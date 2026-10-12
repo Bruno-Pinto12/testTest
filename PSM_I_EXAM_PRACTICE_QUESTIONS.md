@@ -14,7 +14,7 @@ A) True
 
 B) False
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -32,7 +32,7 @@ C) As needed, while taking into account a short-term reduction in productivity.
 
 D) As needed, with no special allowance for changes in productivity.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
@@ -48,7 +48,7 @@ B) It is when the Scrum Team and stakeholders inspect the outcome of a Sprint an
 
 C) It is a demo at the end of the Sprint for everyone in the organization to check on the work done.
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -66,7 +66,7 @@ C) The Product Owner.
 
 D) The Scrum Master.
 
-**Answer:** 
+**Answer:** B C D
 
 ---
 
@@ -84,7 +84,7 @@ C) Discuss the item with the other members of the Scrum Team so the team can dec
 
 D) Add the item to the current Sprint Backlog, drop an item of similar size, and reduce the Sprint Goal.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
@@ -104,7 +104,7 @@ D) The Developers and Scrum Master.
 
 E) The Developers.
 
-**Answer:** 
+**Answer:** E
 
 ---
 
@@ -122,7 +122,7 @@ C) Identify and remove people that are not working hard enough.
 
 D) Monitor the progress of the Developers on the Scrum Team.
 
-**Answer:** 
+**Answer:** A
 
 ---
 
@@ -142,7 +142,7 @@ D) Teach the Developers to keep the Daily Scrum within the 15 minute timebox.
 
 E) All answers apply.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -162,7 +162,7 @@ D) Transparency, Inspection, Adaptation.
 
 E) Transparency, Eliminating Waste, Kaizen.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -178,7 +178,7 @@ B) Complete the project as estimated when the date and cost are committed to the
 
 C) Do all of the development work, except for specialized testing that requires additional tools and environments.
 
-**Answer:** 
+**Answer:** A
 
 ---
 
@@ -196,7 +196,7 @@ C) The event must take at least a minimum amount of time.
 
 D) The event must happen by a given time.
 
-**Answer:** 
+**Answer:** A
 
 ---
 
@@ -214,7 +214,7 @@ C) If it is not an organizational standard, the Scrum Team must create a Definit
 
 D) The Scrum Team, in a collaborative effort where the result is the common denominator of all members' definitions.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
@@ -234,7 +234,7 @@ D) 4 hours and longer as needed.
 
 E) 1 day.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
@@ -250,7 +250,7 @@ B) It depends.
 
 C) All Scrum Teams must have a Definition of Done that makes their combined Increment valuable and useful.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
@@ -268,7 +268,7 @@ C) The Developers.
 
 D) The Scrum Master.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
@@ -286,7 +286,7 @@ C) During the Daily Scrum.
 
 D) Never. The entire Scrum Team is accountable for creating value every Sprint.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -304,7 +304,7 @@ C) By keeping high value features high in the Product Backlog.
 
 D) By removing impediments that hinder the Scrum Team.
 
-**Answer:** 
+**Answer:** B D
 
 ---
 
@@ -322,7 +322,7 @@ C) When the Product Owner decides enough has been delivered to meet the Sprint G
 
 D) When all Product Backlog items meet their Definition of Done.
 
-**Answer:** 
+**Answer:** A
 
 ---
 
@@ -340,7 +340,7 @@ C) One month or less.
 
 D) All of the above.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -358,7 +358,7 @@ C) The Developers may work with the Product Owner to add or remove work if they 
 
 D) The Sprint Backlog is fully formulated in the Sprint Planning event and does not change during the Sprint.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -376,7 +376,7 @@ C) 8 hours for a monthly Sprint. For shorter Sprints it is usually shorter.
 
 D) 4 hours.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
@@ -394,7 +394,7 @@ C) 7 plus or minus 2.
 
 D) 10 or fewer.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -412,7 +412,7 @@ C) As much as it can fit into the Sprint.
 
 D) Analysis, design, programming, testing and documentation.
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -430,7 +430,7 @@ C) Management may feel less anxious.
 
 D) All of the above.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -448,7 +448,7 @@ C) Whenever a team member can accommodate more work.
 
 D) During the Daily Scrum.
 
-**Answer:** 
+**Answer:** A
 
 ---
 
@@ -466,7 +466,7 @@ C) Next Monday.
 
 D) Immediately following the next Sprint Planning.
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -488,7 +488,7 @@ E) Each component of Scrum serves a specific purpose and is essential to your ab
 
 F) Scrum is a methodology where you can pick and choose which parts of Scrum you think will work for your environment.
 
-**Answer:** 
+**Answer:** C D F
 
 ---
 
@@ -506,7 +506,7 @@ C) When the sales department has an important new opportunity.
 
 D) When the Sprint Goal becomes obsolete.
 
-**Answer:** 
+**Answer:** D
 
 ---
 
@@ -518,7 +518,7 @@ A) True
 
 B) False
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -536,7 +536,7 @@ C) The consistency reduces complexity.
 
 D) Rooms are hard to book and this lets it be booked in advance.
 
-**Answer:** 
+**Answer:** C
 
 ---
 
