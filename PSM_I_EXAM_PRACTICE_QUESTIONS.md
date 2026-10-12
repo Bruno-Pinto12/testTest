@@ -28,15 +28,15 @@ D) The Sprint Backlog is fully formulated in the Sprint Planning event and does 
 
 **Context:** 
 
-**Question:** **[Your question here]**
+**Question:** **The timebox for the Sprint Planning event is?**
 
-A) 
+A) Monthly.
 
-B) 
+B) Whenever it is done.
 
-C) 
+C) 8 hours for a monthly Sprint. For shorter Sprints it is usually shorter.
 
-D) 
+D) 4 hours.
 
 **Answer:** 
 
