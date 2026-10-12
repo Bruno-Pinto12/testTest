@@ -499,174 +499,137 @@ All artifacts are designed to maximize transparency of key information.
 - Multiple Sprints' Increments can be combined before release
 - Release is a business decision, not a Scrum requirement
 
-**Quality Standards:**
-- An Increment with "minor known bugs" is NOT an Increment (it doesn't meet DoD)
-- Technical documentation, code reviews, testing, security review are part of creating Increment
-- No shortcuts on Definition of Done
+**Quality:**
+- An Increment with "minor known bugs" is NOT an Increment (fails DoD)
+- Technical documentation, code reviews, testing are part of creating Increment
 
 ---
 
-## ✅ DEFINITION OF DONE
+## ✅ DEFINITION OF DONE (CRITICAL)
 
 **What it is:**
-- A formal description of the state of the Increment when it meets quality standards
-- A shared understanding of what "complete" means
-- A checklist of criteria that work must meet
+- Shared understanding of what it means for work to be "complete"
+- Checklist of criteria that must be met
 
 **Purposes (3 critical purposes):**
-1. **Create transparency** of the quality and status of work
-2. **Create shared understanding** among all team members about what "done" means
-3. **Enable team to assess** when work is truly complete
+1. Create transparency of work quality
+2. Create shared understanding among team members
+3. Enable team to know when work is truly complete
 
-**Who Creates It:**
-- **Scrum Team** (Product Owner, Scrum Master, Developers collaborate)
-- May include organizational or technical standards as a baseline
+**Who creates it:**
+- Scrum Team (Product Owner, Scrum Master, Developers)
+- May include organizational standards
 
-**When to Change It:**
+**When to change:**
 - During Sprint Retrospective
-- As team matures and learns, they often add MORE stringent criteria
-- Never remove criteria (only add or maintain)
+- As team matures, they often add MORE stringent criteria
 
-**What it Might Include:**
+**What it should include:**
 - Code review complete
-- Unit tests written and passing
-- Integration tests passing
+- Tests written and passing
 - Documentation updated
 - Security review passed
-- Performance benchmarks met
-- Deployment ready
-- Whatever the team and organization define
+- Performance acceptable
+- Whatever the team defines
 
-**Important Points:**
-- Definition of Done should be **achievable WITHIN the Sprint**
-- If team lacks skills/tools to meet DoD, work with Scrum Master and organization to improve
-- When multiple teams work on one product: **SAME Definition of Done for all**
-- May have organizational minimum standards + team-specific additions
-- All work must meet DoD; nothing is "partially done"
-- Work not meeting DoD goes back to Product Backlog (not counted as Increment)
+**Important:**
+- Definition of Done should be achievable WITHIN the Sprint
+- If team lacks skills/tools, adjust DoD with team input
+- When multiple teams work on one product, they should use the SAME Definition of Done
 
 ---
 
 ## 🎯 SPRINT GOAL
 
-**Definition:**
-- The single objective for the Sprint
-- The reason the Sprint is valuable
-
-**Characteristics:**
-- Created during Sprint Planning
-- Gives Developers focus while allowing flexibility in approach
-- Helps team decide what to do if choices or trade-offs arise
-- **Single objective** (one clear focus, not multiple goals)
+**What it is:**
+- Single objective for the Sprint
+- Reason for Sprint's value
+- Provides focus and direction
 
 **Purpose:**
-- Focuses Developers on the most valuable work
-- Provides coherence and unity of purpose
-- Helps communicate Sprint value to stakeholders
+- Focuses Developers on most important work
+- Helps team decide what to do if choices arise
 
-**Example of Sprint Goal:**
-- ✅ "Implement user authentication" (clear, focused)
-- ✅ "Enable users to log in and manage profiles" (achievable, valuable)
-- ❌ "Work on database, UI, API, testing, documentation" (too many things, no focus)
+**Example:**
+- "Implement user authentication" (instead of implementing 5 random features)
 
-**Who Sets It:**
-- Collaboration between **Product Owner** (value perspective) and **Developers** (feasibility perspective)
-- Created during Sprint Planning
-- Reflects the top priorities in Product Backlog
+**Who sets it:**
+- Collaboration between PO and Developers during Sprint Planning
 
-**How It's Used:**
-- Referenced in Daily Scrum: "Are we still on track toward the Sprint Goal?"
-- Referenced in Sprint Review: "Did we achieve the Sprint Goal?"
-- Guides decisions during the Sprint: "Does this work support the Sprint Goal?"
-- Can change during Sprint, but ONLY if Sprint Goal becomes obsolete (rare)
+**When used:**
+- Referenced in Daily Scrum (are we still on track?)
+- Referenced in Sprint Review (did we achieve it?)
+- Can change during Sprint, but only if Sprint Goal becomes obsolete
 
 ---
 
 ## 🎁 PRODUCT GOAL
 
-**Definition:**
+**Definition (NEW in 2020):**
 - Long-term objective for the product
-- The future state of the product (5-10 year vision)
 - Why the product exists
 
-**New in Scrum Guide 2020:**
-- Added to clarify the connection between Sprints and longer-term vision
-
 **Examples:**
-- "Become the easiest way to book flights online"
-- "Reduce customer support tickets by 50% through better self-service"
-- "Enable remote teams to collaborate as if they're in the same room"
+- "Become the easiest way to book flights"
+- "Reduce customer support tickets by 50%"
 
 **Relationship to Sprints:**
-- Product Goal is long-term (lasting multiple Sprints or years)
-- Each Sprint Goal contributes to the overall Product Goal
-- Multiple Sprints progress incrementally toward Product Goal
-- Each Increment moves closer to Product Goal
+- Product Goal is long-term
+- Multiple Sprints progress toward Product Goal
+- Each Sprint Goal contributes to overall Product Goal
 
-**Who Manages It:**
-- **Product Owner** is accountable for the Product Goal
-- With input from Developers and stakeholders
-- Clear communication to organization
+**Who manages it:**
+- Product Owner (with input from Developers and stakeholders)
 
-**How It Guides:**
-- Influences ordering of Product Backlog (what adds most value toward goal)
-- Helps decide what features and work to prioritize
-- Helps team understand "why" they're building what they're building
-- Provides context for Sprint Goals
+**How it guides:**
+- Influences ordering of Product Backlog
+- Helps decide what features to build
+- Helps team understand "why" they're building
 
 ---
 
-## 🔄 PROCESS FLOW - How It All Connects
+## 🔄 PROCESS FLOW
 
 ```
-PRODUCT GOAL
-(Why does the product exist? Long-term vision)
+PRODUCT GOAL (Why does the product exist?)
     ↓
-PRODUCT BACKLOG
-(What needs to be done? Ordered list by value)
+PRODUCT BACKLOG (What needs to be done?)
     ↓
-SPRINT PLANNING → SPRINT GOAL
-(What will we accomplish this Sprint? Single objective)
+SPRINT PLANNING → SPRINT GOAL (What will we accomplish this Sprint?)
     ↓
-SPRINT BACKLOG
-(How will we accomplish it? Actionable plan)
+SPRINT BACKLOG (How will we accomplish it?)
+    ↓
+(Daily Scrum - inspect progress)
     ↓
 DEVELOPMENT WORK
-(Daily Scrum - inspect progress, adapt, self-organize)
     ↓
-INCREMENT
-(What did we create? Must meet Definition of Done)
+INCREMENT (What did we create?)
     ↓
-SPRINT REVIEW
-(Show stakeholders, gather feedback, discuss next steps)
+SPRINT REVIEW (Show stakeholders, gather feedback)
     ↓
-SPRINT RETROSPECTIVE
-(How can we improve? What will we change next Sprint?)
+SPRINT RETROSPECTIVE (How can we improve?)
     ↓
-(Next Sprint starts immediately - repeat cycle)
+(Repeat with next Sprint)
 ```
 
 ---
 
-## ⚠️ COMMON MISCONCEPTIONS (PSM I Traps)
+## ⚠️ COMMON MISCONCEPTIONS
 
-| ❌ WRONG | ✅ CORRECT |
+### ❌ WRONG → ✅ CORRECT
+
+| Wrong | Correct |
 |---|---|
-| Scrum Master assigns tasks to Developers | Developers self-manage work; Scrum Master removes impediments |
-| Daily Scrum is a status report for Scrum Master | Daily Scrum is Developers self-organizing to achieve Sprint Goal |
-| Sprint can be extended if not finished | Sprint length is fixed timebox; unfinished work returns to Product Backlog |
-| Definition of Done guides how many items to select | DoD ensures quality standards; doesn't determine quantity of work |
-| Scrum Master runs the Daily Scrum | Developers run Daily Scrum; SM may facilitate/coach, not required to attend |
-| Product Owner must attend Daily Scrum | PO only attends if actively working on Sprint Backlog items as a Developer |
-| Burndown charts are required by Scrum | Nice to have for visualization, but not required by Scrum |
-| Teams should rotate every Sprint | Team stability is important; minimize changes in composition |
-| Sprint is cancelled when work isn't finished | Work is done when it's done; Sprint continues, unfinished work goes to Product Backlog |
-| Scrum Master is a project manager | Scrum Master is a servant leader; not a manager or command-and-control leader |
-| Product Owner is a boss or manager | Product Owner is part of the team; not a boss; doesn't assign work |
-| Testing only happens at the end of Sprint | Testing is continuous throughout Sprint; part of Definition of Done |
-| Only Developers can attend Retrospective | Scrum Team (PO, SM, Developers) attends; external observers not included |
-| Confusing project language with Scrum | Scrum focuses on products, not projects; Scrum is product-oriented |
-| Refinement is a formal event in the Sprint | Refinement is ongoing; not a formal event; uses ~10% of Sprint capacity |
+| Scrum Master assigns tasks | Developers self-manage work |
+| Daily Scrum is status report | Daily Scrum is self-organization |
+| Sprint can be extended | Sprint length is fixed |
+| Release every Sprint required | Release when business decides |
+| Definition of Done guides how many items to select | DoD ensures quality, not quantity |
+| Scrum Master runs the team | Scrum Master serves the team |
+| Product Owner must attend Daily Scrum | PO only attends if working on tasks |
+| Burndown charts are required | Nice to have, not required |
+| Teams can rotate every Sprint | Team stability is important |
+| Sprint is cancelled when work isn't finished | Sprint continues, team adapts |
 
 ---
 
@@ -674,99 +637,73 @@ SPRINT RETROSPECTIVE
 
 | Term | Definition |
 |---|---|
-| **Timebox** | Maximum amount of time allowed for an event; stop when timebox ends |
-| **Definition of Done** | Shared criteria for when work is truly complete and meets quality standards |
-| **Increment** | Usable sum of all completed work that meets Definition of Done |
-| **Product Backlog** | Ordered, emergent list of everything needed to improve the product |
-| **Sprint Backlog** | Items selected for Sprint + plan for delivering them; owned by Developers |
-| **Sprint Goal** | Single objective for the Sprint; provides focus and coherence |
-| **Product Goal** | Long-term objective for the product; why the product exists |
-| **Empiricism** | Decisions based on observation, experience, and experimentation (not speculation) |
-| **Transparency** | Visibility of work, processes, progress, and status |
-| **Inspection** | Regular examination of artifacts and progress to enable adaptation |
-| **Adaptation** | Adjusting processes, products, and behaviors based on inspection |
-| **Self-Managing** | Team decides HOW to do work; Product Owner decides WHAT; Scrum Master facilitates |
-| **Cross-Functional** | Team has all skills needed to create an Increment without external dependencies |
-| **Servant Leader** | Scrum Master serves the team, removing impediments and facilitating, not commanding |
-| **Artifact** | Formal repository of information (Product Backlog, Sprint Backlog, Increment) |
+| **Timebox** | Maximum amount of time allowed for event; stop when timebox ends |
+| **Definition of Done** | Shared criteria for when work is complete |
+| **Increment** | Working product that meets Definition of Done |
+| **Product Backlog** | Ordered list of everything needed for the product |
+| **Sprint Backlog** | Items selected from Product Backlog for current Sprint |
+| **Sprint Goal** | Single objective for the Sprint |
+| **Product Goal** | Long-term objective for the product |
+| **Empiricism** | Decisions based on observation and experimentation |
+| **Transparency** | Visibility of work, process, and progress |
+| **Inspection** | Regular examination of artifacts and progress |
+| **Adaptation** | Adjusting process based on inspection |
+| **Self-Managing** | Team decides HOW to do work, not WHAT to do |
 
 ---
 
-## 📋 EXAM FOCUS AREAS - What Will Definitely Be Tested
+## 📋 EXAM FOCUS AREAS
 
-### ✅ Likely to be tested HEAVILY (Study hard):
-1. **Who does what** (roles, accountabilities, responsibilities)
+### ✅ Likely to be tested heavily:
+1. **Who does what** (roles and responsibilities)
 2. **Event purposes and timeboxes**
-3. **What happens in each event and why**
-4. **Definition of Done and its three purposes**
-5. **Sprint cancellation rules** (only PO, only if goal obsolete)
-6. **Who attends each event** (critical detail)
-7. **Scrum Master as servant leader** (not manager, not boss)
+3. **What happens in each event**
+4. **Definition of Done and its purposes**
+5. **Sprint cancellation rules**
+6. **Who attends each event**
+7. **Scrum Master as servant leader (not manager)**
 8. **Developers self-manage** (not assigned tasks)
-9. **Product Backlog ordering** (PO responsibility for value)
+9. **Product Backlog ordering** (PO responsibility)
 10. **Sprint Goal and how it guides decisions**
-11. **The three pillars** (Transparency, Inspection, Adaptation)
-12. **The five Scrum Values**
-13. **Multiple teams on same product** (one backlog, one PO, one DoD)
 
-### 🟡 Moderately tested (Know these):
-1. **Product Goal** (new in 2020; longer-term vision)
-2. **Empiricism and the cycle** (Transparency → Inspection → Adaptation)
-3. **Refinement process** (ongoing, ~10% of capacity)
-4. **Increment definition** (usable, meets DoD, accumulates)
-5. **Sprint Backlog ownership** (Developers, not PO or SM)
-6. **Process flow and connections** between artifacts and events
+### 🟡 Moderately tested:
+1. **Product Goal** (new in 2020)
+2. **Transparency, Inspection, Adaptation**
+3. **Refinement process**
+4. **Increment definition**
 
-### 🟢 Less heavily tested but know (Avoid tricks):
-1. **Scrum values in depth** (how they enable pillars)
-2. **Non-functional requirements** (in backlog, part of DoD)
-3. **Multi-team coordination** (dependencies, integration)
-4. **Real-life scenarios** (what to do when X happens)
+### 🟢 Less tested but know:
+1. **Scrum values in depth**
+2. **Non-functional requirements**
+3. **Multi-team coordination**
 
 ---
 
-## 🧠 STUDY TIPS FOR PSM I SUCCESS
+## 🧠 STUDY TIPS FOR PSM I
 
-1. **Memorize the 5 Scrum Values word-for-word:** Commitment, Focus, Openness, Respect, Courage. These WILL be tested.
-
-2. **Know timeboxes by heart:** Can you recall them without notes? Sprint (≤1 month), Planning (8h), Daily (15m), Review (4h), Retro (1.5h)
-
-3. **Understand roles by accountability, not tasks:**
-   - PO = maximize value
-   - Developers = create Increment
-   - SM = establish Scrum, help everyone learn
-
-4. **Events are KEY—understand PURPOSE, not just agenda:** Each event exists for a reason.
-
-5. **Empiricism is the foundation:** Everything in Scrum is based on Transparency → Inspection → Adaptation
-
-6. **Developers = self-managing:** Not managed, not assigned tasks, not told how to work
-
-7. **Product Owner is ONE person:** Can delegate, but accountable for decisions and backlog ordering
-
-8. **Scrum Master ≠ Project Manager:** Servant leader, facilitator, impediment remover, coach
-
-9. **Multiple teams = ONE Product Backlog, ONE Product Owner, ONE Definition of Done:** This is tested multiple times in different ways
-
-10. **When in doubt:** Go back to the Scrum Guide 2020 definition. The exam tests according to official guide.
+1. **Memorize the 5 Scrum Values:** They will definitely be tested
+2. **Know timeboxes by heart:** Can you recall them without notes?
+3. **Understand roles:** Each role is defined by accountability, not tasks
+4. **Events are KEY:** Understand PURPOSE, not just agenda
+5. **Empiricism is important:** Transparency → Inspection → Adaptation cycle
+6. **Developers = self-managing:** Not managed, not assigned tasks
+7. **Product Owner is single person:** Can delegate, but accountable for decisions
+8. **Scrum Master ≠ Project Manager:** Facilitator, not manager
 
 ---
 
-## 📚 QUICK REFERENCE - TIMEBOXES CHEAT SHEET
+## 📚 QUICK REFERENCE - TIMEBOXES
 
-| Event | 1-month Sprint | 2-week Sprint | Fixed? |
-|---|---|---|---|
-| **Sprint** | 1 month (30 days) | 2 weeks (10 days) | Yes, all same |
-| **Sprint Planning** | 8 hours | 4 hours | Max - can end early |
-| **Daily Scrum** | 15 minutes | 15 minutes | Max - can end early |
-| **Sprint Review** | 4 hours | 2 hours | Max - can end early |
-| **Sprint Retrospective** | 1.5 hours (3h max) | 45 minutes | Max - can end early |
-
-**Key point:** Timeboxes are MAXIMUM times. Events should end when their purpose is achieved, not when the timebox expires.
+| Event | 1-month Sprint | 2-week Sprint |
+|---|---|---|
+| **Sprint Planning** | 8 hours | 4 hours |
+| **Daily Scrum** | 15 minutes | 15 minutes |
+| **Sprint Review** | 4 hours | 2 hours |
+| **Sprint Retrospective** | 1.5 hours | 45 minutes |
 
 ---
 
-## 🎯 REAL-LIFE CASES FOR PSM I EXAM
+## 🎓 REAL-LIFE CASES FOR PSM I EXAM
 
 ### **Case 1: Two Scrum Teams on the same product**
 
@@ -925,9 +862,14 @@ SPRINT RETROSPECTIVE
 **Question:** Is this allowed?
 
 **Answer:**
-- Scrum Guide doesn't explicitly REQUIRE aligned Sprints
-- But aligned Sprints are common practice (easier integration)
-- For exam: Answer according to what Scrum Guide requires, not common practice
+
+The Scrum Guide does not explicitly require identical Sprint lengths across teams. However, for one product, the work must integrate into **one Done, usable Increment every Sprint**, so aligned Sprint lengths are strongly recommended in practice. Different lengths make integration, inspection, and adaptation harder.
+
+**Why this matters:**
+- With different Sprint lengths, teams finish at different times
+- Creating one integrated Increment every Sprint becomes difficult
+- Inspection and adaptation cycles are misaligned
+- For the exam: Answer according to what Scrum Guide requires (NOT a hard requirement, but strongly recommended)
 
 ---
 
