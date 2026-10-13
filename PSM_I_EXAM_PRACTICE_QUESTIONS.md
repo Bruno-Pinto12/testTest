@@ -1,7 +1,7 @@
 # 📝 PSM I EXAM PRACTICE QUESTIONS
 
-**Format:** Questions without answers  
-**Purpose:** Study and practice before reviewing answers  
+**Format:** Questions with answer keys
+**Purpose:** Study, practice, and review answers
 **Instructions:** Try to answer each question before checking the answer key
 
 ---
@@ -1444,6 +1444,600 @@ F) The Scrum Master loses the ability to update the Gantt chart properly.
 
 ---
 
+## Question 78   🔁 Seen 1 time (0 duplicates)
+
+**The Scrum framework is purposefully incomplete.**
+
+A) False
+
+B) True
+
+**Answer:** B
+
+---
+
+## Question 79   🔁 Seen 1 time (0 duplicates)
+
+**When should Product Backlog refinement occur?**
+
+*(choose the best answer)*
+
+A) Continuously throughout the Sprint
+
+B) Only during Sprint Planning
+
+C) Only during the Sprint Review
+
+D) At the start of each Sprint
+
+**Answer:** A
+
+---
+
+## Question 80   🔁 Seen 1 time (0 duplicates)
+
+**The Product Owner must attend the Sprint Retrospective.**
+
+A) False
+
+B) True
+
+**Answer:** B
+
+---
+
+## Question 81   🔁 Seen 1 time (0 duplicates)
+
+**Which of the following best describes the topics discussed at Sprint Planning?**
+
+*(choose the best answer)*
+
+A) Who is on the team and what team member roles will be.
+
+B) How conditions have changed and how the Product Backlog should evolve.
+
+C) What to do and who will do it.
+
+D) What went wrong in the last Sprint and what to do differently this Sprint.
+
+E) Why the work is valuable, what can be done, and how to do it.
+
+**Answer:** E
+
+---
+
+## Question 82   🔁 Seen 1 time (0 duplicates)
+
+**Which of the following is a benefit of working inside timeboxes?**
+
+*(choose the best answer)*
+
+A) It ensures that all planned items will be finished.
+
+B) It helps the Product Owner know which attribute of the "Iron Triangle" to adjust.
+
+C) It increases the Scrum Team's velocity.
+
+D) It helps to limit work-in-progress.
+
+**Answer:** D
+
+**Key note:** This is the best answer among the source choices; a timebox does not guarantee completion or increased velocity.
+
+---
+
+## Question 83   🔁 Seen 1 time (0 duplicates)
+
+**A Scrum Team must never have any technical debt.**
+
+A) False
+
+B) True
+
+**Answer:** A
+
+---
+
+## Question 84   🔁 Seen 1 time (0 duplicates)
+
+**A Scrum Team must only work on a single Product Goal at any time.**
+
+A) False
+
+B) True
+
+**Answer:** B
+
+---
+
+## Question 85   🔁 Seen 1 time (0 duplicates)
+
+**Among the Developers, there is nobody with significant testing expertise. They should...**
+
+*(choose two answers)*
+
+A) Quality is the responsibility of the Developers and they should undertake testing themselves to the best of their abilities.
+
+B) Produce an Increment that will be tested by a dedicated test team after the Sprint to guarantee the quality.
+
+C) Request for a specialist tester to join them and queue testing for them to do when they arrive in a later Sprint.
+
+D) Raise this as an impediment which may require the assistance of the Scrum Master to resolve.
+
+**Answer:** A D
+
+---
+
+## Question 86   🔁 Seen 1 time (0 duplicates)
+
+**Which of the following does Scrum require?**
+
+*(choose the best answer)*
+
+A) None of the answers apply.
+
+B) Burn-down charts.
+
+C) Code refactoring.
+
+D) Automated builds.
+
+E) Critical path analysis.
+
+F) Release burn-ups.
+
+G) Unit test coverage.
+
+**Answer:** A
+
+---
+
+## Question 87   🔁 Seen 1 time (0 duplicates)
+
+**Why does Scrum require the Product Backlog to be ordered rather than prioritised?**
+
+*(choose the best answer)*
+
+A) Order and priority are always the same thing.
+
+B) Multiple Product Backlog items can have the same priority. There can only be one position in the Product Backlog when it comes to order.
+
+C) Order is better than chaos.
+
+D) Scrum requires both order and priority.
+
+**Answer:** B
+
+---
+
+## Question 88   🔁 Seen 1 time (0 duplicates)
+
+**Which of the following events has the shortest timebox?**
+
+*(choose the best answer among the listed options)*
+
+A) Sprint Planning
+
+B) Sprint Retrospective
+
+C) Sprint Review
+
+**Answer:** B
+
+**Key note:** This answer is among the listed options; the Daily Scrum, which has a shorter timebox, is not listed.
+
+---
+
+## Question 89   🔁 Seen 1 time (0 duplicates)
+
+**A Scrum Team has how many specific accountabilities?**
+
+*(choose the best answer)*
+
+A) 3
+
+B) 4
+
+C) 1
+
+D) 2
+
+**Answer:** A
+
+---
+
+## Question 90   🔁 Seen 1 time (0 duplicates)
+
+**When is the Product Backlog considered complete?**
+
+*(choose the best answer)*
+
+A) When all items in it have been completed.
+
+B) At the end of each Sprint.
+
+C) When the product is released.
+
+D) It is unlikely to ever be truly complete.
+
+**Answer:** D
+
+---
+
+## Question 91   🔁 Seen 1 time (0 duplicates)
+
+**The Definition of Done is a mandatory part of Scrum.**
+
+A) False
+
+B) True
+
+**Answer:** B
+
+---
+
+## Question 92   🔁 Seen 1 time (0 duplicates)
+
+**An Increment is...**
+
+*(choose the best answer)*
+
+A) All work that was carried out in the Sprint.
+
+B) All work that has happened up to the current point in time.
+
+C) The sum of the Done work during a Sprint, plus the work Done in earlier Sprints.
+
+D) All work completed up to now, where there are no bugs present.
+
+**Answer:** C
+
+---
+
+## Question 93   🔁 Seen 1 time (0 duplicates)
+
+**If documentation is required as part of an Increment, who creates it?**
+
+*(choose the best answer)*
+
+A) The Product Owner.
+
+B) The Developers.
+
+C) The technical writer.
+
+D) The Scrum Master.
+
+E) Documentation is not a part of an Increment.
+
+**Answer:** B
+
+---
+
+## Question 94   🔁 Seen 1 time (0 duplicates)
+
+**Who can do the work to ensure the Product Backlog is refined to a state that it is useful?**
+
+*(choose two answers)*
+
+A) The Developers, with support from the Product Owner who is still accountable for it.
+
+B) The Business Analyst.
+
+C) The Product Owner.
+
+D) Stakeholders.
+
+**Answer:** A C
+
+---
+
+## Question 95   🔁 Seen 1 time (0 duplicates)
+
+**During Sprint Planning, every task must be estimated so the Developers can be sure they have the capacity to complete them in the Sprint.**
+
+A) True
+
+B) False
+
+**Answer:** B
+
+---
+
+## Question 96   🔁 Seen 1 time (0 duplicates)
+
+**Who is accountable for ensuring that the burn-down chart and Gantt chart exist?**
+
+*(choose the best answer)*
+
+A) The Product Owner.
+
+B) The Developers.
+
+C) The Scrum Master.
+
+D) No one.
+
+**Answer:** D
+
+---
+
+## Question 97   🔁 Seen 1 time (0 duplicates)
+
+**Management needs to monitor progress on a daily basis and decides to do so by attending the Daily Scrum. What are the likely results?**
+
+*(choose three answers)*
+
+A) Developers may end up with less time in the Daily Scrum to re-plan their work.
+
+B) Management will be able to better direct the work of the Developers.
+
+C) Developers may be less open and transparent during the Daily Scrum.
+
+D) Additional facilitation may be required to keep to the timebox.
+
+**Answer:** A C D
+
+---
+
+## Question 98   🔁 Seen 1 time (0 duplicates)
+
+**The Product Owner manages...**
+
+*(choose the best answer)*
+
+A) The Project.
+
+B) The Developers.
+
+C) The Scrum Team.
+
+D) The Product Backlog.
+
+**Answer:** D
+
+---
+
+## Question 99   🔁 Seen 1 time (0 duplicates)
+
+**The Product Owner is using burn-up charts instead of burn-down charts. What would your response be as Scrum Master?**
+
+*(choose the best answer)*
+
+A) Burn-up charts are used in traditional methods and should be replaced by burn-down charts.
+
+B) There’s nothing wrong with it.
+
+**Answer:** B
+
+---
+
+## Question 100   🔁 Seen 1 time (0 duplicates)
+
+**The Scrum Master is a leader and servant in service to which of the following?**
+
+*(choose the best answer)*
+
+A) The organisation and Scrum Team.
+
+B) The Developers.
+
+C) The Product Owner.
+
+**Answer:** A
+
+---
+
+## Question 101   🔁 Seen 1 time (0 duplicates)
+
+**The Definition of Ready is part of Scrum.**
+
+A) False
+
+B) True
+
+**Answer:** A
+
+---
+
+## Question 102   🔁 Seen 1 time (0 duplicates)
+
+**A Scrum Team uses 2-week Sprints and timeboxes Sprint Planning to 6 hours. Does this break the rules of Scrum?**
+
+A) True
+
+B) False
+
+**Answer:** B
+
+---
+
+## Question 103   🔁 Seen 1 time (0 duplicates)
+
+**Developers should be set stretch goals by the Product Owner as part of Sprint Planning.**
+
+A) True
+
+B) False
+
+**Answer:** B
+
+---
+
+## Question 104   🔁 Seen 1 time (0 duplicates)
+
+**During the Daily Scrum, the Developers must answer the "3 questions".**
+
+A) False
+
+B) True
+
+**Answer:** A
+
+---
+
+## Question 105   🔁 Seen 1 time (0 duplicates)
+
+**By the end of the Sprint Retrospective, the Scrum Team should have identified and planned improvements to increase its effectiveness.**
+
+A) False
+
+B) True
+
+**Answer:** B
+
+---
+
+## Question 106   🔁 Seen 1 time (0 duplicates)
+
+**The Scrum Master manages the Scrum Team.**
+
+A) False
+
+B) True
+
+**Answer:** A
+
+---
+
+## Question 107   🔁 Seen 1 time (0 duplicates)
+
+**A new Developer joins the Scrum Team, taking the total number to 11 people. As a Scrum Master, what should you do?**
+
+*(choose the best answer)*
+
+A) Do nothing; the Developers must fix their own issues.
+
+B) Instruct the Developers to split into 2 teams.
+
+C) Raise the increased team size as a potential issue and help the Developers decide what to do about it.
+
+D) Instruct the Developers to split into 2 teams; they should decide the appropriate sizes.
+
+**Answer:** C
+
+---
+
+## Question 108   🔁 Seen 1 time (0 duplicates)
+
+**Select the correct timebox for each Scrum event.**
+
+*(choose the best answer)*
+
+A) Sprint Planning - 8 hours, Daily Scrum - 30 minutes, Sprint Review - 4 hours, Sprint Retrospective - 3 hours.
+
+B) Sprint Planning - 4 hours, Daily Scrum - 15 minutes, Sprint Review - 8 hours, Sprint Retrospective - 4 hours.
+
+C) Sprint Planning - 4 hours, Daily Scrum - 15 minutes, Sprint Review - 4 hours, Sprint Retrospective - 4 hours.
+
+D) Sprint Planning - 8 hours, Daily Scrum - 15 minutes, Sprint Review - 4 hours, Sprint Retrospective - 3 hours.
+
+**Answer:** D
+
+**Key note:** The 8/4/3-hour event limits apply to a one-month Sprint; shorter Sprints are usually shorter.
+
+---
+
+## Question 109   🔁 Seen 1 time (0 duplicates)
+
+**What is velocity?**
+
+*(choose the best answer)*
+
+A) The amount of Product Backlog turned into an Increment during a Sprint.
+
+B) Average person-hours spent per Sprint.
+
+C) Amount of work taken into the Sprint.
+
+D) Average lines of code created per Sprint.
+
+**Answer:** A
+
+**Key note:** Velocity is an optional, commonly used measure; it is not defined or required by the Scrum Guide.
+
+---
+
+## Question 110   🔁 Seen 1 time (0 duplicates)
+
+**What tool(s) can be used for managing the Product Backlog?**
+
+*(choose the best answer)*
+
+A) All of the answers apply.
+
+B) Specialized simple software tools like Trello.
+
+C) Physical boards with sticky notes.
+
+D) Specialized enterprise software tools like Jira.
+
+**Answer:** A
+
+---
+
+## Question 111   🔁 Seen 1 time (0 duplicates)
+
+**A Scrum Team must be 10 or fewer people.**
+
+A) False
+
+B) True
+
+**Answer:** A
+
+---
+
+## Question 112   🔁 Seen 1 time (0 duplicates)
+
+**The Product Owner must invite stakeholders to the Sprint Retrospective.**
+
+A) False
+
+B) True
+
+**Answer:** A
+
+---
+
+## Question 113   🔁 Seen 1 time (0 duplicates)
+
+**The Product Owner is primarily responsible for defining the "What" of the product. Who is primarily responsible for determining the "How" of implementing the features of the product?**
+
+*(choose the best answer)*
+
+A) The Developers.
+
+B) The Stakeholders.
+
+C) The Architect.
+
+D) The Scrum Master.
+
+**Answer:** A
+
+---
+
+## Question 114   🔁 Seen 1 time (0 duplicates)
+
+**Developers include which role(s)?**
+
+*(select all that apply)*
+
+A) No other roles. Developer is one of the 3 accountabilities in Scrum.
+
+B) Testers.
+
+C) Business Analysts.
+
+D) Software Architects.
+
+**Answer:** A
+
+**Key note:** The source says “select all that apply” but supplies one key. “Developer” is a Scrum accountability, while these specialties may be represented among Developers; the instruction/key pairing is ambiguous.
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -1712,5 +2306,87 @@ F) The Scrum Master loses the ability to update the Gantt chart properly.
 
 ---
 
-**Status:** 77 questions added, all answers included
+### Source comparison: `scrum-practice-questions.md` (73 images)
+
+**Result:** 37 questions added (Q78–Q114), 32 duplicates mapped to existing or newly added questions, and 4 skipped because their key or framing could not be reliably verified. The mapped duplicates include 15 repeated entries within the source set.
+
+| Image | Result |
+|---:|---|
+| 1 | Added as Q78 |
+| 2 | Added as Q79 |
+| 3 | Skipped: Scrum does not prescribe a Scrum Master appointment procedure, so the source's best-answer key is not verifiable |
+| 4 | Added as Q80 |
+| 5 | Added as Q81 |
+| 6 | Added as Q82 |
+| 7 | Added as Q83 |
+| 8 | Added as Q84 |
+| 9 | Added as Q85 |
+| 10 | Duplicate of Q45 |
+| 11 | Added as Q86 |
+| 12 | Duplicate of Q100 (same question as Image 46) |
+| 13 | Duplicate of Q4 |
+| 14 | Added as Q87 |
+| 15 | Added as Q88 |
+| 16 | Added as Q89 |
+| 17 | Added as Q90 |
+| 18 | Added as Q91 |
+| 19 | Duplicate of Q31 |
+| 20 | Duplicate of Q61 |
+| 21 | Added as Q92 |
+| 22 | Duplicate of Q91 |
+| 23 | Duplicate of Q90 |
+| 24 | Duplicate of Q31 |
+| 25 | Duplicate of Q61 |
+| 26 | Skipped: the claimed revised backlog of probable items for the next Sprint is not a reliable required result under the current Scrum Guide |
+| 27 | Added as Q93 |
+| 28 | Added as Q94 |
+| 29 | Duplicate of Q78 |
+| 30 | Added as Q95 |
+| 31 | Duplicate of Q83 |
+| 32 | Duplicate of Q84 |
+| 33 | Added as Q96 |
+| 34 | Duplicate of Q8 |
+| 35 | Duplicate of Q74 |
+| 36 | Added as Q97 |
+| 37 | Duplicate of Q90 |
+| 38 | Duplicate of Q40 |
+| 39 | Added as Q98 |
+| 40 | Duplicate of Q92 |
+| 41 | Duplicate of Q85 |
+| 42 | Added as Q99 |
+| 43 | Duplicate of Q43 |
+| 44 | Duplicate of Q86 |
+| 45 | Duplicate of Q3 |
+| 46 | Added as Q100 |
+| 47 | Duplicate of Q62 |
+| 48 | Added as Q101 |
+| 49 | Duplicate of Q35 |
+| 50 | Added as Q102 |
+| 51 | Duplicate of Q79 |
+| 52 | Duplicate of Q28 |
+| 53 | Skipped: the source's legacy two-part Sprint Planning framing and its answer rationale are not reliable under the 2020 Guide |
+| 54 | Added as Q103 |
+| 55 | Added as Q104 |
+| 56 | Added as Q105 |
+| 57 | Added as Q106 |
+| 58 | Duplicate of Q88 |
+| 59 | Duplicate of Q1 |
+| 60 | Added as Q107 |
+| 61 | Added as Q108 |
+| 62 | Duplicate of Q89 |
+| 63 | Added as Q109 |
+| 64 | Duplicate of Q106 |
+| 65 | Duplicate of Q43 |
+| 66 | Added as Q110 |
+| 67 | Skipped: the source's claim about combining Product Owner and Scrum Master accountabilities is not explicitly settled by the Scrum Guide |
+| 68 | Duplicate of Q98 |
+| 69 | Added as Q111 |
+| 70 | Duplicate of Q15 |
+| 71 | Added as Q112 |
+| 72 | Added as Q113 |
+| 73 | Added as Q114; the mismatch between “select all” and the single key is noted with the question |
+
+---
+
+**Status:** 114 questions total (77 existing + 37 added from `scrum-practice-questions.md`); 32 duplicates mapped and 4 entries skipped
 **Last Updated:** 2026-10-13
