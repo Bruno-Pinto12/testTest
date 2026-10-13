@@ -830,7 +830,7 @@ C) The frequency at which team formation can be changed.
 
 D) The organization has mandated similar length sprints.
 
-**Answer:** C
+**Answer:** A
 
 ---
 
@@ -910,7 +910,7 @@ C) Function as a go-between for them.
 
 D) Teach the Developers to talk in terms of business needs and objectives
 
-**Answer:** D
+**Answer:** A
 
 ---
 
@@ -1362,7 +1362,7 @@ D) Describe the work that must be mostly done before the Sprint is allowed to en
 
 E) Increase transparency.
 
-**Answer:** C D E
+**Answer:** B C E 
 
 ---
 
