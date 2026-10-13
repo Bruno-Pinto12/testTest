@@ -816,6 +816,634 @@ E) 15 minutes.
 
 ---
 
+## Question 45   🔁 Seen 1 time (0 duplicates)
+
+**What factor should be considered when establishing the Sprint length ?**
+
+*(choose the best answer)*
+
+A) The need for the team to learn based on doing work and measuring results.
+
+B) The organization's release schedule.
+
+C) The frequency at which team formation can be changed.
+
+D) The organization has mandated similar length sprints.
+
+**Answer:** C
+
+---
+
+## Question 46   🔁 Seen 1 time (0 duplicates)
+
+**Which two ways of creating Scrum Teams are consistent with Scrum's values?**
+
+*(choose the best two answers)*
+
+A) Existing teams propose how they would like to go about organizing into the new structure
+
+B) Managers personally re-assign current subordinates to new teams.
+
+C) Managers collaborate to assign individuals to specific teams.
+
+D) Bring all the people together and let them organize into Scrum Teams
+
+E) The Chief Product Owner determines the new team structures and assignments.
+
+**Answer:** A D
+
+---
+
+## Question 47   🔁 Seen 1 time (0 duplicates)
+
+**Which of the following is an example of an Increment?**
+
+*(choose the best answer)*
+
+A) A plan for the overall product release
+
+B) A mock-up of the product marketing materials
+
+C) A design for the product
+
+D) A product roll-out plan.
+
+E) A valuable, useful set of product features.
+
+F) All of the above.
+
+**Answer:** E
+
+---
+
+## Question 48   🔁 Seen 1 time (0 duplicates)
+
+**Which outcome is expected as a Scrum Team matures?**
+
+*(choose the best answer)*
+
+A) There will be no need for a timeboxed Sprint.
+
+B) They will improve their Definition of Done to include more stringent criteria.
+
+C) The Sprint Retrospectives will grow to be longer than 4 hours.
+
+D) A Scrum Master is no longer needed since they are a mature team now.
+
+E) Sprint Reviews will no longer be needed.
+
+**Answer:** B
+
+---
+
+## Question 49   🔁 Seen 1 time (0 duplicates)
+
+**Which technique is the best way the Scrum Master can ensure that the Developers communicate effectively with the Product Owner?**
+
+*(choose the best answer)*
+
+A) Observe communications between them and facilitate direct collaboration.
+
+B) Teach the Product Owner about the technologies employed during the Sprints.
+
+C) Function as a go-between for them.
+
+D) Teach the Developers to talk in terms of business needs and objectives
+
+**Answer:** D
+
+---
+
+## Question 50   🔁 Seen 1 time (0 duplicates)
+
+**Who is responsible for collaboration with stakeholders?**
+
+*(choose the best answer)*
+
+A) The Business Analyst.
+
+B) The Scrum Team.
+
+C) The Team Manager.
+
+D) The Project Manager
+
+E) The Developers
+
+**Answer:** B
+
+---
+
+## Question 51   🔁 Seen 1 time (0 duplicates)
+
+**How much of the Sprint Backlog must be defined during the Sprint Planning event?**
+
+*(choose the best answer)*
+
+A. Enough so the Developers can create their forecast of what work they can do
+
+B. Just enough tasks for the Scrum Master to be confident in the Developers understanding of the Sprint
+
+C. The entire Sprint Backlog must be identified and estimated by the end of Sprint Planning
+
+D. Just enough to understand design and architectural implications.
+
+**Answer:** A
+
+---
+
+## Question 52   🔁 Seen 1 time (0 duplicates)
+
+**One of the Scrum events is the Daily Scrum. What are two intended outcomes of the Daily Scrum?**
+
+*(choose the best two answers)*
+
+A. An updated Scrum board to make Sprint progress transparent for the stakeholders.
+
+B. Identification of impediments that may prevent the Developers from achieving the Sprint Goal
+
+C. A status report for the upper management indicating what each individual has done, will be doing, and what is impeding him/her
+
+D. A shared understanding of the most important work to be undertaken next to achieve the best possible progress toward the Sprint goal.
+
+E. An update of completed tasks and of the remaining work so the Scrum Master can plan the next day.
+
+**Answer:** B D
+
+---
+
+## Question 53   🔁 Seen 1 time (0 duplicates)
+
+**A Scrum Master is introducing Scrum to a new Team. The Team has decided that a Sprint Retrospective is unnecessary, What action should the Scrum Master take?**
+
+*(choose the best answer)*
+
+A) Comply with the decision of the self-managing team
+
+B) Begin facilitating productive and useful Sprint Retrospectives.
+
+C) Call a meeting between the Scrum Team and senior management
+
+D) Consult with the Product Owner to see how they feel about the situation
+
+**Answer:** B
+
+---
+
+## Question 54   🔁 Seen 1 time (0 duplicates)
+
+**When multiple Scrum Teams are working on the same product, should all of their Increments be Integrated every Sprint?**
+
+*(choose the best answer)*
+
+A. Yes, but only for Scrum Teams whose work has dependencies.
+
+B. No, that is far too hard and must be done in a hardening Sprint
+
+C. No, each Scrum Team stands alone.
+
+D. Yes, in order to accurately inspect what is done.
+
+**Answer:** D
+
+---
+
+## Question 55   🔁 Seen 1 time (0 duplicates)
+
+**Which Scrum Value is affected by a lack of trust in the Scrum Team?**
+
+*(choose the best answer)*
+
+A) Focus
+
+B) Respect
+
+C) Openness
+
+D) Courage
+
+E) Commitment
+
+F) All of the above.
+
+**Answer:** F
+
+---
+
+## Question 56   🔁 Seen 1 time (0 duplicates)
+
+**Who starts the Daily Scrum?**
+
+*(choose the best answer)*
+
+A) The Scrum Master. This ensures that the Developers have the event, and it stays within the timebox
+
+B) Whoever the Developers decide should start
+
+C) The customers who attend each day
+
+D) The Product Owner
+
+E) The person coming in last. This encourages people to be on time and helps to stay within the timebox.
+
+**Answer:** B
+
+---
+
+## Question 57   🔁 Seen 1 time (0 duplicates)
+
+**True or False: Multiple Scrum Teams working on the same product must have the same Sprint start date**
+
+A) True
+
+B) False.
+
+**Answer:** B
+
+---
+
+## Question 58   🔁 Seen 1 time (0 duplicates)
+
+**You are the Scrum Master of a new, to be developed Product. Development is going to require 45 people. What is a good first question for you to suggest the group thinks about when forming into teams?**
+
+*(choose the best answer)*
+
+A) Who are the subject matter experts on each team?
+
+B) How will we make sure all teams have the right amount of expertise?
+
+C) Who are going to be the team leads?
+
+D) What is the right mixture of senior and junior people on each team?
+
+**Answer:** B
+
+---
+
+## Question 59   🔁 Seen 1 time (0 duplicates)
+
+**At the end of a Sprint, a Product Backlog item worked on during the Sprint does not meet the Definition of Done What two things should happen with the undone Product Blacklog item?**
+
+*(choose the best two answers)*
+
+A) Do not include the item in the increment this sprint
+
+B) Put it on the Product Backlog for the Product Owner to decide what to do with it
+
+C) Review the item, add the done part of the estimate to the velocity and create a Story for the remaining work
+
+D) If the stakeholders agree, the Product Owner can accept it and release it to the users
+
+**Answer:** A B
+
+---
+
+## Question 60   🔁 Seen 1 time (0 duplicates)
+
+**As the Sprint Planning progresses, the Developers realize that the workload may be greater than their capacity to complete the work. Which two are valid actions?**
+
+*(choose the best two answers)*
+
+A) Recruit additional Developers before the work can begin
+
+B) The Developers ensure that the Scrum Team is aware, start the Sprint, and monitor progress.
+
+C) The Developers work overtime during this Sprint.
+
+D) Cancel the Sprint.
+
+E) Remove or change selected Product Backlog items
+
+**Answer:** B E
+
+---
+
+## Question 61   🔁 Seen 1 time (0 duplicates)
+
+**How do you know that a Scrum Team is cross-functional?**
+
+*(choose the best answer)*
+
+A) There are no conflicts within the Scrum Team
+
+B) A few of the Developers pair program and do Test-Driven Development
+
+C) The Scrum Team has all the skills to create an increment by the end of every Sprint
+
+D) Every member of the Scrum Team is able to perform every task
+
+**Answer:** C
+
+---
+
+## Question 62   🔁 Seen 1 time (0 duplicates)
+
+**Developers are self-managing, which of the following do they manage?**
+
+*(choose the best answer)*
+
+A) Sprint length.
+
+B) When to release, based on its progress.
+
+C) Product Backlog ordering.
+
+D) Stakeholders for the Sprint Review.
+
+E) Sprint Backlog
+
+**Answer:** E
+
+---
+
+## Question 63   🔁 Seen 1 time (0 duplicates)
+
+**What are two effective ways for the Scrum Team to make non-functional requirements visible?**
+
+*(choose the best two answers)*
+
+A) Put them on a separate list on the Scrum board, available for all to see.
+
+B) Run the integration and regression tests before the end of the Sprint, and capture the open work for the Sprint Backlog of the next Sprint.
+
+C) Add them to the Product Backlog to ensure transparency
+
+D) Add them to the Definition of Done so the work is taken care of every Sprint
+
+**Answer:** C D
+
+---
+
+## Question 64   🔁 Seen 1 time (0 duplicates)
+
+**Which topics should be discussed in the Sprint Review?**
+
+*(choose the best answer)*
+
+A) The Scrum process, and how it was used during the Sprint
+
+B) Coding and engineering practices.
+
+C) The product Increment
+
+D) All of the above
+
+**Answer:** C
+
+---
+
+## Question 65   🔁 Seen 1 time (0 duplicates)
+
+**Which Scrum Values are violated by building Product Backlog items that have low business value?**
+
+*(choose the best three answers)*
+
+A) Focus
+
+B) Earned Value
+
+C) Respect
+
+D) Economic Value Added.
+
+E) Courage
+
+**Answer:** A C E
+
+---
+
+## Question 66   🔁 Seen 1 time (0 duplicates)
+
+**Who is responsible for the sizing of Product Backlog items?**
+
+*(choose the best answer)*
+
+A) The Scrum Master
+
+B) The most senior people in the organization, including architects and subject matter experts.
+
+C) The Developers after clarifying requirements with the Product Owner
+
+D) The Developers, alone.
+
+E) The Product Owner with input from the Developers
+
+**Answer:** C
+
+---
+
+## Question 67   🔁 Seen 1 time (0 duplicates)
+
+**What may be included in the Sprint Backlog?**
+
+*(choose the best answer)*
+
+A) User Stories.
+
+B) Tasks.
+
+C) Use Cases.
+
+D) Tests.
+
+E) Any of the above (or others) which are a decomposition of the selected Product Backlog items.
+
+**Answer:** E
+
+---
+
+## Question 68   🔁 Seen 1 time (0 duplicates)
+
+**When is it most appropriate for a Scrum Team to change the Definition of Done?**
+
+*(choose the best answer)*
+
+A) During Sprint Planning
+
+B) During the Sprint Retrospective.
+
+C) During Product Backlog refinement.
+
+D) Prior to starting a new project.
+
+**Answer:** B
+
+---
+
+## Question 69   🔁 Seen 1 time (0 duplicates)
+
+**Several Sprints into a project, the Product Owner tells the Scrum Master that a key stakeholder just started using the product. The stakeholder is unhappy with the quality of the product, and the Product Owner agrees with the stakeholder's assessment that the quality is low. How should the Scrum Master respond to the Product Owner?**
+
+*(choose the best two answers)*
+
+A) Tell the Product Owner they have noted the concern and will raise this issue at the Sprint Retrospective.
+
+B) Work with the Product Owner to understand their desired resolution and help formulate an approach for raising the concern with the Developers.
+
+C) Bring the concern to the testers to improve how the Product is verified
+
+D) Encourage the Product Owner to include quality specifications in the Product Backlog and to communicate the stakeholders' concerns to the Developers
+
+E) Explain to the Product Owner that it is up to the Developers to decide on acceptable quality standards.
+
+**Answer:** B D
+
+---
+
+## Question 70   🔁 Seen 1 time (0 duplicates)
+
+**A Product Owner wants advice from the Scrum Master about estimating work in Scrum. What guidance should a Scrum Master give?**
+
+*(choose the best answer)*
+
+A) Product Backlog items must be estimated in story points.
+
+B) Estimates are made by the Product Owner, but are best checked with the Developers.
+
+C) Estimates must be in relative units
+
+D) Estimates are made by the people doing the work.
+
+E) Scrum forbids estimating.
+
+**Answer:** D
+
+---
+
+## Question 71   🔁 Seen 1 time (0 duplicates)
+
+**What happens if the Scrum Team cannot complete its work by the end of the Sprint?**
+
+*(choose the best answer)*
+
+A) The Sprint is extended temporarily. Lessons are taken to ensure it does not happen again
+
+B) The Sprint is extended and future Sprints use this new duration.
+
+C) The Sprint length is unchanged and the Scrum Team continuously learns and adapts.
+
+**Answer:** C
+
+---
+
+## Question 72   🔁 Seen 1 time (0 duplicates)
+
+**What is the key concern when multiple Scrum Teams are working from the same Product Backlog?**
+
+*(choose the best answer)*
+
+A) Meeting original scope projections.
+
+B) Clear definition of requirements.
+
+C) Maximizing velocity.
+
+D) Making sure there is enough work for everyone on each team
+
+E) Minimizing dependencies between teams..
+
+**Answer:** E
+
+---
+
+## Question 73   🔁 Seen 1 time (0 duplicates)
+
+**The Definition of Done serves which three purposes?**
+
+*(choose the best three answers)*
+
+A) Describe the purpose, objective, and timebox of each Scrum event
+
+B) Guide the Developers on how many Product Backlog items to select for the Sprint
+
+C) Create a shared understanding of when work is complete.
+
+D) Describe the work that must be mostly done before the Sprint is allowed to end
+
+E) Increase transparency.
+
+**Answer:** C D E
+
+---
+
+## Question 74   🔁 Seen 1 time (0 duplicates)
+
+**If burndown charts are used to visualize progress, what do they track?**
+
+*(choose the best answer)*
+
+A) Accumulated cost
+
+B) Individual worker productivity.
+
+C) Work remaining across time
+
+D) Accumulated business value delivered to the customer
+
+**Answer:** C
+
+---
+
+## Question 75   🔁 Seen 1 time (0 duplicates)
+
+**What is the Scrum Master responsible for during the Sprint Retrospective?**
+
+*(choose the best answer)*
+
+A) Summarizing and reporting the discussions to management.
+
+B) Participating as a Scrum Team member and facilitating as requested or needed.
+
+C) Prioritizing the resulting action items.
+
+D) Acting as a scribe to capture the Scrum Team's answers.
+
+**Answer:** B
+
+---
+
+## Question 76   🔁 Seen 1 time (0 duplicates)
+
+**What are three benefits of self-management?**
+
+*(choose the best three answers)*
+
+A) Increased accuracy of estimates.
+
+B) Increased creativity
+
+C) Increased commitment.
+
+D) Increased rule compliance.
+
+E) Increased self-accountability.
+
+**Answer:** B C E
+
+---
+
+## Question 77   🔁 Seen 1 time (0 duplicates)
+
+**The Daily Scrum is an event that happens every day. What would be three key concerns if the frequency were to be lowered to every two or three days?**
+
+*(choose the best three answers)*
+
+A) Too much work is spent updating the Scrum board before the meeting.
+
+B) The Product Owner cannot accurately report progress to the stakeholders.
+
+C) Opportunities to inspect and adapt the Sprint Backlog are lost.
+
+D) The Sprint Backlog may become inaccurate
+
+E) Impediments are raised and resolved more slowly.
+
+F) The Scrum Master loses the ability to update the Gantt chart properly.
+
+**Answer:** C D E
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -996,5 +1624,93 @@ E) 15 minutes.
 
 ---
 
-**Status:** 44 questions added, all answers included  
+### Source comparison: `questions_2025.txt` (79 questions)
+
+**Result:** 33 questions added (Q45-Q77), 45 skipped as semantic duplicates, and 1 skipped due to material truncation.
+
+| Source Entry (file order) | Result |
+|---|---|
+| 1 | Duplicate of Q36 |
+| 2 | Duplicate of Q35 |
+| 3 | Duplicate of Q34 |
+| 4 | Duplicate of Q44 |
+| 5 | Added as Q45 |
+| 6 | Duplicate of Q54 |
+| 7 | Duplicate of Q49 |
+| 8 | Duplicate of Q26 |
+| 9 | Duplicate of Q23 |
+| 10 | Added as Q46 |
+| 11 | Added as Q47 |
+| 12 | Added as Q48 |
+| 13 | Added as Q49 |
+| 14 | Duplicate of Q40 |
+| 15 | Added as Q50 |
+| 16 | Duplicate of Q61 |
+| 17 | Duplicate of Q39 |
+| 18 | Duplicate of Q17 |
+| 19 | Added as Q51 |
+| 20 | Added as Q52 |
+| 21 | Duplicate of Q33 |
+| 22 | Duplicate of Q3 |
+| 23 | Added as Q53 |
+| 24 | Added as Q54 |
+| 25 | Added as Q55 |
+| 26 | Added as Q56 |
+| 27 | Duplicate of Q39 |
+| 28 | Added as Q57 |
+| 29 | Duplicate of Q4 |
+| 30 | Added as Q58 |
+| 31 | Added as Q59 |
+| 32 | Duplicate of Q32 |
+| 33 | Added as Q60 |
+| 34 | Added as Q61 |
+| 35 | Duplicate of Q19 |
+| 36 | Duplicate of Q14 |
+| 37 | Duplicate of Q11 |
+| 38 | Duplicate of Q4 |
+| 39 | Duplicate of Q77 |
+| 40 | Duplicate of Q46 |
+| 41 | Added as Q62 |
+| 42 | Added as Q63 |
+| 43 | Added as Q64 |
+| 44 | Added as Q65 |
+| 45 | Duplicate of Q20 |
+| 46 | Duplicate of Q18 |
+| 47 | Duplicate of Q34 |
+| 48 | Added as Q66 |
+| 49 | Duplicate of Q2 |
+| 50 | Duplicate of Q28 |
+| 51 | Added as Q67 |
+| 52 | Added as Q68 |
+| 53 | Duplicate of Q26 |
+| 54 | Duplicate of Q15 |
+| 55 | Duplicate of Q12 |
+| 56 | Added as Q69 |
+| 57 | Duplicate of Q17 |
+| 58 | Added as Q70 |
+| 59 | Duplicate of Q21 |
+| 60 | Duplicate of Q28 |
+| 61 | Added as Q71 |
+| 62 | Skipped: materially truncated stem/options |
+| 63 | Duplicate of Q72 |
+| 64 | Duplicate of Q36 |
+| 65 | Duplicate of Q38 |
+| 66 | Duplicate of Q23 |
+| 67 | Duplicate of Q73 |
+| 68 | Duplicate of Q6 |
+| 69 | Added as Q72 |
+| 70 | Duplicate of Q25 |
+| 71 | Duplicate of Q4 |
+| 72 | Duplicate of Q32 |
+| 73 | Added as Q73 |
+| 74 | Added as Q74 |
+| 75 | Added as Q75 |
+| 76 | Duplicate of Q35 |
+| 77 | Added as Q76 |
+| 78 | Duplicate of Q15 and Q25 |
+| 79 | Added as Q77 |
+
+---
+
+**Status:** 77 questions added, all answers included
 **Last Updated:** 2026-10-13
