@@ -251,6 +251,16 @@ function answerText(question, ids) {
   return question.options.filter(option => ids.includes(option.id)).map(option => `${option.id}. ${option.text}`).join('\n');
 }
 
+function appendIaMadeBadge(container, question) {
+  if (question.context.startsWith('[IA MADE]')) container.append(el('span', 'made-tag', 'IA MADE'));
+}
+
+function appendQuestionContext(container, question) {
+  if (!question.context) return;
+  const context = question.context.replace(/^\[IA MADE\]\s*/, '');
+  container.append(el('p', 'context', context));
+}
+
 function renderQuestion(focus = true) {
   const question = engine.currentQuestion(bank, session);
   if (!question) {
@@ -280,12 +290,13 @@ function renderQuestion(focus = true) {
   card.append(topline, progressLabel, progress);
   const meta = el('div', 'question-meta');
   meta.append(el('span', 'number-tag', `SOURCE #${question.id}`), el('span', 'topic-tag', question.topic));
+  appendIaMadeBadge(meta, question);
   const heading = el('h2', 'question-title', question.prompt);
   heading.tabIndex = -1;
   heading.id = 'question-heading';
   card.setAttribute('aria-labelledby', heading.id);
   card.append(meta, heading);
-  if (question.context) card.append(el('p', 'context', question.context));
+  appendQuestionContext(card, question);
   if (question.caveat) {
     card.append(el('p', 'caveat', question.caveat));
   }
@@ -426,10 +437,12 @@ function renderSummary() {
     for (const response of responses) {
       const question = bank.find(item => item.id === response.questionId);
       const item = el('article', 'review-item');
+      const questionMeta = el('p', 'question-meta', `SOURCE #${question.id} · ${question.topic}`);
+      appendIaMadeBadge(questionMeta, question);
       item.append(el('span', `review-verdict${response.correct ? '' : ' missed'}`, response.correct ? 'CORRECT' : 'MISSED'),
-        el('p', 'question-meta', `SOURCE #${question.id} · ${question.topic}`),
+        questionMeta,
         el('h3', '', question.prompt));
-      if (question.context) item.append(el('p', 'context', question.context));
+      appendQuestionContext(item, question);
       item.append(el('p', 'subtle', question.instruction));
       const options = el('ul');
       for (const option of question.options) {

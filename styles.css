@@ -66,6 +66,7 @@ progress::-moz-progress-bar{background:var(--violet);border-radius:10px}
 .question-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:30px 0 14px;font-size:.72rem;font-weight:700}
 .number-tag{color:var(--violet);background:#f1edfc;border-radius:6px;padding:4px 8px}
 .topic-tag{color:var(--muted)}
+.made-tag{display:inline-flex;align-items:center;background:#e7f6f1;color:#08634f;border:1px solid #bce4d5;border-radius:999px;padding:5px 10px;font-size:.7rem;font-weight:800;letter-spacing:.06em}
 .question-title{margin-bottom:16px;white-space:pre-wrap;overflow-wrap:anywhere}
 .context{white-space:pre-wrap;background:#f7f8fb;border-left:3px solid #bbb5d6;padding:14px 18px;font-size:.9rem;color:#51536c;border-radius:0 8px 8px 0;margin-bottom:20px}
 .caveat{background:#fff8e9;border:1px solid #eedbb1;border-radius:10px;padding:12px 16px;font-size:.82rem;color:#715520;margin-bottom:20px;white-space:pre-wrap}

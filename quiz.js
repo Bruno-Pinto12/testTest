@@ -1,5 +1,5 @@
 export const STORAGE_KEY = 'psm-practice-session-v1';
-export const EXPECTED_QUESTION_COUNT = 123;
+export const EXPECTED_QUESTION_COUNT = 133;
 export const JOURNEY_SESSION_COUNT = 6;
 
 export function journeySessionBounds(questionCount, sessionNumber) {

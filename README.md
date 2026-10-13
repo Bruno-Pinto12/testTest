@@ -1,8 +1,9 @@
 # Scrum Practice · PSM I
 
-A dependency-free, unofficial PSM I practice quiz. All **123 questions** are
-included: the original 114-question bank and nine additions selected to broaden
-coverage, with answer keys and explanatory notes.
+A dependency-free, unofficial PSM I practice quiz. All **133 questions** are
+included: the original 114-question bank, nine archive additions, and ten
+original IA-made questions selected to broaden coverage, with answer keys and
+explanatory notes.
 
 ## Run locally
 
@@ -18,15 +19,15 @@ default. Set `PORT` to use a different port. Use HTTP rather than opening
 The site can also be hosted on any static web server.
 
 ```sh
-npm run build  # regenerate questions.json and validate all 123 entries
+npm run build  # regenerate questions.json and validate all 133 entries
 npm test       # source integrity, answer formats, scoring, sampling, persistence
 ```
 
 ## Practice
 
 Choose all questions in source order, a random subset without repeats, or a
-random journey through the full bank. The journey shuffles all 123 questions
-once and divides them into six balanced sessions of 20–21 questions, with no
+random journey through the full bank. The journey shuffles all 133 questions
+once and divides them into six balanced sessions of 22–23 questions, with no
 repeats.
 Single-choice and true/false use radio buttons; multi-select uses checkboxes.
 Select the requested number, then **Check Answer** to see the correct choices and
@@ -42,9 +43,11 @@ There is no account, backend, analytics, or external resource request.
 
 ## Provenance and source caveats
 
-`PSM_I_EXAM_PRACTICE_QUESTIONS.md` is the canonical source for all 123 entries.
-It retains the original 114 questions and adds nine items selected from the
-personal 2021–2023 question archives to strengthen coverage.
+`PSM_I_EXAM_PRACTICE_QUESTIONS.md` is the canonical source for all 133 entries.
+It retains the original 114 questions, adds nine items selected from the
+personal 2021–2023 question archives, and includes ten original questions
+marked **IA MADE** with a visible badge for reading and discussion rather than
+memorization.
 `scripts/build-questions.mjs` deterministically generates `questions.json`.
 The build validates counts, IDs, option IDs, answer keys, and format cardinality.
 Topics are presentation labels inferred from prompt text; tips are the bank's

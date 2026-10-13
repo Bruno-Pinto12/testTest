@@ -2442,6 +2442,226 @@ E) Ensure the Scrum Team members have compatible personalities.
 
 ---
 
+## Question 124   ✨ IA MADE
+
+**During a Sprint Review, user feedback shows that an assumption behind the current Product Backlog order was wrong. What is the most empirical response?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Keep the original order until the current release plan is complete.
+
+B) Inspect the feedback with stakeholders, update what the team has learned, and adapt the Product Backlog.
+
+C) Ask the Developers to decide the product direction without the Product Owner or stakeholders.
+
+D) Keep the original order because the forecast cannot change.
+
+**Answer:** B
+
+**Key note:** Empiricism uses experience and observation to make decisions. The Sprint Review supports inspection of results and adaptation of what to do next.
+
+---
+
+## Question 125   ✨ IA MADE
+
+**The Product Owner has collected many ideas, but only a few are likely to be worked on soon. Which approach best reflects lean thinking?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Fully specify every idea now so no future discussion is needed.
+
+B) Keep the Product Backlog transparent, add useful detail to items as they approach implementation, and revisit other ideas as more is learned.
+
+C) Remove every item whose implementation details are not yet known.
+
+D) Ask the Developers to estimate every idea and commit to delivery dates.
+
+**Answer:** B
+
+**Key note:** Lean thinking focuses on essentials and reducing waste. Refinement is ongoing; items likely to be implemented soon generally need more detail than distant ideas.
+
+---
+
+## Question 126   ✨ IA MADE
+
+**Two Developers disagree about how to complete work needed for the Sprint Goal. Which response best demonstrates the Scrum Value of Commitment?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Each Developer protects their own assigned tasks and avoids helping elsewhere.
+
+B) They work together to find the best way to make progress toward the Sprint Goal.
+
+C) They ask the Scrum Master to assign the remaining tasks to individuals.
+
+D) They stop discussing the problem so that the Sprint forecast stays unchanged.
+
+**Answer:** B
+
+**Key note:** Commitment is to achieving the goals of the Scrum Team and supporting one another, not to individual task ownership or an unchanged forecast.
+
+---
+
+## Question 127   ✨ IA MADE
+
+**During a Sprint, a stakeholder asks the Developers to switch to an unrelated feature. Which response best demonstrates Focus?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Stop current work and begin the feature immediately.
+
+B) Discuss the request with the Product Owner and adjust Sprint scope only if the Sprint Goal remains intact.
+
+C) Add the feature to the Sprint Backlog without discussing it.
+
+D) Ask the Scrum Master to decide whether the feature is more important.
+
+**Answer:** B
+
+**Key note:** Focus is on the Sprint Goal, not a fixed set of tasks. Developers and the Product Owner can renegotiate Sprint scope as they learn, provided the Sprint Goal remains intact.
+
+---
+
+## Question 128   ✨ IA MADE
+
+**Developers discover an integration risk that may prevent a usable Increment. Which response best demonstrates Openness?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Make the risk visible to the Scrum Team promptly and work together on how to respond.
+
+B) Keep it private until the Sprint Review so that no one is distracted.
+
+C) Report only completed tasks and omit uncertain information.
+
+D) Wait for the Scrum Master to discover the risk independently.
+
+**Answer:** A
+
+**Key note:** Openness includes being open about the work and challenges. Making a risk visible early supports inspection and timely adaptation.
+
+---
+
+## Question 129   ✨ IA MADE
+
+**A Developer questions a design proposed by a colleague. Which response best demonstrates Respect?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Dismiss the concern because the colleague has less experience.
+
+B) Listen to the concern, consider the colleague's expertise, and discuss the design on its merits.
+
+C) Ask the Product Owner to decide which Developer is more knowledgeable.
+
+D) Avoid further discussion to preserve team harmony.
+
+**Answer:** B
+
+**Key note:** Respect means valuing one another as capable, independent people, including listening to different perspectives and expertise.
+
+---
+
+## Question 130   ✨ IA MADE
+
+**A stakeholder pressures the Scrum Team to mark work as Done even though it does not meet the Definition of Done. Which response best demonstrates Courage?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Mark it Done to avoid a difficult conversation.
+
+B) Make the quality gap visible and work with the Scrum Team and stakeholder on an appropriate response.
+
+C) Ask the Product Owner to change the Definition of Done for this item alone.
+
+D) Hide the unfinished work from the Sprint Review.
+
+**Answer:** B
+
+**Key note:** Courage includes doing the right thing and working on tough problems. The team should be transparent about whether work meets the shared Definition of Done.
+
+---
+
+## Question 131   ✨ IA MADE
+
+**A Scrum Team has achieved its current Product Goal and is ready to pursue a different product objective. What must happen before it takes on the next Product Goal?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) The Scrum Team must fulfill or abandon the current Product Goal.
+
+B) The Product Owner must create a separate Product Backlog for the next goal.
+
+C) The Developers must complete every item in the Product Backlog.
+
+D) The Scrum Master must approve the new Product Goal.
+
+**Answer:** A
+
+**Key note:** The Scrum Team must fulfill or abandon one Product Goal before taking on the next. The Product Backlog can still contain ideas that may support future goals.
+
+---
+
+## Question 132   ✨ IA MADE
+
+**A Scrum Team is checking that each artifact has its corresponding commitment. Which mapping is correct?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Product Backlog - Product Goal; Sprint Backlog - Sprint Goal; Increment - Definition of Done.
+
+B) Product Backlog - Sprint Goal; Sprint Backlog - Definition of Done; Increment - Product Goal.
+
+C) Product Backlog - Definition of Done; Sprint Backlog - Product Goal; Increment - Sprint Goal.
+
+D) Product Backlog - Definition of Done; Sprint Backlog - Sprint Goal; Increment - Product Goal.
+
+**Answer:** A
+
+**Key note:** The Product Goal, Sprint Goal, and Definition of Done are the commitments for the Product Backlog, Sprint Backlog, and Increment, respectively.
+
+---
+
+## Question 133   ✨ IA MADE
+
+**At a Sprint Review, new evidence suggests that a high-ordered Product Backlog item would no longer provide much value. What is the Product Owner's best response?**
+
+**[IA MADE] Original practice question - read for understanding, not memorization.**
+
+*(choose the best answer)*
+
+A) Keep the item at the top because its previous order cannot change.
+
+B) Consider the new evidence with stakeholders and adapt the Product Backlog order to reflect current understanding.
+
+C) Ask the Developers to implement it before considering the feedback.
+
+D) Remove all lower-ordered items so the Product Backlog remains unchanged.
+
+**Answer:** B
+
+**Key note:** The Product Backlog is emergent. The Product Owner can adapt its ordering as more is learned, making the current understanding of the work transparent.
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -2806,5 +3026,20 @@ E) Ensure the Scrum Team members have compatible personalities.
 | Q122 | `questions_2022.txt`, Q49 | Daily Scrum progress inspection and adaptation |
 | Q123 | `questions_2022_PO.txt`, 21-SM-0E-77 | Starting a Scrum Team: Definition of Done and product context |
 
-**Status:** 123 questions total (114 existing + 9 coverage additions from personal 2021/2022/2023 question archives); previous duplicate log applies to the original batches
+### IA-made coverage questions
+
+| Question | Coverage area |
+|---|---|
+| Q124 | Applying empiricism to feedback and Product Backlog adaptation |
+| Q125 | Lean thinking and avoiding premature refinement |
+| Q126 | Commitment in collaborative work toward the Sprint Goal |
+| Q127 | Focus when new work is requested during a Sprint |
+| Q128 | Openness about risks and challenges |
+| Q129 | Respect for different perspectives and expertise |
+| Q130 | Courage to uphold quality and transparency |
+| Q131 | Moving between Product Goals |
+| Q132 | Relationships between artifacts and their commitments |
+| Q133 | Adapting Product Backlog ordering based on value evidence |
+
+**Status:** 133 questions total (114 original + 9 archive additions + 10 IA-made coverage questions). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
 **Last Updated:** 2026-10-13

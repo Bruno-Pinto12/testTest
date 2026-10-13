@@ -3831,5 +3831,315 @@
     "note": "Help the team establish a shared understanding of quality and the Definition of Done, and have the Product Owner provide product context. Managers assigning individual responsibilities or incentives do not support a self-managing Scrum Team.",
     "topic": "Scrum accountabilities",
     "caveat": null
+  },
+  {
+    "id": 124,
+    "prompt": "During a Sprint Review, user feedback shows that an assumption behind the current Product Backlog order was wrong. What is the most empirical response?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Keep the original order until the current release plan is complete."
+      },
+      {
+        "id": "B",
+        "text": "Inspect the feedback with stakeholders, update what the team has learned, and adapt the Product Backlog."
+      },
+      {
+        "id": "C",
+        "text": "Ask the Developers to decide the product direction without the Product Owner or stakeholders."
+      },
+      {
+        "id": "D",
+        "text": "Keep the original order because the forecast cannot change."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "Empiricism uses experience and observation to make decisions. The Sprint Review supports inspection of results and adaptation of what to do next.",
+    "topic": "Scrum events",
+    "caveat": null
+  },
+  {
+    "id": 125,
+    "prompt": "The Product Owner has collected many ideas, but only a few are likely to be worked on soon. Which approach best reflects lean thinking?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Fully specify every idea now so no future discussion is needed."
+      },
+      {
+        "id": "B",
+        "text": "Keep the Product Backlog transparent, add useful detail to items as they approach implementation, and revisit other ideas as more is learned."
+      },
+      {
+        "id": "C",
+        "text": "Remove every item whose implementation details are not yet known."
+      },
+      {
+        "id": "D",
+        "text": "Ask the Developers to estimate every idea and commit to delivery dates."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "Lean thinking focuses on essentials and reducing waste. Refinement is ongoing; items likely to be implemented soon generally need more detail than distant ideas.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 126,
+    "prompt": "Two Developers disagree about how to complete work needed for the Sprint Goal. Which response best demonstrates the Scrum Value of Commitment?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Each Developer protects their own assigned tasks and avoids helping elsewhere."
+      },
+      {
+        "id": "B",
+        "text": "They work together to find the best way to make progress toward the Sprint Goal."
+      },
+      {
+        "id": "C",
+        "text": "They ask the Scrum Master to assign the remaining tasks to individuals."
+      },
+      {
+        "id": "D",
+        "text": "They stop discussing the problem so that the Sprint forecast stays unchanged."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "Commitment is to achieving the goals of the Scrum Team and supporting one another, not to individual task ownership or an unchanged forecast.",
+    "topic": "Backlogs & goals",
+    "caveat": null
+  },
+  {
+    "id": 127,
+    "prompt": "During a Sprint, a stakeholder asks the Developers to switch to an unrelated feature. Which response best demonstrates Focus?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stop current work and begin the feature immediately."
+      },
+      {
+        "id": "B",
+        "text": "Discuss the request with the Product Owner and adjust Sprint scope only if the Sprint Goal remains intact."
+      },
+      {
+        "id": "C",
+        "text": "Add the feature to the Sprint Backlog without discussing it."
+      },
+      {
+        "id": "D",
+        "text": "Ask the Scrum Master to decide whether the feature is more important."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "Focus is on the Sprint Goal, not a fixed set of tasks. Developers and the Product Owner can renegotiate Sprint scope as they learn, provided the Sprint Goal remains intact.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 128,
+    "prompt": "Developers discover an integration risk that may prevent a usable Increment. Which response best demonstrates Openness?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Make the risk visible to the Scrum Team promptly and work together on how to respond."
+      },
+      {
+        "id": "B",
+        "text": "Keep it private until the Sprint Review so that no one is distracted."
+      },
+      {
+        "id": "C",
+        "text": "Report only completed tasks and omit uncertain information."
+      },
+      {
+        "id": "D",
+        "text": "Wait for the Scrum Master to discover the risk independently."
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "note": "Openness includes being open about the work and challenges. Making a risk visible early supports inspection and timely adaptation.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 129,
+    "prompt": "A Developer questions a design proposed by a colleague. Which response best demonstrates Respect?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dismiss the concern because the colleague has less experience."
+      },
+      {
+        "id": "B",
+        "text": "Listen to the concern, consider the colleague's expertise, and discuss the design on its merits."
+      },
+      {
+        "id": "C",
+        "text": "Ask the Product Owner to decide which Developer is more knowledgeable."
+      },
+      {
+        "id": "D",
+        "text": "Avoid further discussion to preserve team harmony."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "Respect means valuing one another as capable, independent people, including listening to different perspectives and expertise.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 130,
+    "prompt": "A stakeholder pressures the Scrum Team to mark work as Done even though it does not meet the Definition of Done. Which response best demonstrates Courage?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mark it Done to avoid a difficult conversation."
+      },
+      {
+        "id": "B",
+        "text": "Make the quality gap visible and work with the Scrum Team and stakeholder on an appropriate response."
+      },
+      {
+        "id": "C",
+        "text": "Ask the Product Owner to change the Definition of Done for this item alone."
+      },
+      {
+        "id": "D",
+        "text": "Hide the unfinished work from the Sprint Review."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "Courage includes doing the right thing and working on tough problems. The team should be transparent about whether work meets the shared Definition of Done.",
+    "topic": "Definition of Done",
+    "caveat": null
+  },
+  {
+    "id": 131,
+    "prompt": "A Scrum Team has achieved its current Product Goal and is ready to pursue a different product objective. What must happen before it takes on the next Product Goal?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Scrum Team must fulfill or abandon the current Product Goal."
+      },
+      {
+        "id": "B",
+        "text": "The Product Owner must create a separate Product Backlog for the next goal."
+      },
+      {
+        "id": "C",
+        "text": "The Developers must complete every item in the Product Backlog."
+      },
+      {
+        "id": "D",
+        "text": "The Scrum Master must approve the new Product Goal."
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "note": "The Scrum Team must fulfill or abandon one Product Goal before taking on the next. The Product Backlog can still contain ideas that may support future goals.",
+    "topic": "Backlogs & goals",
+    "caveat": null
+  },
+  {
+    "id": 132,
+    "prompt": "A Scrum Team is checking that each artifact has its corresponding commitment. Which mapping is correct?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Product Backlog - Product Goal; Sprint Backlog - Sprint Goal; Increment - Definition of Done."
+      },
+      {
+        "id": "B",
+        "text": "Product Backlog - Sprint Goal; Sprint Backlog - Definition of Done; Increment - Product Goal."
+      },
+      {
+        "id": "C",
+        "text": "Product Backlog - Definition of Done; Sprint Backlog - Product Goal; Increment - Sprint Goal."
+      },
+      {
+        "id": "D",
+        "text": "Product Backlog - Definition of Done; Sprint Backlog - Sprint Goal; Increment - Product Goal."
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "note": "The Product Goal, Sprint Goal, and Definition of Done are the commitments for the Product Backlog, Sprint Backlog, and Increment, respectively.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 133,
+    "prompt": "At a Sprint Review, new evidence suggests that a high-ordered Product Backlog item would no longer provide much value. What is the Product Owner's best response?",
+    "context": "[IA MADE] Original practice question - read for understanding, not memorization.",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Keep the item at the top because its previous order cannot change."
+      },
+      {
+        "id": "B",
+        "text": "Consider the new evidence with stakeholders and adapt the Product Backlog order to reflect current understanding."
+      },
+      {
+        "id": "C",
+        "text": "Ask the Developers to implement it before considering the feedback."
+      },
+      {
+        "id": "D",
+        "text": "Remove all lower-ordered items so the Product Backlog remains unchanged."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "The Product Backlog is emergent. The Product Owner can adapt its ordering as more is learned, making the current understanding of the work transparent.",
+    "topic": "Scrum events",
+    "caveat": null
   }
 ]

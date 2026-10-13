@@ -34,6 +34,9 @@ test(`all ${EXPECTED_QUESTION_COUNT} questions match their source wording, optio
   }
   assert.ok(bank.find((question) => question.id === 32).context.startsWith('[Related'));
   for (const id of [7, 32, 100, 114]) assert.ok(bank.find((question) => question.id === id).caveat);
+  for (const id of Array.from({ length: 10 }, (_, index) => index + 124)) {
+    assert.ok(bank.find((question) => question.id === id).context.startsWith('[IA MADE]'));
+  }
 });
 
 test('validator rejects malformed counts, IDs, options, keys and metadata', () => {
