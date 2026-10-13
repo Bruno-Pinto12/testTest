@@ -4,7 +4,8 @@ import { readFileSync } from 'node:fs';
 import { parseQuestions } from '../scripts/build-questions.mjs';
 import { validateBank, createSession, currentQuestion, selectAnswer, checkAnswer, nextQuestion, scoreSession, restoreSession } from '../quiz.js';
 
-const markdown = readFileSync(new URL('../PSM_I_EXAM_PRACTICE_QUESTIONS.md', import.meta.url), 'utf8');
+const markdown = readFileSync(new URL('../PSM_I_EXAM_PRACTICE_QUESTIONS.md', import.meta.url), 'utf8')
+  .replace(/\r\n?/g, '\n');
 const bank = JSON.parse(readFileSync(new URL('../questions.json', import.meta.url), 'utf8'));
 const clone = (value) => structuredClone(value);
 const sessionFor = (id) => {
@@ -115,6 +116,28 @@ test('random sessions sample without repeats; all mode is canonical and complete
   assert.deepEqual(createSession(bank, 'random', 114, () => 0).questionIds, [...bank.slice(1).map((question) => question.id), 1]);
   for (const length of [0, 115, 1.2, NaN]) assert.throws(() => createSession(bank, 'random', length));
   assert.throws(() => createSession(bank, 'unknown'));
+});
+
+test('six-session random journey shuffles the full bank once and restores across sessions', () => {
+  let journey = createSession(bank, 'journey', bank.length, () => 0);
+  assert.equal(journey.questionIds.length, 114);
+  assert.equal(new Set(journey.questionIds).size, 114);
+  assert.notDeepEqual(journey.questionIds, bank.map((question) => question.id));
+  for (let i = 0; i < 6; i++) {
+    assert.equal(journey.questionIds.slice(i * 19, (i + 1) * 19).length, 19);
+  }
+  assert.throws(() => createSession(bank, 'journey', 19));
+
+  while (currentQuestion(bank, journey)) {
+    const question = currentQuestion(bank, journey);
+    for (const id of question.answers) journey = selectAnswer(bank, journey, id);
+    journey = checkAnswer(bank, journey);
+    journey = nextQuestion(bank, journey);
+    assert.deepEqual(restoreSession(JSON.stringify(journey), bank), journey);
+  }
+  assert.equal(journey.responses.length, 114);
+  assert.deepEqual(journey.responses.map((response) => response.questionId), journey.questionIds);
+  assert.deepEqual(scoreSession(journey), { correct: 114, answered: 114, total: 114, percent: 100 });
 });
 
 test('score progresses only on checking; completion and every intermediate state restore', () => {

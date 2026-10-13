@@ -106,11 +106,15 @@ function renderLanding() {
     card.append(box);
   }
   const setup = el('form', 'setup');
-  setup.append(el('h2', '', 'Choose your practice'), el('p', 'subtle', 'Go through the complete bank, or mix things up with a random set.'));
+  setup.append(el('h2', '', 'Choose your practice'), el('p', 'subtle', 'Practice in source order, choose a random subset, or complete the whole bank across six random sessions.'));
   const fieldset = el('fieldset');
   const legend = el('legend', 'sr-only', 'Practice mode');
   const modes = el('div', 'mode-options');
-  for (const [value, title, description] of [['all', 'The complete collection', `All ${bank.length} questions, in source order.`], ['random', 'A fresh mix', 'A random selection for a focused session.']]) {
+  for (const [value, title, description] of [
+    ['all', 'The complete collection', `All ${bank.length} questions, in source order.`],
+    ['random', 'A fresh mix', 'A random selection for a focused session.'],
+    ['journey', 'Six-session journey', `All ${bank.length} questions shuffled into six sessions of ${engine.JOURNEY_SESSION_SIZE}.`],
+  ]) {
     const label = el('label', 'mode-card');
     const input = el('input');
     input.type = 'radio';
@@ -173,7 +177,7 @@ function renderLanding() {
     if (savedSession && !window.confirm('Start a new session and replace your saved progress?')) return;
     try {
       const mode = setup.elements.mode.value;
-      const length = mode === 'all' ? bank.length : Number(lengths.value === 'custom' ? custom.value : lengths.value);
+      const length = mode !== 'random' ? bank.length : Number(lengths.value === 'custom' ? custom.value : lengths.value);
       if (!Number.isInteger(length) || length < 1 || length > bank.length) throw new Error(`Choose a whole number from 1 to ${bank.length}.`);
       session = engine.createSession(bank, mode, length);
       savedSession = null;
@@ -193,7 +197,46 @@ function renderSession() {
     renderSummary();
     return;
   }
+  if (session.mode === 'journey' && session.index > 0 &&
+      session.index % engine.JOURNEY_SESSION_SIZE === 0) {
+    renderJourneySessionSummary();
+    return;
+  }
   renderQuestion();
+}
+
+function renderJourneySessionSummary() {
+  const sessionNumber = session.index / engine.JOURNEY_SESSION_SIZE;
+  const responses = session.responses.slice(session.index - engine.JOURNEY_SESSION_SIZE, session.index);
+  const correct = responses.filter(response => response.correct).length;
+  const percent = Math.round(correct / responses.length * 100);
+  const card = el('section', 'card');
+  const header = el('div', 'summary-header');
+  const heading = el('h1', '', `Session ${sessionNumber} complete.`);
+  heading.tabIndex = -1;
+  header.append(el('span', 'eyebrow', `SESSION ${sessionNumber} OF ${engine.JOURNEY_SESSION_COUNT} COMPLETE`),
+    heading, el('p', 'subtle', 'Take a break or continue your random journey when you’re ready.'));
+  const ring = el('div', 'score-ring');
+  ring.append(el('strong', '', `${percent}%`), el('span', '', 'session score'));
+  header.append(ring);
+  const stats = el('div', 'summary-stats');
+  for (const [value, label] of [[correct, 'correct'], [responses.length - correct, 'missed'], [responses.length, 'questions']]) {
+    const stat = el('div');
+    stat.append(el('strong', '', String(value)), el('span', '', label));
+    stats.append(stat);
+  }
+  card.append(header, stats);
+  const actions = el('div', 'actions');
+  actions.append(button(`Continue to session ${sessionNumber + 1} →`, 'button-primary', () => {
+    renderQuestion();
+    announce(`Session ${sessionNumber + 1} of ${engine.JOURNEY_SESSION_COUNT}. Question 1 of ${engine.JOURNEY_SESSION_SIZE}.`);
+  }), button('Back to start', 'button-secondary', () => {
+    savedSession = session;
+    session = null;
+    renderLanding();
+  }));
+  card.append(actions);
+  showPage(card);
 }
 
 function answerText(question, ids) {
@@ -210,9 +253,15 @@ function renderQuestion(focus = true) {
   const result = score();
   const card = el('section', 'card quiz-card');
   const topline = el('div', 'quiz-topline');
-  topline.append(el('span', 'eyebrow', session.mode === 'all' ? 'THE COMPLETE COLLECTION' : 'YOUR FRESH MIX'), el('span', 'score-chip', `${result.correct} correct / ${result.answered} checked`));
+  const modeLabel = session.mode === 'all' ? 'THE COMPLETE COLLECTION'
+    : session.mode === 'journey' ? `RANDOM JOURNEY · SESSION ${Math.floor(session.index / engine.JOURNEY_SESSION_SIZE) + 1} OF ${engine.JOURNEY_SESSION_COUNT}`
+      : 'YOUR FRESH MIX';
+  topline.append(el('span', 'eyebrow', modeLabel), el('span', 'score-chip', `${result.correct} correct / ${result.answered} checked`));
   const progressLabel = el('div', 'progress-label');
-  progressLabel.append(el('span', '', `Question ${session.index + 1} of ${result.total}`), el('span', '', `${result.answered} checked`));
+  const questionLabel = session.mode === 'journey'
+    ? `Question ${session.index % engine.JOURNEY_SESSION_SIZE + 1} of ${engine.JOURNEY_SESSION_SIZE}`
+    : `Question ${session.index + 1} of ${result.total}`;
+  progressLabel.append(el('span', '', questionLabel), el('span', '', `${result.answered} / ${result.total} checked`));
   const progress = el('progress');
   progress.max = result.total;
   progress.value = result.answered;
@@ -288,7 +337,15 @@ function renderQuestion(focus = true) {
         session = engine.nextQuestion(bank, session);
         persist();
         renderSession();
-        announce(session.index === session.questionIds.length ? 'Practice complete. Your results are ready.' : `Question ${session.index + 1} of ${session.questionIds.length}.`);
+        if (session.index === session.questionIds.length) {
+          announce('Practice complete. Your results are ready.');
+        } else if (session.mode === 'journey' && session.index % engine.JOURNEY_SESSION_SIZE === 0) {
+          announce(`Session ${session.index / engine.JOURNEY_SESSION_SIZE} of ${engine.JOURNEY_SESSION_COUNT} complete.`);
+        } else if (session.mode === 'journey') {
+          announce(`Session ${Math.floor(session.index / engine.JOURNEY_SESSION_SIZE) + 1} of ${engine.JOURNEY_SESSION_COUNT}. Question ${session.index % engine.JOURNEY_SESSION_SIZE + 1} of ${engine.JOURNEY_SESSION_SIZE}.`);
+        } else {
+          announce(`Question ${session.index + 1} of ${session.questionIds.length}.`);
+        }
       } catch (failure) {
         error.textContent = failure.message;
       }
@@ -318,7 +375,10 @@ function renderSummary() {
   const header = el('div', 'summary-header');
   const heading = el('h1', '', 'Practice makes progress.');
   heading.tabIndex = -1;
-  header.append(el('span', 'eyebrow', 'SESSION COMPLETE'), heading, el('p', 'subtle', 'Take a breath. Reflect on what clicked, and revisit what didn’t.'));
+  const isJourney = session.mode === 'journey';
+  if (isJourney) heading.textContent = 'Your random journey is complete.';
+  header.append(el('span', 'eyebrow', isJourney ? 'ALL SIX SESSIONS COMPLETE' : 'SESSION COMPLETE'), heading,
+    el('p', 'subtle', isJourney ? 'You’ve completed all 114 shuffled questions. Reflect on what clicked, and revisit what didn’t.' : 'Take a breath. Reflect on what clicked, and revisit what didn’t.'));
   const ring = el('div', 'score-ring');
   ring.append(el('strong', '', `${result.percent}%`), el('span', '', 'practice score'));
   header.append(ring);
@@ -330,7 +390,7 @@ function renderSummary() {
   }
   card.append(header, stats, el('p', 'subtle', 'This is a learning score based on the source keys, not a prediction of your official assessment result.'));
   const actions = el('div', 'actions');
-  actions.append(button('Practice again →', 'button-primary', restart), button('Back to start', 'button-secondary', () => {
+  actions.append(button(isJourney ? 'Start a new random journey →' : 'Practice again →', 'button-primary', restart), button('Back to start', 'button-secondary', () => {
     savedSession = session;
     session = null;
     renderLanding();

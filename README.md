@@ -24,7 +24,9 @@ npm test       # source integrity, answer formats, scoring, sampling, persistenc
 
 ## Practice
 
-Choose all questions in source order or a random subset without repeats.
+Choose all questions in source order, a random subset without repeats, or a
+random journey through the full bank. The journey shuffles all 114 questions
+once and divides them into six sessions of 19 questions, with no repeats.
 Single-choice and true/false use radio buttons; multi-select uses checkboxes.
 Select the requested number, then **Check Answer** to see the correct choices and
 the original key note. Scoring requires the exact keyed set, with no partial credit.
@@ -32,7 +34,8 @@ the original key note. Scoring requires the exact keyed set, with no partial cre
 questions and can show all answers.
 
 Progress, selections, and checked answers are stored locally in your browser.
-Refresh and resume the session from the start screen. Invalid or outdated saved
+Refresh and resume the session from the start screen; journey progress and its
+shuffled order are saved across all six sessions. Invalid or outdated saved
 sessions are discarded; unavailable browser storage does not prevent practice.
 There is no account, backend, analytics, or external resource request.
 

@@ -1,4 +1,6 @@
 export const STORAGE_KEY = 'psm-practice-session-v1';
+export const JOURNEY_SESSION_COUNT = 6;
+export const JOURNEY_SESSION_SIZE = 114 / JOURNEY_SESSION_COUNT;
 const types = new Set(['single', 'true-false', 'select-two', 'select-three', 'select-all']);
 const counts = { single: 1, 'true-false': 1, 'select-two': 2, 'select-three': 3 };
 
@@ -46,16 +48,17 @@ function signature(bank) {
 }
 
 export function createSession(bank, mode = 'all', length = bank.length, random = Math.random) {
-  if (!['all', 'random'].includes(mode)) throw new Error('Choose all or random mode.');
+  if (!['all', 'random', 'journey'].includes(mode)) throw new Error('Choose a valid practice mode.');
   if (!Number.isInteger(length) || length < 1 || length > bank.length) throw new Error('Invalid quiz length.');
+  if (mode === 'journey' && length !== bank.length) throw new Error('The random journey must include the complete question bank.');
   const questionIds = bank.map((question) => question.id).sort((a, b) => a - b);
-  if (mode === 'random') {
+  if (mode !== 'all') {
     for (let i = questionIds.length - 1; i > 0; i--) {
       const j = Math.floor(random() * (i + 1));
       [questionIds[i], questionIds[j]] = [questionIds[j], questionIds[i]];
     }
   }
-  return { version: 1, bankSignature: signature(bank), mode, questionIds: mode === 'all' ? questionIds : questionIds.slice(0, length), index: 0, selected: [], responses: [] };
+  return { version: 1, bankSignature: signature(bank), mode, questionIds: mode === 'random' ? questionIds.slice(0, length) : questionIds, index: 0, selected: [], responses: [] };
 }
 
 export function currentQuestion(bank, session) {
@@ -112,12 +115,13 @@ export function restoreSession(raw, bank) {
   try {
     const session = JSON.parse(raw);
     if (!session || session.version !== 1 || session.bankSignature !== signature(bank) ||
-        !['all', 'random'].includes(session.mode) || !Array.isArray(session.questionIds) ||
+        !['all', 'random', 'journey'].includes(session.mode) || !Array.isArray(session.questionIds) ||
         session.questionIds.length < 1 || session.questionIds.length > bank.length ||
         new Set(session.questionIds).size !== session.questionIds.length ||
         session.questionIds.some((id) => !bank.some((question) => question.id === id)) ||
         (session.mode === 'all' && (session.questionIds.length !== bank.length ||
           session.questionIds.some((id, i) => id !== i + 1))) ||
+        (session.mode === 'journey' && session.questionIds.length !== bank.length) ||
         !Number.isInteger(session.index) || session.index < 0 || session.index > session.questionIds.length ||
         !Array.isArray(session.responses) || session.responses.length > session.questionIds.length ||
         ![session.index, session.index + 1].includes(session.responses.length) ||
