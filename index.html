@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#15152d">
+    <meta name="description" content="An unofficial PSM I practice space with focused questions, source-keyed feedback, and saved progress.">
+    <title>Scrum Studio — PSM I Practice</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to practice</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Scrum Studio home"><span class="brand-mark" aria-hidden="true">S<span>.</span></span><span>Scrum<span class="brand-light">Studio</span></span></a>
+      <span class="header-label"><span class="status-dot" aria-hidden="true"></span> PSM I practice</span>
+    </header>
+    <main id="main" tabindex="-1">
+      <div id="storage-message" class="storage-message" role="status" hidden></div>
+      <div id="app" aria-busy="true">
+        <section class="card loading-card" aria-labelledby="loading-title">
+          <span class="eyebrow">YOUR NEXT STEP IN SCRUM</span>
+          <h1 id="loading-title" tabindex="-1">Preparing your practice space…</h1>
+          <p>Loading the question bank. A little focus goes a long way.</p>
+          <div class="loading-bar" aria-hidden="true"></div>
+        </section>
+      </div>
+      <div id="announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    </main>
+    <footer class="site-footer">
+      <p>Independent practice. Not affiliated with or endorsed by Scrum.org.<br>Practice scoring follows the source answer keys, not an official assessment.</p>
+      <nav aria-label="Resources"><a href="./PSM_I_EXAM_PRACTICE_QUESTIONS.md">Question bank</a><a href="./SCRUM_GUIDE_2020_KEY_POINTS_EN.md">Scrum Guide notes</a><a href="https://scrumguides.org/scrum-guide.html" target="_blank" rel="noopener noreferrer">Official guide <span aria-hidden="true">↗</span></a></nav>
+    </footer>
+    <noscript><p class="noscript">Enable JavaScript to use the interactive practice questions.</p></noscript>
+  </body>
+</html>
