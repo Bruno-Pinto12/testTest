@@ -6,7 +6,7 @@
 
 ---
 
-## Question 1   🔁 Seen 2 times (1 duplicate)
+## Question 1   🔁 Seen 3 times (2 duplicates)
 
 **True or False: It is mandatory that the product Increment be released to production at the end of each Sprint.**
 
@@ -18,7 +18,7 @@ B) False
 
 ---
 
-## Question 2   🔁 Seen 2 times (1 duplicate)
+## Question 2   🔁 Seen 3 times (2 duplicates)
 
 **When should a Developer on a Scrum Team be replaced?**
 
@@ -36,7 +36,7 @@ D) As needed, with no special allowance for changes in productivity.
 
 ---
 
-## Question 3   🔁 Seen 2 times (1 duplicate)
+## Question 3   🔁 Seen 3 times (2 duplicates)
 
 **Which statement best describes the Sprint Review?**
 
@@ -52,7 +52,7 @@ C) It is a demo at the end of the Sprint for everyone in the organization to che
 
 ---
 
-## Question 4   🔁 Seen 2 times (1 duplicate)
+## Question 4   🔁 Seen 5 times (4 duplicates)
 
 **Who is on the Scrum Team?**
 
@@ -70,7 +70,7 @@ D) The Scrum Master.
 
 ---
 
-## Question 5   🔁 Seen 2 times (1 duplicate)
+## Question 5   🔁 Seen 4 times (3 duplicates)
 
 **The CEO asks the Developers to add a "very important" item to a Sprint that is in progress. What should the Developers do?**
 
@@ -88,7 +88,7 @@ D) Add the item to the current Sprint Backlog, drop an item of similar size, and
 
 ---
 
-## Question 6   🔁 Seen 2 times (1 duplicate)
+## Question 6   🔁 Seen 4 times (3 duplicates)
 
 **Who is required to attend the Daily Scrum?**
 
@@ -108,7 +108,7 @@ E) The Developers.
 
 ---
 
-## Question 7   🔁 Seen 2 times (1 duplicate)
+## Question 7   🔁 Seen 4 times (3 duplicates)
 
 **What is the function or purpose of Management in Scrum?**
 
@@ -126,7 +126,7 @@ D) Monitor the progress of the Developers on the Scrum Team.
 
 ---
 
-## Question 8   🔁 Seen 2 times (1 duplicate)
+## Question 8   🔁 Seen 4 times (3 duplicates)
 
 **Which of the following services is appropriate for a Scrum Master in regard to the Daily Scrum?**
 
@@ -146,7 +146,7 @@ E) All answers apply.
 
 ---
 
-## Question 9   🔁 Seen 2 times (1 duplicate)
+## Question 9   🔁 Seen 3 times (2 duplicates)
 
 **The three pillars of Scrum are:**
 
@@ -166,7 +166,7 @@ E) Transparency, Eliminating Waste, Kaizen.
 
 ---
 
-## Question 10   🔁 Seen 2 times (1 duplicate)
+## Question 10   🔁 Seen 3 times (2 duplicates)
 
 **The Developers should have all the skills needed to:**
 
@@ -182,7 +182,7 @@ C) Do all of the development work, except for specialized testing that requires 
 
 ---
 
-## Question 11   🔁 Seen 2 times (1 duplicate)
+## Question 11   🔁 Seen 4 times (3 duplicates)
 
 **What does it mean to say that an event has a timebox?**
 
@@ -200,7 +200,7 @@ D) The event must happen by a given time.
 
 ---
 
-## Question 12   🔁 Seen 2 times (1 duplicate)
+## Question 12   🔁 Seen 3 times (2 duplicates)
 
 **Who creates the Definition of Done?**
 
@@ -218,7 +218,7 @@ D) The Scrum Team, in a collaborative effort where the result is the common deno
 
 ---
 
-## Question 13   🔁 Seen 2 times (1 duplicate)
+## Question 13   🔁 Seen 4 times (3 duplicates)
 
 **The timebox for the Sprint Review is:**
 
@@ -238,7 +238,7 @@ E) 1 day.
 
 ---
 
-## Question 14   🔁 Seen 2 times (1 duplicate)
+## Question 14   🔁 Seen 4 times (3 duplicates)
 
 **When many Scrum Teams are working on a single product, what best describes the Definition of Done?**
 
@@ -254,7 +254,7 @@ C) All Scrum Teams must have a Definition of Done that makes their combined Incr
 
 ---
 
-## Question 15   🔁 Seen 2 times (1 duplicate)
+## Question 15   🔁 Seen 4 times (3 duplicates)
 
 **Who is responsible for managing the progress of work during a Sprint?**
 
@@ -272,7 +272,7 @@ D) The Scrum Master.
 
 ---
 
-## Question 16   🔁 Seen 2 times (1 duplicate)
+## Question 16   🔁 Seen 3 times (2 duplicates)
 
 **When does a Developer become accountable for the value of a Product Backlog item selected for the Sprint?**
 
@@ -290,7 +290,7 @@ D) Never. The entire Scrum Team is accountable for creating value every Sprint.
 
 ---
 
-## Question 17   🔁 Seen 1 time (0 duplicates)
+## Question 17   🔁 Seen 2 times (1 duplicate)
 
 **What are two ways a Scrum Master serves to enable effective Scrum Teams?**
 
@@ -308,7 +308,7 @@ D) By removing impediments that hinder the Scrum Team.
 
 ---
 
-## Question 18   🔁 Seen 1 time (0 duplicates)
+## Question 18   🔁 Seen 3 times (2 duplicates)
 
 **When does a Sprint conclude?**
 
@@ -326,7 +326,7 @@ D) When all Product Backlog items meet their Definition of Done.
 
 ---
 
-## Question 19   🔁 Seen 2 times (1 duplicate)
+## Question 19   🔁 Seen 3 times (2 duplicates)
 
 **The length of a Sprint should be:**
 
@@ -362,7 +362,7 @@ D) The Sprint Backlog is fully formulated in the Sprint Planning event and does 
 
 ---
 
-## Question 21   🔁 Seen 1 time (0 duplicates)
+## Question 21   🔁 Seen 2 times (1 duplicate)
 
 **The timebox for the Sprint Planning event is?**
 
@@ -380,7 +380,7 @@ D) 4 hours.
 
 ---
 
-## Question 22   🔁 Seen 1 time (0 duplicates)
+## Question 22   🔁 Seen 3 times (2 duplicates)
 
 **What is the typical size for a Scrum Team?**
 
@@ -398,7 +398,7 @@ D) 10 or fewer.
 
 ---
 
-## Question 23   🔁 Seen 1 time (0 duplicates)
+## Question 23   🔁 Seen 2 times (1 duplicate)
 
 **How much work must the Developers complete for each Sprint?**
 
@@ -416,7 +416,7 @@ D) Analysis, design, programming, testing and documentation.
 
 ---
 
-## Question 24   🔁 Seen 2 times (1 duplicate)
+## Question 24   🔁 Seen 4 times (3 duplicates)
 
 **An organization has decided to adopt Scrum, but management wants to change the terminology to fit with terminology already used. What will likely happen if this is done?**
 
@@ -452,7 +452,7 @@ D) During the Daily Scrum.
 
 ---
 
-## Question 26   🔁 Seen 1 time (0 duplicates)
+## Question 26   🔁 Seen 2 times (1 duplicate)
 
 **When does the next Sprint begin?**
 
@@ -470,7 +470,7 @@ D) Immediately following the next Sprint Planning.
 
 ---
 
-## Question 27   🔁 Seen 2 times (1 duplicate)
+## Question 27   🔁 Seen 3 times (2 duplicates)
 
 **What are three incorrect, untrue, or misleading statements about Scrum?**
 
@@ -492,7 +492,7 @@ F) Scrum is a methodology where you can pick and choose which parts of Scrum you
 
 ---
 
-## Question 28   🔁 Seen 1 time (0 duplicates)
+## Question 28   🔁 Seen 3 times (2 duplicates)
 
 **When might a Sprint be cancelled?**
 
@@ -510,7 +510,7 @@ D) When the Sprint Goal becomes obsolete.
 
 ---
 
-## Question 29   🔁 Seen 2 times (1 duplicate)
+## Question 29   🔁 Seen 3 times (2 duplicates)
 
 **True or False: The Scrum Team must choose at least one high priority process improvement item, identified during the Sprint Retrospective, and place it in the Sprint Backlog.**
 
@@ -522,7 +522,7 @@ B) False
 
 ---
 
-## Question 30   🔁 Seen 2 times (1 duplicate)
+## Question 30   🔁 Seen 4 times (3 duplicates)
 
 **Why is the Daily Scrum held at the same time and same place?**
 
@@ -540,7 +540,7 @@ D) Rooms are hard to book and this lets it be booked in advance.
 
 ---
 
-## Question 31
+## Question 31   🔁 Seen 2 times (1 duplicate)
 
 **[Related to Question 6 and Question 8 - but tests a different aspect: the Scrum Master's main reason for being at the Daily Scrum]**
 
@@ -560,7 +560,7 @@ D) To make sure every team member answers the three questions.
 
 ---
 
-## Question 32
+## Question 32   🔁 Seen 2 times (1 duplicate)
 
 **[Related to Question 5 and Question 20 - but tests a different aspect: who is present to renegotiate Sprint scope when the forecast cannot be completed]**
 
@@ -580,7 +580,7 @@ D) The Scrum Master, the project manager, and the Developers
 
 ---
 
-## Question 33
+## Question 33   🔁 Seen 2 times (1 duplicate)
 
 **[Related to Question 11, Question 13 and Question 21 - but tests a different aspect: identifying which events are timeboxed]**
 
@@ -606,7 +606,7 @@ G) Release Testing.
 
 ---
 
-## Question 34
+## Question 34   🔁 Seen 3 times (2 duplicates)
 
 **[Related to Question 14 - but tests a different aspect: Product Backlog (not Definition of Done) with multiple teams]**
 
@@ -620,7 +620,7 @@ B) False
 
 ---
 
-## Question 35
+## Question 35   🔁 Seen 2 times (1 duplicate)
 
 **[Related to Question 18 and Question 28 - but tests a different aspect: the purpose of a Sprint]**
 
@@ -634,7 +634,7 @@ B) False
 
 ---
 
-## Question 36
+## Question 36   🔁 Seen 2 times (1 duplicate)
 
 **The Product Backlog is ordered by:**
 
@@ -654,7 +654,7 @@ E) Size, where small items are at the top and large items are at the bottom.
 
 ---
 
-## Question 37
+## Question 37   🔁 Seen 3 times (2 duplicates)
 
 **[Related to Question 4 and Question 27 - but tests a different aspect: whether a project manager role exists in Scrum]**
 
@@ -668,7 +668,7 @@ B) False
 
 ---
 
-## Question 38
+## Question 38   🔁 Seen 2 times (1 duplicate)
 
 **[Related to Question 27 - but tests a different aspect: how Scrum is defined as a framework]**
 
@@ -688,7 +688,7 @@ D) A complete methodology that defines how to develop software.
 
 ---
 
-## Question 39
+## Question 39   🔁 Seen 2 times (1 duplicate)
 
 **[Related to Question 7 and Question 17 - but tests a different aspect: Product Owner responsibility]**
 
@@ -705,6 +705,92 @@ C) Maximizing the value of the work the Scrum Team does.
 D) Directing the Developers.
 
 **Answer:** C
+
+---
+
+## Question 40   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 36 and Question 39 - but tests a different aspect: who has the final say on Product Backlog order]**
+
+**Who has the final say on the order of the Product Backlog?**
+
+*(choose the best answer)*
+
+A) The Product Owner.
+
+B) The CEO.
+
+C) The Scrum Master.
+
+D) The Developers.
+
+E) The Stakeholders.
+
+**Answer:** A
+
+---
+
+## Question 41   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 6 and Question 15 - but tests a different aspect: recognizing poor Scrum practice / lack of self-management]**
+
+**Which of the following are examples of a Scrum Team practicing Scrum poorly or not exhibiting traits of a self-managing Scrum Team?**
+
+*(choose the best three answers)*
+
+A) Stakeholders attend the Daily Scrum to check on the Scrum Team's progress.
+
+B) The Developers invite external stakeholders to the Sprint Planning to ask them how to turn a Product Backlog item into an Increment via a complete and detailed Sprint Backlog.
+
+C) The Developers are collaboratively selecting their own work during the Sprint.
+
+D) The Developers have all the skills they need to create a valuable, useful Increment.
+
+E) The Developers are working within the boundaries of their organization's functional description and nicely handing off work from analyst to developer to tester to integration.
+
+F) The Developers create their own Sprint Backlog, reflecting all work that is required to meet the Definition of Done.
+
+**Answer:** A B E
+
+---
+
+## Question 42   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 39 and Question 40 - but tests a different aspect: who knows most about progress toward a business objective or release]**
+
+**Who should know the most about the progress toward a business objective or a release, and be able to explain the alternatives most clearly?**
+
+*(choose the best answer)*
+
+A) The Product Owner
+
+B) The Project Manager
+
+C) The Developers
+
+D) The Scrum Master
+
+**Answer:** A
+
+---
+
+## Question 43   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 35 - but tests a different aspect: what the Scrum Team does during the first Sprint]**
+
+**What should the Scrum Team do during the first Sprint?**
+
+*(choose the best answer)*
+
+A) Create a valuable and useful Increment.
+
+B) Create the complete Product Backlog to be developed in subsequent Sprints.
+
+C) Determine the complete architecture and infrastructure for the product.
+
+D) Develop a plan for the rest of the release.
+
+**Answer:** A
 
 ---
 
@@ -746,9 +832,77 @@ D) Directing the Developers.
 | 27 | Q24 |
 | 30 | Q30 |
 
-**Batch 3 (2 new questions received):** Q38-Q39 added; duplicates updated for matched questions in this batch.
+**Batch 3 (30 questions received):** 2 new questions added (Q38-Q39), 28 duplicates skipped.
+
+| Batch 3 Question | Matched Existing Question |
+|---|---|
+| 1 | Q22 |
+| 2 | Q14 |
+| 3 | Q9 |
+| 4 | Q13 |
+| 5 | Q34 |
+| 6 | Q11 |
+| 7 | Q5 |
+| 8 | Q16 |
+| 9 | Q36 |
+| 10 | Q8 |
+| 11 | Q24 |
+| 12 | Q3 |
+| 13 | Q37 |
+| 14 | Q17 |
+| 15 | Q4 |
+| 16 | Q15 |
+| 17 | Q7 |
+| 18 | Q6 |
+| 19 | Q29 |
+| 20 | Q10 |
+| 21 | Q1 |
+| 22 | Q38 (new) |
+| 23 | Q33 |
+| 24 | Q23 |
+| 25 | Q30 |
+| 26 | Q12 |
+| 27 | Q28 |
+| 28 | Q31 |
+| 29 | Q18 |
+| 30 | Q39 (new) |
+
+**Batch 4 (30 questions received):** 4 new questions added (Q40-Q43), 26 duplicates skipped.
+
+| Batch 4 Question | Matched Existing Question |
+|---|---|
+| 1 | Q6 |
+| 2 | Q40 (new) |
+| 3 | Q28 |
+| 4 | Q41 (new) |
+| 5 | Q18 |
+| 6 | Q42 (new) |
+| 7 | Q8 |
+| 8 | Q4 |
+| 9 | Q19 |
+| 10 | Q39 |
+| 11 | Q27 |
+| 12 | Q7 |
+| 13 | Q14 |
+| 14 | Q43 (new) |
+| 15 | Q11 |
+| 16 | Q38 |
+| 17 | Q2 |
+| 18 | Q24 |
+| 19 | Q30 |
+| 20 | Q26 |
+| 21 | Q22 |
+| 22 | Q5 |
+| 23 | Q37 |
+| 24 | Q34 |
+| 25 | Q15 |
+| 26 | Q35 |
+| 27 | Q13 |
+| 28 | Q32 |
+| 29 | Q21 |
+| 30 | Q4 |
 
 ---
 
-**Status:** 39 questions added, all answers included  
+**Status:** 43 questions added, all answers included  
 **Last Updated:** 2026-10-13
