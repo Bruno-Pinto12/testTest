@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseQuestions } from '../scripts/build-questions.mjs';
-import { validateBank, createSession, currentQuestion, selectAnswer, checkAnswer, nextQuestion, scoreSession, restoreSession } from '../quiz.js';
+import { EXPECTED_QUESTION_COUNT, JOURNEY_SESSION_COUNT, journeySessionBounds, journeyProgress, isJourneySessionBoundary, validateBank, createSession, currentQuestion, selectAnswer, checkAnswer, nextQuestion, scoreSession, restoreSession } from '../quiz.js';
 
 const markdown = readFileSync(new URL('../PSM_I_EXAM_PRACTICE_QUESTIONS.md', import.meta.url), 'utf8')
   .replace(/\r\n?/g, '\n');
@@ -18,10 +18,10 @@ function answer(session, ids) {
   return checkAnswer(bank, session);
 }
 
-test('all 114 questions match their source wording, options, keys, annotations and notes', () => {
+test(`all ${EXPECTED_QUESTION_COUNT} questions match their source wording, options, keys, annotations and notes`, () => {
   assert.deepEqual(bank, parseQuestions(markdown));
   assert.equal(validateBank(bank), bank);
-  assert.deepEqual(bank.map((question) => question.id), Array.from({ length: 114 }, (_, i) => i + 1));
+  assert.deepEqual(bank.map((question) => question.id), Array.from({ length: EXPECTED_QUESTION_COUNT }, (_, i) => i + 1));
   for (const question of bank) {
     const block = markdown.split(`## Question ${question.id} `)[1].split('\n---')[0];
     const promptLines = block.split('\n').filter((line) => line.startsWith('**') && line.endsWith('**') && !line.startsWith('**['));
@@ -41,7 +41,7 @@ test('validator rejects malformed counts, IDs, options, keys and metadata', () =
   assert.throws(() => validateBank(null));
   for (const mutate of [
     (data) => { data[1].id = 1; },
-    (data) => { data[0].id = 115; },
+    (data) => { data[0].id = EXPECTED_QUESTION_COUNT + 1; },
     (data) => { data[0].options[1].id = 'A'; },
     (data) => { data[0].answers = ['Z']; },
     (data) => { data[0].answers = ['A', 'A']; },
@@ -104,29 +104,38 @@ test('selection replacement and checkbox deselection do not mutate the previous 
 });
 
 test('random sessions sample without repeats; all mode is canonical and complete', () => {
-  for (const length of [1, 10, 20, 40, 80, 114]) {
+  for (const length of [1, 10, 20, 40, 80, EXPECTED_QUESTION_COUNT]) {
     for (let i = 0; i < 30; i++) {
       const session = createSession(bank, 'random', length);
       assert.equal(session.questionIds.length, length);
       assert.equal(new Set(session.questionIds).size, length);
-      assert.ok(session.questionIds.every((id) => id >= 1 && id <= 114));
+      assert.ok(session.questionIds.every((id) => id >= 1 && id <= EXPECTED_QUESTION_COUNT));
     }
   }
   assert.deepEqual(createSession(bank, 'all', 10).questionIds, bank.map((question) => question.id));
-  assert.deepEqual(createSession(bank, 'random', 114, () => 0).questionIds, [...bank.slice(1).map((question) => question.id), 1]);
-  for (const length of [0, 115, 1.2, NaN]) assert.throws(() => createSession(bank, 'random', length));
+  assert.deepEqual(createSession(bank, 'random', EXPECTED_QUESTION_COUNT, () => 0).questionIds, [...bank.slice(1).map((question) => question.id), 1]);
+  for (const length of [0, EXPECTED_QUESTION_COUNT + 1, 1.2, NaN]) assert.throws(() => createSession(bank, 'random', length));
   assert.throws(() => createSession(bank, 'unknown'));
 });
 
 test('six-session random journey shuffles the full bank once and restores across sessions', () => {
   let journey = createSession(bank, 'journey', bank.length, () => 0);
-  assert.equal(journey.questionIds.length, 114);
-  assert.equal(new Set(journey.questionIds).size, 114);
+  assert.equal(journey.questionIds.length, EXPECTED_QUESTION_COUNT);
+  assert.equal(new Set(journey.questionIds).size, EXPECTED_QUESTION_COUNT);
   assert.notDeepEqual(journey.questionIds, bank.map((question) => question.id));
-  for (let i = 0; i < 6; i++) {
-    assert.equal(journey.questionIds.slice(i * 19, (i + 1) * 19).length, 19);
+  const sessionSizes = [];
+  for (let i = 0; i < JOURNEY_SESSION_COUNT; i++) {
+    const sessionNumber = i + 1;
+    const { start, end } = journeySessionBounds(EXPECTED_QUESTION_COUNT, sessionNumber);
+    sessionSizes.push(end - start);
+    assert.equal(journey.questionIds.slice(start, end).length, end - start);
+    assert.deepEqual(journeyProgress(start, EXPECTED_QUESTION_COUNT), {
+      sessionNumber, questionNumber: 1, sessionSize: end - start,
+    });
+    if (sessionNumber < JOURNEY_SESSION_COUNT) assert.equal(isJourneySessionBoundary(end, EXPECTED_QUESTION_COUNT), true);
   }
-  assert.throws(() => createSession(bank, 'journey', 19));
+  assert.ok(Math.max(...sessionSizes) - Math.min(...sessionSizes) <= 1);
+  assert.throws(() => createSession(bank, 'journey', journeySessionBounds(EXPECTED_QUESTION_COUNT, 1).end));
 
   while (currentQuestion(bank, journey)) {
     const question = currentQuestion(bank, journey);
@@ -135,14 +144,14 @@ test('six-session random journey shuffles the full bank once and restores across
     journey = nextQuestion(bank, journey);
     assert.deepEqual(restoreSession(JSON.stringify(journey), bank), journey);
   }
-  assert.equal(journey.responses.length, 114);
+  assert.equal(journey.responses.length, EXPECTED_QUESTION_COUNT);
   assert.deepEqual(journey.responses.map((response) => response.questionId), journey.questionIds);
-  assert.deepEqual(scoreSession(journey), { correct: 114, answered: 114, total: 114, percent: 100 });
+  assert.deepEqual(scoreSession(journey), { correct: EXPECTED_QUESTION_COUNT, answered: EXPECTED_QUESTION_COUNT, total: EXPECTED_QUESTION_COUNT, percent: 100 });
 });
 
 test('score progresses only on checking; completion and every intermediate state restore', () => {
   let session = createSession(bank);
-  assert.deepEqual(scoreSession(session), { correct: 0, answered: 0, total: 114, percent: 0 });
+  assert.deepEqual(scoreSession(session), { correct: 0, answered: 0, total: EXPECTED_QUESTION_COUNT, percent: 0 });
   while (currentQuestion(bank, session)) {
     const question = currentQuestion(bank, session);
     for (const id of question.answers) session = selectAnswer(bank, session, id);
@@ -153,7 +162,7 @@ test('score progresses only on checking; completion and every intermediate state
     session = nextQuestion(bank, session);
     assert.deepEqual(restoreSession(JSON.stringify(session), bank), session);
   }
-  assert.deepEqual(scoreSession(session), { correct: 114, answered: 114, total: 114, percent: 100 });
+  assert.deepEqual(scoreSession(session), { correct: EXPECTED_QUESTION_COUNT, answered: EXPECTED_QUESTION_COUNT, total: EXPECTED_QUESTION_COUNT, percent: 100 });
   assert.throws(() => nextQuestion(bank, session));
   assert.throws(() => checkAnswer(bank, session));
   let mixed = createSession(bank, 'random', 2);
@@ -170,7 +179,7 @@ test('restore safely rejects corrupt, stale and inconsistent storage', () => {
   for (const mutate of [
     (value) => { value.version = 2; },
     (value) => { value.questionIds = [1, 1]; },
-    (value) => { value.questionIds = [115]; },
+    (value) => { value.questionIds = [EXPECTED_QUESTION_COUNT + 1]; },
     (value) => { value.index = -1; },
     (value) => { value.index = 2; },
     (value) => { value.selected = ['A']; },

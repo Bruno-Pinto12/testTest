@@ -1,0 +1,630 @@
+21-SM-7A-01 ( ) - $$
+In accordance with Scrum theory, how should a group of 100 people be divided into multiple Scrum Teams? (choose the best answer)
+A) It does not really matter because you can rotate the teams every Sprint to spread knowledge. 
+B) Create a matrix of skills, seniority, and level of experience to assign people to teams.
+C) Check with the allocation department to see who has worked together before and make these the first teams.
+D) Understanding the product, the product vision and the rules of the Scrum framework, the group divides itself into teams.
+ANS : D
+21-SM-7A -02 ( ) - $$
+The Product Backlog is ordered by: (choose the best answer)
+A) The Product Owner with the most valuable items placed at the top. 
+B) Items are randomly arranged.
+C) Risk, where safer items are at the top, and riskier items are at the bottom.
+D) Size, where small items are at the top and large items are at the bottom.
+ANS : A
+21-SM-7A -03 ( ) - $$
+A Product Owner wants advice from the Scrum Master about estimating work in Scrum. What guidance should a Scrum Master give? (choose the best answer)
+A) Estimates are made by the people doing the work. 
+B) Estimates are made by the Product Owner, but are best checked with the Developers.
+C) Product Backlog items must be estimated in story points.
+D) Estimates must be in relative units.
+E) Scrum forbids estimating.
+ANS : A
+21-SM-7A -04 ( ) - $$
+Which two things should the Scrum Team do during the first Sprint? (choose the best two answers)
+A) Develop at least one piece of functionality
+B) Create an Increment of potentially releasable software 
+C) Analyze, describe and document the requirements for the subsequent Sprints
+D) Define the major product features and a release plan architecture
+E) Make up a plan for the rest of the project
+ANS : A, B
+21-SM-7A -05 ( ???) N/A
+ANS : 
+21-SM-7A -06 ( ) - $$
+What is the Product Owner responsible for during the Sprint Retrospective ? (Choose the best answer)
+A) Summarizing and reporting the discussions to the stakeholders the they represent in the Scrum Team 
+B) Capturing requirements for the Product Backlog.
+C) Participating as a Scrum Team member.
+D) The Product Owner should (NOT?) take part in Sprint Retrospective
+ANS : C
+21-SM-7A -07 ( ) - $$
+Which Scrum Value is affected by a lack of trust in the Scrum Team? (choose the best answer)
+A: Focus
+B: Respect
+C: Openness
+D: Courage
+E: Commitment
+F: All of the above
+ANS : F
+21-SM-7A -08 ( ) - $$
+Who is accountable for managing the progress of work during a Sprint? (choose the best answer)
+A) The Scrum Master. 
+B) The most junior member of the team.
+C) The Product Owner.
+D) The Developers.
+ANS : D
+21-SM-7A -09 ( ) - $$ 
+Which three behaviors demonstrate that a Scrum Team is self-managing? (choose the best three answers)
+A) The Developers create their own Sprint Backlog, reflecting all work that is part of the Definition of Done.
+B) The Scrum Team members are working within the boundaries of their functional description and nicely handing off work from analyst to developer to tester to integration.
+C) The Scrum Master is no longer needed.
+D) Stakeholders are attending the Daily Scrum to check progress and work with the Scrum Master to optimize the functional scope for the Sprint
+E) The Scrum Team has all the skills needed to create an increment.
+F) Developers collaboratively selecting their own work during the Sprint 
+ANS : A, E, F
+21-SM-7A -10 ( ) - $$
+Who determines when it is appropriate to update the Sprint Backlog during a Sprint? (choose the best answer)
+A) The Project Manager. 
+B) The Product Owner.
+C) The Scrum Team.
+D) The Developers.
+ANS : D
+21-SM-7A -11 ( ) - $$
+You have just been hired by a company new to Scrum. Your management has assigned you to be the Scrum Master of six new Scrum Teams. 
+These teams will build one product. Select two conditions you should strive for in this scenario (choose the best two answers) 
+A) There should be six Product Owners, one for each Scrum Team. 
+B) Each Scrum Team should have a separate Product Backlog.
+C) The product has one Product Backlog.
+D) There should be only one Product Owner.
+E) There should be six Product Owners, reporting to a Chief Product Owner.
+ANS : C, D 
+21-SM-7A -12 ( ) - $$
+How often should Scrum Team membership change? (choose the best answer)
+A) As needed, with no special allowance for changes in productivity. 
+B) As needed, while taking into account a short-term reduction in productivity.
+C) Never, it reduces productivity.
+D) Every Sprint to promote shared learning.
+ANS : B
+21-SM-7A -13 ( ) - $$
+User documentation is part of your Definition of Done. However, there are not enough technical writers for all teams. Your Scrum Team does not have a technical writer. What should the Scrum Team do ? (choose the best answer)
+A) Form a separate team of technical writers that will work on an on-demand basis for the various Product Owners. Work order will be first in, first out. 
+B) The Developers on the Scrum Team should write the user documentation.
+C) Let the user documentation remain undone and accumulate until after the last development Sprint. It will then be done by any available technical writer. 
+D) Wait until you have a technical writer on your Scrum team to take care of this.
+ANS : D (Corr: -> B)
+21-SM-7A -14 ( ) - $$
+An increment must be released to customers or users at the end of each Sprint.
+A) True
+B) False
+ANS : B
+21-SM-7A -15 ( ) - $$
+The Developers select a set of Product Backlog items for a Sprint Backlog with the intent to get the selected items done by the end of the Sprint.
+Which three phrases best describe the purpose of a Definition of done. (Choose best three answers)
+A) It creates transparency over the work inspected at the Sprint Review.
+B) It defines what it takes for an Increment to be ready for release.
+C) It controls whether the developers have performed their tasks.
+D) It provides a template for elements that need to be included in the technical documentation.
+E) It guides the Developers in creating a forecast at the Sprint Planning.
+F) It tracks the percentage complete of a Product Backlog item.
+ANS : A, B, E 
+21-SM-7A -16 ( ) - $$
+Every Scrum Team should have: (choose the best answer) 
+A) At least one representative from each major department, such as, Quality Assurance, Development, and Marketing. 
+B) One Lead Developer and no more than 8 other members.
+C) The competencies and skills needed to deliver an Increment in a Sprint.
+ANS : C
+21-SM-7A -17 ( ) - $$
+Who is responsible for collaboration with stakeholders? (choose the best answer)
+A) The Team Manager.
+B) The Developers. 
+C) The Business Analyst.
+D) The Project Manager.
+E) The Scrum Team. 
+ANS : E
+21-SM-7A -18 ( ) - $$
+What is the Scrum Master responsible for during the Sprint Retrospective? (choose the best answer)
+A) Prioritizing the resulting action items. 
+B) Summarizing and reporting the discussions to management.
+C) Participating as a Scrum Team member and facilitating as requested or needed.
+D) Acting as a scribe to capture the Scrum Team's answers 
+ANS : C
+21-SM-7A -19 ( ) - $$
+Which of the following is an example of an Increment? (Choose the best answer.)
+A) A plan for the overall product release.
+B) A mock-up of the product marketing materials.
+C) A design for the product.
+D) A product roll-out plan.
+E) A valuable, useful set of products featured.
+F) All of the above.
+ANS : E
+21-SM-7A -20 ( ) - $$
+Who should know the most about the progress toward the Product Goal? (choose the best answer)
+A) The Project Manager.
+B) The Product Owner.
+C) The Scrum Master.
+D) The Developers.
+ANS : B
+21-SM-7A -21 ( ) - $$
+A Scrum Team is a cohesive unit of professionals that consists of which of the following? (choose all that apply)
+A) Users.
+B) One Product Owner.
+C) Customers.
+D) Developers.
+E) One Scrum Master.
+ANS : A, C, D 
+21-SM-7A -22 (Corr >B) - $$ 
+During the Sprint Retrospective a Scrum Team has identified several high priority process improvements. Which of the following statements is most accurate? (choose the best answer)
+A) The Scrum Team should choose at least one high priority process improvement to place in the Product Backlog.
+B) The Scrum Team may add the items to the Sprint Backlog for the next Sprint.
+C) The Scrum Master selects the most important process improvement and places it in the Sprint Backlog.
+D) The Scrum Team should decline to add a process improvement to the Sprint Backlog when things are running smoothly.
+ANS : A (Corr: -> B)
+21-SM-7A -23 ( ) - $$
+Which of the following are appropriate topics for discussion during a Sprint Retrospective? (best two answers)
+A) Identifying high priority process improvements for the next Sprint. 
+B) The order of items in the Product Backlog. 
+C) How the team collaborates.
+D) Documenting acceptance criteria for items in the next Sprint.
+ANS : A, C
+21-SM-7A -24 ( ) - $$
+What is the timebox for the Sprint Review? (choose the best answer)
+A) As long as needed.
+B) 2 hours for a one-month Sprint.
+C) 4 hours for one-month Sprint. 
+D) 1 day.
+ANS : C
+21-SM-7A -25 ( ) - $$
+What techniques could the Scrum Master use when the Scrum Team gets caught in an internal disagreement about which agile practices to apply? (choose the best two answers)
+A) Use coaching techniques, such as open questions and active listening.
+B) Ask team members to take the issue up with the company's Human Resources department.
+C) Involve the complete Scrum Team in making a decision 
+D) Ask an external agile coach what they recommend.
+ANS : A, C 
+21-SM-7A -26 ( ) - $$
+Which of the following are true about the Product Owner? (choose the best two answers)
+A) The Product Owner is accountable for ordering the Product Backlog. 
+B) The Product Owner is one person.
+C) The Product Owner can be represented by a committee or a team of people.
+D) The Scrum Team can have multiple Product Owners.
+ANS : A, B
+21-SM-7A -27 ( ) (~$$~) - $$
+What is the accountability of the Product Owner during Sprint 0? (choose the best answer)
+A) Make sure enough Product Backlog items are refined to fill the first 3 Sprints. 
+B) There is no such thing as Sprint 0.
+C) Determine the composition of the Scrum Teams to meet the release plan.
+D) Create the overall release plan to ensure that organizational goals are met. 
+E) Gathering, eliciting, and analyzing the requirements to build the Product Backlog.
+ANS : B
+21-SM-7A -28 ( ) - $$
+If burndown charts are used to visualize progress, what do they track? (choose the best answer)
+A) Work remaining across time.
+B) Individual worker productivity.
+C) Accumulated business value delivered to the customer.
+D) Accumulated cost.
+ANS : A
+21-SM-7A -29 ( ) - $$
+True or False: The Product Owner makes sure the Developers select enough from the Product Backlog for a Sprint to satisfy the stakeholders.
+A) True
+B) False
+ANS : B
+21-SM-7A -30 (“SM-0B-39”)
+What are two effective ways for the Scrum Team to make non-functional requirements visible?
+A) Run the integration and regression tests before the end of the Sprint, and capture the open work for the Sprint Backlog of the next Sprint. 
+B) Add them to the Product Backlog to ensure transparency.
+C) Put them on a separate list on the Scrum board, available for all to see. 
+D) Add them to the definition of Done so the work is taken care of every Sprint.
+ANS : B, D
+21-SM-7A -01 ( ) - $$
+Who is part of the discussion about which Product Backlog items are selected for a Sprint ? (choose the best answer)
+A) The Developers. 
+B) The Product Owner.
+C) The Scrum Master.
+D) The Scrum Team.
+ANS : A
+21-SM-7A -32 ( ) - $$
+Who determines how work is performed during the Sprint ? (choose the best answer)
+A) The Scrum Team
+B) Subject matter expert. 
+C) The Developers.
+D) Team manager.
+E) The Scrum Master
+ANS : C
+21-SM-7A -33 ( ) - $$
+How much time is required after a Sprint to prepare for the next Sprint? (choose the best answer)
+A) The break between Sprints is timeboxed to one-week for a one-month Sprint, and usually less for shorter Sprints.
+B) Enough time for the requirements for the next Sprint to be determined and documented.
+C) Enough time for the Developers finish the testing from the last Sprint.
+D) None. A new Sprint starts immediately following the end of the previous Sprint.
+E) All of the above are allowed depending on the situation.
+ANS : D
+21-SM-7A -34 ( ) - $$
+Which are characteristics of the Daily Scrum? (choose the best two answers)
+A) It is held first thing in the morning. 
+B) Its purpose is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog.
+C) It is free form and designed to promote conversation.
+D) It consists of the Scrum Master asking the team for status.
+E) It's location and time remain constant.
+F) It is facilitated by the team lead. 
+ANS : B, E
+21-SM-7A -35 ( ) - $$
+When should a Sprint Goal be created ?
+A) It must be established before Sprint Planning in order to begin planning. 
+B) It should have been created in the previous Sprint during Product Backlog refinement.
+C) At any time during the Sprint.
+D) During Sprint Planning.
+E) A Sprint Goal is not mandatory in Scrum 
+ANS : D
+21-SM-7A -36 ( ) - $$
+The purpose of a Sprint is to produce a valuable, useful Increment.
+A) True
+B) False
+ANS : A
+21-SM-7A -37 ( ) - $$
+Several Sprints into a project, the Product Owner tells the Scrum Master that a key stakeholder just started using the product. The stakeholder is unhappy with the quality of the product. 
+What are two good options for the Scrum Master? (choose the best two answers)
+A) Coach the Product Owner on how to talk with the Developers about this concern. 
+B) Wait to bring this up until the Sprint Retrospective.
+C) Explain to the Product Owner that it is up to the Developers to decide on acceptable quality standards.
+D) Bring the concern to the testers to improve how the Product is verified.
+E) Encourage the Product Owner to put quality specifications on the Product Backlog and express the stakeholder's concern to the Developers.
+ANS : A, E
+21-SM-7A -38 ( ) - $$
+Who is accountable for tracking the remaining work toward the Sprint Goal? (choose the best answer)
+A) The Project Manager. 
+B) The Developers.
+C) The Product Owner.
+D) The Scrum Master.
+ANS : B
+21-SM-7A -39 ( ) - $$
+When does the second Sprint start? (choose the best answer)
+A) After the customer completes acceptance testing of the first Sprint.
+B) Once the architectural changes for the second Sprint are approved by the senior architect.
+C) Immediately after the first Sprint.
+D) After the Product Backlog items for the second Sprint have been selected.
+ANS : C
+21-SM-7A -40 ( ) - $$
+How should Product Backlog items be chosen when multiple Scrum Teams work from the same Product Backlog? (choose the best answer)
+A) The Developers pull in work in agreement with the Product Owner.
+B) Each Scrum Team takes an equal number of items.
+C) The Product Owner decides.
+D) The Product Owner should provide each team with its own Product Backlog.
+E) The Scrum Team with the highest velocity pulls Product Backlog items first.
+ANS : A
+ 
+21-SM-7A -41 ( ) - $$
+Which three of the following are true about Scrum? (Choose the best three answers.)
+A) Each component of Scrum serves a specific purpose and is essential to Scrum’s success and your usage of Scrum to develop complex products.
+B) Scrum is a framework for developing and sustaining complex products.
+C) Scrum is a methodology where you can pick and choose which parts of Scrum you think will work for your environment.
+D) Scrum is based on empiricism and lean thinking.
+E) Scrum implements self-management by replacing Project Managers with Scrum Masters.
+ANS : A, B, D
+21-SM-7A -42 ( ) - $$
+Choose two responsibilities of self-managing Developers (choose the best two answers)
+A) Increase velocity. 
+B) Reorder the Product Backlog.
+C) Do the work planned in the Sprint Backlog.
+D) Pull Product Backlog items for the Sprint.
+E) Report daily progress to stakeholders 
+ANS : C, D
+21-SM-7A -43 ( ) - $$
+When Developers are having trouble delivering an Increment because they do not understand a functional requirement, what should they do? (Choose the best answer)
+A) Add a specialist to the Development team.
+B) Partially complete the functionality and discuss the remaining work at the Sprint Review.
+C) Defer the work to a more appropriate Sprint.
+D) Collaborate with the product owner to determine what is possible and acceptable.
+ANS : D
+21-SM-7A -44 ( ) – (~$$)
+A Scrum Master is working with a Scrum Team that has members in different physical locations. The Scrum Team meets in a variety of meeting rooms and have much to do logistically (for example: reserve meeting rooms and set up conference calls) before the Daily Scrum. 
+What action should the Scrum Master take? (choose the best answer)
+A) Allow the Developers to self-manage and determine for themselves what to do. 
+B) Ask the Developers to alternate who is responsible for meeting setup.
+C) Inform management and ask them to solve it.
+D) Set up the meeting and tell the Scrum Team that is how it will be done.
+ANS : A
+21-SM-7A -445 ( ) - $$
+For which of the following is the Scrum Master responsible? (choose the best answer)
+A) Properly adopting and using the Scrum framework. 
+B) The meeting and the objectives that a Scrum Team sets for itself.
+C) Managing the performance of the Scrum team.
+D) Keeping track of resource allocation.
+ANS : A
+21-SM-7A -46 ( ) - $$
+The Scrum Master observes the Product Owner struggling with ordering the Product Backlog.
+What is an appropriate action for the Scrum Master to take? (choose the best answer)
+A) Suggest that the Developers order the Product Backlog to be sure that it is a feasible ordering of work. 
+B) Suggest the Product Owner extend the Sprint, so he can have more time to order the Product Backlog.
+C) Encourage the Product Owner to work with the Developers to see which items technically are fastest to implement.
+D) Present the Product Owner with an ordered Product Backlog to use 
+E) Offer the Product Owner help in understanding that the goal of ordering the Product Backlog is to maximize value.
+ANS : E
+ 
+21-SM-7A -47 ( ) - $$
+What is the timebox for the Sprint Planning event ? (choose the best answer)
+A) 4 hours for one-month Sprint.
+B) Monthly.
+C) 8 hours for a one-month Sprint
+D) Whenever it is done.
+ANS : C
+21-SM-7A -48 ( ) - $$
+When is a Product Backlog item considered complete? (choose the best answer)
+A) When the item meets the Definition of Done. 
+B) When the item passes all acceptance criteria.
+C) At the end of the Sprint.
+D) When the item has gained product sponsor approval.
+ANS : A
+21-SM-7A -49 ( ) - $$
+Which are appropriate topics for discussion in a Sprint Retrospective? (Choose the best three answers.)
+A) How the Scrum Team does its work. 
+B) Arranging the Sprint Backlog for the next Sprint.
+C) Team relations
+D) The value of work currently represented in the Product Backlog. 
+E) Definition of Done. 
+ANS : A, C, E
+21-SM-7A -50 ( )
+Why do the Developers need a Sprint Goal? (choose the best answer)
+A) A Sprint Goal ensures that all of the Product Backlog items selected for the Sprint are implemented)
+B) Sprint Goals are not valuable. Everything is known from the Product Backlog. 
+C) A Sprint Goal only gives purpose to Sprint 0.
+D) The Developers are more focused with a common yet specific goal.
+ANS : D
+21-SM-7A -51 ( ) - $$
+What are two ways that regulatory compliance issues are dealt with in Scrum? (choose the best two answers)
+A) They are addressed by a separate team who is responsible for compliance issues.
+B) Thev are discussed. determined, and documented before the actual feature development Sprints.
+C) They are addressed along with functional development of the product.
+D) They are added to the Product Backlog and addressed in early Sprints, while always requiring at least some business functionality, no matter how small.
+ANS : C, D
+21-SM-7A -52 ( ) - $$
+What tactic should a Scrum Master use to divide a group of 100 people into multiple Scrum Teams? 
+(choose the best answer)
+A) Ask the people to divide themselves into teams. 
+B) Ask the Product Owner to assign the people to teams.
+C) Create teams based on their skills across multiple layers (such as database, Ul, etc.).
+ANS : A
+21-SM-7A -53 ( ) - $$
+When is the Sprint Backlog created? (choose the best answer)
+A) During Sprint Planning. 
+B) During refinement.
+C) Prior to Sprint Planning. 
+D) During the Sprint Retrospective.
+ANS : A
+ 
+21-SM-7A -54 ( ) - $$
+What does it mean for a Scrum Team to be cross-functional? (choose the best answer)
+A) The Scrum Team includes not only developers but also business analysts, architects, and testers.
+B) Developers on the Scrum Team work closely with business analysts, architects, developers, and testers who are not on the team.
+C) The Scrum Team is a virtual team drawing from separate teams of business analysts, architects, developers, and testers 
+D) The Scrum Team includes cross-skilled individuals who are able to contribute to do what is necessary to deliver an Increment.
+ANS : D
+21-SM-7A -55 ( ) - $$
+True or False: Cross-functional teams are optimized to work on one component or layer of a system only.
+A) True
+B) False
+ANS : B
+21-SM-7A -56 ( ) - $$
+During the sprint, the scrum master’s role is to do which two of the following: (choose the best two answers)
+A) Facilitate inspection and adaptation opportunities as requested or needed. 
+B) Coaching the team in self-management.
+C) Monitor the progress of the developers.
+D) Ensure the Product Owner attends all scrum events.
+E) Escalate team conflicts to functional line managers.
+F) Assign tasks with the scrum team.
+ANS : A, B
+21-SM-7A -57 ( ) N/A ?????????
+ANS : 
+21-SM-7A -58 ( )
+Which of the following services are appropriate for a Scrum Master in regard to the Daily Scrum? (choose the best answer)
+A) Lead the discussions
+B) Make sure that all 3 questions have been answered by each member of the team.
+C) Keep track of whether each Developer has a chance to speak.
+D) Teach the Developers to keep the Daily Scrum within 15 minutes.
+E) All of the above.
+ANS : D
+21-SM-7A -59 ( ) - $$
+Which best describes the Product Backlog? (choose the best answer)
+A) It provides just enough information to enable a Scrum Team to start the design phase of a product.
+B) It contains all foreseeable tasks and requirements from which the Scrum Team can develop and maintain a complete project plan.
+C) It is baselined to follow change management processes.
+D) It is allowed to grow and change as more is learned about the product and its customers.
+ANS : D
+21-SM-7A -60 ( ) - $$
+What may be included in the Sprint Backlog? (choose the best answer)
+A) User Stories.
+B) Tasks.
+C) Use Cases.
+D) Tests.
+E) Any of the above (or others) which are a decomposition of the selected Product Backlog items.
+ANS : E
+ 
+21-SM-7A -61 ( ) - $$
+Which of the following is required by Scrum? (choose the best answer)
+A) Sprint Retrospective.
+B) Developers must stand up at the Daily Scrum.
+C) Sprint Burndown Chart.
+D) Release Planning.
+E) All of the above.
+ANS : A
+21-SM-7A -62 ( ) - $$
+What happens if the Scrum Team cannot complete its work by the end of the Sprint ? (choose the best answer)
+A) The Sprint length is unchanged and the Scrum Team continuously learns and adapts.
+B) The Sprint is extended temporarily. Lessons are taken to ensure it does not happen again.
+C) The Sprint is extended and future Sprints use this new duration.
+ANS : A
+21-SM-7A -63 ( ) - $$
+Who does the work to make sure Product Backlog items conform to the Definition of Done? (he best answer)
+A) The Product Owner.
+B) The Quality Assurance Team.
+C) The Scrum Team.
+D) The Developers.
+E) The Scrum Master.
+ANS : D
+21-SM-7A -64 ( ) - $$
+How is management that is external to the Scrum Team involved in the Daily Scrum? (choose the best answer)
+A) The Product Owner represents their opinions.
+B) The Scrum Master speaks on their behalf.
+C) Management gives an update at the start of each Daily Scrum 
+D) Managers are not required at the Daily Scrum.
+ANS : D
+21-SM-7A -65 ( ) - $$
+For the purpose of transparency, when does Scrum say a valuable and useful Increment must be available?
+(choose the best answer)
+A) After the Acceptance Testing phase. 
+B) When the Product Owner asks to create one. 
+C) Before the Release Sprint.
+D) At the end of every Sprint.
+E) Every 3 Sprints.
+ANS : D
+21-SM-7A -66 ( ) - $$
+One of the Scrum events is the Daily Scrum. What are two intended outcomes of the Daily Scrum? (choose the best two answers)
+A) Identification of impediments that may prevent the Developers from achieving the Sprint Goal.
+B) An update of completed tasks and of the remaining work so the Scrum Master can plan the next day.
+C) A shared understanding of the most important work to be undertaken next to achieve the best possible progress toward the Sprint goal.
+D) An updated Scrum board to make Sprint progress transparent for the stakeholders.
+E) A status report for the upper management indicating what each individual has done, will be doing, and what is impeding him/her.
+ANS : A, C
+21-SM-7A -67 ( ) - $$
+Which of these may a Scrum Team deliver at the end of a Sprint? (choose the best answer)
+A) A valuable, useful Increment that meets the Definition of Done 
+B) Failing unit tests, to identify acceptance tests for the next Sprint.
+C) An Increment of software with minor known bugs in it. 
+D) A single document, if that is what management asked for.
+ANS : A
+21-SM-7A -68 ( ) - $$
+True or False: Developers do not meet with stakeholders; only the Product Owner meets with stakeholders
+A) True 
+B) False
+ANS : B
+21-SM-7A -69 ( ) - $$
+Which two of the following are true about the Scrum Master? (choose the best two answers)
+A) The Scrum Master assigns tasks to Developers when they need work. 
+B) The Scrum Master is responsible for updating the Sprint Burndown 
+C) The Scrum Master helps those outside the team interact with the Scrum Team 
+D) At the Sprint Review, the Scrum Master identifies what work is done and not done.
+E) The Scrum Master teaches the Scrum Team to use timeboxes.
+ANS : C, E
+21-SM-7A -70 ( ) - $$
+When does a Developer become accountable for the value of a Product Backlog item selected for the Sprint?
+(choose the best answer)
+A) During the Daily Scrum. 
+B) At the Sprint Planning Event.
+C) Whenever a team member can accommodate more work. 
+D) Never. The entire Scrum Team is accountable for creating value every Sprint.
+ANS : D
+21-SM-7A -71 ( )
+Which of the following is a Developer accountable for? (choose the best two answers)
+A) Creating a plan for the Sprint, the Sprint Backlog.
+B) Organizing the work required to meet the Sprint Goal.
+C) Selecting the Product Owner.
+D) reporting productivity.
+ANS : A, B
+21-SM-7A -72 ( ) - $$
+How should a Scrum Team deal with non-functional requirements? (choose the best answer)
+A) Assign them to the lead developers on the team. 
+B) Make sure the release department understands these requirements, but it is not the Scrum Team's responsibility.
+C) Ensure every Increment meets them.
+D) Manage them during the Integration Sprint prior to the Release Sprint.
+ANS : C
+21-SM-7A -73 ( ) - $$
+Which approach is best for Scrum Teams in order to produce valuable Increments? (Choose the best answer.)
+A) Each Scrum Team works on an independent set of components.
+B) Each Developer works on the component where they feel that they can contribute.
+C) Each Scrum Member works only as an independent layer of the system.
+D) Each Scrum Team is accountable for developing functionality from beginning to end.
+ANS : B (Correction: --> D)
+21-SM-7A -74 ( ) - $$
+The Sprint Review is mainly an inspect and adapt opportunity for which group? (choose the best answer)
+A) The Product Owner and management. 
+B) The Developers and management.
+C) The Scrum Team and stakeholders.
+D) The Developers and stakeholders.
+E) The Product Owner and stakeholders
+F) The Product Owner and the Developers.
+ANS : C
+21-SM-7A -75 ( )
+At the end of a Sprint, a Product Backlog item worked on during the Sprint does not meet the Definition of Done. What two things should happen with the undone Product Backlog item ? (choose the best two answers)
+A) If the stakeholders agree, the Product Owner can accept it and release it to the users. 
+B) Put it on the Product Backlog for the Product Owner to decide what to do with it.
+C) Do not include the item in the Increment this Sprint.
+D) Review the item, add the "Done" part of the estimate to the velocity and create a Story for the remaining work.
+ANS : B, C
+21-SM-7A -76 ( ) - $$
+What are two responsibilities of testers in a Scrum Team? (choose the best two answers)
+A) Tracking quality metrics. 
+B) The Developers are responsible for quality.
+C) Finding bugs.
+D) Verifying the work of programmers.
+E) Scrum has no "tester" role.
+ANS : B, E
+21-SM-7A -77 ( ) - $$
+You are the Scrum Master on a newly formed Scrum Team. Which two of the following activities would probably help the team in starting up? (choose the best two answers)
+A) Ensure the team understands they need a Definition of Done. 
+B) Have the manager for each Developer introduce their direct reports and go over their responsibilities on the Scrum Team.
+C) Ask the Product Owner to discuss the product, its vision, history, goals, and context, as well answer questions.
+D) Introduce a bonus system for the top performers in the team.
+E) Ensure the Scrum Team members have compatible personalities.
+ANS : A, C
+21-SM-7A -78 ( ) - $$
+The Scrum Team should have all the skills needed to: (Choose the best answer.)
+A) Do all of the development work, except for specialized testing that requires additional tools and environments. 
+B) Turn Product Backlog items into a valuable, useful Increment.
+C) Complete the project within the date and cost as calculated by the Product Owner. 
+ANS : B
+21-SM-7A -79 ( ) - $$
+Which of the following are topics for the Developers to discuss at the Daily Scrum as they inspect their progress toward the Sprint Goal ? (choose the best three answers)
+A) Will today’s work negatively impact our ability to meet the Sprint Goa for the Sprint following this one ?
+B) What have we learned since yesterday, and how should we modify our plan to increase our ability to meet the Sprint Goal?
+C) How many hours did I spend on the project yesterday?
+D) Are there any decisions that need to be made to maintain progress toward the Sprint Goal
+E) Are there any impediments blocking progress toward the Sprint Goal ?
+F) Why were you late ?
+G) What will I be working on tomorrow?
+ANS : B, E, G (Correction : B, D, E) 
+21-SM-7A -80 ( )
+Scrum has a role called “Project Manager”.
+A) True
+B) False
+ANS : B
+
+ 
+2021.07.26 - PSM1 - ChYv - 5Q - 0 errors - 100%
+
+21-SM-0E-25) - (Old Q - « 1B-18 »)
+What are three ways Scrum Promote self-management? (choose the best three answers)
+A) By having the Scrum Master protect the Scrum Team from interruptions.
+B) By the Scrum Team deciding what fork to do in a Sprint.
+C) By being a lightweight framework.
+D) By removing titles for Scrum Team members.
+ANS : B,C,D
+https://scrumprep.com/answering-what-are-three-ways-scrum-promotes-self-management/
+
+21-SM-0E-27) - (New Q) - $$
+Developers do not meet with stakeholders; only the Product Owner meets with stakeholders? (True or False)
+A) True.
+B) False
+ANS : B
+21-SM-0E-34) - (Old Q - « 0B-43 ») - $$
+Who should make sure everyone on the Scrum team does their tasks for the Sprint ? (choose the best answer)
+A) The Project Manager
+B) The Product Owner  
+C) The Scrum Master
+D) The Scrum Team 
+E) All of the above
+ANS : D
+21-SM-0E-74) - (Old Q - « 0C-69 ») $$
+At the end of a Sprint, a Product Backlog item worked on during the Sprint does not meet the Definition of Done. What two things should happen with the undone Product Backlog item ? (choose the best two answers)
+A) Review the item, add the "Done" part of the estimate to the velocity and create a Story for the remaining work.
+B) Do not include the item in the Increment this Sprint.
+C) If the stakeholders agree, the Product Owner can accept it and release it to the users.
+D) Put it on the Product Backlog for the Product Owner to decide what to do with it.
+ANS : B, D
+21-SM-0E-78) - (New Q - ) - $$
+Which of the following are topics for the Developers to discuss at the Daily Scrum as they inspect their progress toward the Sprint Goal ? (choose the best three answers)
+A) What have we learned since yesterday, and how should we modify our plan to increase our ability to meet the Sprint Goal?
+B) Are there any impediments blocking progress toward the Sprint Goal ?
+C) What will I be working on tomorrow?
+D) Are there any decisions that need to be made to maintain progress toward the Sprint Goal
+E) Why were you late ?
+F) How many hours did I spend on the project yesterday?
+G) Will today’s work negatively impact our ability to meet the Sprint Goa for the Sprint following this one ?
+ANS : A, B, D

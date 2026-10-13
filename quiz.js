@@ -1,15 +1,37 @@
 export const STORAGE_KEY = 'psm-practice-session-v1';
+export const EXPECTED_QUESTION_COUNT = 123;
 export const JOURNEY_SESSION_COUNT = 6;
-export const JOURNEY_SESSION_SIZE = 114 / JOURNEY_SESSION_COUNT;
+
+export function journeySessionBounds(questionCount, sessionNumber) {
+  return {
+    start: Math.floor((sessionNumber - 1) * questionCount / JOURNEY_SESSION_COUNT),
+    end: Math.floor(sessionNumber * questionCount / JOURNEY_SESSION_COUNT),
+  };
+}
+
+export function journeyProgress(questionIndex, questionCount) {
+  const sessionNumber = Math.ceil((questionIndex + 1) * JOURNEY_SESSION_COUNT / questionCount);
+  const { start, end } = journeySessionBounds(questionCount, sessionNumber);
+  return { sessionNumber, questionNumber: questionIndex - start + 1, sessionSize: end - start };
+}
+
+export function isJourneySessionBoundary(questionIndex, questionCount) {
+  if (questionIndex <= 0 || questionIndex >= questionCount) return false;
+  const completedSessions = Math.ceil(questionIndex * JOURNEY_SESSION_COUNT / questionCount);
+  return journeySessionBounds(questionCount, completedSessions).end === questionIndex;
+}
 const types = new Set(['single', 'true-false', 'select-two', 'select-three', 'select-all']);
 const counts = { single: 1, 'true-false': 1, 'select-two': 2, 'select-three': 3 };
 
 export function validateBank(bank) {
-  if (!Array.isArray(bank) || bank.length !== 114) throw new Error('Expected all 114 source questions.');
+  if (!Array.isArray(bank) || bank.length !== EXPECTED_QUESTION_COUNT) {
+    throw new Error(`Expected all ${EXPECTED_QUESTION_COUNT} source questions.`);
+  }
   const ids = new Set();
   for (const question of bank) {
-    if (!question || !Number.isInteger(question.id) || question.id < 1 || question.id > 114 || ids.has(question.id)) {
-      throw new Error('Question IDs must be unique and cover 1–114.');
+    if (!question || !Number.isInteger(question.id) || question.id < 1 ||
+        question.id > EXPECTED_QUESTION_COUNT || ids.has(question.id)) {
+      throw new Error(`Question IDs must be unique and cover 1–${EXPECTED_QUESTION_COUNT}.`);
     }
     ids.add(question.id);
     for (const field of ['prompt', 'note', 'topic']) {

@@ -2256,6 +2256,192 @@ D) Software Architects.
 
 ---
 
+## Question 115   🔁 Seen 1 time (0 duplicates)
+
+**Which three of the following provide feedback loops in Scrum?**
+
+*(choose the best three answers)*
+
+A) Sprint Review
+
+B) Product Backlog refinement
+
+C) Daily Scrum
+
+D) Sprint Retrospective
+
+E) Release planning
+
+**Answer:** A C D
+
+**Key note:** The Sprint Review, Daily Scrum, and Sprint Retrospective each create opportunities to inspect and adapt. Product Backlog refinement is an ongoing activity, not a prescribed Scrum event, and release planning is not a Scrum event.
+
+---
+
+## Question 116   🔁 Seen 2 times (1 duplicate)
+
+**During Sprint Planning, the Product Owner and Developers agree on a Sprint Goal but cannot yet agree on the highest-priority Product Backlog items. Which two actions are appropriate?**
+
+*(choose the best two answers)*
+
+A) Cancel the Sprint and require advanced Scrum training before trying again.
+
+B) Suspend Sprint Planning until every Product Backlog item has been fully analyzed.
+
+C) Continue Sprint Planning beyond its timebox until the Developers can make a complete forecast.
+
+D) Discuss the planning difficulty in the next Sprint Retrospective and consider how to prevent it recurring.
+
+E) Forecast the Product Backlog items most likely to meet the Sprint Goal, start the Sprint, and continue refining the plan as more is learned.
+
+**Answer:** D E
+
+**Key note:** The Sprint Goal guides the Developers’ forecast; selected work and the Sprint Backlog can be clarified and adapted during the Sprint. Keep the Sprint Planning timebox and use the Retrospective to improve future planning.
+
+---
+
+## Question 117   🔁 Seen 2 times (1 duplicate)
+
+**Several Scrum Teams share a Product Backlog, and upcoming work depends on a specialist outside those teams. Which two considerations are most useful for the Scrum Master?**
+
+*(choose the best two answers)*
+
+A) Support the Developers in exploring a solution together.
+
+B) Preserve a stable velocity across all teams.
+
+C) Consider how the teams can produce an integrated Increment.
+
+D) Ensure every Developer has enough work to stay fully utilized.
+
+**Answer:** A C
+
+**Key note:** Teams can collaborate on dependencies and integration rather than optimize individual utilization or stable velocity. The shared product should result in a usable, integrated Increment.
+
+---
+
+## Question 118   🔁 Seen 1 time (0 duplicates)
+
+**Which two statements about testing in a Scrum Team are correct?**
+
+*(choose the best two answers)*
+
+A) Tracking quality metrics is the exclusive responsibility of testers.
+
+B) Scrum does not define a separate tester accountability.
+
+C) Testers are responsible for verifying work completed by programmers.
+
+D) Developers are accountable for the quality of the Increment.
+
+E) Finding bugs is the only purpose of testing.
+
+**Answer:** B D
+
+**Key note:** Scrum defines the accountabilities of Product Owner, Scrum Master, and Developers, not a separate tester accountability. Developers are accountable for quality; testing expertise may be part of the Developers’ skills.
+
+---
+
+## Question 119   🔁 Seen 1 time (0 duplicates)
+
+**User documentation is part of the Definition of Done, but the Scrum Team has no technical writer. What should the Developers do?**
+
+*(choose the best answer)*
+
+A) Form a separate documentation team that completes the work after each Sprint.
+
+B) Create the required user documentation as part of their work.
+
+C) Leave the documentation unfinished until technical writers become available.
+
+D) Delay the Sprint until a technical writer joins the Scrum Team.
+
+**Answer:** B
+
+**Key note:** Developers are responsible for creating a usable Increment that meets the Definition of Done. Work required by that commitment cannot be deferred to a later team or Sprint.
+
+---
+
+## Question 120   🔁 Seen 1 time (0 duplicates)
+
+**True or False: Developers do not meet with stakeholders; only the Product Owner meets with stakeholders.**
+
+A) True
+
+B) False
+
+**Answer:** B
+
+**Key note:** The Product Owner remains accountable for maximizing product value, but stakeholder collaboration is a responsibility of the Scrum Team. Developers may communicate directly with stakeholders.
+
+---
+
+## Question 121   🔁 Seen 1 time (0 duplicates)
+
+**During a Sprint Retrospective, the Developers propose holding the Daily Scrum only on Thursdays. Which two responses are most appropriate for the Scrum Master?**
+
+*(choose the best two answers)*
+
+A) Immediately approve the change because Scrum Teams are self-managing.
+
+B) Explain the Daily Scrum's purpose as an opportunity to inspect progress and update the plan.
+
+C) Explore why the team wants the change and work with them to improve the event.
+
+D) Ask the Developers to vote on which weekday to hold the Daily Scrum.
+
+E) Decide which days the Daily Scrum should occur.
+
+**Answer:** B C
+
+**Key note:** The Daily Scrum is held every working day. The Scrum Master should help the Developers understand its purpose and explore changes that improve its effectiveness, rather than unilaterally changing or scheduling it.
+
+---
+
+## Question 122   🔁 Seen 1 time (0 duplicates)
+
+**Which three discussions best support the Developers in inspecting progress toward the Sprint Goal during the Daily Scrum?**
+
+*(choose the best three answers)*
+
+A) Identify impediments that may block progress toward the Sprint Goal.
+
+B) Explain why an individual was late.
+
+C) Share what has been learned and decide how to adapt the plan to meet the Sprint Goal.
+
+D) Report the number of hours each person worked yesterday.
+
+E) Identify decisions needed to maintain progress toward the Sprint Goal.
+
+**Answer:** A C E
+
+**Key note:** The Daily Scrum is for Developers to inspect progress toward the Sprint Goal and adapt their plan, producing an actionable plan for the next day's work; it is not an individual status report.
+
+---
+
+## Question 123   🔁 Seen 1 time (0 duplicates)
+
+**A Scrum Master is supporting a newly formed Scrum Team. Which two activities would probably help the team get started?**
+
+*(choose the best two answers)*
+
+A) Ensure the team understands that it needs a Definition of Done.
+
+B) Ask each Developer's manager to introduce their direct reports and assign their responsibilities.
+
+C) Ask the Product Owner to discuss the product, its vision, goals, and context, and answer the team's questions.
+
+D) Introduce a bonus system for the team's top performers.
+
+E) Ensure the Scrum Team members have compatible personalities.
+
+**Answer:** A C
+
+**Key note:** Help the team establish a shared understanding of quality and the Definition of Done, and have the Product Owner provide product context. Managers assigning individual responsibilities or incentives do not support a self-managing Scrum Team.
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -2606,5 +2792,19 @@ D) Software Architects.
 
 ---
 
-**Status:** 114 questions total (77 existing + 37 added from `scrum-practice-questions.md`); 32 duplicates mapped and 4 entries skipped
+## 📚 Coverage additions from personal archives
+
+| New question | Source | Coverage area |
+|---|---|---|
+| Q115 | `questions_2023.txt`, Q10 | Feedback loops across Scrum events |
+| Q116 | `questions_2021.txt`, Q48; `questions_2023.txt`, Q22 | Sprint Planning, Sprint Goal, and adapting the forecast |
+| Q117 | `questions_2021.txt`, Q41; `questions_2023.txt`, Q25 | Cross-team dependencies and integrated Increments |
+| Q118 | `questions_2023.txt`, Q37 | Testing and Developers' quality accountability |
+| Q119 | `questions_2021.txt`, Q66 | Meeting the Definition of Done without a specialist |
+| Q120 | `questions_2023.txt`, Q59 | Developer collaboration with stakeholders |
+| Q121 | `questions_2022_1.txt`, Q22 | Daily Scrum purpose, cadence, and coaching |
+| Q122 | `questions_2022.txt`, Q49 | Daily Scrum progress inspection and adaptation |
+| Q123 | `questions_2022_PO.txt`, 21-SM-0E-77 | Starting a Scrum Team: Definition of Done and product context |
+
+**Status:** 123 questions total (114 existing + 9 coverage additions from personal 2021/2022/2023 question archives); previous duplicate log applies to the original batches
 **Last Updated:** 2026-10-13

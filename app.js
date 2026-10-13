@@ -110,10 +110,16 @@ function renderLanding() {
   const fieldset = el('fieldset');
   const legend = el('legend', 'sr-only', 'Practice mode');
   const modes = el('div', 'mode-options');
+  const journeySizes = Array.from({length: engine.JOURNEY_SESSION_COUNT}, (_, index) =>
+    engine.journeySessionBounds(bank.length, index + 1).end -
+    engine.journeySessionBounds(bank.length, index + 1).start);
+  const journeySizeRange = Math.min(...journeySizes) === Math.max(...journeySizes)
+    ? String(journeySizes[0])
+    : `${Math.min(...journeySizes)}–${Math.max(...journeySizes)}`;
   for (const [value, title, description] of [
     ['all', 'The complete collection', `All ${bank.length} questions, in source order.`],
     ['random', 'A fresh mix', 'A random selection for a focused session.'],
-    ['journey', 'Six-session journey', `All ${bank.length} questions shuffled into six sessions of ${engine.JOURNEY_SESSION_SIZE}.`],
+    ['journey', 'Six-session journey', `All ${bank.length} questions shuffled into six sessions of ${journeySizeRange}.`],
   ]) {
     const label = el('label', 'mode-card');
     const input = el('input');
@@ -197,8 +203,8 @@ function renderSession() {
     renderSummary();
     return;
   }
-  if (session.mode === 'journey' && session.index > 0 &&
-      session.index % engine.JOURNEY_SESSION_SIZE === 0) {
+  if (session.mode === 'journey' &&
+      engine.isJourneySessionBoundary(session.index, session.questionIds.length)) {
     renderJourneySessionSummary();
     return;
   }
@@ -206,8 +212,9 @@ function renderSession() {
 }
 
 function renderJourneySessionSummary() {
-  const sessionNumber = session.index / engine.JOURNEY_SESSION_SIZE;
-  const responses = session.responses.slice(session.index - engine.JOURNEY_SESSION_SIZE, session.index);
+  const sessionNumber = Math.ceil(session.index * engine.JOURNEY_SESSION_COUNT / session.questionIds.length);
+  const { start, end } = engine.journeySessionBounds(session.questionIds.length, sessionNumber);
+  const responses = session.responses.slice(start, end);
   const correct = responses.filter(response => response.correct).length;
   const percent = Math.round(correct / responses.length * 100);
   const card = el('section', 'card');
@@ -227,9 +234,10 @@ function renderJourneySessionSummary() {
   }
   card.append(header, stats);
   const actions = el('div', 'actions');
+  const nextSession = engine.journeySessionBounds(session.questionIds.length, sessionNumber + 1);
   actions.append(button(`Continue to session ${sessionNumber + 1} →`, 'button-primary', () => {
     renderQuestion();
-    announce(`Session ${sessionNumber + 1} of ${engine.JOURNEY_SESSION_COUNT}. Question 1 of ${engine.JOURNEY_SESSION_SIZE}.`);
+    announce(`Session ${sessionNumber + 1} of ${engine.JOURNEY_SESSION_COUNT}. Question 1 of ${nextSession.end - nextSession.start}.`);
   }), button('Back to start', 'button-secondary', () => {
     savedSession = session;
     session = null;
@@ -253,13 +261,16 @@ function renderQuestion(focus = true) {
   const result = score();
   const card = el('section', 'card quiz-card');
   const topline = el('div', 'quiz-topline');
+  const journeyProgress = session.mode === 'journey'
+    ? engine.journeyProgress(session.index, session.questionIds.length)
+    : null;
   const modeLabel = session.mode === 'all' ? 'THE COMPLETE COLLECTION'
-    : session.mode === 'journey' ? `RANDOM JOURNEY · SESSION ${Math.floor(session.index / engine.JOURNEY_SESSION_SIZE) + 1} OF ${engine.JOURNEY_SESSION_COUNT}`
+    : journeyProgress ? `RANDOM JOURNEY · SESSION ${journeyProgress.sessionNumber} OF ${engine.JOURNEY_SESSION_COUNT}`
       : 'YOUR FRESH MIX';
   topline.append(el('span', 'eyebrow', modeLabel), el('span', 'score-chip', `${result.correct} correct / ${result.answered} checked`));
   const progressLabel = el('div', 'progress-label');
-  const questionLabel = session.mode === 'journey'
-    ? `Question ${session.index % engine.JOURNEY_SESSION_SIZE + 1} of ${engine.JOURNEY_SESSION_SIZE}`
+  const questionLabel = journeyProgress
+    ? `Question ${journeyProgress.questionNumber} of ${journeyProgress.sessionSize}`
     : `Question ${session.index + 1} of ${result.total}`;
   progressLabel.append(el('span', '', questionLabel), el('span', '', `${result.answered} / ${result.total} checked`));
   const progress = el('progress');
@@ -339,10 +350,13 @@ function renderQuestion(focus = true) {
         renderSession();
         if (session.index === session.questionIds.length) {
           announce('Practice complete. Your results are ready.');
-        } else if (session.mode === 'journey' && session.index % engine.JOURNEY_SESSION_SIZE === 0) {
-          announce(`Session ${session.index / engine.JOURNEY_SESSION_SIZE} of ${engine.JOURNEY_SESSION_COUNT} complete.`);
+        } else if (session.mode === 'journey' &&
+            engine.isJourneySessionBoundary(session.index, session.questionIds.length)) {
+          const completedSessions = Math.ceil(session.index * engine.JOURNEY_SESSION_COUNT / session.questionIds.length);
+          announce(`Session ${completedSessions} of ${engine.JOURNEY_SESSION_COUNT} complete.`);
         } else if (session.mode === 'journey') {
-          announce(`Session ${Math.floor(session.index / engine.JOURNEY_SESSION_SIZE) + 1} of ${engine.JOURNEY_SESSION_COUNT}. Question ${session.index % engine.JOURNEY_SESSION_SIZE + 1} of ${engine.JOURNEY_SESSION_SIZE}.`);
+          const progress = engine.journeyProgress(session.index, session.questionIds.length);
+          announce(`Session ${progress.sessionNumber} of ${engine.JOURNEY_SESSION_COUNT}. Question ${progress.questionNumber} of ${progress.sessionSize}.`);
         } else {
           announce(`Question ${session.index + 1} of ${session.questionIds.length}.`);
         }
@@ -378,7 +392,7 @@ function renderSummary() {
   const isJourney = session.mode === 'journey';
   if (isJourney) heading.textContent = 'Your random journey is complete.';
   header.append(el('span', 'eyebrow', isJourney ? 'ALL SIX SESSIONS COMPLETE' : 'SESSION COMPLETE'), heading,
-    el('p', 'subtle', isJourney ? 'You’ve completed all 114 shuffled questions. Reflect on what clicked, and revisit what didn’t.' : 'Take a breath. Reflect on what clicked, and revisit what didn’t.'));
+    el('p', 'subtle', isJourney ? `You’ve completed all ${bank.length} shuffled questions. Reflect on what clicked, and revisit what didn’t.` : 'Take a breath. Reflect on what clicked, and revisit what didn’t.'));
   const ring = el('div', 'score-ring');
   ring.append(el('strong', '', `${result.percent}%`), el('span', '', 'practice score'));
   header.append(ring);
