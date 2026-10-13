@@ -556,7 +556,7 @@ C) To write down any changes to the Sprint Backlog, including adding new items, 
 
 D) To make sure every team member answers the three questions.
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -576,7 +576,7 @@ C) The Product Owner and all stakeholders.
 
 D) The Scrum Master, the project manager, and the Developers
 
-**Answer:** 
+**Answer:** A
 
 ---
 
@@ -602,7 +602,7 @@ F) Sprint Review.
 
 G) Release Testing.
 
-**Answer:** 
+**Answer:** B E F
 
 ---
 
@@ -616,7 +616,7 @@ A) True
 
 B) False
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -630,7 +630,7 @@ A) True
 
 B) False
 
-**Answer:** 
+**Answer:** A
 
 ---
 
@@ -650,7 +650,7 @@ D) Least valuable items at the top to most valuable at the bottom.
 
 E) Size, where small items are at the top and large items are at the bottom.
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -664,7 +664,7 @@ A) True
 
 B) False
 
-**Answer:** 
+**Answer:** B
 
 ---
 
@@ -708,5 +708,5 @@ B) False
 
 ---
 
-**Status:** 37 questions (answers for Q31-Q37 pending)  
+**Status:** 37 questions added, all answers included  
 **Last Updated:** 2026-10-12
