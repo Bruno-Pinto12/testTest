@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node scripts/build-questions.mjs",
     "test": "node --test",
-    "start": "python3 -m http.server 8000 --bind 127.0.0.1"
+    "start": "node scripts/serve.mjs"
   },
   "engines": {
     "node": ">=20"

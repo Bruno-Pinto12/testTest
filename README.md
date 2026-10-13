@@ -6,16 +6,15 @@ annotations, and explanatory key notes.
 
 ## Run locally
 
-Requires Python 3 to serve the site; Node.js 20+ is needed only to regenerate data
-or run tests. There are no packages to install.
+Requires Node.js 20+. There are no packages to install.
 
 ```sh
 npm start
 ```
 
-Open **http://127.0.0.1:8000**. Alternatively, run
-`python3 -m http.server 8000 --bind 127.0.0.1` from the repository root.
-Use HTTP rather than opening `index.html` directly (the question bank is fetched).
+Open **http://127.0.0.1:8000**. The server binds to `127.0.0.1:8000` by
+default. Set `PORT` to use a different port. Use HTTP rather than opening
+`index.html` directly (the question bank is fetched).
 The site can also be hosted on any static web server.
 
 ```sh
