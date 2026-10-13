@@ -150,16 +150,17 @@ function renderLanding() {
   custom.max = String(bank.length);
   custom.step = '1';
   custom.value = String(Math.min(10, bank.length));
+  custom.disabled = true;
   customGroup.append(customLabel, custom);
   lengthRow.append(lengthGroup, customGroup);
-  modes.addEventListener('change', () => {
+  function updateLengthControls() {
     lengthRow.hidden = setup.elements.mode.value !== 'random';
-    custom.required = !lengthRow.hidden && lengths.value === 'custom';
-  });
-  lengths.addEventListener('change', () => {
     customGroup.hidden = lengths.value !== 'custom';
-    custom.required = !customGroup.hidden;
-  });
+    custom.disabled = lengthRow.hidden || customGroup.hidden;
+    custom.required = !custom.disabled;
+  }
+  modes.addEventListener('change', updateLengthControls);
+  lengths.addEventListener('change', updateLengthControls);
   const actions = el('div', 'actions');
   const start = el('button', 'button button-primary', 'Start practicing →');
   start.type = 'submit';
@@ -226,7 +227,7 @@ function renderQuestion(focus = true) {
   card.append(meta, heading);
   if (question.context) card.append(el('p', 'context', question.context));
   if (question.caveat) {
-    card.append(el('p', 'caveat', 'Source caveat: this question has a source-key or interpretation caveat. Practice scoring follows the supplied key; details appear after checking.'));
+    card.append(el('p', 'caveat', question.caveat));
   }
   const fieldset = el('fieldset', 'answer-fieldset');
   fieldset.append(el('legend', '', question.instruction || 'Choose your answer.'));
@@ -399,8 +400,8 @@ async function load() {
     const response = await fetch('./questions.json', {cache: 'no-cache'});
     if (!response.ok) throw new Error(`The question bank could not be loaded (HTTP ${response.status}). Please retry.`);
     const data = await response.json();
+    if (Array.isArray(data) && data.length === 0) throw new Error('The question bank is empty. Add questions to questions.json, then retry.');
     engine.validateBank(data);
-    if (!Array.isArray(data) || data.length === 0) throw new Error('The question bank is empty. Add questions to questions.json, then retry.');
     bank = data;
     savedSession = null;
     session = null;
