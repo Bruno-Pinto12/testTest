@@ -668,6 +668,46 @@ B) False
 
 ---
 
+## Question 38
+
+**[Related to Question 27 - but tests a different aspect: how Scrum is defined as a framework]**
+
+**Which statement best describes Scrum?**
+
+*(choose the best answer)*
+
+A) A defined and predictive process that conforms to the principles of Scientific Management.
+
+B) A cookbook that defines best practices for software development.
+
+C) A framework for creating complex products in complex environments.
+
+D) A complete methodology that defines how to develop software.
+
+**Answer:** C
+
+---
+
+## Question 39
+
+**[Related to Question 7 and Question 17 - but tests a different aspect: Product Owner responsibility]**
+
+**Which statement best describes a Product Owner's responsibility?**
+
+*(choose the best answer)*
+
+A) Managing the project and ensuring that the work meets the commitments to the stakeholders.
+
+B) Keep stakeholders from distracting the Developers.
+
+C) Maximizing the value of the work the Scrum Team does.
+
+D) Directing the Developers.
+
+**Answer:** C
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -706,7 +746,9 @@ B) False
 | 27 | Q24 |
 | 30 | Q30 |
 
+**Batch 3 (2 new questions received):** Q38-Q39 added; duplicates updated for matched questions in this batch.
+
 ---
 
-**Status:** 37 questions added, all answers included  
-**Last Updated:** 2026-10-12
+**Status:** 39 questions added, all answers included  
+**Last Updated:** 2026-10-13
