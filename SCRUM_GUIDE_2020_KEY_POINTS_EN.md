@@ -24,26 +24,27 @@ The framework brings together:
 - Three artifacts, each with a commitment: Product Backlog / Product Goal,
   Sprint Backlog / Sprint Goal, and Increment / Definition of Done.
 
-Scrum is based on empiricism and lean thinking. Its rules and components work
-together; selectively using a few Scrum elements does not necessarily produce
-the transparency and feedback the framework is intended to provide.
+Scrum is based on empiricism and lean thinking. The framework is intentionally
+incomplete, but Scrum exists only in its entirety: using only selected parts is
+possible, but the result is not Scrum. Scrum can contain other techniques,
+methodologies, and practices.
 
 ## 2. Foundations: empiricism and lean thinking
 
 ### Empiricism
 
-Empiricism means making decisions using what is observed and learned. It is
-especially useful when a problem is complex and the best path is not fully
-known in advance.
+Empiricism is the idea that knowledge comes from experience and that decisions
+are based on what is observed. It is especially useful when a problem is complex
+and the best path is not fully known in advance.
 
 Scrum uses three pillars to support empirical process control:
 
-1. **Transparency** — Important aspects of the work and its state are visible
-   and understood by those responsible for the outcome.
+1. **Transparency** — Important aspects of the process and work are visible to
+   those doing the work and those receiving it.
 2. **Inspection** — The Scrum artifacts and progress toward agreed goals are
    checked often enough to notice unwanted differences or emerging problems.
-3. **Adaptation** — When inspection shows that work or results are outside
-   acceptable limits, the process or the work is adjusted promptly.
+3. **Adaptation** — When inspection shows that a process or product is outside
+   acceptable limits, it is adjusted promptly.
 
 The pillars reinforce one another: inspection is useful when there is
 transparency, and inspection should lead to adaptation when needed.
@@ -59,20 +60,19 @@ work that does not contribute enough value.
 
 The Scrum Team's use of Scrum depends on these five values:
 
-- **Commitment** — Members take responsibility for achieving the team's goals
-  and supporting one another.
+- **Commitment** — Members personally commit to achieving the Scrum Team's
+  goals and support one another.
 - **Focus** — Members concentrate on the work of the Sprint and the goals of
   the Scrum Team.
 - **Openness** — Members and stakeholders are candid about work, progress,
   challenges, and learning.
-- **Respect** — Members recognize one another as capable people with
-  independent expertise and good intentions.
+- **Respect** — Members recognize one another as capable, independent people.
 - **Courage** — Members address difficult problems and do the right thing,
   including raising concerns.
 
 The Guide does not assign each value to a particular empiricism pillar. The
-values support the Scrum Team's way of working; they are not a formal
-pillar-to-value mapping.
+values guide the Scrum Team's work, actions, and behavior; they are not a
+formal pillar-to-value mapping.
 
 ## 3. The Scrum Team
 
@@ -83,13 +83,15 @@ self-managing, meaning that the team decides internally who does what, when,
 and how.
 
 The Guide describes Scrum Teams as typically 10 or fewer people. If a team
-becomes too large, the organization should consider reorganizing into multiple
-cohesive Scrum Teams working on the same product. Those teams share the same
-Product Goal, Product Backlog, Product Owner, and Definition of Done.
+becomes too large, the teams should consider reorganizing into multiple cohesive
+Scrum Teams focused on the same product. Those teams share the same Product
+Goal, Product Backlog, Product Owner, and Definition of Done.
 
 The Scrum Team is accountable for creating a valuable, useful Increment every
 Sprint. The three accountabilities within the team are Product Owner, Scrum
-Master, and Developers.
+Master, and Developers. The team is also responsible for all product-related
+activities, including stakeholder collaboration, verification, maintenance,
+operation, experimentation, and research and development.
 
 ### Product Owner
 
@@ -98,7 +100,7 @@ resulting from the Scrum Team's work and for effective Product Backlog
 management. This includes:
 
 - Developing and communicating the Product Goal.
-- Creating and communicating Product Backlog items clearly.
+- Creating Product Backlog items and communicating them clearly.
 - Ordering the Product Backlog.
 - Ensuring that the Product Backlog is transparent, visible, and understood.
 
@@ -117,10 +119,11 @@ of a usable Increment each Sprint. Their accountabilities include:
 - Adapting the plan each day toward the Sprint Goal.
 - Holding one another accountable as professionals.
 
-Developers decide how to turn selected work into a Done Increment. During
-Sprint Planning, they collaborate with the Product Owner on what can be done
-and why it is valuable. They make the forecast of work for the Sprint; the
-forecast is not a guarantee that every selected item will be completed.
+Developers decide how to turn selected work into a usable, Done Increment;
+others do not prescribe how they do this. During Sprint Planning, they
+collaborate with the Product Owner on what can be done and why it is valuable.
+Developers make the forecast of work for the Sprint; the forecast is not a
+guarantee that every selected item will be completed.
 
 ### Scrum Master
 
@@ -151,6 +154,10 @@ Scrum being understood and used effectively.
 A Sprint is a fixed-length event of one month or less. A new Sprint starts
 immediately after the previous one ends. Sprints provide a consistent rhythm
 for achieving goals, inspecting results, and adapting plans.
+
+Each Scrum event is a formal opportunity to inspect and adapt Scrum artifacts
+and is designed to enable transparency. Skipping or changing events from the
+Guide's prescribed form loses opportunities to inspect and adapt.
 
 During a Sprint:
 
@@ -184,8 +191,10 @@ Planning addresses three concerns:
 3. **How will the chosen work get done?** Developers plan the work needed to
    create an Increment that meets the Definition of Done.
 
-The Sprint Goal and forecast are created collaboratively. As the work is
-better understood, Developers may refine or adjust the plan during the Sprint.
+The Scrum Team collaborates on the Sprint Goal. Developers make the forecast
+after discussing the Product Backlog items with the Product Owner. As the work
+is better understood, Developers may refine or adjust the plan during the
+Sprint.
 
 **Timebox:** At most eight hours for a one-month Sprint. Shorter Sprints
 usually have shorter planning.
@@ -199,7 +208,7 @@ adjusting the upcoming work plan.
 It takes place at the same time and place each working day of the Sprint to
 reduce complexity. Developers choose the structure and techniques, as long as
 the event focuses on progress toward the Sprint Goal and produces an
-actionable plan for the next day's work.
+actionable plan for the next working day.
 
 The Daily Scrum is not the only time Developers may adjust their plan. They
 may meet throughout the day for more detailed discussion. The event is not a
@@ -304,16 +313,17 @@ changes must not endanger the goal.
 
 ### Increment and Definition of Done
 
-An Increment is a concrete step toward the Product Goal. It adds to the
-usable value of previous Increments. Work can produce more than one
-Increment during a Sprint; together, the Increments are inspected at the
-Sprint Review. An Increment may be delivered to stakeholders before the end
-of a Sprint. The Review is not a release gate.
+An Increment is a concrete step toward the Product Goal. Each Increment is
+additive to previous Increments and thoroughly verified to ensure all
+Increments work together. It must be usable. Work can produce more than one
+Increment during a Sprint; their sum is presented at the Sprint Review. An
+Increment may be delivered to stakeholders before the end of a Sprint. The
+Review is not a release gate.
 
 An Increment must be usable and meet the **Definition of Done**. Work that
 does not meet the Definition of Done is not part of the Increment and cannot
-be released or presented as Done. It returns to the Product Backlog for
-future consideration.
+be released or presented at the Sprint Review. It returns to the Product
+Backlog for future consideration.
 
 The Definition of Done is a formal description of the state of the Increment
 when it meets the product's required quality measures. It creates a shared
@@ -345,7 +355,8 @@ understanding of what Done means and supports transparency.
 - **A usable Increment does not have to wait for the Sprint Review to be
   released.** Release timing is not prescribed by Scrum.
 - **Only work meeting the Definition of Done is part of an Increment.**
-  Incomplete work is not counted as Done.
+  Incomplete work cannot be released or presented at the Sprint Review and
+  returns to the Product Backlog for future consideration.
 - **Product Backlog refinement is ongoing, not one of the five Scrum events.**
   The Guide assigns it no fixed timebox or percentage of capacity.
 - **Scrum does not require user stories, story points, velocity, burndown
@@ -361,6 +372,9 @@ understanding of what Done means and supports transparency.
   the skills it needs and decides how to organize its work.
 
 ## 7. A quick way to reason through Scrum scenarios
+
+These prompts are study heuristics for applying the Guide, not additional
+Scrum requirements.
 
 When considering a scenario, ask:
 
