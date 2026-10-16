@@ -1,5 +1,6 @@
 export const STORAGE_KEY = 'psm-practice-session-v1';
-export const EXPECTED_QUESTION_COUNT = 133;
+export const MISSED_QUESTIONS_KEY = 'psm-practice-missed-questions-v1';
+export const EXPECTED_QUESTION_COUNT = 135;
 export const JOURNEY_SESSION_COUNT = 6;
 
 export function journeySessionBounds(questionCount, sessionNumber) {
@@ -83,6 +84,28 @@ export function createSession(bank, mode = 'all', length = bank.length, random =
   return { version: 1, bankSignature: signature(bank), mode, questionIds: mode === 'random' ? questionIds.slice(0, length) : questionIds, index: 0, selected: [], responses: [] };
 }
 
+export function createMissedSession(bank, missedQuestionIds) {
+  if (!Array.isArray(missedQuestionIds) ||
+      missedQuestionIds.some((id) => !Number.isInteger(id) || !bank.some((question) => question.id === id))) {
+    throw new Error('Missed-question history is invalid.');
+  }
+  const missed = new Set(missedQuestionIds);
+  const questionIds = bank.map((question) => question.id).filter((id) => missed.has(id));
+  if (!questionIds.length) throw new Error('You have not missed any questions yet.');
+  return { version: 1, bankSignature: signature(bank), mode: 'missed', questionIds, index: 0, selected: [], responses: [] };
+}
+
+export function restoreMissedQuestionIds(raw, bank) {
+  try {
+    const ids = JSON.parse(raw);
+    if (!Array.isArray(ids) || ids.some((id) => !Number.isInteger(id) || id < 1)) return null;
+    const availableIds = new Set(bank.map((question) => question.id));
+    return [...new Set(ids)].filter((id) => availableIds.has(id)).sort((a, b) => a - b);
+  } catch {
+    return null;
+  }
+}
+
 export function currentQuestion(bank, session) {
   return bank.find((question) => question.id === session.questionIds[session.index]) ?? null;
 }
@@ -137,7 +160,7 @@ export function restoreSession(raw, bank) {
   try {
     const session = JSON.parse(raw);
     if (!session || session.version !== 1 || session.bankSignature !== signature(bank) ||
-        !['all', 'random', 'journey'].includes(session.mode) || !Array.isArray(session.questionIds) ||
+        !['all', 'random', 'journey', 'missed'].includes(session.mode) || !Array.isArray(session.questionIds) ||
         session.questionIds.length < 1 || session.questionIds.length > bank.length ||
         new Set(session.questionIds).size !== session.questionIds.length ||
         session.questionIds.some((id) => !bank.some((question) => question.id === id)) ||

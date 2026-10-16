@@ -4141,5 +4141,67 @@
     "note": "The Product Backlog is emergent. The Product Owner can adapt its ordering as more is learned, making the current understanding of the work transparent.",
     "topic": "Scrum events",
     "caveat": null
+  },
+  {
+    "id": 134,
+    "prompt": "Developers are waiting for a component from an external supplier and ask the Product Owner to order work so the whole team stays busy next Sprint. What advice best supports Scrum?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Order the Product Backlog to support the flow of value, rather than maximizing utilization."
+      },
+      {
+        "id": "B",
+        "text": "Move the supplier-dependent work into a separate Sprint."
+      },
+      {
+        "id": "C",
+        "text": "Order the Product Backlog so each Developer has a full workload."
+      },
+      {
+        "id": "D",
+        "text": "Delay all Product Backlog ordering until the supplier delivers the component."
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "note": "The Product Owner orders the Product Backlog to maximize value. Keeping every Developer fully utilized is not the goal; other valuable work may be considered while the dependency is unresolved.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 135,
+    "prompt": "Several Scrum Teams use one Product Backlog and are planning upcoming Sprints. How should they select Product Backlog items?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Each Scrum Team selects the same number of items."
+      },
+      {
+        "id": "B",
+        "text": "The Developers select a forecast of work in collaboration with the Product Owner."
+      },
+      {
+        "id": "C",
+        "text": "The team with the highest velocity selects items first."
+      },
+      {
+        "id": "D",
+        "text": "The Product Owner assigns a separate Product Backlog to each team."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "A product has one ordered Product Backlog. During Sprint Planning, Developers select the work they forecast they can complete, collaborating with the Product Owner; Scrum does not prescribe equal item counts or velocity-based priority.",
+    "topic": "Backlogs & goals",
+    "caveat": null
   }
 ]

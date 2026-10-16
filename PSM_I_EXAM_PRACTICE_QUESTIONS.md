@@ -2300,7 +2300,7 @@ E) Forecast the Product Backlog items most likely to meet the Sprint Goal, start
 
 ---
 
-## Question 117   🔁 Seen 2 times (1 duplicate)
+## Question 117   🔁 Seen 3 times (2 duplicates)
 
 **Several Scrum Teams share a Product Backlog, and upcoming work depends on a specialist outside those teams. Which two considerations are most useful for the Scrum Master?**
 
@@ -2662,6 +2662,46 @@ D) Remove all lower-ordered items so the Product Backlog remains unchanged.
 
 ---
 
+## Question 134   🔁 Source: `question_2022_2.txt`, Q24
+
+**Developers are waiting for a component from an external supplier and ask the Product Owner to order work so the whole team stays busy next Sprint. What advice best supports Scrum?**
+
+*(choose the best answer)*
+
+A) Order the Product Backlog to support the flow of value, rather than maximizing utilization.
+
+B) Move the supplier-dependent work into a separate Sprint.
+
+C) Order the Product Backlog so each Developer has a full workload.
+
+D) Delay all Product Backlog ordering until the supplier delivers the component.
+
+**Answer:** A
+
+**Key note:** The Product Owner orders the Product Backlog to maximize value. Keeping every Developer fully utilized is not the goal; other valuable work may be considered while the dependency is unresolved.
+
+---
+
+## Question 135   🔁 Source: `question_2022_2.txt`, Q77
+
+**Several Scrum Teams use one Product Backlog and are planning upcoming Sprints. How should they select Product Backlog items?**
+
+*(choose the best answer)*
+
+A) Each Scrum Team selects the same number of items.
+
+B) The Developers select a forecast of work in collaboration with the Product Owner.
+
+C) The team with the highest velocity selects items first.
+
+D) The Product Owner assigns a separate Product Backlog to each team.
+
+**Answer:** B
+
+**Key note:** A product has one ordered Product Backlog. During Sprint Planning, Developers select the work they forecast they can complete, collaborating with the Product Owner; Scrum does not prescribe equal item counts or velocity-based priority.
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -3018,13 +3058,15 @@ D) Remove all lower-ordered items so the Product Backlog remains unchanged.
 |---|---|---|
 | Q115 | `questions_2023.txt`, Q10 | Feedback loops across Scrum events |
 | Q116 | `questions_2021.txt`, Q48; `questions_2023.txt`, Q22 | Sprint Planning, Sprint Goal, and adapting the forecast |
-| Q117 | `questions_2021.txt`, Q41; `questions_2023.txt`, Q25 | Cross-team dependencies and integrated Increments |
+| Q117 | `questions_2021.txt`, Q41; `questions_2023.txt`, Q25; `question_2022_2.txt`, Q27 | Cross-team dependencies and integrated Increments |
 | Q118 | `questions_2023.txt`, Q37 | Testing and Developers' quality accountability |
 | Q119 | `questions_2021.txt`, Q66 | Meeting the Definition of Done without a specialist |
 | Q120 | `questions_2023.txt`, Q59 | Developer collaboration with stakeholders |
 | Q121 | `questions_2022_1.txt`, Q22 | Daily Scrum purpose, cadence, and coaching |
 | Q122 | `questions_2022.txt`, Q49 | Daily Scrum progress inspection and adaptation |
 | Q123 | `questions_2022_PO.txt`, 21-SM-0E-77 | Starting a Scrum Team: Definition of Done and product context |
+| Q134 | `question_2022_2.txt`, Q24 | Value flow over maximizing utilization |
+| Q135 | `question_2022_2.txt`, Q77 | Selecting work across teams sharing one Product Backlog |
 
 ### IA-made coverage questions
 
@@ -3041,5 +3083,5 @@ D) Remove all lower-ordered items so the Product Backlog remains unchanged.
 | Q132 | Relationships between artifacts and their commitments |
 | Q133 | Adapting Product Backlog ordering based on value evidence |
 
-**Status:** 133 questions total (114 original + 9 archive additions + 10 IA-made coverage questions). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
+**Status:** 135 questions total (114 original + 11 archive additions + 10 IA-made coverage questions). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
 **Last Updated:** 2026-10-13

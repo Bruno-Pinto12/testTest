@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { parseQuestions } from '../scripts/build-questions.mjs';
-import { EXPECTED_QUESTION_COUNT, JOURNEY_SESSION_COUNT, journeySessionBounds, journeyProgress, isJourneySessionBoundary, validateBank, createSession, currentQuestion, selectAnswer, checkAnswer, nextQuestion, scoreSession, restoreSession } from '../quiz.js';
+import { EXPECTED_QUESTION_COUNT, JOURNEY_SESSION_COUNT, journeySessionBounds, journeyProgress, isJourneySessionBoundary, validateBank, createSession, createMissedSession, restoreMissedQuestionIds, currentQuestion, selectAnswer, checkAnswer, nextQuestion, scoreSession, restoreSession } from '../quiz.js';
 
 const markdown = readFileSync(new URL('../PSM_I_EXAM_PRACTICE_QUESTIONS.md', import.meta.url), 'utf8')
   .replace(/\r\n?/g, '\n');
@@ -119,6 +119,25 @@ test('random sessions sample without repeats; all mode is canonical and complete
   assert.deepEqual(createSession(bank, 'random', EXPECTED_QUESTION_COUNT, () => 0).questionIds, [...bank.slice(1).map((question) => question.id), 1]);
   for (const length of [0, EXPECTED_QUESTION_COUNT + 1, 1.2, NaN]) assert.throws(() => createSession(bank, 'random', length));
   assert.throws(() => createSession(bank, 'unknown'));
+});
+
+test('missed-question history is validated, deduplicated and used for focused practice', () => {
+  const missedIds = [3, 1, 3, EXPECTED_QUESTION_COUNT + 1];
+  assert.deepEqual(restoreMissedQuestionIds(JSON.stringify(missedIds), bank), [1, 3]);
+  assert.deepEqual(restoreMissedQuestionIds('[]', bank), []);
+  assert.equal(restoreMissedQuestionIds('not JSON', bank), null);
+  assert.equal(restoreMissedQuestionIds('[0]', bank), null);
+  assert.throws(() => createMissedSession(bank, []));
+  assert.throws(() => createMissedSession(bank, [EXPECTED_QUESTION_COUNT + 1]));
+
+  let session = createMissedSession(bank, [3, 1, 3]);
+  assert.equal(session.mode, 'missed');
+  assert.deepEqual(session.questionIds, [1, 3]);
+  assert.deepEqual(restoreSession(JSON.stringify(session), bank), session);
+  const question = currentQuestion(bank, session);
+  const wrong = question.options.find((option) => !question.answers.includes(option.id));
+  session = answer(session, [wrong.id]);
+  assert.equal(session.responses[0].correct, false);
 });
 
 test('six-session random journey shuffles the full bank once and restores across sessions', () => {

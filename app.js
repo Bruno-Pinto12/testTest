@@ -2,6 +2,7 @@ let engine;
 let bank = [];
 let session = null;
 let savedSession = null;
+let missedQuestionIds = [];
 let storageFailed = false;
 let reviewMode = 'missed';
 const root = document.getElementById('app');
@@ -39,6 +40,14 @@ function storageWarning() {
 function persist() {
   try {
     localStorage.setItem(engine.STORAGE_KEY, JSON.stringify(session));
+  } catch {
+    storageWarning();
+  }
+}
+
+function persistMissedQuestions() {
+  try {
+    localStorage.setItem(engine.MISSED_QUESTIONS_KEY, JSON.stringify(missedQuestionIds));
   } catch {
     storageWarning();
   }
@@ -106,7 +115,7 @@ function renderLanding() {
     card.append(box);
   }
   const setup = el('form', 'setup');
-  setup.append(el('h2', '', 'Choose your practice'), el('p', 'subtle', 'Practice in source order, choose a random subset, or complete the whole bank across six random sessions.'));
+  setup.append(el('h2', '', 'Choose your practice'), el('p', 'subtle', 'Practice in source order, choose a random subset, complete the six-session journey, or review questions you have missed before.'));
   const fieldset = el('fieldset');
   const legend = el('legend', 'sr-only', 'Practice mode');
   const modes = el('div', 'mode-options');
@@ -120,6 +129,9 @@ function renderLanding() {
     ['all', 'The complete collection', `All ${bank.length} questions, in source order.`],
     ['random', 'A fresh mix', 'A random selection for a focused session.'],
     ['journey', 'Six-session journey', `All ${bank.length} questions shuffled into six sessions of ${journeySizeRange}.`],
+    ['missed', 'Review missed questions', missedQuestionIds.length
+      ? `${missedQuestionIds.length} questions answered incorrectly at least once.`
+      : 'Available after your first incorrect answer.'],
   ]) {
     const label = el('label', 'mode-card');
     const input = el('input');
@@ -127,6 +139,7 @@ function renderLanding() {
     input.name = 'mode';
     input.value = value;
     input.checked = value === 'all';
+    input.disabled = value === 'missed' && missedQuestionIds.length === 0;
     const copy = el('span');
     copy.append(el('strong', '', title), el('small', '', description));
     label.append(input, copy);
@@ -185,7 +198,9 @@ function renderLanding() {
       const mode = setup.elements.mode.value;
       const length = mode !== 'random' ? bank.length : Number(lengths.value === 'custom' ? custom.value : lengths.value);
       if (!Number.isInteger(length) || length < 1 || length > bank.length) throw new Error(`Choose a whole number from 1 to ${bank.length}.`);
-      session = engine.createSession(bank, mode, length);
+      session = mode === 'missed'
+        ? engine.createMissedSession(bank, missedQuestionIds)
+        : engine.createSession(bank, mode, length);
       savedSession = null;
       persist();
       renderSession();
@@ -275,8 +290,9 @@ function renderQuestion(focus = true) {
     ? engine.journeyProgress(session.index, session.questionIds.length)
     : null;
   const modeLabel = session.mode === 'all' ? 'THE COMPLETE COLLECTION'
-    : journeyProgress ? `RANDOM JOURNEY · SESSION ${journeyProgress.sessionNumber} OF ${engine.JOURNEY_SESSION_COUNT}`
-      : 'YOUR FRESH MIX';
+    : session.mode === 'missed' ? 'QUESTIONS YOU HAVE MISSED'
+      : journeyProgress ? `RANDOM JOURNEY · SESSION ${journeyProgress.sessionNumber} OF ${engine.JOURNEY_SESSION_COUNT}`
+        : 'YOUR FRESH MIX';
   topline.append(el('span', 'eyebrow', modeLabel), el('span', 'score-chip', `${result.correct} correct / ${result.answered} checked`));
   const progressLabel = el('div', 'progress-label');
   const questionLabel = journeyProgress
@@ -379,6 +395,11 @@ function renderQuestion(focus = true) {
     actions.append(button('Check answer', 'button-primary', () => {
       try {
         session = engine.checkAnswer(bank, session);
+        const response = session.responses[session.index];
+        if (!response.correct && !missedQuestionIds.includes(response.questionId)) {
+          missedQuestionIds = [...missedQuestionIds, response.questionId].sort((a, b) => a - b);
+          persistMissedQuestions();
+        }
         persist();
         renderQuestion(false);
         const feedback = root.querySelector('.feedback');
@@ -493,6 +514,15 @@ async function load() {
     savedSession = null;
     session = null;
     try {
+      const missedRaw = localStorage.getItem(engine.MISSED_QUESTIONS_KEY);
+      if (missedRaw !== null) {
+        missedQuestionIds = engine.restoreMissedQuestionIds(missedRaw, bank);
+        if (!missedQuestionIds) {
+          localStorage.removeItem(engine.MISSED_QUESTIONS_KEY);
+          missedQuestionIds = [];
+          announce('Invalid saved missed-question history was discarded.');
+        }
+      }
       const raw = localStorage.getItem(engine.STORAGE_KEY);
       if (raw) {
         savedSession = engine.restoreSession(raw, bank);
@@ -500,6 +530,13 @@ async function load() {
           removeSaved();
           announce('An outdated or invalid saved session was discarded. Start a new practice session.');
         }
+      }
+      const recoverableMisses = savedSession?.responses
+        .filter((response) => !response.correct)
+        .map((response) => response.questionId) ?? [];
+      if (recoverableMisses.some((id) => !missedQuestionIds.includes(id))) {
+        missedQuestionIds = [...new Set([...missedQuestionIds, ...recoverableMisses])].sort((a, b) => a - b);
+        persistMissedQuestions();
       }
     } catch {
       storageWarning();

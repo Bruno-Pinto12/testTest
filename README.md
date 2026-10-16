@@ -1,7 +1,7 @@
 # Scrum Practice · PSM I
 
-A dependency-free, unofficial PSM I practice quiz. All **133 questions** are
-included: the original 114-question bank, nine archive additions, and ten
+A dependency-free, unofficial PSM I practice quiz. All **135 questions** are
+included: the original 114-question bank, eleven archive additions, and ten
 original IA-made questions selected to broaden coverage, with answer keys and
 explanatory notes.
 
@@ -19,16 +19,17 @@ default. Set `PORT` to use a different port. Use HTTP rather than opening
 The site can also be hosted on any static web server.
 
 ```sh
-npm run build  # regenerate questions.json and validate all 133 entries
+npm run build  # regenerate questions.json and validate all 135 entries
 npm test       # source integrity, answer formats, scoring, sampling, persistence
 ```
 
 ## Practice
 
-Choose all questions in source order, a random subset without repeats, or a
-random journey through the full bank. The journey shuffles all 133 questions
-once and divides them into six balanced sessions of 22–23 questions, with no
-repeats.
+Choose all questions in source order, a random subset without repeats, a
+random journey through the full bank, or a review of questions answered
+incorrectly at least once. The missed-question option unlocks after the first
+incorrect answer. The journey shuffles all 135 questions once and divides them
+into six balanced sessions of 22–23 questions, with no repeats.
 Single-choice and true/false use radio buttons; multi-select uses checkboxes.
 Select the requested number, then **Check Answer** to see the correct choices and
 the original key note. Scoring requires the exact keyed set, with no partial credit.
@@ -37,14 +38,18 @@ questions and can show all answers.
 
 Progress, selections, and checked answers are stored locally in your browser.
 Refresh and resume the session from the start screen; journey progress and its
-shuffled order are saved across all six sessions. Invalid or outdated saved
-sessions are discarded; unavailable browser storage does not prevent practice.
+shuffled order are saved across all six sessions. Missed-question history is
+saved separately and keeps a question in the review set even after a later
+correct answer. On first use, misses in a currently saved session are recovered;
+older sessions that were already replaced cannot be reconstructed. Invalid or
+outdated saved sessions are discarded; unavailable browser storage does not
+prevent practice.
 There is no account, backend, analytics, or external resource request.
 
 ## Provenance and source caveats
 
-`PSM_I_EXAM_PRACTICE_QUESTIONS.md` is the canonical source for all 133 entries.
-It retains the original 114 questions, adds nine items selected from the
+`PSM_I_EXAM_PRACTICE_QUESTIONS.md` is the canonical source for all 135 entries.
+It retains the original 114 questions, adds eleven items selected from the
 personal 2021–2023 question archives, and includes ten original questions
 marked **IA MADE** with a visible badge for reading and discussion rather than
 memorization.
