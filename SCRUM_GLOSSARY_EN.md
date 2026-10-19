@@ -5,6 +5,7 @@ Guide is authoritative if a definition here is unclear or incomplete.
 
 ## Foundations and principles
 
+| Term | Concise definition |
 | --- | --- |
 | **Scrum** | A lightweight framework that helps people, teams, and organizations generate value through adaptive solutions for complex problems. |
 | **Empiricism** | The idea that knowledge comes from experience and decisions are based on what is observed. |
