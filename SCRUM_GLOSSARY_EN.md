@@ -12,14 +12,14 @@ Guide is authoritative if a definition here is unclear or incomplete.
 | **Lean thinking** | An approach that reduces waste and focuses on what is essential. |
 
 ## Three pillars
-
+| Term | Concise definition |
 | --- | --- |
 | **Transparency** | Making important aspects of the work and process visible and understood by those responsible for the work and those receiving it. |
 | **Inspection** | Frequent, careful checking of Scrum artifacts and progress toward agreed goals to detect problems or unwanted differences. |
 | **Adaptation** | Adjusting a process or product as soon as possible when inspection shows that it is outside acceptable limits. |
 
 ## Scrum values
-
+| Term | Concise definition |
 | --- | --- |
 | **Commitment** | The Scrum Team’s commitment to achieving its goals and supporting one another. |
 | **Focus** | Concentrating on the work of the Sprint and the goals of the Scrum Team. |
@@ -28,7 +28,7 @@ Guide is authoritative if a definition here is unclear or incomplete.
 | **Courage** | Having the courage to do the right thing and work on tough problems. |
 
 ## Scrum Team and accountabilities
-
+| Term | Concise definition |
 | --- | --- |
 | **Scrum Team** | One Product Owner, one Scrum Master, and Developers: a cohesive, cross-functional, self-managing team focused on the Product Goal, with no sub-teams or internal hierarchies. |
 | **Accountabilities** | Scrum defines three accountabilities within the Scrum Team: Product Owner, Scrum Master, and Developers. |
@@ -37,12 +37,13 @@ Guide is authoritative if a definition here is unclear or incomplete.
 | **Developers** | The people in the Scrum Team committed to creating any aspect of a usable Increment each Sprint. |
 
 ## Scrum Team skill
+| Term | Concise definition |
 | --- | --- |
 | **Cross-functional** | Having, as a team, all the skills needed to create value in each Sprint. |
 | **Self-managing** | Deciding internally who does what, when, and how. |
 
 ## Scrum events
-
+| Term | Concise definition |
 | --- | --- |
 | **Sprint** | A fixed-length event of one month or less that contains the other Scrum events and turns ideas into value. |
 | **Sprint Planning** | The event where the Scrum Team plans why the Sprint is valuable, what can be done, and how the chosen work will get done. |
@@ -51,6 +52,8 @@ Guide is authoritative if a definition here is unclear or incomplete.
 | **Sprint Retrospective** | The event where the Scrum Team plans ways to increase quality and effectiveness. |
 
 ## Scrum event terms
+| Term | Concise definition |
+| --- | --- |
 | **Sprint cancellation** | Only the Product Owner may cancel a Sprint, and only when its Sprint Goal becomes obsolete. |
 | **Timebox** | The maximum duration set for an event: for a one-month Sprint, Planning is at most eight hours, the Daily Scrum 15 minutes, Review four hours, and Retrospective three hours. |
 | **Forecast** | The Developers’ prediction of the work they believe can be completed in a Sprint; it is not a promise. |
