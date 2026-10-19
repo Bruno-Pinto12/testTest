@@ -67,13 +67,10 @@ is distinct from **Commitment**, one of the five Scrum values.
 | Term | Concise definition |
 | --- | --- |
 | **Artifact** | A formal description of work or value, designed to make key information transparent. |
-
 | **Product Backlog** | The emergent, ordered list of what is needed to improve the product; it is the single source of work for the Scrum Team. |
 | **Product Goal** | A future state of the product that serves as the Scrum Team’s long-term objective and commitment for the Product Backlog. |
-
 | **Sprint Backlog** | The Sprint Goal, the Product Backlog items selected for the Sprint, and the Developers’ plan for delivering the Increment. |
 | **Sprint Goal** | The single objective for the Sprint and commitment for the Sprint Backlog. |
-
 | **Increment** | A concrete, usable step toward the Product Goal that meets the Definition of Done, adds to previous Increments, and works with them. |
 | **Definition of Done** | The formal description of the state of an Increment when it meets the quality measures required for the product; it is the commitment for the Increment. |
 
