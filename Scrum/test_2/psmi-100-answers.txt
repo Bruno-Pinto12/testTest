@@ -1,0 +1,997 @@
+PSM I — source transcription and independently assessed answers
+
+SOURCES AND COVERAGE
+All paths below are relative to Scrum/test_2/.
+JPG: "PSMI - 100% - 11.05.2022/" — all 55 files, 0.jpg–54.jpg.
+DOCX: "PSMI - 100% - 11.05.2022.docx" — all 81 word/media/image1.png–image81.png.
+PDF: "PSMI - 100%question  - 11.05.2022.pdf" — all 55 pages and 81 embedded images. The filename has two spaces after "question".
+The 81 PDF images match the DOCX images exactly after decoding to RGB pixels. The first image is the results page; the remaining 80 are Questions 1–80. PDF image identifiers below are zero-based embedded-image indices, not question numbering.
+The results page reports 100%, duration 00:39:47, started Wed 11 May '22 00:56 and finished Wed 11 May '22 01:36. This score and the filenames are provenance, NOT independent proof of any answer.
+
+Coverage: 80 unique printed question numbers, 1–80 inclusive. Missing question numbers: none. Unreadable question numbers: none. Duplicate question numbers within a source: none. Repeated captures across the three formats are consolidated by their printed question number, not by image filename.
+Each entry identifies its JPG, DOCX media filename and PDF page/image. The existing psmi-extra-questions.md was consulted only as a secondary aid; its image numbers 74–77 refer to questions printed here as 1–4 and are not additional questions.
+
+METHOD AND LIMITATIONS
+Local Tesseract OCR was run on every JPG and DOCX image, with a second enlarged-image OCR pass on all 80 question images. Wording was reconciled between passes and formats. Line wrapping and control glyphs are omitted; original English, answer labels and choice instructions are retained. True/False options have no invented letter labels. Obvious OCR character/spacing errors are normalized. Cursor interference affects small portions of Questions 15 ("toward"), 34 ("Sprint"), 52 ("Product Backlog") and 53 ("cost more"); the readable context supports those restorations, but the obscured pixels are not independently recoverable. No absent question or choice has been invented.
+Visual-tool limitation: the image viewer allowed only one screenshot to be displayed in this extraction session (Question 5, confirming checked B and D), then refused further images. Separate manual inspection of JPG 0 confirmed Question 1's blue False radio. The full collection was checked using local OCR and programmatic pixel analysis, not a claimed manual visual reading of every screenshot.
+Selected answers were recovered from blue control pixels, distinguishing filled radio buttons/checked boxes from unfilled outlines. In Question 10, A has a blue outline but no filled center; only D is selected. Selection cardinality is one unless the printed instruction requests two or three. No conflicting selected-answer captures were found. The source does not show per-question grading feedback.
+Validation: checked exactly 80 ordered headings, all 337 original choices, contiguous option labels, all provenance mappings, and answer/explanation fields. All 103 selected controls independently agree between JPG and DOCX pixel analysis and the transcription. There are 13 two-answer questions, five three-answer questions and 62 single-answer questions (including five True/False questions). Every transcribed question/options block exceeds 98% normalized-character agreement with the enlarged OCR; differences are OCR/control artifacts and the restorations noted above, not a claim that obscured pixels were recovered.
+
+REFERENCE AND ANSWER STATUS
+Official reference: Ken Schwaber and Jeff Sutherland, The Scrum Guide, November 2020, https://scrumguides.org/scrum-guide.html .
+Direct access to the official HTML and PDF failed DNS lookup during extraction. The complete 2020 Guide text was instead read from this explicitly identified, unofficial mirror: https://raw.githubusercontent.com/d-baer/scrum-guide/master/scrum-guide.md (repository d-baer/scrum-guide, file SHA 8c43e6b65bf736a8a276e82559cfa91e12d828b7). It describes itself as a direct port of the November 2020 Guide. Its fidelity and whether a later official revision exists could not be independently checked against the live official site.
+"Correct answer" means the best available choice supported by that Guide text and the accompanying reasoning, not an official answer key. Guide section names are included in explanations. Scenario answers may be reasoned applications rather than verbatim rules. Questions requiring special review are explicitly marked, rather than treating the visible selection or 100% score as proof.
+Review-required questions: 2, 7, 10, 28, 30, 32, 33, 52, 62 and 75. These involve interpretive, historical or imprecise wording. All other answers below are supported by the 2020 Guide or, for Question 45, the ordinary definition of the optional burndown technique.
+
+Question 1 of 80
+Source: JPG 0.jpg; DOCX word/media/image2.png; PDF page 1, image 1.
+True or False: A high-performance Scrum Team ensures that each Increment is complete by running a Release Sprint.
+True
+False
+Selected answer (source): False.
+Correct answer: False.
+Explanation: The Guide's Increment and Definition of Done sections require usable, Done Increments within Sprints; Scrum defines no separate Release Sprint.
+
+Question 2 of 80
+Source: JPG 1.jpg; DOCX word/media/image3.png; PDF page 2, image 2.
+Which Scrum Value is affected by a lack of trust in the Scrum Team?
+(choose the best answer)
+A. Focus
+B. Respect
+C. Openness
+D. Courage
+E. Commitment
+F. All of the above
+Selected answer (source): F.
+Correct answer: Not independently verified; review F as the likely intended answer.
+Review note: Scrum Values connects all five values with building trust. It does not explicitly establish this question's reverse causal claim that lack of trust affects every value. Do not infer an official key from the selection.
+
+Question 3 of 80
+Source: JPG 2.jpg; DOCX word/media/image4.png; PDF page 3, image 3.
+The Developers ask their Product Owner to re-order the Product Backlog. The team is waiting for an external supplier to deliver a component. Without that component there will not be enough work in the next Sprint to occupy the full team. As the Scrum Master, what advice would you give the Product Owner?
+(choose the best answer)
+A. Tell the Product Owner to re-order the Product Backlog so the work involving the external component can be planned in a separate sprint.
+B. Tell the Product Owner that the Product Backlog should be ordered to maximize utilization of the Developers.
+C. Remind the Product Owner that their primary concern is the flow of value reflected in the ordering of the Product Backlog.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Product Owner makes maximizing product value the accountability; maximizing utilization is not the objective of Product Backlog ordering.
+
+Question 4 of 80
+Source: JPG 3.jpg; DOCX word/media/image5.png; PDF page 4, image 4.
+In accordance with Scrum theory, how should a group of 100 people be divided into multiple Scrum Teams?
+(choose the best answer)
+A. It does not really matter since you can rotate the teams every Sprint to spread knowledge.
+B. Create a matrix of skills, seniority, and level of experience to assign people to teams.
+C. Check with the allocation department to see who has worked together before and make these the first teams.
+D. Understanding the product, the product vision and the rules of the Scrum framework, the people divide themselves into teams.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Scrum Team describes empowered, self-managing, cross-functional teams. D best applies those principles; the Guide does not prescribe a detailed 100-person allocation procedure.
+
+Question 5 of 80
+Source: JPG 4.jpg; DOCX word/media/image6.png; PDF page 5, image 5.
+What are the two primary ways a Scrum Master helps a Scrum Team work at its highest level of productivity?
+(choose the best two answers)
+A. By ensuring the meetings start and end at the proper time.
+B. By facilitating Scrum Team decisions.
+C. By keeping high value features high in the Product Backlog.
+D. By removing impediments that hinder the Scrum Team.
+Selected answer (source): B and D.
+Correct answer: B and D.
+Explanation: Scrum Master supports team effectiveness and self-management and causes impediments to be removed. Product Backlog ordering remains the Product Owner's accountability.
+
+Question 6 of 80
+Source: JPG 4.jpg; DOCX word/media/image7.png; PDF page 5, image 6.
+A Sprint Retrospective should be held:
+(choose the best answer)
+A. Only when the Scrum Team determines it needs one.
+B. At the end of each Sprint.
+C. At the end of the last Sprint in a project or a release.
+D. At the beginning of each Sprint.
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Sprint Retrospective explicitly concludes the Sprint.
+
+Question 7 of 80
+Source: JPG 5.jpg; DOCX word/media/image8.png; PDF page 6, image 7.
+The Product Backlog is ordered by:
+(choose the best answer)
+A. Items are randomly arranged.
+B. Size, where small items are at the top and large items are at the bottom.
+C. The Product Owner with the most valuable items placed at the top.
+D. Risk, where safer items are at the top, and riskier items are at the bottom.
+Selected answer (source): C.
+Correct answer: Not independently verified as worded; C is the best available choice.
+Review note: Product Owner establishes accountability for ordering to maximize product value. The Guide does not require a strict item-value sort: dependencies, risk, learning and other considerations may affect ordering.
+
+Question 8 of 80
+Source: JPG 6.jpg; DOCX word/media/image9.png; PDF page 7, image 8.
+During the Sprint, the Scrum Master's role is to do which two of the following:
+(choose the best two answers)
+A. Coaching the team members in self-management.
+B. Ensure the Product Owner attends all Scrum events.
+C. Assign tasks with the Scrum Team.
+D. Facilitate inspection and adaptation opportunities as requested or needed.
+E. Escalate team conflicts to functional line managers.
+F. Monitor the progress of the Developers.
+Selected answer (source): A and D.
+Correct answer: A and D.
+Explanation: Scrum Master supports self-management and effective Scrum events; Scrum Events describes opportunities for inspection and adaptation. The Scrum Master does not assign the Developers' work.
+
+Question 9 of 80
+Source: JPG 6.jpg; DOCX word/media/image10.png; PDF page 7, image 9.
+Which of these may a Scrum Team deliver at the end of a Sprint?
+(choose the best answer)
+A. A single document, if that is what management asked for.
+B. A valuable, useful Increment that meets the Definition of Done.
+C. Failing unit tests, to identify acceptance tests for the next Sprint.
+D. An Increment of software with minor known bugs in it.
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Scrum Team and Increment require a valuable, useful, Done Increment. A management request or the existence of bugs alone does not establish whether an Increment is usable and Done.
+
+Question 10 of 80
+Source: JPG 7.jpg; DOCX word/media/image11.png; PDF page 8, image 10.
+The length of a Sprint should be:
+(choose the best answer)
+A. Short enough to keep the business risk acceptable to the Product Owner.
+B. Short enough to be able to synchronize the development work with other business events.
+C. No more than one calendar month.
+D. All of the above.
+Selected answer (source): D.
+Correct answer: Not independently verified; review D as the likely intended answer.
+Review note: The Sprint explicitly limits duration to one month or less and connects shorter Sprints with limiting risk. Synchronization with other business events is contextual advice, not an explicit Guide requirement. A's blue unfilled outline is not a second selection.
+
+Question 11 of 80
+Source: JPG 7.jpg; DOCX word/media/image12.png; PDF page 8, image 11.
+What techniques could the Scrum Master use when the Scrum Team gets caught in an internal disagreement about which agile practices to apply?
+(choose the best two answers)
+A. Involve the complete Scrum Team in making a decision.
+B. Ask team members to take the issue up with the company’s Human Resources department.
+C. Ask an external agile coach what they recommend.
+D. Use coaching techniques, such as open questions and active listening.
+Selected answer (source): A and D.
+Correct answer: A and D.
+Explanation: Scrum Master and Scrum Team support coaching and internal decision-making. These are reasoned applications of self-management, rather than prescribed conflict-resolution techniques.
+
+Question 12 of 80
+Source: JPG 8.jpg; DOCX word/media/image13.png; PDF page 9, image 12.
+As the Developers start work during the Sprint, they realize they have selected too much work to finish in the Sprint. What should they do?
+(choose the best answer)
+A. As soon as possible in the Sprint, work with the Product Owner to remove some work or Product Backlog items.
+B. Reduce the Definition of Done and get all of the Product Backlog items done by the new definition.
+C. Find another Scrum Team to give the excess work to.
+D. Inform the Product Owner at the Sprint Review, but prior to the demonstration.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: The Sprint and Sprint Goal allow scope renegotiation with the Product Owner as learning occurs, without endangering the Sprint Goal or decreasing quality.
+
+Question 13 of 80
+Source: JPG 8.jpg; DOCX word/media/image14.png; PDF page 9, image 13.
+True or False: Cross-functional teams are optimized to work on one component or layer of a system only.
+True
+False
+Selected answer (source): False.
+Correct answer: False.
+Explanation: Scrum Team defines cross-functionality as collectively having all skills necessary to create value each Sprint, not specialization in a single system layer.
+
+Question 14 of 80
+Source: JPG 9.jpg; DOCX word/media/image15.png; PDF page 10, image 14.
+When must the Product Owner participate in the Daily Scrum?
+(choose the best answer)
+A. When the Scrum Master asks the Product Owner to attend.
+B. When the Product Owner is actively working on items on the Sprint Backlog; however, they participate as a Developer.
+C. When the Product Owner needs to represent the stakeholders' point of view to the Developers.
+D. When there are impediments to discuss.
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Daily Scrum explicitly states that Product Owners actively working on Sprint Backlog items participate as Developers.
+
+Question 15 of 80
+Source: JPG 9.jpg; DOCX word/media/image16.png; PDF page 10, image 15.
+Who is accountable for tracking the remaining work toward the Sprint Goal?
+(choose the best answer)
+A. The Product Owner.
+B. The Scrum Master.
+C. The Developers.
+D. The Project Manager.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Developers adapt their plan each day toward the Sprint Goal; Daily Scrum and Sprint Backlog make progress inspectable.
+
+Question 16 of 80
+Source: JPG 10.jpg; DOCX word/media/image17.png; PDF page 11, image 16.
+What is the key concern when multiple Scrum Teams are working from the same Product Backlog?
+(choose the best answer)
+A. Clear definition of requirements.
+B. Making sure there is enough work for everyone on each team.
+C. Minimizing dependencies between teams.
+D. Meeting original scope projections.
+E. Maximizing velocity.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Scrum Team and Increment support cohesive, cross-functional teams producing usable, integrated work. Reducing dependencies best supports that goal among these choices; velocity maximization is not a Scrum objective.
+
+Question 17 of 80
+Source: JPG 11.jpg; DOCX word/media/image18.png; PDF page 12, image 17.
+A Scrum Team is required to deliver a done Increment by the end of a Sprint. Select two statements that explain what done means.
+(choose the best two answers)
+A. All work the Developers are willing to do.
+B. Ready to be released to end users.
+C. No work is left to meet the Definition of Done.
+D. Whatever the Product Owner defines as quality.
+E. Ready for integration.
+Selected answer (source): B and C.
+Correct answer: B and C.
+Explanation: Increment and Definition of Done require usable, integrated work meeting the product's quality measures. Release readiness does not require actual release at the Sprint boundary.
+
+Question 18 of 80
+Source: JPG 11.jpg; DOCX word/media/image19.png; PDF page 12, image 18.
+What are two effective ways for the Scrum Team to make non-functional requirements visible?
+(choose the best two answers)
+A. Put them on a separate list on the Scrum board, available for all to see.
+B. Add them to the Product Backlog to ensure transparency.
+C. Run the integration and regression tests before the end of the Sprint, and capture the open work for the Sprint Backlog of the next Sprint.
+D. Add them to the Definition of Done so the work is taken care of every Sprint.
+Selected answer (source): B and D.
+Correct answer: B and D.
+Explanation: Product Backlog makes needed work transparent; Definition of Done makes applicable product quality measures explicit. Apply recurring quality standards to each Increment, not deferred cleanup.
+
+Question 19 of 80
+Source: JPG 12.jpg; DOCX word/media/image20.png; PDF page 13, image 19.
+What activities would a Product Owner typically undertake in the period between the end of the current Sprint and the start of the next Sprint?
+(choose the best answer)
+A. There are no such activities. The next Sprint starts immediately after the current Sprint.
+B. Refine the Product Backlog.
+C. Work with the Quality Assurance departments on the Increment of the current Sprint.
+D. Update the project plan with stakeholders.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: The Sprint specifies that a new Sprint starts immediately after the previous one concludes. Refinement occurs as needed within Sprints, not in a separate gap.
+
+Question 20 of 80
+Source: JPG 12.jpg; DOCX word/media/image21.png; PDF page 13, image 20.
+Which three of the following are feedback loops in Scrum?
+(choose the best three answers)
+A. Refinement Meeting.
+B. Sprint Retrospective.
+C. Daily Scrum.
+D. Release Planning.
+E. Sprint Review.
+Selected answer (source): B, C and E.
+Correct answer: B, C and E.
+Explanation: Scrum Events defines these as formal inspection/adaptation events. Refinement can provide feedback, but "Refinement Meeting" and "Release Planning" are not defined Scrum events.
+
+Question 21 of 80
+Source: JPG 13.jpg; DOCX word/media/image22.png; PDF page 14, image 21.
+Which statement best describes Scrum?
+(choose the best answer)
+A. A framework to generate value through adaptive solutions for complex problems.
+B. A complete methodology that defines how to develop software.
+C. A defined and predictive process that conforms to the principles of Scientific Management.
+D. A cookbook that defines best practices for software development.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: Scrum Definition describes a lightweight framework for generating value through adaptive solutions for complex problems.
+
+Question 22 of 80
+Source: JPG 13.jpg; DOCX word/media/image23.png; PDF page 14, image 22.
+The CEO asks the Developers to add a "very important" item to a Sprint that is in progress. What should the Developers do?
+(choose the best answer)
+A. Add the item to the next Sprint.
+B. Add the item to the current Sprint without any adjustments.
+C. Inform the Product Owner so they can work with the CEO.
+D. Add the item to the current Sprint and drop an item of equal size.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Product Owner manages Product Backlog ordering; The Sprint permits negotiated scope changes without endangering the Sprint Goal. Executive urgency does not bypass these accountabilities.
+
+Question 23 of 80
+Source: JPG 14.jpg; DOCX word/media/image24.png; PDF page 15, image 23.
+The Product Owner is not collaborating with the Developers during the Sprint. What are two valuable actions for a Scrum Master to take?
+(choose the best two answers)
+A. Bring up the problem in the Sprint Retrospective.
+B. Nominate a proxy Product Owner.
+C. Stop the Sprint, send the Product Owner to a course and restart.
+D. Coach the Product Owner in the values of Scrum and incremental delivery.
+E. Inform the Product Owner's functional manager.
+Selected answer (source): A and D.
+Correct answer: A and D.
+Explanation: Scrum Master coaches effective Scrum practice; Sprint Retrospective inspects interactions and improves effectiveness. This does not require waiting until the Retrospective to address the problem.
+
+Question 24 of 80
+Source: JPG 15.jpg; DOCX word/media/image25.png; PDF page 16, image 24.
+Which of the following services are appropriate for a Scrum Master in regard to the Daily Scrum?
+(choose the best answer)
+A. Lead the discussions.
+B. Make sure that all 3 questions have been answered by each member of the team.
+C. Keep track of whether each Developer has a chance to speak.
+D. Teach the Developers to keep the Daily Scrum within 15 minutes.
+E. All of the above.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Daily Scrum is a 15-minute event whose structure the Developers choose. The 2020 Guide does not mandate the historical three-question format.
+
+Question 25 of 80
+Source: JPG 16.jpg; DOCX word/media/image26.png; PDF page 17, image 25.
+The Definition of Done serves which three purposes?
+(choose the best three answers)
+A. Guide the Developers on how many Product Backlog items to select for the Sprint.
+B. Describe the work that must be done before the Sprint is allowed to end.
+C. Increase transparency.
+D. Describe the purpose, objective, and timebox of each Scrum event.
+E. Create a shared understanding of when work is complete.
+Selected answer (source): A, C and E.
+Correct answer: A, C and E.
+Explanation: Sprint Planning uses the Definition of Done in forecasting capacity; Definition of Done establishes transparency and shared understanding of completed work. Sprints do not extend until every item is Done.
+
+Question 26 of 80
+Source: JPG 16.jpg; DOCX word/media/image27.png; PDF page 17, image 26.
+When does a Sprint conclude?
+(choose the best answer)
+A. When all the tasks are completed by the Developers.
+B. When all Product Backlog items meet their Definition of Done.
+C. When the Sprint Retrospective is complete.
+D. When the Product Owner decides enough has been delivered to meet the Sprint Goal.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Sprint Retrospective explicitly concludes the Sprint; it occurs inside the fixed Sprint timebox.
+
+Question 27 of 80
+Source: JPG 17.jpg; DOCX word/media/image28.png; PDF page 18, image 27.
+What is the timebox for the Sprint Review?
+(choose the best answer)
+A. As long as needed.
+B. 2 hours for a one-month Sprint.
+C. 1 day.
+D. 4 hours for a one-month Sprint.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Sprint Review has a maximum four-hour timebox for a one-month Sprint and is usually shorter for shorter Sprints.
+
+Question 28 of 80
+Source: JPG 17.jpg; DOCX word/media/image29.png; PDF page 18, image 28.
+An organization has decided to adopt Scrum, but management wants to change the terminology to fit with terminology already used. What will likely happen if this is done?
+(choose the best answer)
+A. Without a new vocabulary as a reminder of the change, very little change may actually happen.
+B. The organization may not understand what has changed within Scrum and the benefits of Scrum may be lost.
+C. Management may feel less anxious.
+D. All answers apply.
+Selected answer (source): D.
+Correct answer: Not independently verified; review D as the likely intended answer.
+Review note: Purpose of the Scrum Guide warns that changing or omitting core ideas limits Scrum's benefits. It does not predict management's anxiety or prove all three proposed organizational outcomes.
+
+Question 29 of 80
+Source: JPG 18.jpg; DOCX word/media/image30.png; PDF page 19, image 29.
+A Scrum Team is experiencing a growing list of impediments. Which techniques would be most helpful in this situation?
+(choose the best two answers)
+A. Arrange a triage meeting with management.
+B. As a Scrum Team, prioritize the list and work on them in order.
+C. The Scrum Master discusses the impediments with the Scrum Team.
+D. The Product Owner should add the open impediments to the Product Backlog.
+Selected answer (source): B and C.
+Correct answer: B and C.
+Explanation: Scrum Master causes impediment removal while supporting self-management. Collaborative prioritization and discussion are the strongest applications here; not every impediment is product work.
+
+Question 30 of 80
+Source: JPG 18.jpg; DOCX word/media/image31.png; PDF page 19, image 30.
+Who should know the most about the progress toward the Product Goal?
+(choose the best answer)
+A. The Scrum Master.
+B. The Product Owner.
+C. The Project Manager.
+D. The Developers.
+Selected answer (source): B.
+Correct answer: Not independently verified; review B as the likely intended answer.
+Review note: Product Owner is accountable for communicating the Product Goal and effective Product Backlog management. Sprint Review has the Scrum Team and stakeholders discuss progress; the Guide does not rank whose knowledge must be greatest.
+
+Question 31 of 80
+Source: JPG 19.jpg; DOCX word/media/image32.png; PDF page 20, image 31.
+True or False: Multiple Scrum Teams working on the same product must have the same Sprint start date.
+True
+False
+Selected answer (source): False.
+Correct answer: False.
+Explanation: Scrum Team and Definition of Done require a shared product focus and compatible, integrated Done work, but the Guide does not require identical Sprint start dates.
+
+Question 32 of 80
+Source: JPG 19.jpg; DOCX word/media/image33.png; PDF page 20, image 32.
+Which three behaviors demonstrate that a Scrum Team is self-managing?
+(choose the best three answers)
+A. The Scrum Team has all the skills needed to create an Increment.
+B. Developers collaboratively selecting their own work during the Sprint.
+C. The Developers create their own Sprint Backlog, reflecting all work that is part of the Definition of Done.
+D. The Scrum Team members are working within the boundaries of their functional description and nicely handing off work from analyst to developer to tester to integration.
+E. The Scrum Master is no longer needed.
+F. Stakeholders are attending the Daily Scrum to check progress and work with the Scrum Master to optimize the functional scope for the Sprint.
+Selected answer (source): A, B and C.
+Correct answer: Not independently verified as worded; review A, B and C as the intended three.
+Review note: Scrum Team defines internal decisions about who does what, when and how as self-management, supporting B and C. A instead defines cross-functionality; it is not by itself evidence of self-management. The other alternatives do not supply a sound third self-management behavior.
+
+Question 33 of 80
+Source: JPG 20.jpg; DOCX word/media/image34.png; PDF page 21, image 33.
+Which technique is the best way the Scrum Master can ensure that the Developers communicate effectively with the Product Owner?
+(choose the best answer)
+A. Teach the Developers to talk in terms of business needs and objectives.
+B. Monitor communications between them and facilitate direct collaboration.
+C. Teach the Product Owner about the technologies employed during the Sprints.
+D. Function as a go-between for them.
+Selected answer (source): B.
+Correct answer: Not independently verified; review B as the likely intended answer.
+Review note: Scrum Master supports collaboration and team effectiveness, not becoming a communication intermediary. B's facilitation fits that guidance, but "monitor" should not imply managerial surveillance; A can also be useful in context. The Guide does not prescribe this exact ranking.
+
+Question 34 of 80
+Source: JPG 20.jpg; DOCX word/media/image35.png; PDF page 21, image 34.
+Which are appropriate topics for discussion in a Sprint Retrospective?
+(choose the best three answers)
+A. The value of work currently represented in the Product Backlog.
+B. Definition of Done.
+C. How the Scrum Team does its work.
+D. Arranging the Sprint Backlog for the next Sprint.
+E. Team relations.
+Selected answer (source): B, C and E.
+Correct answer: B, C and E.
+Explanation: Sprint Retrospective explicitly inspects individuals, interactions, processes, tools and the Definition of Done to improve quality and effectiveness.
+
+Question 35 of 80
+Source: JPG 21.jpg; DOCX word/media/image36.png; PDF page 22, image 35.
+When is the Sprint Backlog created?
+(choose the best answer)
+A. During Sprint Planning.
+B. Prior to Sprint Planning.
+C. During refinement.
+D. During the Sprint Retrospective.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: Sprint Planning creates the Sprint Goal, selected Product Backlog items and delivery plan that together form the Sprint Backlog.
+
+Question 36 of 80
+Source: JPG 22.jpg; DOCX word/media/image37.png; PDF page 23, image 36.
+The Scrum Master observes the Product Owner struggling with ordering the Product Backlog. What is an appropriate action for the Scrum Master to take?
+(choose the best answer)
+A. Suggest the Product Owner extend the Sprint, so he can have more time to order the Product Backlog.
+B. Present the Product Owner with an ordered Product Backlog to use.
+C. Offer the Product Owner help in understanding that the goal of ordering the Product Backlog is to maximize value.
+D. Suggest that the Developers order the Product Backlog to be sure that it is a feasible ordering of work.
+E. Encourage the Product Owner to work with the Developers to see which items technically are fastest to implement.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Product Owner retains accountability for ordering and maximizing value; Scrum Master helps with effective Product Backlog management rather than taking it over.
+
+Question 37 of 80
+Source: JPG 23.jpg; DOCX word/media/image38.png; PDF page 24, image 37.
+What are two effective ways for a Scrum Team to ensure security concerns are satisfied?
+(choose the best two answers)
+A. Postpone the work until a specialist can perform a security audit and create a list of security-related Product Backlog items.
+B. Add security concerns to the Definition of Done.
+C. Have the Scrum Team create Product Backlog items for each concern.
+D. Delegate the work to the security department.
+E. Add a Sprint to specifically resolve all security concerns.
+Selected answer (source): B and C.
+Correct answer: B and C.
+Explanation: Product Backlog exposes needed work; Definition of Done expresses product quality measures that Done Increments must satisfy. Security is not deferred to a separate cleanup Sprint.
+
+Question 38 of 80
+Source: JPG 24.jpg; DOCX word/media/image39.png; PDF page 25, image 38.
+Which answer best describes the topics covered in Sprint Planning?
+(choose the best answer)
+A. What went wrong in the last Sprint and what to do differently this Sprint.
+B. What to do and who will do it.
+C. What can be done, how to do it, and why to do it.
+D. How conditions have changed and how the Product Backlog should evolve.
+E. Who is on the team and what team member roles will be.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Sprint Planning covers why the Sprint is valuable, what can be Done and how the chosen work will get done.
+
+Question 39 of 80
+Source: JPG 25.jpg; DOCX word/media/image40.png; PDF page 26, image 39.
+A Developer takes the Scrum Master aside to express his concerns about data security issues. What should the Scrum Master do?
+(choose the best answer)
+A. Tell the Product Owner to stop further development of features until the issues are fixed.
+B. Go check with the testers.
+C. Create a Product Backlog item for security.
+D. Ask the Developer to share the concern with the team as soon as possible.
+E. Add security to the Definition of Done.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Transparency, Adaptation and Scrum Master's coaching support making the concern visible promptly so the self-managing team can inspect it and decide appropriate action.
+
+Question 40 of 80
+Source: JPG 25.jpg; DOCX word/media/image41.png; PDF page 26, image 40.
+True or False: When multiple teams work together on the same product, each team should maintain a separate Product Backlog.
+True
+False
+Selected answer (source): False.
+Correct answer: False.
+Explanation: Scrum Team specifies that teams focused on the same product share the Product Goal, Product Backlog and Product Owner.
+
+Question 41 of 80
+Source: JPG 26.jpg; DOCX word/media/image42.png; PDF page 27, image 41.
+Who is responsible for collaboration with stakeholders?
+(choose the best answer)
+A. The Scrum Team.
+B. The Project Manager.
+C. The Team Manager.
+D. The Developers.
+E. The Business Analyst.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: Scrum Team explicitly includes stakeholder collaboration among the team's product-related responsibilities.
+
+Question 42 of 80
+Source: JPG 27.jpg; DOCX word/media/image43.png; PDF page 28, image 42.
+User documentation is part of your Definition of Done. However, there are not enough technical writers for all teams. Your Scrum Team does not have a technical writer. What should the Scrum Team do?
+(choose the best answer)
+A. Form a separate team of technical writers that will work on an on-demand basis for the various Product Owners. Work order will be first in, first out.
+B. Let the user documentation remain undone and accumulate until after the last development Sprint. It will then be done by any available technical writers.
+C. The Developers on the Scrum Team should write the user documentation.
+D. Wait until you have a technical writer on your Scrum Team to take care of this.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Developers create every aspect of a usable Increment and adhere to the Definition of Done. A specialist shortage does not make unfinished documentation Done.
+
+Question 43 of 80
+Source: JPG 28.jpg; DOCX word/media/image44.png; PDF page 29, image 43.
+Who owns the Sprint Backlog?
+(choose the best answer)
+A. The Product Owner.
+B. The Scrum Team.
+C. The Scrum Master.
+D. The Developers.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Sprint Backlog describes it as a plan by and for the Developers.
+
+Question 44 of 80
+Source: JPG 28.jpg; DOCX word/media/image45.png; PDF page 29, image 44.
+How do you know that a Scrum Team is cross-functional?
+(choose the best answer)
+A. There are no conflicts within the Scrum Team.
+B. A few of the Developers pair program and do Test-Driven Development.
+C. The Scrum Team has all the skills to create an Increment by the end of every Sprint.
+D. Every member of the Scrum Team is able to perform every task.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Scrum Team defines cross-functionality at team level. It does not require every individual to perform every task.
+
+Question 45 of 80
+Source: JPG 29.jpg; DOCX word/media/image46.png; PDF page 30, image 45.
+If burndown charts are used to visualize progress, what do they track?
+(choose the best answer)
+A. Accumulated business value delivered to the customer.
+B. Accumulated cost.
+C. Individual worker productivity.
+D. Work remaining across time.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: A burndown plots remaining work against time. The Sprint mentions burndowns as an optional forecasting practice; the Guide does not require the chart or specify its detailed construction.
+
+Question 46 of 80
+Source: JPG 30.jpg; DOCX word/media/image47.png; PDF page 31, image 46.
+When multiple Scrum Teams are working on a single product, what best describes the Definition of Done?
+(choose the best answer)
+A. When multiple Scrum Teams are working together on a product, they must mutually define and comply with the same Definition of Done.
+B. Each Scrum Team defines and uses its own. The differences are discussed and reconciled during a hardening Sprint.
+C. The Scrum Masters from each Scrum Team define a common Definition of Done.
+D. Each Scrum Team uses its own, but must make their definition clear to all other teams so the differences are known.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: Definition of Done explicitly requires teams working together on a product to mutually define and comply with the same Definition of Done.
+
+Question 47 of 80
+Source: JPG 31.jpg; DOCX word/media/image48.png; PDF page 32, image 47.
+How is management that is external to the Scrum Team involved in the Daily Scrum?
+(choose the best answer)
+A. The Product Owner represents their opinions.
+B. The Scrum Master speaks on their behalf.
+C. Managers are not required at the Daily Scrum.
+D. Management gives an update at the start of each Daily Scrum.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Daily Scrum is an event for the Developers, not a management status meeting.
+
+Question 48 of 80
+Source: JPG 31.jpg; DOCX word/media/image49.png; PDF page 32, image 48.
+When multiple Scrum Teams are working on the same product, should all of their Increments be integrated every Sprint?
+(choose the best answer)
+A. Yes, but only for Scrum Teams whose work has dependencies.
+B. No, that is far too hard and must be done in a hardening Sprint.
+C. Yes, in order to accurately inspect what is done.
+D. No, each Scrum Team stands alone.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Increment requires each Increment to be additive to prior Increments and thoroughly verified so all Increments work together. Integration cannot wait for a hardening Sprint.
+
+Question 49 of 80
+Source: JPG 32.jpg; DOCX word/media/image50.png; PDF page 33, image 49.
+Who determines when it is appropriate to update the Sprint Backlog during a Sprint?
+(choose the best answer)
+A. The Scrum Team.
+B. The Product Owner.
+C. The Project Manager.
+D. The Developers.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Sprint Backlog is the Developers' plan and is updated throughout the Sprint as learning occurs; scope changes are negotiated with the Product Owner when necessary.
+
+Question 50 of 80
+Source: JPG 33.jpg; DOCX word/media/image51.png; PDF page 34, image 50.
+Which of the following are topics for the Developers to discuss at the Daily Scrum as they inspect their progress toward the Sprint Goal?
+(choose the best three answers)
+A. Are there any impediments blocking progress toward the Sprint Goal?
+B. Why were you late?
+C. Will today’s work negatively impact our ability to meet the Sprint Goal for the Sprint following this one?
+D. What have we learned since yesterday, and how should we modify our plan to increase our ability to meet the Sprint Goal?
+E. How many hours did I spend on the project yesterday?
+F. What will I be working on tomorrow?
+G. Are there any decisions that need to be made to maintain progress toward the Sprint Goal?
+Selected answer (source): A, D and G.
+Correct answer: A, D and G.
+Explanation: Daily Scrum focuses on the current Sprint Goal, adapting the plan, identifying impediments and making decisions. F can be relevant when connected to that goal, but is not as strong as the three explicitly goal-focused alternatives.
+
+Question 51 of 80
+Source: JPG 34.jpg; DOCX word/media/image52.png; PDF page 35, image 51.
+When Developers are having trouble delivering an Increment because they do not understand a functional requirement, what should they do?
+(choose the best answer)
+A. Add a specialist to the Development Team.
+B. Defer the work to a more appropriate Sprint.
+C. Partially complete the functionality, and discuss the remaining work at the Sprint Review.
+D. Collaborate with the Product Owner to determine what is possible and acceptable.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: The Sprint and Sprint Goal support clarifying and renegotiating scope with the Product Owner as more is learned. "Development Team" in A is historical terminology, retained from the source.
+
+Question 52 of 80
+Source: JPG 35.jpg; DOCX word/media/image53.png; PDF page 36, image 52.
+Which two things are appropriate for a Scrum Master to do, if the Scrum Team does not have the tools and environment to completely finish each selected Product Backlog item?
+(choose the best two answers)
+A. Coach the Scrum Team to improve its skills, tools and environment over time and adjust the Definition of Done accordingly.
+B. Refocus the current Sprint on establishing the Scrum Team's environment instead of delivering an Increment.
+C. Encourage the Product Owner to accept partially done Increments until the situation improves.
+D. Have the Scrum Team establish a Definition of Done that is actually possible to achieve given current circumstances.
+E. Declare the Scrum Team not ready for Scrum.
+Selected answer (source): A and D.
+Correct answer: Not independently verified as unconditional advice; review A and D as the historical/test-specific intended pair.
+Review note: Scrum Master supports improvements and impediment removal. However, The Sprint forbids decreasing quality, and Definition of Done requires applicable organizational minimum standards and usable Increments. D and "adjust" in A must not justify weakening those standards or relabeling unfinished work as Done. Address capability gaps and renegotiate scope instead.
+
+Question 53 of 80
+Source: JPG 36.jpg; DOCX word/media/image54.png; PDF page 37, image 53.
+At the seventh Sprint Review, the stakeholders are disappointed and angry. They have determined that the product or system being built will not meet their needs and will cost more than they are willing to spend. What factors likely led to this?
+(choose the best two answers)
+A. The Project Management Office (PMO) has not been engaged adequately.
+B. The Product Owner has not been keeping the stakeholders aware of the progress of the project.
+C. The stakeholders were not allowed to prioritize Product Backlog items.
+D. The stakeholders have not been using the Sprint Reviews to inspect and evaluate progress.
+Selected answer (source): B and D.
+Correct answer: B and D.
+Explanation: Product Owner supports transparency and value; Sprint Review brings the team and stakeholders together to inspect outcomes and adapt. Stakeholders influence, but do not take over, Product Backlog ordering.
+
+Question 54 of 80
+Source: JPG 36.jpg; DOCX word/media/image55.png; PDF page 37, image 54.
+The timebox for a Daily Scrum is?
+(choose the best answer)
+A. 4 hours.
+B. The same time of day every day.
+C. 15 minutes.
+D. Two minutes per person.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Daily Scrum specifies 15 minutes, regardless of Sprint length.
+
+Question 55 of 80
+Source: JPG 37.jpg; DOCX word/media/image56.png; PDF page 38, image 55.
+You are the Scrum Master of a new, to be developed Product. Development is going to require 45 people. What is a good first question for you to suggest the group thinks about when forming into teams?
+(choose the best answer)
+A. Who are going to be the team leads?
+B. How will we make sure all teams have the right amount of expertise?
+C. What is the right mixture of senior and junior people on each team?
+D. Who are the subject matter experts on each team?
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Scrum Team requires cross-functional teams with the skills to create value each Sprint, without internal hierarchies. Team-level capability is the strongest starting concern among these choices.
+
+Question 56 of 80
+Source: JPG 37.jpg; DOCX word/media/image57.png; PDF page 38, image 56.
+What is the typical size for a Scrum Team?
+(choose the best answer)
+A. 7 plus or minus 3.
+B. At least 7.
+C. 9.
+D. 10 or fewer.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Scrum Team states typically 10 or fewer people, including Product Owner and Scrum Master, rather than an absolute mandatory limit.
+
+Question 57 of 80
+Source: JPG 38.jpg; DOCX word/media/image58.png; PDF page 39, image 57.
+How much time is required after a Sprint to prepare for the next Sprint?
+(choose the best answer)
+A. The break between Sprints is timeboxed to one-week for a one-month Sprint, and usually less for shorter Sprints.
+B. Enough time for the requirements for the next Sprint to be determined and documented.
+C. Enough time for the Developers to finish the testing from the last Sprint.
+D. None. A new Sprint starts immediately following the end of the previous Sprint.
+E. All of the above are allowed depending on the situation.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: The Sprint explicitly starts a new Sprint immediately after the previous one concludes.
+
+Question 58 of 80
+Source: JPG 39.jpg; DOCX word/media/image59.png; PDF page 40, image 58.
+Who has the final decision about the order of items in the Product Backlog?
+(choose the best answer)
+A. The Developers.
+B. The Scrum Master.
+C. The Stakeholders.
+D. The Product Owner.
+E. The Scrum Team.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Product Owner remains accountable for Product Backlog ordering, even when delegating work, and the organization must respect those decisions.
+
+Question 59 of 80
+Source: JPG 39.jpg; DOCX word/media/image60.png; PDF page 40, image 59.
+True or False: A Scrum Master fulfills the same role as a traditional Project Manager.
+True
+False
+Selected answer (source): False.
+Correct answer: False.
+Explanation: Scrum Master establishes Scrum and enables team effectiveness; Developers manage their own plan and the Product Owner manages product value. Scrum defines no Project Manager accountability.
+
+Question 60 of 80
+Source: JPG 40.jpg; DOCX word/media/image61.png; PDF page 41, image 60.
+Developers are self-managing, which of the following do they manage?
+(choose the best answer)
+A. When to release, based on its progress.
+B. Stakeholders for the Sprint Review.
+C. Sprint Backlog.
+D. Sprint length.
+E. Product Backlog ordering.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Developers create and adapt the Sprint Backlog, which is a plan by and for them.
+
+Question 61 of 80
+Source: JPG 41.jpg; DOCX word/media/image62.png; PDF page 42, image 61.
+You are the Scrum Master for four Scrum Teams working from the same Product Backlog. Several of the developers come to you complaining that work identified for the upcoming two Sprints will require full-time commitment from a specialist who is external to the teams.
+What should the Scrum Master consider in this situation?
+(choose the best two answers)
+A. The need to have enough work to keep all Developers busy.
+B. The benefit of Developers figuring out a solution for themselves.
+C. The desire to maintain a stable velocity.
+D. The ability of the Scrum Teams to produce integrated Increments.
+Selected answer (source): B and D.
+Correct answer: B and D.
+Explanation: Scrum Master fosters self-management; Scrum Team and Increment require the capability to create usable, integrated value. Keeping everyone busy or preserving velocity is not the governing objective.
+
+Question 62 of 80
+Source: JPG 42.jpg; DOCX word/media/image63.png; PDF page 43, image 62.
+What does it mean for a Scrum Team to be cross-functional?
+(choose the best answer)
+A. The Scrum Team includes not only developers but also business analysts, architects, and testers.
+B. Developers on the Scrum Team work closely with business analysts, architects, developers, and testers who are not on the team.
+C. The Scrum Team includes cross-skilled individuals who are able to contribute to do what is necessary to deliver an Increment.
+D. The Scrum Team is a virtual team drawing from separate teams of business analysts, architects, developers, and testers.
+Selected answer (source): C.
+Correct answer: Not independently verified as worded; C is the best available choice.
+Review note: Scrum Team defines cross-functionality as the team collectively having all skills necessary to create value each Sprint. C should not be read as requiring every individual to be cross-skilled or able to do every task, and A's particular job titles are not mandatory.
+
+Question 63 of 80
+Source: JPG 43.jpg; DOCX word/media/image64.png; PDF page 44, image 63.
+Which approach is best for Scrum Teams in order to produce valuable Increments?
+(choose the best answer)
+A. Each Scrum Team works on an independent set of components.
+B. Each Scrum Member works only as an independent layer of the system.
+C. Each Developer works on the component where they feel that they can contribute.
+D. Each Scrum Team is accountable for developing functionality from beginning to end.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Scrum Team is cross-functional and accountable for a valuable, useful Increment; Increment must be usable, not merely an unfinished component or layer.
+
+Question 64 of 80
+Source: JPG 43.jpg; DOCX word/media/image65.png; PDF page 44, image 64.
+Who is accountable for managing the progress of work during a Sprint?
+(choose the best answer)
+A. The Product Owner.
+B. The Developers.
+C. The most junior member of the team.
+D. The Scrum Master.
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Developers adapt their plan each day toward the Sprint Goal; Daily Scrum is their opportunity to inspect progress and adapt.
+
+Question 65 of 80
+Source: JPG 44.jpg; DOCX word/media/image66.png; PDF page 45, image 65.
+What does it mean to say that an event has a timebox?
+(choose the best answer)
+A. The event must take at least a minimum amount of time.
+B. The event must happen at a set time.
+C. The event can take no more than a maximum amount of time.
+D. The event must happen by a given time.
+Selected answer (source): C.
+Correct answer: C.
+Explanation: Sprint Planning, Sprint Review and Sprint Retrospective describe timeboxes as maximum durations. A Sprint itself remains a fixed-length containing event.
+
+Question 66 of 80
+Source: JPG 44.jpg; DOCX word/media/image67.png; PDF page 45, image 66.
+Why is the Daily Scrum held at the same time and same place?
+(choose the best answer)
+A. The Product Owner demands it.
+B. The place can be named.
+C. Rooms are hard to book and must be booked in advance.
+D. The consistency reduces complexity.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Daily Scrum explicitly gives reducing complexity as the reason for its consistent time and place.
+
+Question 67 of 80
+Source: JPG 45.jpg; DOCX word/media/image68.png; PDF page 46, image 67.
+How should a Scrum Team deal with non-functional requirements?
+(choose the best answer)
+A. Make sure the release department understands these requirements, but it is not the Scrum Team's responsibility.
+B. Manage them during the Integration Sprint prior to the Release Sprint.
+C. Assign them to the lead developers on the team.
+D. Ensure every Increment meets them.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Definition of Done requires the product's applicable quality measures to be met for work to count as an Increment. This refers to applicable requirements, not every possible future feature.
+
+Question 68 of 80
+Source: JPG 46.jpg; DOCX word/media/image69.png; PDF page 47, image 68.
+What may be included in the Sprint Backlog?
+(choose the best answer)
+A. User Stories.
+B. Tasks.
+C. Use Cases.
+D. Tests.
+E. Any of the above (or others) which are a decomposition of the selected Product Backlog items.
+Selected answer (source): E.
+Correct answer: E.
+Explanation: Sprint Planning leaves decomposition techniques to Developers; Sprint Backlog requires an actionable plan, not a mandatory item format.
+
+Question 69 of 80
+Source: JPG 47.jpg; DOCX word/media/image70.png; PDF page 48, image 69.
+Who determines how work is performed during the Sprint?
+(choose the best answer)
+A. Subject matter experts.
+B. The Developers
+C. The Scrum Master.
+D. The Scrum Team.
+E. Team manager.
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Sprint Planning states that no one else tells the Developers how to turn Product Backlog items into Increments of value.
+
+Question 70 of 80
+Source: JPG 47.jpg; DOCX word/media/image71.png; PDF page 48, image 70.
+Which of the following are the Developers accountable for?
+(choose the best two answers)
+A. Creating a plan for the Sprint, the Sprint Backlog.
+B. Organizing the work required to meet the Sprint Goal.
+C. Selecting the Product Owner.
+D. Reporting productivity.
+Selected answer (source): A and B.
+Correct answer: A and B.
+Explanation: Developers are explicitly accountable for the Sprint plan and adapting it toward the Sprint Goal, within the team's self-management.
+
+Question 71 of 80
+Source: JPG 48.jpg; DOCX word/media/image72.png; PDF page 49, image 71.
+What are two responsibilities of testers in a Scrum Team?
+(choose the best two answers)
+A. The Developers are responsible for quality.
+B. Verifying the work of programmers.
+C. Scrum has no "tester" role.
+D. Tracking quality metrics.
+E. Finding bugs.
+Selected answer (source): A and C.
+Correct answer: A and C, interpreted as statements about Scrum accountabilities.
+Explanation: Developers are accountable for instilling quality through the Definition of Done. Scrum Team defines no separate tester accountability or sub-team. Testing, bug finding and metrics may still be useful work; C is a role-definition statement, not literally a task.
+
+Question 72 of 80
+Source: JPG 49.jpg; DOCX word/media/image73.png; PDF page 50, image 72.
+A Product Owner wants advice from the Scrum Master about estimating work in Scrum. What guidance should a Scrum Master give?
+(choose the best answer)
+A. Scrum forbids estimating.
+B. Estimates are made by the people doing the work.
+C. Product Backlog items must be estimated in story points.
+D. Estimates are made by the Product Owner, but are best checked with the Developers.
+E. Estimates must be in relative units.
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Product Backlog makes the Developers who will do the work responsible for sizing. The Guide mandates neither story points nor relative units.
+
+Question 73 of 80
+Source: JPG 50.jpg; DOCX word/media/image74.png; PDF page 51, image 73.
+What is the main reason for the Scrum Master to be at the Daily Scrum?
+(choose the best answer)
+A. To write down any changes to the Sprint Backlog, including adding new items, and tracking progress on the burn-down.
+B. To make sure every team member answers the three questions.
+C. To gather status and progress information to report to management.
+D. They do not have to be there; they only need to ensure the Developers have a Daily Scrum.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Scrum Master ensures Scrum events take place; Daily Scrum belongs to Developers. A Scrum Master actively working on Sprint Backlog items participates as a Developer.
+
+Question 74 of 80
+Source: JPG 50.jpg; DOCX word/media/image75.png; PDF page 51, image 74.
+Every Scrum Team should have:
+(choose the best answer)
+A. One Lead Developer and no more than 8 other members.
+B. The competencies and skills needed to deliver an Increment in a Sprint.
+C. At least one representative from each major department, such as, Quality Assurance, Development, and Marketing.
+Selected answer (source): B.
+Correct answer: B.
+Explanation: Scrum Team requires collective cross-functional capability, not specified departmental representatives or a Lead Developer hierarchy.
+
+Question 75 of 80
+Source: JPG 51.jpg; DOCX word/media/image76.png; PDF page 52, image 75.
+When does a Developer become accountable for the value of a Product Backlog item selected for the Sprint?
+(choose the best answer)
+A. Whenever a team member can accommodate more work.
+B. At the Sprint Planning Event.
+C. During the Daily Scrum.
+D. Never. The entire Scrum Team is accountable for creating value every Sprint.
+Selected answer (source): D.
+Correct answer: Not independently verified as worded; D is the best available choice with qualification.
+Review note: Scrum Team makes the entire team accountable for a valuable, useful Increment every Sprint, while Product Owner is accountable for maximizing product value. "Never" must not imply that Developers have no responsibility to contribute to value; individual selection of an item does not transfer the Product Owner's value accountability.
+
+Question 76 of 80
+Source: JPG 51.jpg; DOCX word/media/image77.png; PDF page 52, image 76.
+When is a Product Backlog item considered complete?
+(choose the best answer)
+A. At the end of the Sprint.
+B. When the item has gained product sponsor approval.
+C. When the item passes all acceptance criteria.
+D. When the item meets the Definition of Done.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Definition of Done states that an Increment is born the moment a Product Backlog item meets it. Acceptance criteria alone do not replace the Definition of Done.
+
+Question 77 of 80
+Source: JPG 52.jpg; DOCX word/media/image78.png; PDF page 53, image 77.
+What happens if the Scrum Team cannot complete its work by the end of the Sprint?
+(choose the best answer)
+A. The Sprint length is unchanged and the Scrum Team continuously learns and adapts.
+B. The Sprint is extended temporarily. Lessons are taken to ensure it does not happen again.
+C. The Sprint is extended and future Sprints use this new duration.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: The Sprint is fixed length; Adaptation and Sprint Retrospective support learning and improvement. Definition of Done sends unfinished items back to the Product Backlog for future consideration.
+
+Question 78 of 80
+Source: JPG 52.jpg; DOCX word/media/image79.png; PDF page 53, image 78.
+Who does the work to make sure Product Backlog items conform to the Definition of Done?
+(choose the best answer)
+A. The Scrum Master.
+B. The Product Owner.
+C. The Scrum Team.
+D. The Quality Assurance Team.
+E. The Developers.
+Selected answer (source): E.
+Correct answer: E.
+Explanation: Developers instill quality by adhering to the Definition of Done; Definition of Done explicitly requires Developers to conform to it.
+
+Question 79 of 80
+Source: JPG 53.jpg; DOCX word/media/image80.png; PDF page 54, image 79.
+When the Developers determine that they will not be able to finish the complete forecast, who has to be present when reviewing and adjusting the Sprint work selected?
+(choose the best answer)
+A. The Product Owner and all stakeholders.
+B. The Scrum Master, project manager and the Developers
+C. The Scrum Master and the Developers.
+D. The Product Owner and the Developers.
+Selected answer (source): D.
+Correct answer: D.
+Explanation: Sprint Goal requires Developers to collaborate with the Product Owner to negotiate Sprint Backlog scope without affecting the Sprint Goal. It does not mandate a separate formal meeting.
+
+Question 80 of 80
+Source: JPG 54.jpg; DOCX word/media/image81.png; PDF page 55, image 80.
+Which best describes the Product Backlog?
+(choose the best answer)
+A. It is allowed to grow and change as more is learned about the product and its customers.
+B. It provides just enough information to enable a Scrum Team to start the design phase of a product.
+C. It contains all foreseeable tasks and requirements from which the Scrum Team can develop and maintain a complete project plan.
+D. It is baselined to follow change management processes.
+Selected answer (source): A.
+Correct answer: A.
+Explanation: Product Backlog is an emergent, ordered list, refined as learning occurs, rather than a frozen complete project plan.
