@@ -2718,6 +2718,8 @@ B) False
 
 ## Question 137   🔁 Seen 1 time (0 duplicates)
 
+**[Related to Question 134 - same supplier scenario, but a different set of answer options]**
+
 **The Developers ask their Product Owner to re-order the Product Backlog. The team is waiting for an external supplier to deliver a component. Without that component there will not be enough work in the next Sprint to occupy the full team. As the Scrum Master, what advice would you give the Product Owner?**
 
 *(choose the best answer)*
@@ -2775,6 +2777,8 @@ D) At the beginning of each Sprint.
 ---
 
 ## Question 140   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 36 - same prompt, but a different set of answer options]**
 
 **The Product Backlog is ordered by:**
 
@@ -2913,6 +2917,8 @@ D) When there are impediments to discuss.
 ---
 
 ## Question 147   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 15 - closely related progress-accountability question with different answer choices]**
 
 **Who is accountable for tracking the remaining work toward the Sprint Goal?**
 
@@ -3150,6 +3156,8 @@ E) Add security to the Definition of Done.
 
 ## Question 158   🔁 Seen 1 time (0 duplicates)
 
+**[Related to Question 119 - same documentation scenario, but a different set of answer options]**
+
 **User documentation is part of your Definition of Done. However, there are not enough technical writers for all teams. Your Scrum Team does not have a technical writer. What should the Scrum Team do?**
 
 *(choose the best answer)*
@@ -3170,6 +3178,8 @@ D) Wait until you have a technical writer on your Scrum Team to take care of thi
 
 ## Question 159   🔁 Seen 1 time (0 duplicates)
 
+**[Related to Question 25 - asks who owns the whole Sprint Backlog, not when an individual becomes sole owner of an item]**
+
 **Who owns the Sprint Backlog?**
 
 *(choose the best answer)*
@@ -3189,6 +3199,8 @@ D) The Developers.
 ---
 
 ## Question 160   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 14 - same multi-team Definition of Done topic, but a different set of answer options]**
 
 **When multiple Scrum Teams are working on a single product, what best describes the Definition of Done?**
 
@@ -3249,6 +3261,8 @@ D) The Developers.
 ---
 
 ## Question 163   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 122 - similar Daily Scrum discussions, but a different set of answer options]**
 
 **Which of the following are topics for the Developers to discuss at the Daily Scrum as they inspect their progress toward the Sprint Goal?**
 
@@ -3535,6 +3549,8 @@ E) The Developers.
 ---
 
 ## Question 177   🔁 Seen 1 time (0 duplicates)
+
+**[Related to Question 32 - same forecast-adjustment scenario, but a different set of answer options]**
 
 **When the Developers determine that they will not be able to finish the complete forecast, who has to be present when reviewing and adjusting the Sprint work selected?**
 
@@ -3955,5 +3971,5 @@ D) It is baselined to follow change management processes.
 | Q132 | Relationships between artifacts and their commitments |
 | Q133 | Adapting Product Backlog ordering based on value evidence |
 
-**Status:** 135 questions total (114 original + 11 archive additions + 10 IA-made coverage questions). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
-**Last Updated:** 2026-10-13
+**Status:** 178 questions total (135 existing + 43 additions from the May 2022 PSM I source). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
+**Last Updated:** 2026-10-26
