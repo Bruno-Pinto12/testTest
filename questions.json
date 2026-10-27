@@ -6204,5 +6204,337 @@
     "note": "2017 source selection E is supported: the Scrum Guide defines no Sprint 0 or other special Sprint type. Every Sprint aims to produce a valuable, useful Increment.",
     "topic": "Scrum accountabilities",
     "caveat": null
+  },
+  {
+    "id": 198,
+    "prompt": "Which three of the following are feedback loops in Scrum?",
+    "context": "[Related to Question 115 - the source says \"Refinement Meeting\", not ongoing Product Backlog refinement]",
+    "instruction": "choose the best three answers",
+    "type": "select-three",
+    "options": [
+      {
+        "id": "A",
+        "text": "Refinement Meeting."
+      },
+      {
+        "id": "B",
+        "text": "Sprint Retrospective."
+      },
+      {
+        "id": "C",
+        "text": "Daily Scrum."
+      },
+      {
+        "id": "D",
+        "text": "Release Planning."
+      },
+      {
+        "id": "E",
+        "text": "Sprint Review."
+      }
+    ],
+    "answers": [
+      "B",
+      "C",
+      "E"
+    ],
+    "note": "The source selects B C E, the listed formal Scrum events for inspection and adaptation. Refinement can also provide feedback, but Scrum defines no event called \"Refinement Meeting\"; the intended three-answer framing is retained rather than treating refinement as incapable of providing feedback.",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 199,
+    "prompt": "The CEO asks the Developers to add a \"very important\" item to a Sprint that is in progress. What should the Developers do?",
+    "context": "[Related to Question 5 - same CEO scenario, but different response and scope-change options]",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Add the item to the next Sprint."
+      },
+      {
+        "id": "B",
+        "text": "Add the item to the current Sprint without any adjustments."
+      },
+      {
+        "id": "C",
+        "text": "Inform the Product Owner so they can work with the CEO."
+      },
+      {
+        "id": "D",
+        "text": "Add the item to the current Sprint and drop an item of equal size."
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "note": "The source selects C. The Product Owner manages Product Backlog ordering; Developers and the Product Owner can negotiate scope without endangering the Sprint Goal. Executive urgency does not bypass those accountabilities.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 200,
+    "prompt": "The Definition of Done serves which three purposes?",
+    "context": "[Related to Question 73 - the source's incorrect completion-threshold option says \"done\", not \"mostly done\"]",
+    "instruction": "choose the best three answers",
+    "type": "select-three",
+    "options": [
+      {
+        "id": "A",
+        "text": "Guide the Developers on how many Product Backlog items to select for the Sprint."
+      },
+      {
+        "id": "B",
+        "text": "Describe the work that must be done before the Sprint is allowed to end."
+      },
+      {
+        "id": "C",
+        "text": "Increase transparency."
+      },
+      {
+        "id": "D",
+        "text": "Describe the purpose, objective, and timebox of each Scrum event."
+      },
+      {
+        "id": "E",
+        "text": "Create a shared understanding of when work is complete."
+      }
+    ],
+    "answers": [
+      "A",
+      "C",
+      "E"
+    ],
+    "note": "The source selects A C E. The Definition of Done helps Developers forecast work and creates transparency and shared understanding. A Sprint ends at its fixed timebox, not when a specified amount of work is complete.",
+    "topic": "Definition of Done",
+    "caveat": null
+  },
+  {
+    "id": 201,
+    "prompt": "What is the timebox for the Sprint Review?",
+    "context": "[Related to Question 13 - four-choice version without the option permitting more than four hours]",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "As long as needed."
+      },
+      {
+        "id": "B",
+        "text": "2 hours for a one-month Sprint."
+      },
+      {
+        "id": "C",
+        "text": "1 day."
+      },
+      {
+        "id": "D",
+        "text": "4 hours for a one-month Sprint."
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "note": "The source selects D. The Sprint Review has a maximum four-hour timebox for a one-month Sprint and is usually shorter for shorter Sprints.",
+    "topic": "Scrum events",
+    "caveat": null
+  },
+  {
+    "id": 202,
+    "prompt": "Who should know the most about the progress toward the Product Goal?",
+    "context": "[Related to Question 42 - specifically asks about Product Goal progress, not a release and explaining alternatives]",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Scrum Master."
+      },
+      {
+        "id": "B",
+        "text": "The Product Owner."
+      },
+      {
+        "id": "C",
+        "text": "The Project Manager."
+      },
+      {
+        "id": "D",
+        "text": "The Developers."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "Likely intended source answer B; review required. The Product Owner is accountable for communicating the Product Goal and effective Product Backlog management, but the Scrum Guide does not rank whose knowledge must be greatest.",
+    "topic": "Backlogs & goals",
+    "caveat": null
+  },
+  {
+    "id": 203,
+    "prompt": "The timebox for a Daily Scrum is?",
+    "context": "[Related to Question 44 - four-choice version without the Sprint-length-dependent timebox distractor]",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 hours."
+      },
+      {
+        "id": "B",
+        "text": "The same time of day every day."
+      },
+      {
+        "id": "C",
+        "text": "15 minutes."
+      },
+      {
+        "id": "D",
+        "text": "Two minutes per person."
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "note": "The source selects C. The Daily Scrum is a 15-minute event, regardless of Sprint length.",
+    "topic": "Scrum events",
+    "caveat": null
+  },
+  {
+    "id": 204,
+    "prompt": "What is the typical size for a Scrum Team?",
+    "context": "[Related to Question 22 - preserves the different numerical distractor, 7 plus or minus 3 rather than 2]",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "7 plus or minus 3."
+      },
+      {
+        "id": "B",
+        "text": "At least 7."
+      },
+      {
+        "id": "C",
+        "text": "9."
+      },
+      {
+        "id": "D",
+        "text": "10 or fewer."
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "note": "The source selects D. Scrum Teams are typically 10 or fewer people, including the Product Owner and Scrum Master; this is guidance, not an absolute mandatory limit.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 205,
+    "prompt": "Who has the final decision about the order of items in the Product Backlog?",
+    "context": "[Related to Question 40 - offers Scrum Team rather than CEO as an alternative]",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Developers."
+      },
+      {
+        "id": "B",
+        "text": "The Scrum Master."
+      },
+      {
+        "id": "C",
+        "text": "The Stakeholders."
+      },
+      {
+        "id": "D",
+        "text": "The Product Owner."
+      },
+      {
+        "id": "E",
+        "text": "The Scrum Team."
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "note": "The source selects D. The Product Owner remains accountable for Product Backlog ordering, even when delegating work, and the organization must respect those decisions.",
+    "topic": "Backlogs & goals",
+    "caveat": null
+  },
+  {
+    "id": 206,
+    "prompt": "What are two responsibilities of testers in a Scrum Team?",
+    "context": "[Related to Question 118 - retains the responsibility framing and unqualified testing-activity alternatives]",
+    "instruction": "choose the best two answers",
+    "type": "select-two",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Developers are responsible for quality."
+      },
+      {
+        "id": "B",
+        "text": "Verifying the work of programmers."
+      },
+      {
+        "id": "C",
+        "text": "Scrum has no \"tester\" role."
+      },
+      {
+        "id": "D",
+        "text": "Tracking quality metrics."
+      },
+      {
+        "id": "E",
+        "text": "Finding bugs."
+      }
+    ],
+    "answers": [
+      "A",
+      "C"
+    ],
+    "note": "The source selects A C, interpreted as statements about Scrum accountabilities. Developers are accountable for quality, and Scrum defines no separate tester accountability. The framing is imprecise: C is not literally a responsibility, while verification, metrics and bug finding can be legitimate activities. Question 118's exclusive-responsibility distractors must not be substituted for these unqualified source options.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 207,
+    "prompt": "What are the two primary ways a Scrum Master helps a Scrum Team work at its highest level of productivity?",
+    "context": "[Related to Question 17 - the source facilitates Scrum Team decisions, not only Developer decisions]",
+    "instruction": "choose the best two answers",
+    "type": "select-two",
+    "options": [
+      {
+        "id": "A",
+        "text": "By ensuring the meetings start and end at the proper time."
+      },
+      {
+        "id": "B",
+        "text": "By facilitating Scrum Team decisions."
+      },
+      {
+        "id": "C",
+        "text": "By keeping high value features high in the Product Backlog."
+      },
+      {
+        "id": "D",
+        "text": "By removing impediments that hinder the Scrum Team."
+      }
+    ],
+    "answers": [
+      "B",
+      "D"
+    ],
+    "note": "The source selects B D. The Scrum Master supports team effectiveness and self-management and causes impediments to be removed. Product Backlog ordering remains the Product Owner's accountability.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
   }
 ]
