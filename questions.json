@@ -5587,5 +5587,622 @@
     "note": "Product Backlog is an emergent, ordered list, refined as learning occurs, rather than a frozen complete project plan.",
     "topic": "Backlogs & goals",
     "caveat": null
+  },
+  {
+    "id": 179,
+    "prompt": "Which of the following are true about the Product Owner role?",
+    "context": "",
+    "instruction": "choose the best three answers",
+    "type": "select-three",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Product Owner is accountable for ordering the Product Backlog."
+      },
+      {
+        "id": "B",
+        "text": "The Product Owner can be influenced by a committee."
+      },
+      {
+        "id": "C",
+        "text": "The Product Owner role can be played by a committee or a team of people."
+      },
+      {
+        "id": "D",
+        "text": "Multiple people can share the Product Owner role on a Scrum Team."
+      },
+      {
+        "id": "E",
+        "text": "The Product Owner is one person."
+      }
+    ],
+    "answers": [
+      "A",
+      "B",
+      "E"
+    ],
+    "note": "2017 source selection A, B, E is supported by the 2020 Guide: the Product Owner is one person, not a committee, and is accountable for Product Backlog management including ordering; others may influence the Product Backlog by convincing the Product Owner. \"Role\" is historical wording for the current Product Owner accountability.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 180,
+    "prompt": "Every Scrum Team must have a Product Owner and Scrum Master.",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "False. A Scrum Master is only required when asked for by the Development Team."
+      },
+      {
+        "id": "B",
+        "text": "True. Each must be 100% dedicated to the Scrum Team."
+      },
+      {
+        "id": "C",
+        "text": "True. Outcomes are affected by their participation and availability."
+      },
+      {
+        "id": "D",
+        "text": "False. A Product Owner can be replaced by a business analyst in the Development Team."
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "note": "2017 source selection C is supported: the 2020 Guide defines a Scrum Team as one Scrum Master, one Product Owner and Developers. Scrum does not require full-time dedication. \"Development Team\" is 2017 terminology; the 2020 Guide refers to Developers.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 181,
+    "prompt": "What is a Development Team responsible for?",
+    "context": "[Related to Question 173 - same accountability topic, but a different set of answer options and a different keyed option]",
+    "instruction": "choose the best two answers",
+    "type": "select-two",
+    "options": [
+      {
+        "id": "A",
+        "text": "Organizing the work required to meet the Sprint Goal"
+      },
+      {
+        "id": "B",
+        "text": "Resolving internal team conflicts"
+      },
+      {
+        "id": "C",
+        "text": "Selecting the Product Owner"
+      },
+      {
+        "id": "D",
+        "text": "Reporting productivity"
+      }
+    ],
+    "answers": [
+      "A",
+      "B"
+    ],
+    "note": "2017 source selection is A and B. A is explicitly supported by the 2020 Developer accountabilities. B is a historical self-organization answer: the 2020 Guide does not list conflict resolution explicitly, but self-managing Scrum Teams decide internally how to work, and the Scrum Master may coach them. \"Development Team\" is now \"Developers\".",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 182,
+    "prompt": "What enhances the transparency of an Increment?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Updating Sprint tasks properly in the electronic tracking tool"
+      },
+      {
+        "id": "B",
+        "text": "Keeping track of and estimating all undone work to be completed in a separate Sprint"
+      },
+      {
+        "id": "C",
+        "text": "Doing all work needed to meet the definition of \"Done\""
+      },
+      {
+        "id": "D",
+        "text": "Reporting Sprint progress to the stakeholders daily"
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "note": "2017 source selection C is supported: the Definition of Done creates transparency by providing a shared understanding of the work completed as part of the Increment. Scrum has no separate Sprint for undone work.",
+    "topic": "Empiricism & values",
+    "caveat": null
+  },
+  {
+    "id": 183,
+    "prompt": "Who is responsible for engaging the stakeholders?",
+    "context": "[Related to Question 50 - similar stakeholder topic, but a different set of answer options and a different keyed option]",
+    "instruction": "choose the best answer among the listed options",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Development Team"
+      },
+      {
+        "id": "B",
+        "text": "The team manager"
+      },
+      {
+        "id": "C",
+        "text": "The project manager"
+      },
+      {
+        "id": "D",
+        "text": "The business analyst"
+      },
+      {
+        "id": "E",
+        "text": "The Product Owner"
+      }
+    ],
+    "answers": [
+      "E"
+    ],
+    "note": "2017 source selection E is the best of these options: the Product Owner represents stakeholder needs and maximizes product value. Historical caveat: under the 2020 Guide, the whole Scrum Team collaborates with stakeholders (see Question 50) and Developers may also engage them; the Product Owner is not the only person who does so.",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 184,
+    "prompt": "Which output from Sprint Planning provides the Development Team with a target and overarching direction for the Sprint?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sprint Review minutes"
+      },
+      {
+        "id": "B",
+        "text": "The Sprint Backlog"
+      },
+      {
+        "id": "C",
+        "text": "The release plan"
+      },
+      {
+        "id": "D",
+        "text": "The Sprint Goal"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "note": "2017 source selection D is supported: the Sprint Goal, created during Sprint Planning, is the single objective for the Sprint and gives coherence and focus. \"Development Team\" is now \"Developers\"; release plans are not a Scrum artifact.",
+    "topic": "Scrum events",
+    "caveat": null
+  },
+  {
+    "id": 185,
+    "prompt": "If burndown charts are used to visualize progress, what does a trend line through a release burndown chart indicate?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "When the project will be over if the Product Owner removes work that is equal in effort to any new work that is added."
+      },
+      {
+        "id": "B",
+        "text": "The evolution of the cost spent on the project."
+      },
+      {
+        "id": "C",
+        "text": "When the work remaining will likely be completed if nothing changes on the Product Backlog or the Development Team."
+      },
+      {
+        "id": "D",
+        "text": "When all work will be completed so the Scrum Team can be released for other work."
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "note": "2017 source selection C describes the optional burndown technique. Historical/context caveat: release burndowns are not a Scrum requirement; the 2020 Guide mentions burn-downs only as optional forecasting practices that do not replace empiricism.",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 186,
+    "prompt": "What are two ways that architecture and infrastructure are handled in Scrum?",
+    "context": "",
+    "instruction": "choose the best two answers",
+    "type": "select-two",
+    "options": [
+      {
+        "id": "A",
+        "text": "They are added to the Product Backlog and addressed in early Sprints, while always requiring at least some business functionality, no matter how small."
+      },
+      {
+        "id": "B",
+        "text": "They are built by a separate team through the creation of an architectural runway."
+      },
+      {
+        "id": "C",
+        "text": "They are implemented along with functional development of the product."
+      },
+      {
+        "id": "D",
+        "text": "They are discussed, determined, and documented before the actual feature development Sprints."
+      }
+    ],
+    "answers": [
+      "A",
+      "C"
+    ],
+    "note": "2017 source selection is A and C. The Scrum Guide does not address architecture explicitly; these answers apply its rule that every Sprint produces a useful Increment, rather than separate architecture-only phases, Sprints or teams.",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 187,
+    "prompt": "Who can abnormally terminate a Sprint?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Development Team or its members"
+      },
+      {
+        "id": "B",
+        "text": "The Scrum Master"
+      },
+      {
+        "id": "C",
+        "text": "The Stakeholders"
+      },
+      {
+        "id": "D",
+        "text": "The Product Owner"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "note": "2017 source selection D is supported: only the Product Owner has the authority to cancel a Sprint, which may happen if the Sprint Goal becomes obsolete. \"Abnormally terminate\" is historical wording for cancellation.",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 188,
+    "prompt": "Which two activities will a Product Owner engage in during a Sprint?",
+    "context": "",
+    "instruction": "choose the best two answers",
+    "type": "select-two",
+    "options": [
+      {
+        "id": "A",
+        "text": "Update the Sprint burndown chart."
+      },
+      {
+        "id": "B",
+        "text": "Run the Daily Scrum."
+      },
+      {
+        "id": "C",
+        "text": "Answer questions from the Development Team about items in the current Sprint."
+      },
+      {
+        "id": "D",
+        "text": "Prioritize the Development Team's work on the Sprint Backlog."
+      },
+      {
+        "id": "E",
+        "text": "Work with the stakeholders."
+      }
+    ],
+    "answers": [
+      "C",
+      "E"
+    ],
+    "note": "2017 source selection C and E is supported: the Product Owner helps the Developers understand Product Backlog items and works with stakeholders. The Sprint Backlog is by and for the Developers; the Daily Scrum is their event.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 189,
+    "prompt": "Why does a Development Team need a Sprint Goal?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Sprint Goal ensures that all of the Product Backlog items selected for the Sprint are implemented."
+      },
+      {
+        "id": "B",
+        "text": "A Sprint Goal only gives purpose to Sprint 0."
+      },
+      {
+        "id": "C",
+        "text": "The Development Team is more focused with a common yet specific goal."
+      },
+      {
+        "id": "D",
+        "text": "Sprint Goals are not valuable. Everything is known from the Product Backlog."
+      }
+    ],
+    "answers": [
+      "C"
+    ],
+    "note": "2017 source selection C is supported: the Sprint Goal creates coherence and focus, encouraging the Scrum Team to work together. Scrum has no Sprint 0, and the Sprint Goal allows flexibility in the exact work delivered.",
+    "topic": "Backlogs & goals",
+    "caveat": null
+  },
+  {
+    "id": 190,
+    "prompt": "A new developer is having continuing conflicts with existing Development Team members and creating a hostile environment. If necessary, who is responsible for removing the team member?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Development Team is responsible, and may need help from the Scrum Master."
+      },
+      {
+        "id": "B",
+        "text": "The Scrum Master is responsible, because he/she removes impediments."
+      },
+      {
+        "id": "C",
+        "text": "The Product Owner is responsible, because he/she controls the return on investment (ROI)."
+      },
+      {
+        "id": "D",
+        "text": "The hiring manager is responsible, because he/she hired the developer."
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "note": "2017 source selection A is retained. Caveat: the Scrum Guide does not prescribe a team-member removal procedure; the answer applies self-management, with Scrum Master coaching and help. Organizational policies may also apply.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 191,
+    "prompt": "What three factors are best considered when establishing the Sprint length?",
+    "context": "[Related to Question 45 - same Sprint-length topic, but a multiple-answer version with different answer options]",
+    "instruction": "choose the best three answers",
+    "type": "select-three",
+    "options": [
+      {
+        "id": "A",
+        "text": "The risk of being disconnected from the stakeholders"
+      },
+      {
+        "id": "B",
+        "text": "Sprints must have the same length throughout an organization"
+      },
+      {
+        "id": "C",
+        "text": "The level of uncertainty over the technology to be used"
+      },
+      {
+        "id": "D",
+        "text": "The frequency at which team formation can be changed"
+      },
+      {
+        "id": "E",
+        "text": "The ability to go to market with a product release"
+      }
+    ],
+    "answers": [
+      "A",
+      "C",
+      "E"
+    ],
+    "note": "2017 source selection is A, C and E. The Guide fixes only Sprints of one month or less; it explains that overly long Sprints can increase complexity and risk, while shorter Sprints create more learning cycles. These factors are reasoned applications rather than a Guide checklist.",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 192,
+    "prompt": "A Scrum Master is working with a Development Team that has members in different physical locations. The Development Team meets in a variety of meeting rooms and has much to do logistically (for example, set up conference calls) before the Daily Scrum. What action should the Scrum Master take?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Allow the Development Team to self-manage and determine for itself what to do."
+      },
+      {
+        "id": "B",
+        "text": "Inform management and ask them to solve it."
+      },
+      {
+        "id": "C",
+        "text": "Set up the meeting and tell the Development Team that is how it will be done."
+      },
+      {
+        "id": "D",
+        "text": "Ask the Development Team members to alternate who is responsible for meeting setup."
+      }
+    ],
+    "answers": [
+      "A"
+    ],
+    "note": "2017 source selection A is supported: the Daily Scrum is an event for the Developers, and self-managing teams decide how to make it work. The Scrum Master ensures it takes place and can coach, but does not dictate logistics.",
+    "topic": "Scrum events",
+    "caveat": null
+  },
+  {
+    "id": 193,
+    "prompt": "Which of the following is required by Scrum?",
+    "context": "[Related to Question 86 - same prompt, but a different set of answer options and a different keyed option]",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sprint Burndown Chart"
+      },
+      {
+        "id": "B",
+        "text": "Members must stand up at the Daily Scrum"
+      },
+      {
+        "id": "C",
+        "text": "Release Planning"
+      },
+      {
+        "id": "D",
+        "text": "Sprint Retrospective"
+      },
+      {
+        "id": "E",
+        "text": "All of the above"
+      }
+    ],
+    "answers": [
+      "D"
+    ],
+    "note": "2017 source selection D is supported: the Sprint Retrospective is a Scrum event. Burndown charts, standing up and release planning are optional practices, not Scrum Guide requirements.",
+    "topic": "Scrum foundations",
+    "caveat": null
+  },
+  {
+    "id": 194,
+    "prompt": "Which two of the following are true about the Scrum Master role?",
+    "context": "",
+    "instruction": "choose the best two answers",
+    "type": "select-two",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Scrum Master assigns tasks to Development Team members when they need work."
+      },
+      {
+        "id": "B",
+        "text": "The Scrum Master is responsible for updating the Sprint Burndown."
+      },
+      {
+        "id": "C",
+        "text": "The Scrum Master helps those outside the team interact with the Scrum Team."
+      },
+      {
+        "id": "D",
+        "text": "At the Sprint Review, the Scrum Master identifies what has been \"done\" and what has not been \"done\"."
+      },
+      {
+        "id": "E",
+        "text": "The Scrum Master teaches the Development Team to keep the Scrum meetings to their timebox."
+      }
+    ],
+    "answers": [
+      "C",
+      "E"
+    ],
+    "note": "2017 source selection C and E is supported in current terms: the Scrum Master helps stakeholders and the organization work with the Scrum Team, and ensures that Scrum events are kept within their timeboxes. \"Role\" and \"Scrum meetings\" are historical wording for accountability and events.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
+  },
+  {
+    "id": 195,
+    "prompt": "The Product Owner makes sure the team selects enough from the Product Backlog for a Sprint to satisfy the stakeholders.",
+    "context": "",
+    "instruction": "",
+    "type": "true-false",
+    "options": [
+      {
+        "id": "A",
+        "text": "True"
+      },
+      {
+        "id": "B",
+        "text": "False"
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "2017 source selection False is supported: during Sprint Planning, the Developers select items from the Product Backlog in discussion with the Product Owner; stakeholder satisfaction does not set their forecast.",
+    "topic": "Backlogs & goals",
+    "caveat": null
+  },
+  {
+    "id": 196,
+    "prompt": "Who is responsible for clearly expressing Product Backlog Items?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Scrum Master, or the Scrum Master may have the Development Team do it."
+      },
+      {
+        "id": "B",
+        "text": "The Product Owner."
+      },
+      {
+        "id": "C",
+        "text": "The Scrum Master."
+      },
+      {
+        "id": "D",
+        "text": "The business analyst who represents the Product Owner in the Development Team."
+      }
+    ],
+    "answers": [
+      "B"
+    ],
+    "note": "2017 source selection B is supported: the 2020 Guide makes the Product Owner accountable for creating and clearly communicating Product Backlog items. The Product Owner may delegate this work, but remains accountable.",
+    "topic": "Backlogs & goals",
+    "caveat": null
+  },
+  {
+    "id": 197,
+    "prompt": "What is the accountability of the Product Owner during Sprint 0?",
+    "context": "",
+    "instruction": "choose the best answer",
+    "type": "single",
+    "options": [
+      {
+        "id": "A",
+        "text": "Make the complete project plan to commit date, budget and scope to the stakeholders."
+      },
+      {
+        "id": "B",
+        "text": "Make sure enough Product Backlog items are refined to fill the first 3 Sprints."
+      },
+      {
+        "id": "C",
+        "text": "Gathering, eliciting, and analyzing the requirements that will be inserted into the Product Backlog."
+      },
+      {
+        "id": "D",
+        "text": "Determine the composition of the Development Teams so they have the capacity to deliver the completed forecast."
+      },
+      {
+        "id": "E",
+        "text": "There is no such thing as Sprint 0."
+      }
+    ],
+    "answers": [
+      "E"
+    ],
+    "note": "2017 source selection E is supported: the Scrum Guide defines no Sprint 0 or other special Sprint type. Every Sprint aims to produce a valuable, useful Increment.",
+    "topic": "Scrum accountabilities",
+    "caveat": null
   }
 ]

@@ -3590,6 +3590,402 @@ D) It is baselined to follow change management processes.
 
 ---
 
+## Question 179   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/01.jpg`, Q1
+
+**Which of the following are true about the Product Owner role?**
+
+*(choose the best three answers)*
+
+A) The Product Owner is accountable for ordering the Product Backlog.
+
+B) The Product Owner can be influenced by a committee.
+
+C) The Product Owner role can be played by a committee or a team of people.
+
+D) Multiple people can share the Product Owner role on a Scrum Team.
+
+E) The Product Owner is one person.
+
+**Answer:** A B E
+
+**Key note:** 2017 source selection A, B, E is supported by the 2020 Guide: the Product Owner is one person, not a committee, and is accountable for Product Backlog management including ordering; others may influence the Product Backlog by convincing the Product Owner. "Role" is historical wording for the current Product Owner accountability.
+
+---
+
+## Question 180   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/02.jpg`, Q2
+
+**Every Scrum Team must have a Product Owner and Scrum Master.**
+
+*(choose the best answer)*
+
+A) False. A Scrum Master is only required when asked for by the Development Team.
+
+B) True. Each must be 100% dedicated to the Scrum Team.
+
+C) True. Outcomes are affected by their participation and availability.
+
+D) False. A Product Owner can be replaced by a business analyst in the Development Team.
+
+**Answer:** C
+
+**Key note:** 2017 source selection C is supported: the 2020 Guide defines a Scrum Team as one Scrum Master, one Product Owner and Developers. Scrum does not require full-time dedication. "Development Team" is 2017 terminology; the 2020 Guide refers to Developers.
+
+---
+
+## Question 181   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/02.jpg`, Q3
+
+**[Related to Question 173 - same accountability topic, but a different set of answer options and a different keyed option]**
+
+**What is a Development Team responsible for?**
+
+*(choose the best two answers)*
+
+A) Organizing the work required to meet the Sprint Goal
+
+B) Resolving internal team conflicts
+
+C) Selecting the Product Owner
+
+D) Reporting productivity
+
+**Answer:** A B
+
+**Key note:** 2017 source selection is A and B. A is explicitly supported by the 2020 Developer accountabilities. B is a historical self-organization answer: the 2020 Guide does not list conflict resolution explicitly, but self-managing Scrum Teams decide internally how to work, and the Scrum Master may coach them. "Development Team" is now "Developers".
+
+---
+
+## Question 182   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/03.jpg`, Q6
+
+**What enhances the transparency of an Increment?**
+
+*(choose the best answer)*
+
+A) Updating Sprint tasks properly in the electronic tracking tool
+
+B) Keeping track of and estimating all undone work to be completed in a separate Sprint
+
+C) Doing all work needed to meet the definition of "Done"
+
+D) Reporting Sprint progress to the stakeholders daily
+
+**Answer:** C
+
+**Key note:** 2017 source selection C is supported: the Definition of Done creates transparency by providing a shared understanding of the work completed as part of the Increment. Scrum has no separate Sprint for undone work.
+
+---
+
+## Question 183   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/03.jpg`, Q9
+
+**[Related to Question 50 - similar stakeholder topic, but a different set of answer options and a different keyed option]**
+
+**Who is responsible for engaging the stakeholders?**
+
+*(choose the best answer among the listed options)*
+
+A) The Development Team
+
+B) The team manager
+
+C) The project manager
+
+D) The business analyst
+
+E) The Product Owner
+
+**Answer:** E
+
+**Key note:** 2017 source selection E is the best of these options: the Product Owner represents stakeholder needs and maximizes product value. Historical caveat: under the 2020 Guide, the whole Scrum Team collaborates with stakeholders (see Question 50) and Developers may also engage them; the Product Owner is not the only person who does so.
+
+---
+
+## Question 184   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/04.jpg`, Q13
+
+**Which output from Sprint Planning provides the Development Team with a target and overarching direction for the Sprint?**
+
+*(choose the best answer)*
+
+A) Sprint Review minutes
+
+B) The Sprint Backlog
+
+C) The release plan
+
+D) The Sprint Goal
+
+**Answer:** D
+
+**Key note:** 2017 source selection D is supported: the Sprint Goal, created during Sprint Planning, is the single objective for the Sprint and gives coherence and focus. "Development Team" is now "Developers"; release plans are not a Scrum artifact.
+
+---
+
+## Question 185   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/08.jpg`, Q27
+
+**If burndown charts are used to visualize progress, what does a trend line through a release burndown chart indicate?**
+
+*(choose the best answer)*
+
+A) When the project will be over if the Product Owner removes work that is equal in effort to any new work that is added.
+
+B) The evolution of the cost spent on the project.
+
+C) When the work remaining will likely be completed if nothing changes on the Product Backlog or the Development Team.
+
+D) When all work will be completed so the Scrum Team can be released for other work.
+
+**Answer:** C
+
+**Key note:** 2017 source selection C describes the optional burndown technique. Historical/context caveat: release burndowns are not a Scrum requirement; the 2020 Guide mentions burn-downs only as optional forecasting practices that do not replace empiricism.
+
+---
+
+## Question 186   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/09.jpg`, Q31
+
+**What are two ways that architecture and infrastructure are handled in Scrum?**
+
+*(choose the best two answers)*
+
+A) They are added to the Product Backlog and addressed in early Sprints, while always requiring at least some business functionality, no matter how small.
+
+B) They are built by a separate team through the creation of an architectural runway.
+
+C) They are implemented along with functional development of the product.
+
+D) They are discussed, determined, and documented before the actual feature development Sprints.
+
+**Answer:** A C
+
+**Key note:** 2017 source selection is A and C. The Scrum Guide does not address architecture explicitly; these answers apply its rule that every Sprint produces a useful Increment, rather than separate architecture-only phases, Sprints or teams.
+
+---
+
+## Question 187   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/09.jpg`, Q33
+
+**Who can abnormally terminate a Sprint?**
+
+*(choose the best answer)*
+
+A) The Development Team or its members
+
+B) The Scrum Master
+
+C) The Stakeholders
+
+D) The Product Owner
+
+**Answer:** D
+
+**Key note:** 2017 source selection D is supported: only the Product Owner has the authority to cancel a Sprint, which may happen if the Sprint Goal becomes obsolete. "Abnormally terminate" is historical wording for cancellation.
+
+---
+
+## Question 188   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/10.jpg`, Q35
+
+**Which two activities will a Product Owner engage in during a Sprint?**
+
+*(choose the best two answers)*
+
+A) Update the Sprint burndown chart.
+
+B) Run the Daily Scrum.
+
+C) Answer questions from the Development Team about items in the current Sprint.
+
+D) Prioritize the Development Team's work on the Sprint Backlog.
+
+E) Work with the stakeholders.
+
+**Answer:** C E
+
+**Key note:** 2017 source selection C and E is supported: the Product Owner helps the Developers understand Product Backlog items and works with stakeholders. The Sprint Backlog is by and for the Developers; the Daily Scrum is their event.
+
+---
+
+## Question 189   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/11.jpg`, Q40
+
+**Why does a Development Team need a Sprint Goal?**
+
+*(choose the best answer)*
+
+A) A Sprint Goal ensures that all of the Product Backlog items selected for the Sprint are implemented.
+
+B) A Sprint Goal only gives purpose to Sprint 0.
+
+C) The Development Team is more focused with a common yet specific goal.
+
+D) Sprint Goals are not valuable. Everything is known from the Product Backlog.
+
+**Answer:** C
+
+**Key note:** 2017 source selection C is supported: the Sprint Goal creates coherence and focus, encouraging the Scrum Team to work together. Scrum has no Sprint 0, and the Sprint Goal allows flexibility in the exact work delivered.
+
+---
+
+## Question 190   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/12.jpg`, Q43
+
+**A new developer is having continuing conflicts with existing Development Team members and creating a hostile environment. If necessary, who is responsible for removing the team member?**
+
+*(choose the best answer)*
+
+A) The Development Team is responsible, and may need help from the Scrum Master.
+
+B) The Scrum Master is responsible, because he/she removes impediments.
+
+C) The Product Owner is responsible, because he/she controls the return on investment (ROI).
+
+D) The hiring manager is responsible, because he/she hired the developer.
+
+**Answer:** A
+
+**Key note:** 2017 source selection A is retained. Caveat: the Scrum Guide does not prescribe a team-member removal procedure; the answer applies self-management, with Scrum Master coaching and help. Organizational policies may also apply.
+
+---
+
+## Question 191   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/12.jpg`, Q44
+
+**[Related to Question 45 - same Sprint-length topic, but a multiple-answer version with different answer options]**
+
+**What three factors are best considered when establishing the Sprint length?**
+
+*(choose the best three answers)*
+
+A) The risk of being disconnected from the stakeholders
+
+B) Sprints must have the same length throughout an organization
+
+C) The level of uncertainty over the technology to be used
+
+D) The frequency at which team formation can be changed
+
+E) The ability to go to market with a product release
+
+**Answer:** A C E
+
+**Key note:** 2017 source selection is A, C and E. The Guide fixes only Sprints of one month or less; it explains that overly long Sprints can increase complexity and risk, while shorter Sprints create more learning cycles. These factors are reasoned applications rather than a Guide checklist.
+
+---
+
+## Question 192   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/15.jpg`, Q56
+
+**A Scrum Master is working with a Development Team that has members in different physical locations. The Development Team meets in a variety of meeting rooms and has much to do logistically (for example, set up conference calls) before the Daily Scrum. What action should the Scrum Master take?**
+
+*(choose the best answer)*
+
+A) Allow the Development Team to self-manage and determine for itself what to do.
+
+B) Inform management and ask them to solve it.
+
+C) Set up the meeting and tell the Development Team that is how it will be done.
+
+D) Ask the Development Team members to alternate who is responsible for meeting setup.
+
+**Answer:** A
+
+**Key note:** 2017 source selection A is supported: the Daily Scrum is an event for the Developers, and self-managing teams decide how to make it work. The Scrum Master ensures it takes place and can coach, but does not dictate logistics.
+
+---
+
+## Question 193   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/17.jpg`, Q63
+
+**[Related to Question 86 - same prompt, but a different set of answer options and a different keyed option]**
+
+**Which of the following is required by Scrum?**
+
+*(choose the best answer)*
+
+A) Sprint Burndown Chart
+
+B) Members must stand up at the Daily Scrum
+
+C) Release Planning
+
+D) Sprint Retrospective
+
+E) All of the above
+
+**Answer:** D
+
+**Key note:** 2017 source selection D is supported: the Sprint Retrospective is a Scrum event. Burndown charts, standing up and release planning are optional practices, not Scrum Guide requirements.
+
+---
+
+## Question 194   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/17.jpg`, Q65
+
+**Which two of the following are true about the Scrum Master role?**
+
+*(choose the best two answers)*
+
+A) The Scrum Master assigns tasks to Development Team members when they need work.
+
+B) The Scrum Master is responsible for updating the Sprint Burndown.
+
+C) The Scrum Master helps those outside the team interact with the Scrum Team.
+
+D) At the Sprint Review, the Scrum Master identifies what has been "done" and what has not been "done".
+
+E) The Scrum Master teaches the Development Team to keep the Scrum meetings to their timebox.
+
+**Answer:** C E
+
+**Key note:** 2017 source selection C and E is supported in current terms: the Scrum Master helps stakeholders and the organization work with the Scrum Team, and ensures that Scrum events are kept within their timeboxes. "Role" and "Scrum meetings" are historical wording for accountability and events.
+
+---
+
+## Question 195   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/20.jpg`, Q74
+
+**The Product Owner makes sure the team selects enough from the Product Backlog for a Sprint to satisfy the stakeholders.**
+
+A) True
+
+B) False
+
+**Answer:** B
+
+**Key note:** 2017 source selection False is supported: during Sprint Planning, the Developers select items from the Product Backlog in discussion with the Product Owner; stakeholder satisfaction does not set their forecast.
+
+---
+
+## Question 196   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/20.jpg`, Q75
+
+**Who is responsible for clearly expressing Product Backlog Items?**
+
+*(choose the best answer)*
+
+A) The Scrum Master, or the Scrum Master may have the Development Team do it.
+
+B) The Product Owner.
+
+C) The Scrum Master.
+
+D) The business analyst who represents the Product Owner in the Development Team.
+
+**Answer:** B
+
+**Key note:** 2017 source selection B is supported: the 2020 Guide makes the Product Owner accountable for creating and clearly communicating Product Backlog items. The Product Owner may delegate this work, but remains accountable.
+
+---
+
+## Question 197   🔁 Source: `20170919 - PSM1 - Q-R - 100 pour 100/21.jpg`, Q78
+
+**What is the accountability of the Product Owner during Sprint 0?**
+
+*(choose the best answer)*
+
+A) Make the complete project plan to commit date, budget and scope to the stakeholders.
+
+B) Make sure enough Product Backlog items are refined to fill the first 3 Sprints.
+
+C) Gathering, eliciting, and analyzing the requirements that will be inserted into the Product Backlog.
+
+D) Determine the composition of the Development Teams so they have the capacity to deliver the completed forecast.
+
+E) There is no such thing as Sprint 0.
+
+**Answer:** E
+
+**Key note:** 2017 source selection E is supported: the Scrum Guide defines no Sprint 0 or other special Sprint type. Every Sprint aims to produce a valuable, useful Increment.
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -3940,6 +4336,95 @@ D) It is baselined to follow change management processes.
 
 ---
 
+### Source comparison: `20170919 - PSM1 - Q-R - 100 pour 100/` (22 images, 2017 PSM I result screenshots)
+
+**Result:** 79 source questions extracted from all 22 images (`01.jpg`–`22.jpg`); 19 added (Q179–Q197), 60 skipped as duplicates (59 of existing entries, 1 within this source set), and 1 unresolved because Question 10 does not appear in any image. Visible selections come from a 2017 assessment and use 2017 terminology (for example, Development Team); the 100% score in the folder name is provenance, not proof of correctness. Answers were reviewed against the 2020 Scrum Guide and historical differences are noted in each added key note.
+
+| Source question (image) | Result |
+|---|---|
+| 1 (01.jpg) | Added as Q179 |
+| 2 (02.jpg) | Added as Q180 |
+| 3 (02.jpg) | Added as Q181 (related to Q173; different keyed option) |
+| 4 (02.jpg) | Duplicate of Q61 |
+| 5 (02.jpg) | Duplicate of Q34 |
+| 6 (03.jpg) | Added as Q182 |
+| 7 (03.jpg) | Duplicate of Q136 |
+| 8 (03.jpg) | Duplicate of Q5 (source selection "Inform the Product Owner" is compatible with the existing key) |
+| 9 (03.jpg) | Added as Q183 (related to Q50; different option set, historical caveat) |
+| 10 | Unresolved: not present in any image (03.jpg ends at Q9, 04.jpg starts at Q11) |
+| 11 (04.jpg) | Duplicate of Q74 |
+| 12 (04.jpg) | Duplicate of Q172 |
+| 13 (04.jpg) | Added as Q184 |
+| 14 (04.jpg) | Duplicate of Q62 |
+| 15 (05.jpg) | Duplicate of Q25 |
+| 16 (05.jpg) | Duplicate of Q163; conflicting answer: the 2017 selection keys the former "three questions", which are optional under the 2020 Guide (see Q104); Q163's key is kept |
+| 17 (05.jpg) | Duplicate of Q19 |
+| 18 (06.jpg) | Duplicate of Q187 (same as source Q33) |
+| 19 (06.jpg) | Duplicate of Q153 |
+| 20 (06.jpg) | Duplicate of Q39 |
+| 21 (06.jpg) | Duplicate of Q38 |
+| 22 (07.jpg) | Duplicate of Q75 |
+| 23 (07.jpg) | Duplicate of Q138; the source shows no choice instruction |
+| 24 (07.jpg) | Duplicate of Q81 (2017 version omits "why") |
+| 25 (07.jpg) | Duplicate of Q56 |
+| 26 (08.jpg) | Duplicate of Q175 |
+| 27 (08.jpg) | Added as Q185 |
+| 28 (08.jpg) | Duplicate of Q144 |
+| 29 (08.jpg) | Duplicate of Q73 |
+| 30 (09.jpg) | Duplicate of Q31 |
+| 31 (09.jpg) | Added as Q186 |
+| 32 (09.jpg) | Duplicate of Q149 |
+| 33 (09.jpg) | Added as Q187 |
+| 34 (10.jpg) | Duplicate of Q28 |
+| 35 (10.jpg) | Added as Q188 |
+| 36 (10.jpg) | Duplicate of Q121 |
+| 37 (10.jpg) | Duplicate of Q11 |
+| 38 (11.jpg) | Duplicate of Q174 |
+| 39 (11.jpg) | Duplicate of Q155 |
+| 40 (11.jpg) | Added as Q189 |
+| 41 (11.jpg) | Duplicate of Q6 |
+| 42 (12.jpg) | Duplicate of Q115 |
+| 43 (12.jpg) | Added as Q190 |
+| 44 (12.jpg) | Added as Q191 (related to Q45; different keyed options) |
+| 45 (12.jpg) | Duplicate of Q38 |
+| 46 (13.jpg) | Duplicate of Q55 |
+| 47 (13.jpg) | Duplicate of Q164 |
+| 48 (13.jpg) | Duplicate of Q152 |
+| 49 (13.jpg) | Duplicate of Q17 |
+| 50 (14.jpg) | Duplicate of Q140; the 2017 option "Importance ... at all times" is less precise than the existing key |
+| 51 (14.jpg) | Duplicate of Q162 |
+| 52 (14.jpg) | Duplicate of Q53 |
+| 53 (14.jpg) | Duplicate of Q169 |
+| 54 (15.jpg) | Duplicate of Q80 |
+| 55 (15.jpg) | Duplicate of Q150 |
+| 56 (15.jpg) | Added as Q192 |
+| 57 (15.jpg) | Duplicate of Q66 |
+| 58 (16.jpg) | Duplicate of Q177 (also Q32) |
+| 59 (16.jpg) | Duplicate of Q52 |
+| 60 (16.jpg) | Duplicate of Q3 |
+| 61 (16.jpg) | Duplicate of Q39 |
+| 62 (17.jpg) | Duplicate of Q17 |
+| 63 (17.jpg) | Added as Q193 (related to Q86; different keyed option) |
+| 64 (17.jpg) | Duplicate of Q48 |
+| 65 (17.jpg) | Added as Q194 |
+| 66 (18.jpg) | Duplicate of Q35; under the 2020 Guide, Increments may also be delivered before the Sprint ends |
+| 67 (18.jpg) | Duplicate of Q138 |
+| 68 (18.jpg) | Duplicate of Q4 |
+| 69 (18.jpg) | Duplicate of Q142 |
+| 70 (19.jpg) | Duplicate of Q15 |
+| 71 (19.jpg) | Duplicate of Q30 and Q44 (same place/time and 15-minute timebox) |
+| 72 (19.jpg) | Duplicate of Q30 |
+| 73 (20.jpg) | Duplicate of Q77 |
+| 74 (20.jpg) | Added as Q195 |
+| 75 (20.jpg) | Added as Q196 |
+| 76 (20.jpg) | Duplicate of Q13 |
+| 77 (21.jpg) | Duplicate of Q1 |
+| 78 (21.jpg) | Added as Q197 |
+| 79 (22.jpg) | Duplicate of Q47 |
+| 80 (22.jpg) | Duplicate of Q26 |
+
+---
+
 ## 📚 Coverage additions from personal archives
 
 | New question | Source | Coverage area |
@@ -3971,5 +4456,5 @@ D) It is baselined to follow change management processes.
 | Q132 | Relationships between artifacts and their commitments |
 | Q133 | Adapting Product Backlog ordering based on value evidence |
 
-**Status:** 178 questions total (135 existing + 43 additions from the May 2022 PSM I source). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
-**Last Updated:** 2026-10-26
+**Status:** 197 questions total (135 existing + 43 additions from the May 2022 PSM I source + 19 additions from the September 2017 PSM I screenshots). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
+**Last Updated:** 2026-10-27
