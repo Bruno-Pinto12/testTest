@@ -3986,6 +3986,234 @@ E) There is no such thing as Sprint 0.
 
 ---
 
+## Question 198   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q20
+
+**[Related to Question 115 - the source says "Refinement Meeting", not ongoing Product Backlog refinement]**
+
+**Which three of the following are feedback loops in Scrum?**
+
+*(choose the best three answers)*
+
+A) Refinement Meeting.
+
+B) Sprint Retrospective.
+
+C) Daily Scrum.
+
+D) Release Planning.
+
+E) Sprint Review.
+
+**Answer:** B C E
+
+**Key note:** The source selects B C E, the listed formal Scrum events for inspection and adaptation. Refinement can also provide feedback, but Scrum defines no event called "Refinement Meeting"; the intended three-answer framing is retained rather than treating refinement as incapable of providing feedback.
+
+---
+
+## Question 199   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q22
+
+**[Related to Question 5 - same CEO scenario, but different response and scope-change options]**
+
+**The CEO asks the Developers to add a "very important" item to a Sprint that is in progress. What should the Developers do?**
+
+*(choose the best answer)*
+
+A) Add the item to the next Sprint.
+
+B) Add the item to the current Sprint without any adjustments.
+
+C) Inform the Product Owner so they can work with the CEO.
+
+D) Add the item to the current Sprint and drop an item of equal size.
+
+**Answer:** C
+
+**Key note:** The source selects C. The Product Owner manages Product Backlog ordering; Developers and the Product Owner can negotiate scope without endangering the Sprint Goal. Executive urgency does not bypass those accountabilities.
+
+---
+
+## Question 200   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q25
+
+**[Related to Question 73 - the source's incorrect completion-threshold option says "done", not "mostly done"]**
+
+**The Definition of Done serves which three purposes?**
+
+*(choose the best three answers)*
+
+A) Guide the Developers on how many Product Backlog items to select for the Sprint.
+
+B) Describe the work that must be done before the Sprint is allowed to end.
+
+C) Increase transparency.
+
+D) Describe the purpose, objective, and timebox of each Scrum event.
+
+E) Create a shared understanding of when work is complete.
+
+**Answer:** A C E
+
+**Key note:** The source selects A C E. The Definition of Done helps Developers forecast work and creates transparency and shared understanding. A Sprint ends at its fixed timebox, not when a specified amount of work is complete.
+
+---
+
+## Question 201   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q27
+
+**[Related to Question 13 - four-choice version without the option permitting more than four hours]**
+
+**What is the timebox for the Sprint Review?**
+
+*(choose the best answer)*
+
+A) As long as needed.
+
+B) 2 hours for a one-month Sprint.
+
+C) 1 day.
+
+D) 4 hours for a one-month Sprint.
+
+**Answer:** D
+
+**Key note:** The source selects D. The Sprint Review has a maximum four-hour timebox for a one-month Sprint and is usually shorter for shorter Sprints.
+
+---
+
+## Question 202   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q30
+
+**[Related to Question 42 - specifically asks about Product Goal progress, not a release and explaining alternatives]**
+
+**Who should know the most about the progress toward the Product Goal?**
+
+*(choose the best answer)*
+
+A) The Scrum Master.
+
+B) The Product Owner.
+
+C) The Project Manager.
+
+D) The Developers.
+
+**Answer:** B
+
+**Key note:** Likely intended source answer B; review required. The Product Owner is accountable for communicating the Product Goal and effective Product Backlog management, but the Scrum Guide does not rank whose knowledge must be greatest.
+
+---
+
+## Question 203   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q54
+
+**[Related to Question 44 - four-choice version without the Sprint-length-dependent timebox distractor]**
+
+**The timebox for a Daily Scrum is?**
+
+*(choose the best answer)*
+
+A) 4 hours.
+
+B) The same time of day every day.
+
+C) 15 minutes.
+
+D) Two minutes per person.
+
+**Answer:** C
+
+**Key note:** The source selects C. The Daily Scrum is a 15-minute event, regardless of Sprint length.
+
+---
+
+## Question 204   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q56
+
+**[Related to Question 22 - preserves the different numerical distractor, 7 plus or minus 3 rather than 2]**
+
+**What is the typical size for a Scrum Team?**
+
+*(choose the best answer)*
+
+A) 7 plus or minus 3.
+
+B) At least 7.
+
+C) 9.
+
+D) 10 or fewer.
+
+**Answer:** D
+
+**Key note:** The source selects D. Scrum Teams are typically 10 or fewer people, including the Product Owner and Scrum Master; this is guidance, not an absolute mandatory limit.
+
+---
+
+## Question 205   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q58
+
+**[Related to Question 40 - offers Scrum Team rather than CEO as an alternative]**
+
+**Who has the final decision about the order of items in the Product Backlog?**
+
+*(choose the best answer)*
+
+A) The Developers.
+
+B) The Scrum Master.
+
+C) The Stakeholders.
+
+D) The Product Owner.
+
+E) The Scrum Team.
+
+**Answer:** D
+
+**Key note:** The source selects D. The Product Owner remains accountable for Product Backlog ordering, even when delegating work, and the organization must respect those decisions.
+
+---
+
+## Question 206   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q71
+
+**[Related to Question 118 - retains the responsibility framing and unqualified testing-activity alternatives]**
+
+**What are two responsibilities of testers in a Scrum Team?**
+
+*(choose the best two answers)*
+
+A) The Developers are responsible for quality.
+
+B) Verifying the work of programmers.
+
+C) Scrum has no "tester" role.
+
+D) Tracking quality metrics.
+
+E) Finding bugs.
+
+**Answer:** A C
+
+**Key note:** The source selects A C, interpreted as statements about Scrum accountabilities. Developers are accountable for quality, and Scrum defines no separate tester accountability. The framing is imprecise: C is not literally a responsibility, while verification, metrics and bug finding can be legitimate activities. Question 118's exclusive-responsibility distractors must not be substituted for these unqualified source options.
+
+---
+
+## Question 207   🔁 Source: `Scrum/test_2/psmi-100-answers.txt`, Q5
+
+**[Related to Question 17 - the source facilitates Scrum Team decisions, not only Developer decisions]**
+
+**What are the two primary ways a Scrum Master helps a Scrum Team work at its highest level of productivity?**
+
+*(choose the best two answers)*
+
+A) By ensuring the meetings start and end at the proper time.
+
+B) By facilitating Scrum Team decisions.
+
+C) By keeping high value features high in the Product Backlog.
+
+D) By removing impediments that hinder the Scrum Team.
+
+**Answer:** B D
+
+**Key note:** The source selects B D. The Scrum Master supports team effectiveness and self-management and causes impediments to be removed. Product Backlog ordering remains the Product Owner's accountability.
+
+---
+
 ## 📌 Notes
 
 - Add your notes and observations here as you study
@@ -3995,6 +4223,118 @@ E) There is no such thing as Sprint 0.
 ---
 
 ## 🔁 Duplicate Log
+
+### Full-bank audit (2026-10-27)
+
+**Method:** Read all 197 pre-audit entries and compare normalized question intent, the complete option set (ignoring option order, punctuation and minor OCR/wording differences), and answer cardinality. A shared topic or correct answer alone is not a duplicate. Different roles, numerical constraints, substantive distractors and selection instructions are retained.
+
+**Removed → kept:** None. No clear duplicate among the 197 existing entries met all three criteria; their IDs remain unchanged. The tables below the audited source comparisons describe historical imports, not a fresh certification of those other source sets.
+
+| Retained entries | Why they are not safely interchangeable |
+|---|---|
+| Q119 / Q158 | Closest documentation-scenario overlap; specialist-team timing, on-demand FIFO service and postponement until the last Sprint differ |
+| Q124 / Q133 | Closest empirical-adaptation overlap; decision framing and substantive distractors differ |
+| Q32 / Q177 | Developers alone versus Scrum Master with Developers is a different incorrect participant set |
+| Q134 / Q137 | Q134 includes an additional option to delay all ordering until the supplier delivers |
+| Q122 / Q163 | Q163 additionally asks about next-Sprint impact and tomorrow's work |
+| Q14 / Q160 | Different Definition of Done alternatives, including hardening Sprints and Scrum Master authorship |
+| Q15 / Q147 | Managing progress versus tracking remaining work; junior-member versus Project Manager distractor |
+| Q36 / Q140 | Different option counts and ordering constraints; Q140's strict value-sort caveat remains |
+| Q50 / Q183 | Scrum Team versus Product Owner is a different available answer and historical framing, not a key-letter conflict |
+| Q173 / Q181 | Creating the Sprint Backlog versus resolving internal conflicts changes one correct proposition |
+| Q86 / Q193 | Optional-practices-only options versus an option containing the required Sprint Retrospective |
+| Q45 / Q191 | One versus three answers and different Sprint-length factors |
+
+### Source comparison: `Scrum/test_2/psmi-100-answers.txt` (80 questions, May 2022)
+
+**Result:** All 80 source questions read; 70 mapped to existing entries, 10 missing variants added (Q198–Q207), 0 unresolved. Each source row maps to one canonical entry. The 43 previously imported entries Q136–Q178 remain unchanged; they are not new additions in this audit.
+
+| Source question | Result |
+|---|---|
+| 1 | Mapped to Q136 |
+| 2 | Mapped to Q55 |
+| 3 | Mapped to Q137 |
+| 4 | Mapped to Q138 |
+| 5 | Added as Q207; Scrum Team decisions have broader participant scope than Q17's Developer decisions |
+| 6 | Mapped to Q139 |
+| 7 | Mapped to Q140 |
+| 8 | Mapped to Q141 |
+| 9 | Mapped to Q142 |
+| 10 | Mapped to Q19 |
+| 11 | Mapped to Q143 |
+| 12 | Mapped to Q144 |
+| 13 | Mapped to Q145 |
+| 14 | Mapped to Q146 |
+| 15 | Mapped to Q147 |
+| 16 | Mapped to Q72 |
+| 17 | Mapped to Q148 |
+| 18 | Mapped to Q63 |
+| 19 | Mapped to Q149 |
+| 20 | Added as Q198; "Refinement Meeting" is not ongoing Product Backlog refinement in Q115 |
+| 21 | Mapped to Q38; current value/adaptive-solutions wording and historical complex-product wording express the same framework contrast, with equivalent distractors |
+| 22 | Added as Q199; Q5 has different correct-response and scope-change options |
+| 23 | Mapped to Q150 |
+| 24 | Mapped to Q8 |
+| 25 | Added as Q200; Q73 says "mostly done" rather than "done" in the completion-threshold distractor |
+| 26 | Mapped to Q18 |
+| 27 | Added as Q201; four choices, not Q13's five |
+| 28 | Mapped to Q24 |
+| 29 | Mapped to Q151 |
+| 30 | Added as Q202; Product Goal scope differs from Q42's business objective/release and explaining alternatives |
+| 31 | Mapped to Q57 |
+| 32 | Mapped to Q152 |
+| 33 | Mapped to Q49; "monitor" is interpreted as observing and facilitating collaboration, not managerial surveillance |
+| 34 | Mapped to Q153 |
+| 35 | Mapped to Q154 |
+| 36 | Mapped to Q155 |
+| 37 | Mapped to Q156 |
+| 38 | Mapped to Q81 |
+| 39 | Mapped to Q157 |
+| 40 | Mapped to Q34 |
+| 41 | Mapped to Q50 |
+| 42 | Mapped to Q158 |
+| 43 | Mapped to Q159 |
+| 44 | Mapped to Q61 |
+| 45 | Mapped to Q74 |
+| 46 | Mapped to Q160 |
+| 47 | Mapped to Q161 |
+| 48 | Mapped to Q54 |
+| 49 | Mapped to Q162 |
+| 50 | Mapped to Q163 |
+| 51 | Mapped to Q164 |
+| 52 | Mapped to Q165 |
+| 53 | Mapped to Q166 |
+| 54 | Added as Q203; four choices, not Q44's five |
+| 55 | Mapped to Q58 |
+| 56 | Added as Q204; numerical distractor is 7 ± 3, not Q22's 7 ± 2 |
+| 57 | Mapped to Q167 |
+| 58 | Added as Q205; Scrum Team replaces Q40's CEO alternative |
+| 59 | Mapped to Q168 |
+| 60 | Mapped to Q62 |
+| 61 | Mapped to Q117; equivalent specialist-dependency decision, options and two-answer cardinality; the source specifies four teams, two upcoming Sprints and full-time specialist commitment, while Q117 generalizes that context without changing the decision |
+| 62 | Mapped to Q169 |
+| 63 | Mapped to Q170 |
+| 64 | Mapped to Q15 |
+| 65 | Mapped to Q11 |
+| 66 | Mapped to Q30 |
+| 67 | Mapped to Q171 |
+| 68 | Mapped to Q67 |
+| 69 | Mapped to Q172 |
+| 70 | Mapped to Q173; not Q181's conflict-resolution variant |
+| 71 | Added as Q206; Q118 rewrites testing activities as exclusive responsibilities |
+| 72 | Mapped to Q70 |
+| 73 | Mapped to Q31 |
+| 74 | Mapped to Q174 |
+| 75 | Mapped to Q16 |
+| 76 | Mapped to Q175 |
+| 77 | Mapped to Q71 |
+| 78 | Mapped to Q176 |
+| 79 | Mapped to Q177; Q32 has a different participant option |
+| 80 | Mapped to Q178 |
+
+**Answer review:** No conflicting keys among equivalent text-source mappings after translating option letters. Source questions 2, 7, 10, 28, 30, 32, 33, 52, 62 and 75 remain interpretive/review-required as documented in the source; mapping is not independent certification of their intended answers. Q198 retains the formal-event framing ambiguity, Q202 the unsupported "knows most" ranking, and Q206 the distinction between tester activities and Scrum accountabilities. The source documents small cursor-obscured word restorations in questions 15, 34, 52 and 53; no additional wording was invented here.
+
+---
 
 **Batch 2 (30 questions received):** 7 new questions added (Q31-Q37), 23 duplicates skipped.
 
@@ -4456,5 +4796,5 @@ E) There is no such thing as Sprint 0.
 | Q132 | Relationships between artifacts and their commitments |
 | Q133 | Adapting Product Backlog ordering based on value evidence |
 
-**Status:** 197 questions total (135 existing + 43 additions from the May 2022 PSM I source + 19 additions from the September 2017 PSM I screenshots). IA-made questions are original practice prompts for understanding, not memorization; previous duplicate log applies to the original batches.
+**Status:** 207 questions total (197 pre-audit entries + 10 missing May 2022 source variants). No existing entries removed; image-source coverage recheck is in progress. IA-made questions are original practice prompts for understanding, not memorization; historical duplicate logs apply to their original batches.
 **Last Updated:** 2026-10-27
