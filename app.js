@@ -21,10 +21,10 @@ document.addEventListener('keydown', event => {
     input.focus();
     input.click();
   } else if (event.key === 'Enter') {
-    const check = card.querySelector('#check-answer');
-    if (!check) return;
+    const action = card.querySelector('#check-answer, #next-question');
+    if (!action) return;
     event.preventDefault();
-    check.click();
+    action.click();
   }
 });
 
@@ -389,12 +389,15 @@ function renderQuestion(focus = true) {
       el('p', '', `Correct ${question.answers.length === 1 ? 'answer' : 'answers'}:\n${answerText(question, question.answers)}`));
     if (question.note) feedback.append(el('span', 'tip-label', 'Source explanation'), el('p', '', question.note));
     if (question.caveat) feedback.append(el('span', 'tip-label', 'Source caveat'), el('p', '', question.caveat));
+    feedback.append(el('p', 'subtle', session.index + 1 === session.questionIds.length
+      ? 'Press Enter again to see your results.'
+      : 'Press Enter again for the next question.'));
     card.append(feedback);
   }
   const actions = el('div', 'actions');
   actions.append(button('Restart practice', 'button-quiet', restart));
   if (checked) {
-    actions.append(button(session.index + 1 === session.questionIds.length ? 'See my results →' : 'Next question →', 'button-primary', () => {
+    const next = button(session.index + 1 === session.questionIds.length ? 'See my results →' : 'Next question →', 'button-primary', () => {
       try {
         session = engine.nextQuestion(bank, session);
         persist();
@@ -414,7 +417,10 @@ function renderQuestion(focus = true) {
       } catch (failure) {
         error.textContent = failure.message;
       }
-    }));
+    });
+    next.id = 'next-question';
+    next.setAttribute('aria-keyshortcuts', 'Enter');
+    actions.append(next);
   } else {
     const check = button('Check answer', 'button-primary', () => {
       try {
