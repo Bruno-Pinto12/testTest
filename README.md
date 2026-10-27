@@ -34,6 +34,12 @@ into six balanced sessions of 32–33 questions, with no repeats.
 Single-choice and true/false use radio buttons; multi-select uses checkboxes.
 Select the requested number, then **Check Answer** to see the correct choices and
 the original key note. Scoring requires the exact keyed set, with no partial credit.
+During a question, number keys **1–9** select the corresponding answers in display
+order (**1 = A**, **2 = B**, **3 = C**, etc.). For multi-select questions, pressing
+the same number again deselects that answer. Press **Enter** to check using the
+same selection requirements as the button. Checked answers stay locked; Enter
+does not automatically advance to the next question. Shortcuts do not override
+focused buttons, links, or text-entry controls.
 **Next Question** advances after checking. The final review includes missed
 questions and can show all answers.
 

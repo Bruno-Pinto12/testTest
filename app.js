@@ -9,6 +9,25 @@ const root = document.getElementById('app');
 const announcements = document.getElementById('announcements');
 const storageMessage = document.getElementById('storage-message');
 
+document.addEventListener('keydown', event => {
+  if (event.defaultPrevented || event.repeat || event.isComposing ||
+      event.ctrlKey || event.altKey || event.metaKey) return;
+  const card = root.querySelector('.quiz-card');
+  if (!card || event.target.closest('button, a, select, textarea, [contenteditable]:not([contenteditable="false"]), input:not([name="answer"])')) return;
+  if (/^[1-9]$/.test(event.key)) {
+    const input = card.querySelectorAll('input[name="answer"]')[Number(event.key) - 1];
+    if (!input || input.disabled) return;
+    event.preventDefault();
+    input.focus();
+    input.click();
+  } else if (event.key === 'Enter') {
+    const check = card.querySelector('#check-answer');
+    if (!check) return;
+    event.preventDefault();
+    check.click();
+  }
+});
+
 function el(tag, className, text) {
   const node = document.createElement(tag);
   if (className) node.className = className;
@@ -321,7 +340,7 @@ function renderQuestion(focus = true) {
   const options = el('div', 'options');
   const response = checked ? session.responses[session.index] : null;
   const selected = response ? response.selected : session.selected;
-  for (const option of question.options) {
+  for (const [index, option] of question.options.entries()) {
     const label = el('label', 'option');
     const input = el('input');
     input.type = question.type === 'single' || question.type === 'true-false' ? 'radio' : 'checkbox';
@@ -329,6 +348,7 @@ function renderQuestion(focus = true) {
     input.value = option.id;
     input.checked = selected.includes(option.id);
     input.disabled = checked;
+    if (!checked && index < 9) input.setAttribute('aria-keyshortcuts', String(index + 1));
     const copy = el('span', 'option-content');
     copy.append(el('span', 'option-text', option.text));
     label.append(input, el('span', 'option-letter', option.id), copy);
@@ -355,6 +375,10 @@ function renderQuestion(focus = true) {
   }
   fieldset.append(options);
   card.append(fieldset);
+  if (!checked) {
+    const shortcuts = question.options.slice(0, 9).map((option, index) => `${index + 1} = ${option.id}`).join(', ');
+    card.append(el('p', 'subtle', `Keyboard: ${shortcuts}. Press a number to select or toggle an answer, then Enter to check.`));
+  }
   const error = el('p', 'inline-error');
   error.setAttribute('role', 'alert');
   card.append(error);
@@ -392,7 +416,7 @@ function renderQuestion(focus = true) {
       }
     }));
   } else {
-    actions.append(button('Check answer', 'button-primary', () => {
+    const check = button('Check answer', 'button-primary', () => {
       try {
         session = engine.checkAnswer(bank, session);
         const response = session.responses[session.index];
@@ -409,7 +433,10 @@ function renderQuestion(focus = true) {
       } catch (failure) {
         error.textContent = failure.message || 'Please choose an answer before checking.';
       }
-    }));
+    });
+    check.id = 'check-answer';
+    check.setAttribute('aria-keyshortcuts', 'Enter');
+    actions.append(check);
   }
   card.append(actions);
   showPage(card, focus);
