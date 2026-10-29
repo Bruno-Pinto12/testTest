@@ -1,341 +1,186 @@
-# Scrum Study Sheet for PSM-1
+# Scrum Study Sheet — PSM I Final Review
 
-## 1) Scrum in one sentence
-Scrum is a **lightweight framework** for developing, delivering, and sustaining complex products through **empiricism**, **accountability**, and **continuous improvement**.
+A high-yield review of the **November 2020 Scrum Guide** for a final PSM I check. The Scrum Guide is authoritative; this sheet is a study aid, not a substitute for reading it.
 
-## 2) Scrum values
-The five Scrum values are:
-- **Commitment**
-- **Focus**
-- **Openness**
-- **Respect**
-- **Courage**
+## 1. Scrum in brief
 
-## 3) Scrum pillars
-Scrum is based on empiricism:
-- **Transparency**
-- **Inspection**
-- **Adaptation**
+**Scrum** is a lightweight framework that helps people, teams, and organizations generate value through adaptive solutions for complex problems. It is intentionally incomplete: it defines the essential parts of Scrum, while leaving room to choose suitable techniques and practices. Scrum is based on **empiricism** and **lean thinking**.
 
-## 4) Scrum Team
-The Scrum Team consists of:
-- **1 Product Owner**
-- **1 Scrum Master**
-- **Developers**
+- **Empiricism:** knowledge comes from experience; decisions are based on what is observed.
+- **Lean thinking:** reduce waste and focus on what is essential.
+- Scrum is a framework, not a complete methodology, project plan, or cookbook of engineering practices.
+- Scrum exists only in its entirety. Other techniques and practices can be used within the framework.
 
-### Important points
-- The Scrum Team is **small**
-- It is **cross-functional**
-- It is **self-managing**
-- There is **no hierarchy** inside the Scrum Team
-- The whole Scrum Team is accountable for creating a valuable, useful Increment
+### The three pillars of empiricism
 
-## 5) Product Owner
-### Accountability
-The Product Owner is accountable for:
-- **Maximizing the value of the product resulting from the work of the Scrum Team**
+1. **Transparency** — important work and process information is visible and understood.
+2. **Inspection** — artifacts and progress toward goals are checked frequently enough to detect problems.
+3. **Adaptation** — the process or product is adjusted promptly when inspection shows a problem or unacceptable deviation.
 
-### Main responsibilities
-- Develops and explicitly communicates the **Product Goal**
-- Creates and communicates the **Product Backlog**
-- Orders Product Backlog items to best achieve goals and missions
-- Ensures the Product Backlog is:
-  - visible
-  - transparent
-  - clear
-  - understood
+Inspection without transparency is misleading; inspection should lead to adaptation when needed.
 
-### Product Owner interacts with:
-- **Stakeholders**
-- **Developers**
-- **Scrum Master**
+### The five Scrum values
 
-### Product Owner is not:
-- A project manager
-- A boss of the Developers
-- Someone who assigns tasks to Developers
+- **Commitment** — commit to achieving goals and supporting one another.
+- **Focus** — concentrate on the work of the Sprint and the Scrum Team's goals.
+- **Openness** — be candid about work, progress, challenges, and learning.
+- **Respect** — recognize one another as capable, independent people.
+- **Courage** — address difficult problems and do the right thing.
 
-### Events
-The Product Owner:
-- **participates in Sprint Planning**
-- **participates in Sprint Review**
-- **participates in Sprint Retrospective**
-- may attend **Daily Scrum only if they are working as a Developer**
+The Guide does not map each value to a particular pillar.
 
-## 6) Scrum Master
-### Accountability
-The Scrum Master is accountable for:
-- **establishing Scrum as defined in the Scrum Guide**
-- helping everyone understand Scrum theory and practice
+## 2. Scrum Team and accountabilities
 
-### Main responsibilities
-The Scrum Master serves the:
-- **Scrum Team**
-- **Product Owner**
-- **organization**
+A Scrum Team consists of **one Product Owner, one Scrum Master, and Developers**. It is a cohesive unit focused on one Product Goal, with **no sub-teams or internal hierarchies**. The team is:
 
-### The Scrum Master helps the Scrum Team by:
-- coaching the team in self-management and cross-functionality
-- helping the team focus on creating high-value Increments
-- removing impediments to the team’s progress
-- ensuring Scrum events take place and are positive, productive, and kept within the timebox
-- helping the team understand the need for clear and concise Product Backlog items
+- **Cross-functional:** collectively has the skills needed to create value in each Sprint; every individual need not have every skill.
+- **Self-managing:** internally decides who does what, when, and how.
+- Typically **10 or fewer people**; smaller teams are generally better. The Guide does not set a strict maximum.
 
-### The Scrum Master helps the Product Owner by:
-- finding techniques for effective Product Goal definition and Product Backlog management
-- helping the Scrum Team understand the need for clear and concise Product Backlog items
-- facilitating stakeholder collaboration as requested or needed
+The Scrum Team is accountable for creating a **valuable, useful Increment every Sprint** and for all product-related work, including stakeholder collaboration, verification, maintenance, operation, experimentation, and research and development. Current Scrum terminology calls the three roles **accountabilities**: Product Owner, Scrum Master, and Developers.
 
-### The Scrum Master helps the organization by:
-- leading, training, and coaching the organization in Scrum adoption
-- planning and advising Scrum implementations
-- helping employees and stakeholders understand and enact Scrum
-- removing barriers between stakeholders and Scrum Teams
+### Product Owner
 
-### Scrum Master is not:
-- a manager of the Scrum Team
-- a project coordinator
-- a command-and-control leader
+**Accountable for maximizing the value of the product** resulting from the Scrum Team's work and for effective Product Backlog management. The Product Owner:
 
-### Events
-The Scrum Master:
-- **can participate in Sprint Planning**
-- **may attend Daily Scrum if needed, but is not required**
-- **participates in Sprint Review**
-- **participates in Sprint Retrospective**
+- develops and explicitly communicates the **Product Goal**;
+- creates and clearly communicates Product Backlog items;
+- orders the Product Backlog;
+- ensures the Product Backlog is transparent, visible, and understood.
 
-## 7) Developers
-### Accountability
-The Developers are accountable for:
-- creating a **usable Increment** every Sprint
-- planning the work necessary to create the Increment
+The Product Owner is **one person, not a committee**. They may delegate Product Backlog work, but remain accountable. Stakeholders influence the backlog by collaborating with the Product Owner; they do not take over the accountability. The Product Owner does not assign tasks to Developers or manage them.
 
-### Main responsibilities
-Developers:
-- create Sprint Backlog
-- select items from the Product Backlog for the Sprint
-- collaborate to plan the work
-- ensure quality by adhering to the **Definition of Done**
-- inspect progress toward the Sprint Goal during the Daily Scrum
-- adapt the Sprint Backlog as needed
+### Scrum Master
 
-### Developers are:
-- self-managing
-- cross-functional
-- accountable for the work of the Sprint
+**Accountable for establishing Scrum as defined in the Scrum Guide and for the Scrum Team's effectiveness.** The Scrum Master serves the Scrum Team, the Product Owner, and the organization by coaching, facilitating when useful, and helping remove impediments and barriers. The Scrum Master:
 
-### Developers are not:
-- assigned tasks by the Product Owner
-- managed by the Scrum Master
-- a sub-team of the Product Owner
+- coaches self-management and cross-functionality;
+- helps the team focus on valuable, Done Increments;
+- ensures Scrum events happen and are positive, productive, and kept within their timeboxes;
+- supports effective Product Backlog management and stakeholder collaboration;
+- helps the organization understand and adopt Scrum.
 
-### Events
-The Daily Scrum is:
-- for the **Developers**
-- timeboxed to **15 minutes**
-- held to inspect progress toward the Sprint Goal and adapt the Sprint Backlog
+The Scrum Master is not a command-and-control manager and is not required to personally facilitate every event.
 
-## 8) Product Backlog
-### Definition
-The Product Backlog is:
-- an **emergent**, **ordered** list of what is needed to improve the product
+### Developers
 
-### Key points
-- It is the **single source of work** for the Scrum Team
-- It is **never complete**
-- It evolves as the product and environment evolve
-- It is managed by the **Product Owner**
-- Items may be added, removed, refined, reordered, or split
+**Accountable for creating any aspect of a usable Increment each Sprint.** Developers:
 
-### Product Backlog refinement
-Refinement is:
-- the act of breaking down and further defining Product Backlog items
-- an ongoing activity
+- create the Sprint Backlog, including the plan;
+- instill quality by adhering to the Definition of Done;
+- adapt their plan each day toward the Sprint Goal;
+- hold one another accountable as professionals.
 
-## 9) Sprint
-### Definition
-A Sprint is:
-- a fixed-length event of **one month or less**
-- the container for all other Scrum events
+Developers decide how to turn selected work into an Increment. They make the Sprint forecast; no one assigns tasks to them. “Developers” is an accountability, not a job title: people with specialties such as testing, analysis, design, or architecture may be Developers.
 
-### Purpose
-The Sprint is used to:
-- create a **Done, usable Increment**
-- achieve a **Sprint Goal**
-- inspect and adapt toward the **Product Goal**
+## 3. Scrum events
 
-### Important Sprint rules
-- A new Sprint starts immediately after the previous one ends
-- Changes that endanger the Sprint Goal should be negotiated with the Product Owner
-- Only the Product Owner can cancel a Sprint, if the Sprint Goal becomes obsolete
+The **Sprint** is the container for all other Scrum events. All events are opportunities to inspect and adapt, and support transparency. A new Sprint starts immediately after the previous Sprint ends.
 
-## 10) Sprint Goal
-The Sprint Goal is:
-- the single objective for the Sprint
-- created during Sprint Planning
-- used to give the Developers flexibility while still focusing on one coherent outcome
-
-## 11) Sprint Planning
-### Purpose
-Sprint Planning initiates the Sprint and answers:
-1. **Why is this Sprint valuable?**
-2. **What can be Done this Sprint?**
-3. **How will the chosen work get done?**
-
-### Who attends
-- Scrum Team: Product Owner, Scrum Master, Developers
-
-## 12) Daily Scrum
-### Purpose
-The Daily Scrum is for the Developers to:
-- inspect progress toward the Sprint Goal
-- adapt the Sprint Backlog as needed
-
-### Key points
-- 15 minutes
-- every day of the Sprint
-- same time and place if possible
-- not a status meeting for management
-
-## 13) Sprint Review
-### Purpose
-The Sprint Review is held at the end of the Sprint to:
-- inspect the Increment
-- discuss progress toward the Product Goal
-- adapt the Product Backlog if needed
-
-### Who attends
-- Scrum Team
-- Key stakeholders
-
-### Key point
-This is a **working session**, not a presentation-only meeting.
-
-## 14) Sprint Retrospective
-### Purpose
-The Sprint Retrospective is for the Scrum Team to:
-- inspect how the last Sprint went
-- identify improvements
-- plan ways to increase quality and effectiveness
-
-### Key point
-The Scrum Team is fully involved, including:
-- Product Owner
-- Scrum Master
-- Developers
-
-## 15) Increment
-### Definition
-An Increment is:
-- a concrete step toward the Product Goal
-- a body of inspected work completed in the Sprint and all prior Sprints
-
-### Key points
-- It must be **usable**
-- It must meet the **Definition of Done**
-- Multiple Increments may be created in a Sprint
-- Increments accumulate across Sprints
-
-## 16) Definition of Done
-The Definition of Done is:
-- a formal description of the state of the Increment when it meets the quality measures required for the product
-
-### Key points
-- It creates transparency
-- It is used to assess when work is complete
-- If an item does not meet the Definition of Done, it is not Done
-
-## 17) Product Goal
-The Product Goal is:
-- the long-term objective for the Scrum Team
-- the future state of the product
-- the commitment in the Product Backlog
-
-## 18) Sprint Backlog
-The Sprint Backlog consists of:
-- the Sprint Goal
-- the selected Product Backlog items for the Sprint
-- an actionable plan for delivering the Increment
-
-It belongs to the Developers.
-
-## 19) Event timeboxes
-- **Sprint**: one month or less
-- **Sprint Planning**: up to 8 hours for a one-month Sprint
-- **Daily Scrum**: 15 minutes
-- **Sprint Review**: up to 4 hours for a one-month Sprint
-- **Sprint Retrospective**: up to 3 hours for a one-month Sprint
-
-## 20) Common PSM-1 traps
-- Saying the Product Owner is a boss or manager
-- Saying the Scrum Master assigns work
-- Saying the Daily Scrum is for reporting to the Scrum Master
-- Saying the team is not self-managing
-- Saying the Product Backlog is fixed
-- Saying the Scrum Master creates burndown charts
-- Saying the Sprint Review is only a demo
-- Saying only Developers can attend the Retrospective
-- Confusing “project” language with Scrum’s product focus
-
----
-
-# Real-life cases for PSM-1
-
-## Two Scrum Teams on the same product
-**Do they share a Definition of Done and a Product Backlog? Yes to both.**
-
-| Item | Shared? | Why |
+| Event | Purpose and key points | Timebox |
 |---|---|---|
-| **Product Backlog** | **Yes, one backlog** | The Product Backlog belongs to the product, not to a team. Each team pulls items from it. |
-| **Product Owner** | **Yes, one PO** | The PO is accountable for maximizing the product's value, so one person orders the single backlog. |
-| **Product Goal** | **Yes** | There is one product, so there is one long-term objective. |
-| **Definition of Done** | **Yes** | The Scrum Guide says that when multiple Scrum Teams work together on a product, they must mutually define and comply with the same Definition of Done. |
-| **Increment** | **Yes, one integrated Increment** | Each team's work must combine into a single usable, "Done" Increment. |
-| **Sprint Backlog** | No | Each team's Developers own their own Sprint Backlog. |
-| **Sprint Goal** | No | Each team can have its own Sprint Goal that supports the Product Goal. |
-| **Developers / Scrum Master** | No | Each team has its own Developers. Each team has a Scrum Master, who may be the same person for both teams. |
+| **Sprint** | Fixed-length cycle to create a valuable, usable Increment and advance toward the Product Goal. | One month or less |
+| **Sprint Planning** | The Scrum Team plans why the Sprint is valuable, what can be done, and how the chosen work will get done. | Up to 8 hours for a one-month Sprint |
+| **Daily Scrum** | Developers inspect progress toward the Sprint Goal and adapt the Sprint Backlog. | 15 minutes every working day of the Sprint |
+| **Sprint Review** | Scrum Team and stakeholders inspect the Sprint outcome and determine future adaptations. | Up to 4 hours for a one-month Sprint |
+| **Sprint Retrospective** | Scrum Team plans ways to increase quality and effectiveness. | Up to 3 hours for a one-month Sprint |
 
-## Why this matters
-- With **separate Product Backlogs**, the product loses a single order of priorities, and teams may build conflicting things.
-- With **different Definitions of Done**, the Increments don't integrate. One team's "Done" might not include testing or documentation, and the combined Increment is then not releasable.
-- If the Definition of Done is part of the organization's standards, all teams follow it as a **minimum**. A team may add stricter criteria but cannot drop any.
+For shorter Sprints, Planning, Review, and Retrospective are usually shorter; the Guide does not prescribe a conversion formula. These are maximums, not targets. The Daily Scrum remains 15 minutes. **Product Backlog refinement is ongoing work, not a Scrum event, and has no prescribed timebox.**
 
-## More real-life cases
-**1. The Product Owner is too busy to attend Sprint Planning.**
-The PO is part of the Scrum Team, and Sprint Planning needs their input on value and the Sprint Goal. The PO can delegate backlog work but remains accountable. The Scrum Master helps the PO find a way to take part.
+### Sprint Planning: Why, What, How
 
-**2. A manager asks the Scrum Master for a status report on the Developers.**
-The Scrum Master is not a manager of the Developers. The Developers are self-managing, and progress is made transparent through the Sprint Backlog and Increment. The Scrum Master helps stakeholders understand Scrum.
+The entire Scrum Team collaborates. Planning addresses:
 
-**3. A stakeholder asks the Developers to add urgent work mid-Sprint.**
-The request goes to the Product Owner. Scope can be clarified and renegotiated with the PO as more is learned, as long as the Sprint Goal is not endangered. Developers do not take orders directly from stakeholders.
+1. **Why is this Sprint valuable?** The Scrum Team collaborates on the Sprint Goal.
+2. **What can be Done this Sprint?** Developers discuss Product Backlog items with the Product Owner and make a forecast.
+3. **How will the chosen work get done?** Developers plan the work needed to create a Done Increment.
 
-**4. The Sprint Goal becomes obsolete.**
-Only the **Product Owner** can cancel the Sprint. It is rare, because Sprints are short.
+The outcome is the Sprint Backlog: Sprint Goal, selected Product Backlog items, and an actionable plan. The forecast is not a guarantee to complete every selected item.
 
-**5. The team can't finish everything by the end of the Sprint.**
-The Sprint is not extended, because timeboxes are fixed. Unfinished work goes back to the Product Backlog and the PO re-orders it. Work that doesn't meet the Definition of Done is not part of the Increment and cannot be released or shown as Done in the Sprint Review.
+### Daily Scrum
 
-**6. The Definition of Done is not met for one item.**
-The item is not Done. It returns to the Product Backlog.
+The Daily Scrum is **for Developers**, not a status report to a manager, Product Owner, or Scrum Master. Developers choose its structure (the “three questions” are not required), as long as it focuses on progress toward the Sprint Goal and produces an actionable plan. Developers may meet more often to discuss or adapt their work. The Product Owner or Scrum Master participates as a Developer only when actively working on items in the Sprint Backlog.
 
-**7. A Developer is absent or someone is added mid-Sprint.**
-The team stays self-managing and adapts the Sprint Backlog. The Sprint Goal still guides the work. Changes in composition can affect focus and productivity, so the team should handle them deliberately.
+### Sprint Review
 
-**8. The Scrum Master is also acting as a Developer.**
-That is allowed, but they must not neglect the Scrum Master role.
+The Scrum Team and stakeholders inspect the outcome, discuss progress toward the Product Goal and changes in the environment, and collaborate on what to do next. The Product Backlog may be adapted. It is a **working session**, not merely a demo, status meeting, or release approval gate. A usable Increment may be released before the Review; Scrum does not require a release at Sprint end.
 
-**9. The team wants to skip the Retrospective because they are busy.**
-The Retrospective is a required event. It is how the team inspects and adapts how it works, and skipping it removes that opportunity.
+### Sprint Retrospective
 
-**10. The Product Owner wants to add work to the Sprint Backlog.**
-The PO can propose items, but the Developers own the Sprint Backlog and decide how much they can take on. The PO does not assign work.
+The Scrum Team inspects how the Sprint went with respect to people, interactions, processes, tools, and the Definition of Done, then identifies useful changes to increase quality and effectiveness. Improvements should be addressed as soon as possible and may be added to the next Sprint Backlog. The Product Owner is part of the Scrum Team and participates.
 
-**11. Multiple teams, but different Sprint lengths.**
-The Scrum Guide doesn't require aligned Sprints. Aligning them is common practice because it makes integration easier. Always answer according to what the Guide requires.
+## 4. The three artifacts and their commitments
 
-## Quick exam rules for scaling cases
-- **One product = one Product Backlog = one Product Owner = one Product Goal.**
-- **One shared Definition of Done** for all teams on the product.
-- **One integrated Increment**, even with several teams.
-- Each team owns its own **Sprint Backlog** and Sprint Goal.
+| Artifact | Meaning | Commitment |
+|---|---|---|
+| **Product Backlog** | Emergent, ordered list of what is needed to improve the product; the Scrum Team's single source of work. | **Product Goal** |
+| **Sprint Backlog** | Sprint Goal, selected Product Backlog items, and the Developers' plan for delivering the Increment. | **Sprint Goal** |
+| **Increment** | Concrete, usable step toward the Product Goal, additive to previous Increments and verified to work with them. | **Definition of Done** |
+
+The commitments focus inspection and progress. Remember the mapping: **Product Backlog → Product Goal; Sprint Backlog → Sprint Goal; Increment → Definition of Done.**
+
+### Product Backlog and refinement
+
+The Product Backlog is **emergent and never complete**; it evolves as the product and its context change. It is ordered by the Product Owner and refined as needed by breaking down and further defining items. Refinement is ongoing collaboration; Scrum does not prescribe a required format, a Business Analyst role, a specific estimation method, or a fixed percentage of Sprint capacity. Developers who will do the work are responsible for sizing items; the Product Owner may help them understand trade-offs and clarify items.
+
+The **Product Goal** describes a future state of the product and is the Scrum Team's long-term objective. It is the commitment for the Product Backlog. The team must fulfill or abandon one Product Goal before taking on another.
+
+### Sprint Backlog and Sprint Goal
+
+The Sprint Backlog is a **plan by and for the Developers**. It is updated throughout the Sprint as more is learned and should be detailed enough to inspect progress in the Daily Scrum. The **Sprint Goal** is the single objective for the Sprint and the commitment for the Sprint Backlog. It gives coherence and flexibility: the scope can be clarified and renegotiated with the Product Owner, provided the Sprint Goal is not endangered.
+
+### Increment and Definition of Done
+
+An Increment is a concrete stepping stone toward the Product Goal. It is **usable**, additive to all prior Increments, and thoroughly verified so that all Increments work together. **At least one Done, usable Increment is created every Sprint; multiple Increments can be created during a Sprint.** An Increment may be delivered before the Sprint ends.
+
+The **Definition of Done (DoD)** is the formal description of the state of the Increment when it meets the product's required quality measures. It creates a shared understanding and transparency about Done. Work that does not meet the DoD is **not part of the Increment** and cannot be released or presented as Done; it returns to the Product Backlog for future consideration. If the organization has a DoD standard, Scrum Teams must follow it as a minimum; otherwise, the Scrum Team creates one appropriate for the product.
+
+## 5. Rules and scenario answers
+
+- **Sprint changes:** No changes may endanger the Sprint Goal, quality must not decrease, and the Product Backlog is refined as needed. Scope may be clarified and renegotiated with the Product Owner as more is learned.
+- **Sprint cancellation:** Only the Product Owner can cancel a Sprint, and only if the Sprint Goal becomes obsolete. Cancellation is rare.
+- **Work will not fit:** Developers and the Product Owner collaborate to renegotiate scope without endangering the Sprint Goal. Do not extend the Sprint. Unfinished work that is not Done is not in the Increment and returns to the Product Backlog; the Product Owner can reorder it.
+- **Urgent stakeholder request:** Discuss it with the Product Owner. Developers do not accept direct stakeholder orders; any Sprint scope change must protect the Sprint Goal and quality.
+- **Impediment or missing skill:** Developers remain accountable for quality and the Increment. The Scrum Master helps address impediments and supports cross-functionality; do not defer testing or other required quality work to a later team and call the item Done.
+- **Management wants daily control:** Scrum does not make management a Scrum accountability. Management can support the Product Owner with information and the Scrum Master with organizational change, but should foster empiricism and self-management rather than direct Developers' work.
+- **A Sprint Goal becomes obsolete:** The Product Owner may cancel the Sprint.
+- **A team wants to skip an event:** Scrum events are formal opportunities for inspection and adaptation. Skipping one loses that opportunity; events are not optional add-ons to Scrum.
+
+## 6. Multiple Scrum Teams on one product
+
+The Scrum Guide requires teams working together on one product to share the same **Product Goal, Product Backlog, Product Owner, and Definition of Done**. The teams must mutually define and comply with the same DoD. They produce one integrated, usable Increment; each Scrum Team still has its own Sprint Backlog and Sprint Goal. The Guide does **not** explicitly require all teams to have the same Sprint length or synchronized Sprint dates, although different cadences can make coordination harder. Do not confuse a practical recommendation with a Scrum rule.
+
+## 7. Common PSM I traps
+
+- Scrum is a **framework**, not a predictive process, complete methodology, or best-practice cookbook.
+- Scrum is purposefully incomplete, but Scrum itself must be used in its entirety.
+- There are **three accountabilities**: Product Owner, Scrum Master, Developers; there are no prescribed sub-roles within Developers.
+- The Product Owner maximizes value and orders the Product Backlog; the Product Owner does not manage Developers or assign their work.
+- The Scrum Master establishes Scrum and supports effectiveness; the Scrum Master is not the team's boss and need not facilitate every event.
+- Developers decide **how** to do the work and manage the Sprint Backlog; the Daily Scrum is not a management status meeting.
+- Only the **Sprint Goal** is the commitment for the Sprint Backlog; the selected work is a forecast, not a guaranteed scope contract.
+- A Sprint is never extended to finish work. Quality does not decrease to meet a date.
+- Sprint Review is not only a demo, approval gate, or release event. Release timing is not prescribed.
+- Only work meeting the DoD is Done and part of the Increment.
+- Refinement is ongoing, not a formal event. Scrum has no **Definition of Ready**.
+- Scrum does not require user stories, story points, velocity, burndown charts, Gantt charts, a specific testing method, or a particular software-development process. These may be useful practices, but are not Scrum requirements.
+- Technical debt is not automatically forbidden by Scrum, but quality must not decrease and Done work must satisfy the DoD.
+- The Guide recommends small teams but does not impose a hard 10-person limit.
+
+## 8. Last-minute memory checklist
+
+**Theory:** empiricism + lean thinking; transparency, inspection, adaptation; commitment, focus, openness, respect, courage.
+
+**Team:** one Product Owner + one Scrum Master + Developers; cross-functional, self-managing, no sub-teams or hierarchy.
+
+**Events:** Sprint (≤ 1 month); Planning (Why/What/How); Daily Scrum (15 minutes, Developers); Review (inspect outcome/adapt); Retrospective (quality/effectiveness).
+
+**Artifacts and commitments:** Product Backlog → Product Goal; Sprint Backlog → Sprint Goal; Increment → Definition of Done.
+
+**Key authority:** PO orders Product Backlog and alone may cancel an obsolete Sprint; Developers own the Sprint Backlog and decide how; Scrum Master serves the team, Product Owner, and organization.
+
+**Every Sprint:** protect the Sprint Goal, maintain quality, and create at least one usable Done Increment.
+
+## Source
+
+Based on the [November 2020 Scrum Guide](https://scrumguides.org/scrum-guide.html). For exam preparation, prefer the Guide's exact wording whenever a practice question conflicts with an informal summary.
