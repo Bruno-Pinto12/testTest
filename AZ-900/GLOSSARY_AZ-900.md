@@ -30,7 +30,9 @@ Training can include supporting topics that are not separately assessed.
 study-guide URL above. The web-fetch tool returned
 `failed to lookup address information: No address associated with hostname`;
 curl returned `curl: (6) Could not resolve host: learn.microsoft.com`.
-An alternative web-search tool failed with a remote transport error. A search
+An alternative web-search tool first failed with a remote transport error;
+a subsequent retry returned `No relevant web results found.` Neither attempt
+retrieved the study guide. A search
 for `Skills measured` in `az-900.md` within Microsoft's `MicrosoftDocs`
 organization on GitHub returned no matches; this does not prove that no
 official source exists. No shared network configuration was changed.
