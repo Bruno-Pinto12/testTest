@@ -1577,3 +1577,59 @@ Commence par le guide d’examen, puis suis les trois parcours Microsoft Learn q
 ## Note finale
 
 Ce guide couvre les compétences listées dans le référentiel AZ-900 en vigueur au **20 juillet 2026**. Il privilégie la compréhension et les distinctions entre services plutôt que la mémorisation de paramètres techniques susceptibles de changer. Pour les détails de disponibilité régionale, de tarification, de fonctionnalités et de modalités d’examen, consulte les pages Microsoft Learn liées ci-dessus.
+
+---
+
+# 11. Annexe — Utilisation de ce document par une autre IA
+
+## 11.1 Statut et limites
+
+Ce fichier est un **support pédagogique non officiel**, établi à partir du guide Microsoft Learn AZ-900 correspondant aux compétences mesurées depuis le 20 juillet 2026 (consulté le 2 novembre 2026). Il ne garantit pas l'exhaustivité de toutes les variantes de questions ni l'absence d'évolution ultérieure. **La liste officielle des compétences fait autorité** : https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900
+
+La présence d'un produit Azure dans les exemples ne signifie pas qu'il fera l'objet d'une question. Le niveau visé est « Fundamentals » : savoir expliquer les concepts, identifier les usages et comparer les services, sans exiger de commandes avancées ni d'architecture de production détaillée.
+
+## 11.2 Matrice de couverture du référentiel officiel
+
+Chaque ligne ci-dessous correspond à un groupe de compétences du guide Microsoft, et indique où le retrouver dans ce fichier.
+
+| Groupe officiel (20 juillet 2026) | Sections principales du présent fichier |
+|---|---|
+| Describe cloud computing | 2 — définitions, responsabilité partagée, modèles, consommation, prix, serverless |
+| Describe the benefits of using cloud services | 2 — disponibilité, scalabilité, fiabilité, prévisibilité, sécurité, gouvernance, gestion |
+| Describe cloud service types | 2 — IaaS, PaaS, SaaS et scénarios |
+| Describe the core architectural components of Azure | 3.1 — régions, paires, régions souveraines, zones, datacenters, ressources, groupes, abonnements, groupes de gestion |
+| Describe Azure compute and networking services | 3.2–3.3 — VMs, VMSS, Availability Sets, Virtual Desktop, conteneurs, Functions, App Service, VNet, sous-réseaux, peering, DNS, VPN, ExpressRoute, endpoints |
+| Describe Azure storage services | 3.4 — services et comptes de stockage, niveaux, redondance, AzCopy, Storage Explorer, File Sync, Migrate, Data Box |
+| Describe Azure identity, access, and security | 3.5 — Entra ID, Domain Services, SSO, MFA, passwordless, identités externes, Conditional Access, RBAC, Zero Trust, défense en profondeur, Defender for Cloud |
+| Describe cost management in Azure | 4.1 — facteurs de coût, calculatrice, Cost Management, tags |
+| Describe features and tools in Azure for governance and compliance | 4.2 — Purview, Policy, verrous |
+| Describe features and tools for managing and deploying Azure resources | 4.3 — portail, Cloud Shell, CLI, PowerShell, Arc, IaC, ARM et templates |
+| Describe monitoring tools in Azure | 4.4 — Advisor, Service Health, Monitor, Log Analytics, alertes, Application Insights |
+
+**Note pour l'IA :** cette matrice signale la présence des sujets, pas une garantie que chaque détail produit est à jour. Avant de corriger une réponse contestée, vérifier la documentation officielle du service concerné.
+
+## 11.3 Instructions pour une IA chargée de faire réviser ce document
+
+1. Utiliser les trois domaines et leurs pondérations officielles : concepts cloud (25–30 %), architecture/services (35–40 %), gestion/gouvernance (30–35 %).
+2. Poser des questions **originales**, jamais prétendre reproduire des questions réelles de l'examen.
+3. Varier définitions, comparaisons, scénarios pratiques, questions à choix unique et choix multiples ; annoncer clairement le nombre de bonnes réponses attendues.
+4. Évaluer la compréhension et le raisonnement, et non la simple mémorisation des lettres du corrigé.
+5. Après chaque réponse, expliquer pourquoi la bonne réponse convient **et pourquoi les distracteurs ne conviennent pas**.
+6. Identifier les erreurs récurrentes par domaine et proposer une révision ciblée des sections correspondantes.
+7. Éviter les détails de configuration avancée qui ne figurent pas dans le référentiel AZ-900, sauf si l'apprenant les demande.
+8. Distinguer les formulations « dans le contexte de cet examen », « comportement courant d'un service » et « caractéristique dépendant de la configuration ».
+9. En cas d'ambiguïté ou de changement de nom/fonctionnalité, vérifier le guide officiel Microsoft Learn et la documentation produit, puis expliciter l'incertitude.
+10. Ne pas déduire un score officiel à partir des 30 questions du document ; seule l'évaluation Microsoft est indicative de son propre format, et l'examen utilise son barème.
+
+### Exemple de consigne à transmettre à une autre IA
+
+> Tu es mon formateur AZ-900. Utilise ce fichier Markdown comme base de cours et la matrice de couverture comme checklist. Prépare des séries de 10 questions originales, équilibrées sur les trois domaines du référentiel du 20 juillet 2026. Pose une question à la fois, attends ma réponse, corrige-la avec explication et référence à la section du document. À la fin, résume mes points faibles et propose un programme de révision. Si une information est susceptible d'avoir changé, vérifie-la sur Microsoft Learn avant d'affirmer qu'elle est exacte.
+
+## 11.4 Vérifications à effectuer avant l'examen
+
+- Ouvrir le guide officiel pour confirmer la version du référentiel applicable à la date et à la langue de l'examen.
+- Utiliser l'évaluation pratique officielle Microsoft Learn.
+- Vérifier les noms des services et les offres éventuellement renommées.
+- Revoir particulièrement les services proches : Policy/RBAC/Locks ; Advisor/Service Health/Monitor ; VPN/ExpressRoute ; Blob/Files/Disks ; LRS/ZRS/GRS/GZRS ; IaaS/PaaS/SaaS.
+
+**Fin du document.**
