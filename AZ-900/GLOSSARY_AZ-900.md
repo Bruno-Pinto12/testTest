@@ -24,6 +24,40 @@ the live [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/cert
 could not be retrieved. Always check that guide before booking the exam.
 Training can include supporting topics that are not separately assessed.
 
+### Comparison with the uploaded revision guide
+
+This glossary was also compared with
+[`Guide_revision_AZ-900.md`](Guide_revision_AZ-900.md), uploaded by the repository
+owner. That document is a secondary, AI-generated study aid, not a downloaded
+copy of the official exam blueprint. It reports a July 20, 2026 skills-measured
+date and the following domain weights; these claims have **not** been
+independently verified against the live Microsoft study guide.
+
+| Domain reported by the uploaded guide | Reported weight | Glossary coverage |
+|---|---|---|
+| Cloud concepts | 25-30% | Section 1 |
+| Azure architecture and services | 35-40% | Sections 2-6 |
+| Azure management and governance | 30-35% | Sections 7-10; tags in section 8 |
+
+The comparison covered the guide's conceptual sections 2-4, comparisons,
+preparation checklist, and glossary. Its main concepts already had corresponding
+entries here. Additional recognition terms were added for SKU, CIDR, DNS zone
+types, VNet-to-VNet VPN, Group Policy, passwordless credentials, the User Access
+Administrator role, and Terraform. The guide's practice questions and answer
+keys were not audited.
+
+**Important discrepancy:** the uploaded guide's section 4.1.3, question 20 and
+answer, and cost checklist describe the TCO calculator without noting its
+retirement. The official Learn
+[pricing lesson](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-cost-management-azure/includes/3-compare-pricing-total-cost-of-ownership-calculators.md)
+explicitly states that it has been retired. This glossary retains that verified
+status: learn the TCO concept, but do not assume the former calculator is
+available. The uploaded guide is preserved unchanged.
+
+Study the shared core topics first. AI/ML/IoT, sustainability, and additional
+recognition material remain supporting context; their presence in training
+does not establish that they are explicit current exam objectives.
+
 ## Contents
 
 1. [Cloud concepts](#1-cloud-concepts)
@@ -125,6 +159,7 @@ responsibilities depend on the specific service and configuration.
 | Compute | Resources that execute workloads, including VMs, containers, and functions. |
 | Azure Virtual Machines - VMs | IaaS machines where the customer manages the guest OS and installed software. |
 | VM size | VM CPU, memory, and related capacity choices; affects performance and cost. |
+| Stock keeping unit - SKU | Product or service variant identifying a particular offering, size, or tier. In Azure, SKU choices can affect capacity, features, availability, and price. |
 | VM image | Template containing an OS and possibly preinstalled software used to create VMs. |
 | VM supporting resources | Typically includes disks, a network interface, a VNet and subnet, and suitable access controls. A public IP is not always required. |
 | Operating system disk / data disk | Disk containing the guest OS / additional disk for application data. |
@@ -152,6 +187,7 @@ responsibilities depend on the specific service and configuration.
 |---|---|
 | Azure Virtual Network - VNet | Logical private network in Azure connecting resources and other networks. |
 | Subnet | Subdivision of a VNet's address space. |
+| Classless Inter-Domain Routing - CIDR | Notation for an IP address range, such as `10.0.0.0/16`. The prefix length indicates the network portion; detailed subnet calculation is not the focus here. |
 | IP address | Network address identifying an interface or endpoint. |
 | Private IP address | Address used within private networks, not directly routable on the public internet. |
 | Public IP address | Publicly routable address. Its existence does not automatically authorize access. |
@@ -163,9 +199,11 @@ responsibilities depend on the specific service and configuration.
 | Azure VPN Gateway | Azure gateway for VPN connections to on-premises networks or individual clients. |
 | Site-to-site - S2S | VPN connection between networks, such as an office network and an Azure VNet. |
 | Point-to-site - P2S | VPN connection from an individual client to an Azure network. |
+| VNet-to-VNet VPN | VPN gateway connection between Azure virtual networks. Distinct from VNet peering, which does not require VPN gateways. |
 | Azure ExpressRoute | Private connectivity to Microsoft through a connectivity provider, bypassing the public internet. Encryption is not implicit. |
 | Domain Name System - DNS | Resolves domain names into records such as IP addresses. |
 | Azure DNS | Hosts DNS zones. DNS hosting is not the same as registering or buying a domain name. |
+| Public DNS zone / Azure Private DNS zone | Public zones publish records for public DNS resolution; private zones resolve names within linked VNets according to their configuration. DNS resolution alone does not grant network access. |
 | Network Security Group - NSG | Rules allowing or denying inbound and outbound traffic at subnet or NIC scope. |
 | Azure Firewall | Managed network firewall for centralized traffic filtering. |
 | Azure DDoS Protection | Protection against distributed denial-of-service attacks; coverage and capabilities depend on the offering. |
@@ -223,12 +261,14 @@ responsibilities depend on the specific service and configuration.
 | Microsoft Entra ID | Cloud identity and access management service, formerly Azure Active Directory / Azure AD. |
 | Active Directory Domain Services - AD DS | Traditional domain directory service associated with Windows Server. Not the same service as Microsoft Entra ID. |
 | Microsoft Entra Domain Services | Managed domain services supporting capabilities such as domain join, LDAP, Kerberos, and NTLM. |
+| Group Policy / Group Policy Object - GPO | Domain-based configuration rules for users and computers, supported in appropriate Microsoft Entra Domain Services scenarios. Not the same as Azure Policy on Azure resources. |
 | Identity | Representation of a user, application, or workload. |
 | Authentication - AuthN | Verifying identity: "Who are you?" |
 | Authorization - AuthZ | Determining allowed actions: "What can you do?" |
 | Single sign-on - SSO | Access to multiple integrated applications after signing in, subject to access policies. |
 | Multifactor authentication - MFA | Uses multiple factor categories: something known, possessed, or inherent to the user. Two passwords are not two categories. |
 | Passwordless authentication | Authentication without a password, such as a security key or Windows Hello for Business. |
+| Passkey / FIDO2 security key | Public-key-based authentication credentials used in passwordless sign-in. A passkey can be device-bound or synchronized depending on the implementation; a security key is a physical authenticator. |
 | Conditional Access | Policies evaluating signals such as user, device, and location to impose access requirements. Features may require appropriate licenses. |
 | External identities | Access management for people outside the organization, including invited partners. |
 | Business-to-business - B2B collaboration | Collaboration model allowing external users to access an organization's resources, commonly as guests. |
@@ -240,6 +280,7 @@ responsibilities depend on the specific service and configuration.
 | Owner | Azure role with broad resource-management rights and permission to assign Azure roles. |
 | Contributor | Can manage resources but cannot assign Azure RBAC roles. |
 | Reader | Can view resources without changing them; does not automatically grant access to all data stored inside them. |
+| User Access Administrator | Built-in Azure role for managing user access to Azure resources, including role assignments at its scope. It does not by itself grant general resource-management permissions like Contributor. |
 | Control plane / data plane | Resource administration / service data operations. Permissions for the two can be separate. |
 | Microsoft Entra roles | Directory-administration roles, distinct from Azure RBAC roles on resources. |
 | Least privilege | Grant only necessary permissions at the appropriate scope and for the necessary duration. |
@@ -314,6 +355,7 @@ responsibilities depend on the specific service and configuration.
 | Infrastructure as Code - IaC | Infrastructure defined in versionable files for repeatable, reviewable deployments. |
 | ARM template | Declarative JSON resource definition deployed through Azure Resource Manager. |
 | Bicep | Declarative language for Azure infrastructure that compiles into ARM templates. |
+| Terraform | Third-party declarative IaC tool using providers, including an Azure provider, to manage infrastructure. Supporting recognition term, not a claim that Terraform syntax is an AZ-900 objective. |
 | Declarative / imperative | Describing the desired state / describing a sequence of steps. |
 | Idempotence | Repeating an operation does not cause additional changes once the desired state is reached. |
 | Deployment | Applying configuration to create or update resources. |
@@ -393,6 +435,8 @@ here does not establish that each is an explicit current exam objective.
 | Organizing multiple subscriptions | Management groups | Resource groups |
 | Proving identity | Authentication | Authorization |
 | Granting resource-management permissions | Azure RBAC | Azure Policy |
+| Managing Azure role assignments without general resource administration | User Access Administrator | Contributor: manages resources but cannot assign roles through that role |
+| Configuring domain users and computers | Group Policy | Azure Policy: Azure resource governance |
 | Restricting deployment regions | Azure Policy | Tags or budgets |
 | Preventing accidental resource deletion | CanNotDelete lock | A recoverable backup |
 | Allocating spending to a team | Tags and cost analysis | Automatic tag inheritance |
