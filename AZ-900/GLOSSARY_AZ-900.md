@@ -24,6 +24,31 @@ the live [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/cert
 could not be retrieved. Always check that guide before booking the exam.
 Training can include supporting topics that are not separately assessed.
 
+### Retrieval retry and remaining verification
+
+**Retry date: November 2, 2026 (UTC).** A new session retried the exact English
+study-guide URL above. The web-fetch tool returned
+`failed to lookup address information: No address associated with hostname`;
+curl returned `curl: (6) Could not resolve host: learn.microsoft.com`.
+An alternative web-search tool failed with a remote transport error. A search
+for `Skills measured` in `az-900.md` within Microsoft's `MicrosoftDocs`
+organization on GitHub returned no matches; this does not prove that no
+official source exists. No shared network configuration was changed.
+
+**Exam-blueprint verification remains pending.** Neither the currently
+effective skills-measured date, domain weights, complete objective list, nor
+change log was retrieved in this retry. No determination can therefore be made
+about currently effective objectives versus announced future changes. The
+training coverage map below is **not an exam-objective coverage map**.
+
+To complete verification, provide a PDF export of the English official study
+guide, or paste its dated **Skills measured** and **Change log** sections,
+including any current and future objective lists. Then compare every applicable
+objective with the linked glossary sections, correct definitions and fill gaps,
+and record the guide's effective date, weights, source, and verification date.
+Until that review is complete, do not treat this glossary or the uploaded guide
+as confirmation of the current exam scope.
+
 ### Comparison with the uploaded revision guide
 
 This glossary was also compared with
@@ -487,6 +512,9 @@ command syntax, or implementation details.
 - [ ] Cross-check this checklist against every objective in the live exam study guide.
 
 ## 14. Official sources and coverage map
+
+This section maps reviewed **training module objectives**, not verified current
+exam objectives. See [the pending verification requirements](#retrieval-retry-and-remaining-verification).
 
 ### Microsoft Learn learning paths
 
