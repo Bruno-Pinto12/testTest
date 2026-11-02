@@ -24,6 +24,33 @@ the live [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/cert
 could not be retrieved. Always check that guide before booking the exam.
 Training can include supporting topics that are not separately assessed.
 
+### Retrieval retry and remaining verification
+
+**Retry date: November 2, 2026 (UTC).** A new session retried the exact English
+study-guide URL above. The web-fetch tool returned
+`failed to lookup address information: No address associated with hostname`;
+curl returned `curl: (6) Could not resolve host: learn.microsoft.com`.
+An alternative web-search tool first failed with a remote transport error;
+a subsequent retry returned `No relevant web results found.` Neither attempt
+retrieved the study guide. A search
+for `Skills measured` in `az-900.md` within Microsoft's `MicrosoftDocs`
+organization on GitHub returned no matches; this does not prove that no
+official source exists. No shared network configuration was changed.
+
+**Exam-blueprint verification remains pending.** Neither the currently
+effective skills-measured date, domain weights, complete objective list, nor
+change log was retrieved in this retry. No determination can therefore be made
+about currently effective objectives versus announced future changes. The
+training coverage map below is **not an exam-objective coverage map**.
+
+To complete verification, provide a PDF export of the English official study
+guide, or paste its dated **Skills measured** and **Change log** sections,
+including any current and future objective lists. Then compare every applicable
+objective with the linked glossary sections, correct definitions and fill gaps,
+and record the guide's effective date, weights, source, and verification date.
+Until that review is complete, do not treat this glossary or the uploaded guide
+as confirmation of the current exam scope.
+
 ### Comparison with the uploaded revision guide
 
 This glossary was also compared with
@@ -39,12 +66,41 @@ independently verified against the live Microsoft study guide.
 | Azure architecture and services | 35-40% | Sections 2-6 |
 | Azure management and governance | 30-35% | Sections 7-10; tags in section 8 |
 
-The comparison covered the guide's conceptual sections 2-4, comparisons,
-preparation checklist, and glossary. Its main concepts already had corresponding
-entries here. Additional recognition terms were added for SKU, CIDR, DNS zone
-types, VNet-to-VNet VPN, Group Policy, passwordless credentials, the User Access
-Administrator role, and Terraform. The guide's practice questions and answer
-keys were not audited.
+**Comparison refreshed: November 2, 2026 (UTC).** The reviewed guide version is
+[`17fcf453c8827c79a4b82f9fe8afdec8532673c4`](https://github.com/Bruno-Pinto12/testTest/blob/17fcf453c8827c79a4b82f9fe8afdec8532673c4/AZ-900/Guide_revision_AZ-900.md).
+The comparison covered its conceptual sections 2-4, comparisons, preparation
+checklist, glossary, and newly added appendix 11. All 11 topic groups in the
+appendix's matrix have corresponding coverage here, as mapped below. This is
+group-level coverage against a secondary guide, not proof that every official
+exam objective or product detail has been independently verified.
+
+The earlier comparison added recognition terms for SKU, CIDR, DNS zone types,
+VNet-to-VNet VPN, Group Policy, passwordless credentials, the User Access
+Administrator role, and Terraform. The new appendix introduces no additional
+technical topic requiring a new glossary entry. Its study-method guidance is
+reflected in [Revision method](#revision-method). The guide's practice questions
+and answer keys were not audited.
+
+#### Topic-group coverage against the uploaded guide
+
+These are the groups **reported by the uploaded guide's section 11.2**. Its
+description of them as official, its reported effective date, and its weights
+remain attributed claims, not a replacement for the unavailable exam blueprint.
+The links below point to this glossary.
+
+| Topic group reported by the uploaded guide | Guide sections | Glossary coverage and comparison result |
+|---|---|---|
+| Describe cloud computing | 2.1-2.4, 2.7 | [Section 1](#1-cloud-concepts): cloud definition, shared responsibility, public/private/hybrid use cases, consumption and pricing models, serverless. Covered. |
+| Describe the benefits of using cloud services | 2.5 | [Section 1](#1-cloud-concepts): availability, scalability, reliability, predictability, security, manageability; [section 8](#8-governance-and-compliance): governance controls. Covered. |
+| Describe cloud service types | 2.6 | [Section 1](#1-cloud-concepts): IaaS, PaaS, SaaS, examples, customer responsibilities, and use cases. Covered. |
+| Describe the core architectural components of Azure | 3.1 | [Section 2](#2-azure-architecture-and-resource-organization): datacenters, regions, pairs, sovereign regions, zones, resources, resource groups, subscriptions, management groups, and hierarchy. Covered. |
+| Describe Azure compute and networking services | 3.2-3.3 | [Section 3](#3-compute-and-application-hosting): VMs, supporting resources, scale sets, availability sets, Virtual Desktop, containers, Functions, and hosting; [section 4](#4-networking): VNets, subnets, peering, DNS, VPN, ExpressRoute, and public/private endpoints. Covered. |
+| Describe Azure storage services | 3.4 | [Section 5](#5-storage-and-migration): services, account types and endpoints, access tiers, redundancy, AzCopy, Storage Explorer, File Sync, Migrate, and Data Box. Covered. |
+| Describe Azure identity, access, and security | 3.5 | [Section 6](#6-identity-access-and-security): Entra ID and Domain Services, SSO, MFA, passwordless, external identities, Conditional Access, RBAC, Zero Trust, defense in depth, and Defender for Cloud. Covered. |
+| Describe cost management in Azure | 4.1 | [Section 7](#7-cost-management-and-service-commitments): cost factors, Pricing calculator, Cost Management, analysis, budgets, and alerts; [section 8](#8-governance-and-compliance): tags. Covered, with the TCO discrepancy below. |
+| Describe features and tools in Azure for governance and compliance | 4.2 | [Section 8](#8-governance-and-compliance): Purview, Policy, compliance, remediation, and locks. Covered. |
+| Describe features and tools for managing and deploying Azure resources | 4.3 | [Section 9](#9-deployment-and-administration): portal, Cloud Shell, CLI, PowerShell, Arc, IaC, ARM, templates, and Bicep. Covered. |
+| Describe monitoring tools in Azure | 4.4 | [Section 10](#10-monitoring): Advisor, Service Health, Monitor, Log Analytics, alert rules and action groups, and Application Insights. Covered. |
 
 **Important discrepancy:** the uploaded guide's section 4.1.3, question 20 and
 answer, and cost checklist describe the TCO calculator without noting its
@@ -270,7 +326,7 @@ responsibilities depend on the specific service and configuration.
 | Passwordless authentication | Authentication without a password, such as a security key or Windows Hello for Business. |
 | Passkey / FIDO2 security key | Public-key-based authentication credentials used in passwordless sign-in. A passkey can be device-bound or synchronized depending on the implementation; a security key is a physical authenticator. |
 | Conditional Access | Policies evaluating signals such as user, device, and location to impose access requirements. Features may require appropriate licenses. |
-| External identities | Access management for people outside the organization, including invited partners. |
+| External identities | Access management for people outside the organization, including partners, suppliers, and customers. Collaboration and customer sign-in scenarios depend on the Microsoft Entra External ID offering and configuration. |
 | Business-to-business - B2B collaboration | Collaboration model allowing external users to access an organization's resources, commonly as guests. |
 | Guest access | Access granted to an external identity; permissions must still be assigned appropriately. |
 | Azure role-based access control - Azure RBAC | Authorization to Azure resources through role assignments at a defined scope. |
@@ -327,7 +383,7 @@ responsibilities depend on the specific service and configuration.
 
 | Term | Meaning and exam-oriented distinction |
 |---|---|
-| Governance | Rules and mechanisms controlling resource use, risk, cost, and compliance. |
+| Governance | Rules and mechanisms controlling resource use, risk, cost, and compliance. Cloud tools help apply consistent standards at scale, but the customer must define and configure those standards. |
 | Azure Policy | Evaluates and enforces resource rules, such as allowed deployment regions or required configurations. |
 | Policy definition | Condition and effect describing a governance rule. |
 | Policy assignment | Application of a policy at a scope, with parameters and possible exemptions. |
@@ -463,6 +519,22 @@ contrast it with the closest alternative. Focus on selecting an appropriate
 service and understanding responsibilities, not memorizing exact prices,
 command syntax, or implementation details.
 
+When studying with an AI tutor, use original practice questions, one at a time,
+mixing definitions, comparisons, and simple scenarios. State how many answers
+are expected for multiple-choice questions. After answering, explain why the
+correct answer fits and why each alternative does not, then link the explanation
+to the relevant glossary section. Track recurring mistakes by topic group and
+revise those sections before trying another set.
+
+Treat the uploaded guide's appendix 11 as study guidance, not independent
+evidence of exam scope. Its reported domain weights must not be presented as
+verified here. Do not convert a practice percentage into Microsoft's official
+exam score, describe generated questions as official, or use exam dumps.
+Distinguish a general service purpose from behavior that depends on a plan,
+region, license, or configuration; explicitly flag unresolved discrepancies.
+Use Microsoft's practice assessment and exam sandbox to prepare for the
+assessment experience.
+
 ### Checklist
 
 - [ ] Compare public, private, hybrid, and multicloud models and use cases.
@@ -487,6 +559,9 @@ command syntax, or implementation details.
 - [ ] Cross-check this checklist against every objective in the live exam study guide.
 
 ## 14. Official sources and coverage map
+
+This section maps reviewed **training module objectives**, not verified current
+exam objectives. See [the pending verification requirements](#retrieval-retry-and-remaining-verification).
 
 ### Microsoft Learn learning paths
 
