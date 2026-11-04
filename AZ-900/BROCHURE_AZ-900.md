@@ -1,13 +1,12 @@
 # AZ-900 Knowledge Brochure - Azure Fundamentals
 
+**Official verification (November 4, 2026):** The live Microsoft AZ-900 study guide was retrieved and compared with this material. The applicable skills-measured date is **July 20, 2026**, with weights **25–30% cloud concepts**, **35–40% Azure architecture and services**, and **30–35% Azure management and governance**. The official guide lists 11 objective groups. Source: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900. The TCO Calculator is **retired**: https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators. This is an independently written study aid, not an official Microsoft publication.
+
+
 A compact reference to read, learn, and remember. Each chapter gives the key
 facts, a short "Remember" box, and the most common exam traps.
 
-> **Source note:** This brochure summarizes the repository's
-> [revision guide](Guide_revision_AZ-900.md) and [glossary](GLOSSARY_AZ-900.md).
-> The official Microsoft study guide could not be retrieved directly from this
-> environment, so the domain weights below are the guide's reported values, not
-> independently verified. It does not contain official or real exam questions.
+> **Source note:** Verified against the live official AZ-900 study guide on November 4, 2026. These explanations and questions are independent study material, not official exam items.
 
 > **Interactive practice:** [AZ-900_PRACTICE_QUIZ.html](AZ-900_PRACTICE_QUIZ.html)
 > is an exam-style quiz (practice and exam modes). Download the file and open
@@ -90,8 +89,8 @@ customer. The split depends on the service type.
 | CapEx (capital expenditure) | Up-front spending on physical infrastructure | Buying servers and building a datacenter |
 | OpEx (operational expenditure) | Spending on services as they are consumed | Paying monthly for cloud VMs |
 
-> **Remember:** Cloud = **OpEx**, pay-as-you-go, no up-front cost, pay only
-> for what you use, stop paying when you stop using.
+> **Remember:** Cloud often shifts infrastructure spending toward **OpEx** and usage-based billing. You generally pay
+> for billable usage or provisioned resources. **Stopping an application or guest OS does not necessarily stop charges**; disks, reserved capacity, and allocated compute can still cost money.
 
 **Exam traps**
 
@@ -99,7 +98,7 @@ customer. The split depends on the service type.
   by a third party but is dedicated to one organization.
 - Moving to the cloud does **not** transfer responsibility for your data.
 
-> **Practice:** [Chapter 1 questions](QUESTIONS_AZ-900.md#1-cloud-computing)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 2. Benefits of cloud services
 
@@ -109,7 +108,7 @@ customer. The split depends on the service type.
 | Scalability | Ability to add or remove resources to handle load |
 | Vertical scaling (scale up/down) | Make a resource bigger or smaller (more CPU or RAM) |
 | Horizontal scaling (scale out/in) | Add or remove instances (more VMs) |
-| Elasticity | Scaling happens **automatically** as demand changes |
+| Elasticity | Scaling happens dynamically in response to demand (often using autoscaling) |
 | Reliability | Ability to recover from failures and keep working |
 | Predictability (performance) | Consistent performance through autoscaling and load balancing |
 | Predictability (cost) | Forecast spending with tools such as the Pricing calculator and Cost Management |
@@ -129,7 +128,7 @@ customer. The split depends on the service type.
 - Combining services multiplies their SLAs, so the **composite SLA is lower**
   than each individual SLA.
 
-> **Practice:** [Chapter 2 questions](QUESTIONS_AZ-900.md#2-benefits-of-cloud-services)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 3. Cloud service types
 
@@ -152,7 +151,7 @@ as a form of PaaS.
 - Azure SQL Database is **PaaS**; SQL Server installed on a VM is **IaaS**.
 - In SaaS the customer still owns **data and accounts**.
 
-> **Practice:** [Chapter 3 questions](QUESTIONS_AZ-900.md#3-cloud-service-types)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ---
 
@@ -167,18 +166,17 @@ as a form of PaaS.
 | Datacenter | Physical building with servers, power, cooling, and networking |
 | Region | Geographic area with one or more datacenters linked by a low-latency network |
 | Availability zone | Physically separate datacenter(s) inside a region with independent power, cooling, and networking |
-| Region pair | Two regions in the same geography (usually at least 300 miles apart) used for disaster recovery |
+| Region pair | Association of certain Azure regions for platform resiliency considerations; pairing does not itself replicate customer workloads |
 | Sovereign region | Isolated Azure instance for legal or compliance needs (Azure Government, Azure China by 21Vianet) |
 
 - A region that supports zones has **at least three** availability zones.
 - **Zonal services** are pinned to one zone (for example a VM).
 - **Zone-redundant services** are replicated automatically across zones (for
   example ZRS storage).
-- In a region pair, updates are rolled out to **one region at a time**, and one
-  region is prioritized for recovery in a broad outage.
+- Platform update sequencing and recovery priorities can depend on service and region. **Not all regions are paired**, and a region pair is not an automatic disaster-recovery solution.
 
 > **Remember:** Zone = protects against a **datacenter** failure.
-> Region pair = protects against a **whole region** failure.
+> **Cross-region disaster recovery requires configured replication/failover.** A region pair alone does not protect your workload.
 
 #### Management hierarchy (top to bottom)
 
@@ -203,7 +201,7 @@ Management groups
 > **Remember (top to bottom):** "**M**y **S**ubscription **R**uns **R**esources":
 > Management group, Subscription, Resource group, Resource.
 
-> **Practice:** [Chapter 4 questions](QUESTIONS_AZ-900.md#4-core-architecture)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 5. Compute
 
@@ -231,7 +229,7 @@ Management groups
 > servers to manage" = **App Service**. "Remote desktop for staff" =
 > **Azure Virtual Desktop**. "Many containers" = **AKS**.
 
-> **Practice:** [Chapter 5 questions](QUESTIONS_AZ-900.md#5-compute)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 6. Networking
 
@@ -259,7 +257,7 @@ Management groups
 > "Encrypted over the internet" = **VPN Gateway**.
 > "Private IP for a PaaS service" = **Private endpoint**.
 
-> **Practice:** [Chapter 6 questions](QUESTIONS_AZ-900.md#6-networking)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 7. Storage
 
@@ -273,7 +271,7 @@ Management groups
 | Table Storage | NoSQL key-value data | Simple structured data |
 | Disk Storage | Block-level disks for VMs | VM OS and data disks |
 
-A **storage account** gives a unique namespace for your data and determines
+A **storage account** provides a unique namespace for your data and determines
 the redundancy and performance options.
 
 #### Blob access tiers
@@ -317,7 +315,7 @@ the redundancy and performance options.
 - Slow or limited internet + huge data = **Data Box**.
 - Archive is the cheapest to store but **cannot be read immediately**.
 
-> **Practice:** [Chapter 7 questions](QUESTIONS_AZ-900.md#7-storage)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 8. Identity, access, and security
 
@@ -363,7 +361,7 @@ Physical security -> Identity & access -> Perimeter -> Network
 - RBAC controls **who can do what**; Azure Policy controls **what can be
   created or how it must be configured**.
 
-> **Practice:** [Chapter 8 questions](QUESTIONS_AZ-900.md#8-identity-access-and-security)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ---
 
@@ -403,7 +401,7 @@ Physical security -> Identity & access -> Perimeter -> Network
 > Cost Management = **after** (actual spend, budgets). Tags = **group and
 > report costs**.
 
-> **Practice:** [Chapter 9 questions](QUESTIONS_AZ-900.md#9-cost-management)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 10. Governance and compliance
 
@@ -428,7 +426,7 @@ Physical security -> Identity & access -> Perimeter -> Network
 > **Remember:** Policy = **rules** for resources. RBAC = **permissions** for
 > people. Locks = **protection** from deletion or change.
 
-> **Practice:** [Chapter 10 questions](QUESTIONS_AZ-900.md#10-governance-and-compliance)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 11. Managing and deploying resources
 
@@ -451,7 +449,7 @@ and source-controlled.
 > **Remember:** Every tool (portal, CLI, PowerShell, SDK) goes through
 > **Azure Resource Manager**. IaC = **same result every time**.
 
-> **Practice:** [Chapter 11 questions](QUESTIONS_AZ-900.md#11-managing-and-deploying-resources)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 12. Monitoring
 
@@ -476,7 +474,7 @@ and source-controlled.
 > Monitor = **my resources' metrics and logs**. Application Insights = **my
 > app**.
 
-> **Practice:** [Chapter 12 questions](QUESTIONS_AZ-900.md#12-monitoring)
+> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ---
 
@@ -497,7 +495,7 @@ and source-controlled.
 | Move 100+ TB with slow internet | Azure Data Box |
 | Rarely accessed data, lowest storage cost | Archive tier |
 | Protect against datacenter failure | Availability zones / ZRS |
-| Protect against region failure | Region pairs / GRS |
+| Protect against region failure | Configured cross-region replication/failover; GRS/GZRS for supported storage |
 | Run code when an event occurs | Azure Functions |
 | Host a web app without managing servers | App Service |
 | Manage on-premises servers from Azure | Azure Arc |
