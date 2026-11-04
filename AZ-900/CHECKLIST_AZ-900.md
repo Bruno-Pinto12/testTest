@@ -1,24 +1,13 @@
 # AZ-900 - Topics and Subtopics Checklist
 
+**Official verification (November 4, 2026):** The live Microsoft AZ-900 study guide was retrieved and compared with this material. The applicable skills-measured date is **July 20, 2026**, with weights **25–30% cloud concepts**, **35–40% Azure architecture and services**, and **30–35% Azure management and governance**. The official guide lists 11 objective groups. Source: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900. The TCO Calculator is **retired**: https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators. This is an independently written study aid, not an official Microsoft publication.
+
+
 ## Scope and use
 
-**Prepared: November 2, 2026.** This checklist consolidates the themes and
-subthemes in the repository's [study guide](Guide_revision_AZ-900.md) and
-[glossary](GLOSSARY_AZ-900.md), as present in repository revision
-`25081c5`. It is a study inventory, **not an independently verified official
-exam blueprint**. The official skills-measured date, weights, full objective
-list, and change log remain unverified in this environment.
+**Verified November 4, 2026** against the live official Microsoft AZ-900 guide (skills measured July 20, 2026). Sections 1–3 align with the 11 official objective groups. Detailed checklist items are teaching subtopics, not necessarily separate objectives. Section 4 is supplementary. TCO Calculator is retired and not listed as a current exam objective.
 
-Sections 1-3 organize the main study topics into the 11 groups used by the local
-guide. Section 4 explicitly separates supporting and recognition material.
-Placement in sections 1-3 does not mean every subtopic is an explicit exam
-objective. Check the [official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
-before deciding what the current exam requires.
-
-Check a box when you can explain the topic without notes, give a simple example,
-and distinguish it from the closest alternative. For configuration-dependent
-features, recognize the dependency rather than memorizing advanced settings.
-Unchecked boxes mean "to review," not "not covered by the exam."
+Check a box only when you can explain the concept, recognize a scenario, and distinguish nearby alternatives.
 
 ## Contents
 
@@ -250,7 +239,7 @@ study guide section 4.1.
 - [ ] Distinguish guest OS shutdown from VM deallocation; retained disks can remain billable.
 - [ ] Distinguish quotas/service limits from financial spending caps.
 
-**Known source discrepancy:** the local guide describes the TCO calculator
+**Verified correction:** an older local guide describes the TCO calculator
 without its retirement status. Retain the glossary's documented correction,
 supported by the official Learn
 [pricing lesson](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-cost-management-azure/includes/3-compare-pricing-total-cost-of-ownership-calculators.md).
