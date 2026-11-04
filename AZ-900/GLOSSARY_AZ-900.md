@@ -1,118 +1,13 @@
 # AZ-900 - Microsoft Azure Fundamentals Study Glossary
 
-## Purpose and source verification
+**Official verification (November 4, 2026):** The live Microsoft AZ-900 study guide was retrieved and compared with this material. The applicable skills-measured date is **July 20, 2026**, with weights **25–30% cloud concepts**, **35–40% Azure architecture and services**, and **30–35% Azure management and governance**. The official guide lists 11 objective groups. Source: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900. The TCO Calculator is **retired**: https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators. This is an independently written study aid, not an official Microsoft publication.
 
-**This folder is exclusively for AZ-900 exam preparation.** Keep only related
-glossaries, notes, exercises, resources, and revision materials here. Scrum
-materials and preparation for other certifications belong elsewhere.
 
-All content in this document is in English. Definitions, comparisons, and
-examples are original study explanations, not official exam questions.
+## Source verification and correction log
 
-**Source review date: November 2, 2026.** The learning-path and module objectives
-were checked against Microsoft's public Microsoft Learn source repository,
-[`MicrosoftDocs/learn`](https://github.com/MicrosoftDocs/learn/tree/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr).
-The reviewed snapshot includes learning paths dated March 31, 2026, and modules
-updated in 2026. The AI/ML/IoT, sustainability, storage-account, and pricing
-calculator lessons were also read directly. See the [source map](#14-official-sources-and-coverage-map).
+The official AZ-900 exam blueprint has now been accessed directly and verified on November 4, 2026. It is effective from July 20, 2026, and includes the three domains and 11 objective groups described in this glossary. Previous notes claiming the blueprint was inaccessible are superseded by this section.
 
-Direct access to `learn.microsoft.com` failed because of DNS resolution in the
-editing environment, not because of a permission restriction. The official
-GitHub sources were accessible. This review verifies coverage against the
-training objectives, **not the exact current exam blueprint or its weightings**:
-the live [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
-could not be retrieved. Always check that guide before booking the exam.
-Training can include supporting topics that are not separately assessed.
-
-### Retrieval retry and remaining verification
-
-**Retry date: November 2, 2026 (UTC).** A new session retried the exact English
-study-guide URL above. The web-fetch tool returned
-`failed to lookup address information: No address associated with hostname`;
-curl returned `curl: (6) Could not resolve host: learn.microsoft.com`.
-An alternative web-search tool first failed with a remote transport error;
-a subsequent retry returned `No relevant web results found.` Neither attempt
-retrieved the study guide. A search
-for `Skills measured` in `az-900.md` within Microsoft's `MicrosoftDocs`
-organization on GitHub returned no matches; this does not prove that no
-official source exists. No shared network configuration was changed.
-
-**Exam-blueprint verification remains pending.** Neither the currently
-effective skills-measured date, domain weights, complete objective list, nor
-change log was retrieved in this retry. No determination can therefore be made
-about currently effective objectives versus announced future changes. The
-training coverage map below is **not an exam-objective coverage map**.
-
-To complete verification, provide a PDF export of the English official study
-guide, or paste its dated **Skills measured** and **Change log** sections,
-including any current and future objective lists. Then compare every applicable
-objective with the linked glossary sections, correct definitions and fill gaps,
-and record the guide's effective date, weights, source, and verification date.
-Until that review is complete, do not treat this glossary or the uploaded guide
-as confirmation of the current exam scope.
-
-### Comparison with the uploaded revision guide
-
-This glossary was also compared with
-[`Guide_revision_AZ-900.md`](Guide_revision_AZ-900.md), uploaded by the repository
-owner. That document is a secondary, AI-generated study aid, not a downloaded
-copy of the official exam blueprint. It reports a July 20, 2026 skills-measured
-date and the following domain weights; these claims have **not** been
-independently verified against the live Microsoft study guide.
-
-| Domain reported by the uploaded guide | Reported weight | Glossary coverage |
-|---|---|---|
-| Cloud concepts | 25-30% | Section 1 |
-| Azure architecture and services | 35-40% | Sections 2-6 |
-| Azure management and governance | 30-35% | Sections 7-10; tags in section 8 |
-
-**Comparison refreshed: November 2, 2026 (UTC).** The reviewed guide version is
-[`17fcf453c8827c79a4b82f9fe8afdec8532673c4`](https://github.com/Bruno-Pinto12/testTest/blob/17fcf453c8827c79a4b82f9fe8afdec8532673c4/AZ-900/Guide_revision_AZ-900.md).
-The comparison covered its conceptual sections 2-4, comparisons, preparation
-checklist, glossary, and newly added appendix 11. All 11 topic groups in the
-appendix's matrix have corresponding coverage here, as mapped below. This is
-group-level coverage against a secondary guide, not proof that every official
-exam objective or product detail has been independently verified.
-
-The earlier comparison added recognition terms for SKU, CIDR, DNS zone types,
-VNet-to-VNet VPN, Group Policy, passwordless credentials, the User Access
-Administrator role, and Terraform. The new appendix introduces no additional
-technical topic requiring a new glossary entry. Its study-method guidance is
-reflected in [Revision method](#revision-method). The guide's practice questions
-and answer keys were not audited.
-
-#### Topic-group coverage against the uploaded guide
-
-These are the groups **reported by the uploaded guide's section 11.2**. Its
-description of them as official, its reported effective date, and its weights
-remain attributed claims, not a replacement for the unavailable exam blueprint.
-The links below point to this glossary.
-
-| Topic group reported by the uploaded guide | Guide sections | Glossary coverage and comparison result |
-|---|---|---|
-| Describe cloud computing | 2.1-2.4, 2.7 | [Section 1](#1-cloud-concepts): cloud definition, shared responsibility, public/private/hybrid use cases, consumption and pricing models, serverless. Covered. |
-| Describe the benefits of using cloud services | 2.5 | [Section 1](#1-cloud-concepts): availability, scalability, reliability, predictability, security, manageability; [section 8](#8-governance-and-compliance): governance controls. Covered. |
-| Describe cloud service types | 2.6 | [Section 1](#1-cloud-concepts): IaaS, PaaS, SaaS, examples, customer responsibilities, and use cases. Covered. |
-| Describe the core architectural components of Azure | 3.1 | [Section 2](#2-azure-architecture-and-resource-organization): datacenters, regions, pairs, sovereign regions, zones, resources, resource groups, subscriptions, management groups, and hierarchy. Covered. |
-| Describe Azure compute and networking services | 3.2-3.3 | [Section 3](#3-compute-and-application-hosting): VMs, supporting resources, scale sets, availability sets, Virtual Desktop, containers, Functions, and hosting; [section 4](#4-networking): VNets, subnets, peering, DNS, VPN, ExpressRoute, and public/private endpoints. Covered. |
-| Describe Azure storage services | 3.4 | [Section 5](#5-storage-and-migration): services, account types and endpoints, access tiers, redundancy, AzCopy, Storage Explorer, File Sync, Migrate, and Data Box. Covered. |
-| Describe Azure identity, access, and security | 3.5 | [Section 6](#6-identity-access-and-security): Entra ID and Domain Services, SSO, MFA, passwordless, external identities, Conditional Access, RBAC, Zero Trust, defense in depth, and Defender for Cloud. Covered. |
-| Describe cost management in Azure | 4.1 | [Section 7](#7-cost-management-and-service-commitments): cost factors, Pricing calculator, Cost Management, analysis, budgets, and alerts; [section 8](#8-governance-and-compliance): tags. Covered, with the TCO discrepancy below. |
-| Describe features and tools in Azure for governance and compliance | 4.2 | [Section 8](#8-governance-and-compliance): Purview, Policy, compliance, remediation, and locks. Covered. |
-| Describe features and tools for managing and deploying Azure resources | 4.3 | [Section 9](#9-deployment-and-administration): portal, Cloud Shell, CLI, PowerShell, Arc, IaC, ARM, templates, and Bicep. Covered. |
-| Describe monitoring tools in Azure | 4.4 | [Section 10](#10-monitoring): Advisor, Service Health, Monitor, Log Analytics, alert rules and action groups, and Application Insights. Covered. |
-
-**Important discrepancy:** the uploaded guide's section 4.1.3, question 20 and
-answer, and cost checklist describe the TCO calculator without noting its
-retirement. The official Learn
-[pricing lesson](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-cost-management-azure/includes/3-compare-pricing-total-cost-of-ownership-calculators.md)
-explicitly states that it has been retired. This glossary retains that verified
-status: learn the TCO concept, but do not assume the former calculator is
-available. The uploaded guide is preserved unchanged.
-
-Study the shared core topics first. AI/ML/IoT, sustainability, and additional
-recognition material remain supporting context; their presence in training
-does not establish that they are explicit current exam objectives.
+The official syllabus does **not** list the retired TCO Calculator as an objective. Its historical purpose is optional context. Extra AI/ML/IoT and sustainability topics remain supplementary unless a future Microsoft blueprint explicitly includes them.
 
 ## Contents
 
