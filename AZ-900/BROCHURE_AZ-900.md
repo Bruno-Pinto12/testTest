@@ -9,6 +9,10 @@ facts, a short "Remember" box, and the most common exam traps.
 > environment, so the domain weights below are the guide's reported values, not
 > independently verified. It does not contain official or real exam questions.
 
+> **Interactive practice:** [AZ-900_PRACTICE_QUIZ.html](AZ-900_PRACTICE_QUIZ.html)
+> is an exam-style quiz (practice and exam modes). Download the file and open
+> it in a web browser; GitHub only shows its source code.
+
 ## Contents
 
 - [Exam at a glance](#exam-at-a-glance)
@@ -95,6 +99,8 @@ customer. The split depends on the service type.
   by a third party but is dedicated to one organization.
 - Moving to the cloud does **not** transfer responsibility for your data.
 
+> **Practice:** [Chapter 1 questions](QUESTIONS_AZ-900.md#1-cloud-computing)
+
 ### 2. Benefits of cloud services
 
 | Benefit | Meaning in one line |
@@ -123,6 +129,8 @@ customer. The split depends on the service type.
 - Combining services multiplies their SLAs, so the **composite SLA is lower**
   than each individual SLA.
 
+> **Practice:** [Chapter 2 questions](QUESTIONS_AZ-900.md#2-benefits-of-cloud-services)
+
 ### 3. Cloud service types
 
 | Type | You manage | Provider manages | Azure examples | Typical use |
@@ -143,6 +151,8 @@ as a form of PaaS.
 - A VM is **always IaaS**, even if it runs a database.
 - Azure SQL Database is **PaaS**; SQL Server installed on a VM is **IaaS**.
 - In SaaS the customer still owns **data and accounts**.
+
+> **Practice:** [Chapter 3 questions](QUESTIONS_AZ-900.md#3-cloud-service-types)
 
 ---
 
@@ -193,6 +203,8 @@ Management groups
 > **Remember (top to bottom):** "**M**y **S**ubscription **R**uns **R**esources":
 > Management group, Subscription, Resource group, Resource.
 
+> **Practice:** [Chapter 4 questions](QUESTIONS_AZ-900.md#4-core-architecture)
+
 ### 5. Compute
 
 | Service | Model | Use it when |
@@ -219,6 +231,8 @@ Management groups
 > servers to manage" = **App Service**. "Remote desktop for staff" =
 > **Azure Virtual Desktop**. "Many containers" = **AKS**.
 
+> **Practice:** [Chapter 5 questions](QUESTIONS_AZ-900.md#5-compute)
+
 ### 6. Networking
 
 | Service or feature | What it does |
@@ -244,6 +258,8 @@ Management groups
 > **Remember:** "Not over the internet" = **ExpressRoute**.
 > "Encrypted over the internet" = **VPN Gateway**.
 > "Private IP for a PaaS service" = **Private endpoint**.
+
+> **Practice:** [Chapter 6 questions](QUESTIONS_AZ-900.md#6-networking)
 
 ### 7. Storage
 
@@ -301,6 +317,8 @@ the redundancy and performance options.
 - Slow or limited internet + huge data = **Data Box**.
 - Archive is the cheapest to store but **cannot be read immediately**.
 
+> **Practice:** [Chapter 7 questions](QUESTIONS_AZ-900.md#7-storage)
+
 ### 8. Identity, access, and security
 
 | Concept | Meaning |
@@ -345,6 +363,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 - RBAC controls **who can do what**; Azure Policy controls **what can be
   created or how it must be configured**.
 
+> **Practice:** [Chapter 8 questions](QUESTIONS_AZ-900.md#8-identity-access-and-security)
+
 ---
 
 ## Part C - Management and governance
@@ -383,6 +403,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 > Cost Management = **after** (actual spend, budgets). Tags = **group and
 > report costs**.
 
+> **Practice:** [Chapter 9 questions](QUESTIONS_AZ-900.md#9-cost-management)
+
 ### 10. Governance and compliance
 
 | Service | Purpose |
@@ -406,6 +428,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 > **Remember:** Policy = **rules** for resources. RBAC = **permissions** for
 > people. Locks = **protection** from deletion or change.
 
+> **Practice:** [Chapter 10 questions](QUESTIONS_AZ-900.md#10-governance-and-compliance)
+
 ### 11. Managing and deploying resources
 
 | Tool | Description |
@@ -426,6 +450,8 @@ and source-controlled.
 
 > **Remember:** Every tool (portal, CLI, PowerShell, SDK) goes through
 > **Azure Resource Manager**. IaC = **same result every time**.
+
+> **Practice:** [Chapter 11 questions](QUESTIONS_AZ-900.md#11-managing-and-deploying-resources)
 
 ### 12. Monitoring
 
@@ -449,6 +475,8 @@ and source-controlled.
 > **Remember:** Advisor = **advice**. Service Health = **is Azure itself OK?**
 > Monitor = **my resources' metrics and logs**. Application Insights = **my
 > app**.
+
+> **Practice:** [Chapter 12 questions](QUESTIONS_AZ-900.md#12-monitoring)
 
 ---
 
