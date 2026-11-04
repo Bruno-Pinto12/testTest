@@ -9,6 +9,10 @@ facts, a short "Remember" box, and the most common exam traps.
 > environment, so the domain weights below are the guide's reported values, not
 > independently verified. It does not contain official or real exam questions.
 
+> **Interactive practice:** [AZ-900_PRACTICE_QUIZ.html](AZ-900_PRACTICE_QUIZ.html)
+> is an exam-style quiz (practice and exam modes). Download the file and open
+> it in a web browser; GitHub only shows its source code.
+
 ## Contents
 
 - [Exam at a glance](#exam-at-a-glance)
