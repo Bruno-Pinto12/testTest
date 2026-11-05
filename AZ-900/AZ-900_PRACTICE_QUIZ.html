@@ -150,7 +150,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
   <h1>AZ-900 Practice Quiz</h1>
   <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">Dark theme</button>
 </header>
-<div style="max-width:860px;margin:12px auto;padding:10px 16px;font-size:.85rem">Independent practice questions, not official exam items. Verified against the <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900" target="_blank" rel="noopener">Microsoft AZ-900 objectives effective July 20, 2026</a> on November 4, 2026. Practice scores are not Microsoft scaled exam scores.</div>\n<main id="app"></main>
+<div style="max-width:860px;margin:12px auto;padding:10px 16px;font-size:.85rem">Independent practice questions, not official exam items. Checked against the <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900" target="_blank" rel="noopener">Microsoft AZ-900 objectives effective July 20, 2026</a> on November 4, 2026. Practice scores are not Microsoft scaled exam scores. Technical references and audit notes: see AZ900_DETAILED_AUDIT.md in the same folder.</div>\n<main id="app"></main>
 
 <script id="quiz-data" type="application/json">[
   {
@@ -208,14 +208,14 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
   {
     "domain": "Cloud concepts",
     "type": "dropdown",
-    "before": "Paying each month only for the virtual machines that are running is an example of",
+    "before": "Paying for Azure virtual machines as an ongoing operating expense rather than buying physical servers is an example of",
     "options": [
       "capital expenditure (CapEx)",
       "operational expenditure (OpEx)"
     ],
     "after": ".",
     "answer": 1,
-    "explain": "OpEx is spending on services or products over time, as they are consumed. CapEx is a one-time, up-front spend on physical infrastructure, such as buying servers.",
+    "explain": "Cloud compute charges are typically OpEx. A VM can still be billed when stopped but allocated, while deallocated compute is generally not billed; disks and networking can continue to incur charges. See Microsoft VM states and billing documentation.",
     "src": "describe-cloud-compute"
   },
   {
@@ -245,16 +245,16 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
     "pick": 2,
     "prompt": "A company is moving from its own datacenter to Azure. Which two are benefits of the consumption-based model? Each correct answer presents a complete solution. Select two.",
     "options": [
-      "No up-front infrastructure costs",
+      "Avoiding the need to purchase physical servers upfront",
       "Buying capacity in advance for peaks",
       "Fixed yearly hardware refresh",
-      "Paying only for what you use"
+      "Paying for billable usage or provisioned resources instead of owning the hardware"
     ],
     "answers": [
       0,
       3
     ],
-    "explain": "The consumption-based model has no up-front costs and you pay only for the resources you use, stopping when you no longer need them. Buying capacity in advance for peaks is the traditional CapEx approach the cloud avoids.",
+    "explain": "Consumption-based cloud services reduce the need for up-front physical infrastructure purchases and shift many costs to usage or provisioned capacity. An allocated but idle VM or retained disk may still be billable; stopping the guest OS is not necessarily enough.",
     "src": "describe-cloud-compute"
   },
   {
@@ -446,7 +446,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
       "ZRS"
     ],
     "answer": 1,
-    "explain": "RA-GZRS replicates across availability zones in the primary region, copies to a secondary region, and allows read access to the secondary at any time. GZRS is the nearest distractor: it gives the same protection, but the secondary is readable only after a failover.",
+    "explain": "RA-GZRS replicates synchronously across zones in the primary region, asynchronously to a secondary region, and provides a read-access secondary endpoint. Applications must explicitly use the secondary endpoint when appropriate; this is not automatic application failover, and recent writes may be lost in a regional disaster.",
     "src": "describe-azure-storage-services"
   },
   {
@@ -461,7 +461,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
     ],
     "after": "access tier.",
     "answer": 2,
-    "explain": "The Cold tier is optimized for infrequently accessed data stored for at least 90 days. Archive is cheaper but is offline and must be rehydrated before reading. Cool targets data stored for at least 30 days.",
+    "explain": "Cold is an online tier optimized for rarely accessed data with a 90-day minimum billable retention period. Archive is offline and needs rehydration. Azure also documents Smart tier, which automatically moves eligible data between Hot, Cool, and Cold.",
     "src": "describe-azure-storage-services"
   },
   {
@@ -594,7 +594,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
       0,
       2
     ],
-    "explain": "Prices vary by region (geography), and network traffic leaving Azure is billed. Tags and resource groups are free organizational features, so the number of them does not change the bill.",
+    "explain": "Azure resource pricing can vary by region, and outbound network data transfer can incur charges. Tags and resource groups are organizational features rather than direct per-tag or per-group billable units; they may indirectly affect costs if used to deploy or manage additional paid resources.",
     "src": "describe-cost-management-azure"
   },
   {
@@ -753,7 +753,32 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
 <script>
 (function () {
   "use strict";
-  var Q = JSON.parse(document.getElementById("quiz-data").textContent);
+  var ALL_Q = JSON.parse(document.getElementById("quiz-data").textContent);
+  var Q = ALL_Q.slice();
+  var CHAPTERS = [
+    ["1", "Cloud computing", ["describe-cloud-compute"]],
+    ["2", "Benefits of cloud services", ["describe-benefits-use-cloud-services"]],
+    ["3", "Cloud service types", ["describe-cloud-service-types"]],
+    ["4", "Core architecture", ["describe-core-architectural-components-of-azure"]],
+    ["5", "Compute", ["describe-azure-compute-networking-services"]],
+    ["6", "Networking", ["describe-azure-networking-services"]],
+    ["7", "Storage", ["describe-azure-storage-services"]],
+    ["8", "Identity, access, and security", ["describe-azure-identity-access-security"]],
+    ["9", "Cost management", ["describe-cost-management-azure"]],
+    ["10", "Governance and compliance", ["describe-features-tools-azure-for-governance-compliance"]],
+    ["11", "Managing and deploying resources", ["describe-features-tools-manage-deploy-azure-resources"]],
+    ["12", "Monitoring", ["describe-monitoring-tools-azure"]]
+  ];
+  var selectedChapter = "all";
+  function applyChapter(chapter) {
+    selectedChapter = chapter;
+    var item = CHAPTERS.find(function (c) { return c[0] === chapter; });
+    Q = item ? ALL_Q.filter(function (q) { return item[2].indexOf(q.src) !== -1; }) : ALL_Q.slice();
+  }
+  function chapterName() {
+    var item = CHAPTERS.find(function (c) { return c[0] === selectedChapter; });
+    return item ? "Chapter " + item[0] + " - " + item[1] : "All chapters";
+  }
   var MODULES = {
     "describe-cloud-compute": "Describe cloud computing",
     "describe-benefits-use-cloud-services": "Describe the benefits of using cloud services",
@@ -882,23 +907,33 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
     }).join("");
     app.innerHTML =
       '<div class="card"><h2>Microsoft Azure Fundamentals (AZ-900)</h2>' +
-      '<p>' + Q.length + ' original practice questions covering the six question styles used on the real exam: ' +
+      '<p><strong>' + esc(chapterName()) + '</strong> - ' + Q.length + ' original practice questions covering the six question styles used on the real exam: ' +
       'drag and drop, single choice, multiple choice, Yes/No grid, sentence completion, and a problem-solution series.</p>' +
       '<table><tr><th>Domain</th><th>Questions</th><th>Share</th></tr>' + rows + '</table>' +
       '<p class="small muted">Official weights (skills measured as of July 20, 2026): cloud concepts 25-30%, ' +
       'architecture and services 35-40%, management and governance 30-35%. ' +
       'These questions are original revision material. They are not official Microsoft questions and are not taken from any exam.</p></div>' +
+       '<div class="card"><h3>Study by brochure chapter</h3>' +
+      '<label for="chapterSelect">Choose a chapter</label>' +
+      '<select id="chapterSelect" style="width:100%;padding:10px;margin-top:8px;border:1px solid var(--border);background:var(--card)">' +
+      '<option value="all">All chapters (' + ALL_Q.length + ' questions)</option>' +
+      CHAPTERS.map(function (c) { var n = ALL_Q.filter(function (q) { return c[2].indexOf(q.src) !== -1; }).length;
+        return '<option value="' + c[0] + '"' + (selectedChapter === c[0] ? ' selected' : '') +
+          '>Chapter ' + c[0] + ' - ' + esc(c[1]) + ' (' + n + ' question' + (n === 1 ? '' : 's') + ')</option>';
+      }).join('') + '</select>' +
+      '<p class="small muted">Chapter names follow BROCHURE_AZ-900.md. Choose Practice or Exam below to begin. Each chapter uses its matching existing questions.</p></div>' +
       '<div class="mode-grid">' +
       '<button class="btn" type="button" id="mPractice"><strong>Practice mode</strong>' +
       '<span class="small muted">Check each answer and see the explanation and source right away.</span></button>' +
       '<button class="btn" type="button" id="mExam"><strong>Exam mode</strong>' +
       '<span class="small muted">No corrections until you finish, like the real exam.</span></button></div>';
+    document.getElementById("chapterSelect").onchange = function () { applyChapter(this.value); S = newState(null); S.view = "start"; render(); };
     document.getElementById("mPractice").onclick = function () { S = newState("practice"); S.view = "quiz"; render(); };
     document.getElementById("mExam").onclick = function () { S = newState("exam"); S.view = "quiz"; render(); };
   }
 
   function navHtml() {
-    var h = '<div class="legend"><span class="l-ans">Answered</span>' +
+    var h = '<p class="small muted">' + esc(chapterName()) + '</p><div class="legend"><span class="l-ans">Answered</span>' +
       (S.mode === "practice" || S.reviewMode ? '<span class="l-ok">Correct</span><span class="l-bad">Incorrect</span>' : "") +
       '<span class="l-flag">Flagged</span></div><div id="nav">';
     Q.forEach(function (q, i) {
@@ -1127,7 +1162,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
       lines.push({ i: i, g: g });
     });
     var pct = Math.round(tot * 100 / max);
-    var txt = "AZ-900 Practice Quiz - " + (S.mode === "practice" ? "Practice" : "Exam") + " mode\n" +
+    var txt = "AZ-900 Practice Quiz - " + chapterName() + " - " + (S.mode === "practice" ? "Practice" : "Exam") + " mode\n" +
       "Score: " + pct + "% (" + tot + "/" + max + " points)\n" +
       "Fully correct questions: " + full + "/" + Q.length + "\n\n";
     lines.forEach(function (l) {
@@ -1140,7 +1175,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
 
   function renderResults() {
     var s = buildSummary();
-    var h = '<div class="card"><h2>Results</h2><div class="score-big">' + s.pct + "%</div>" +
+    var h = '<div class="card"><h2>Results: ' + esc(chapterName()) + '</h2><div class="score-big">' + s.pct + "%</div>" +
       "<p>" + s.tot + " / " + s.max + " points - " + s.full + " of " + Q.length + " questions fully correct.</p>" +
       '<p class="small muted">Partial credit: one point per correctly placed item, per correct statement, or per correct answer in a multiple-choice question.</p>' +
       '<div class="controls"><button type="button" class="btn primary" id="revBtn">Review questions</button>' +
