@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AZ-900 Practice Quiz</title>
+<title>AZ-900 Chapter Mastery Quiz</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -143,14 +143,19 @@ textarea {
 .res-q ul { margin: 4px 0 0; padding-left: 20px; }
 .ok-t { color: var(--ok); } .bad-t { color: var(--bad); }
 a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
+.bank-options { display:grid; gap:12px; margin-top:12px; }
+.bank-options label { display:block; padding:14px; border:1px solid var(--border); border-radius:9px; cursor:pointer; }
+.bank-options label:has(input:checked) { border-color:var(--accent); background:var(--accent-soft); }
+.bank-options label span { display:block; padding-left:24px; }
+.bank-options input { accent-color:var(--accent); }
 </style>
 </head>
 <body>
 <header>
-  <h1>AZ-900 Practice Quiz</h1>
+  <h1>AZ-900 Chapter Mastery Quiz</h1>
   <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">Dark theme</button>
 </header>
-<div style="max-width:860px;margin:12px auto;padding:10px 16px;font-size:.85rem">Independent practice questions, not official exam items. Checked against the <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900" target="_blank" rel="noopener">Microsoft AZ-900 objectives effective July 20, 2026</a> on November 4, 2026. Practice scores are not Microsoft scaled exam scores. Technical references and audit notes: see AZ900_DETAILED_AUDIT.md in the same folder.</div>\n<main id="app"></main>
+<div style="max-width:860px;margin:12px auto;padding:10px 16px;font-size:.85rem">102 original questions + 48 additional mixed-format questions in Advanced Mixed mode, not official exam items. Checked against the <a href="https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900" target="_blank" rel="noopener">Microsoft AZ-900 objectives effective July 20, 2026</a> on November 4, 2026. Practice scores are not Microsoft scaled exam scores. Technical references and audit notes: see AZ900_DETAILED_AUDIT.md in the same folder.</div>\n<main id="app"></main>
 
 <script id="quiz-data" type="application/json">[
   {
@@ -747,6 +752,2014 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
     "a": false,
     "explain": "No. Cost Management can report costs by tag, but it does not prevent untagged resources from being created. Azure Policy is required.",
     "src": "describe-cost-management-azure"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A business needs to retain its private environment but also use Azure services. Which model fits?",
+    "options": [
+      "Hybrid cloud",
+      "Private cloud",
+      "Public cloud",
+      "Multi-cloud"
+    ],
+    "answer": 0,
+    "explain": "Hybrid cloud integrates private and public environments; multi-cloud means multiple public providers.",
+    "src": "describe-cloud-compute"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A company buys physical servers for its own datacenter. How is the initial purchase classified?",
+    "options": [
+      "OpEx",
+      "CapEx",
+      "Consumption charge",
+      "Reservation discount"
+    ],
+    "answer": 1,
+    "explain": "Buying physical infrastructure upfront is capital expenditure.",
+    "src": "describe-cloud-compute"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A company deploys a VM in Azure. Who manages the underlying physical host?",
+    "options": [
+      "Customer",
+      "Application developer",
+      "Microsoft",
+      "Managed service provider by default"
+    ],
+    "answer": 2,
+    "explain": "The cloud provider manages the physical datacenter and hosts, including for IaaS.",
+    "src": "describe-cloud-compute"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "An organization uses Azure and another public cloud provider. What is this called?",
+    "options": [
+      "Hybrid cloud",
+      "Private cloud",
+      "Sovereign cloud",
+      "Multi-cloud"
+    ],
+    "answer": 3,
+    "explain": "Multi-cloud involves more than one public cloud provider.",
+    "src": "describe-cloud-compute"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "An Azure VM is deallocated but its managed disks are retained. What is the likely billing outcome?",
+    "options": [
+      "Compute charges stop but disk charges may continue",
+      "All charges stop immediately",
+      "Compute charges continue at full rate",
+      "Disks are deleted automatically"
+    ],
+    "answer": 0,
+    "explain": "Deallocation generally stops VM compute billing, but retained storage remains billable.",
+    "src": "describe-cloud-compute"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "Which item is always the customer's responsibility in the shared responsibility model?",
+    "options": [
+      "Maintaining physical datacenter cooling",
+      "Protecting its information and data",
+      "Replacing failed physical hosts",
+      "Managing the provider's network hardware"
+    ],
+    "answer": 1,
+    "explain": "The customer remains responsible for its data regardless of service model.",
+    "src": "describe-cloud-compute"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A shopping site adds two more identical web-server instances during a sale. Which scaling method is used?",
+    "options": [
+      "Vertical scaling",
+      "Manual patching",
+      "Data replication",
+      "Horizontal scaling"
+    ],
+    "answer": 3,
+    "explain": "Scale out adds instances rather than increasing one instance's size.",
+    "src": "describe-benefits-use-cloud-services"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A database VM is upgraded from 4 to 16 vCPUs. Which scaling method is this?",
+    "options": [
+      "Vertical scaling",
+      "Horizontal scaling",
+      "Geo-redundancy",
+      "Elastic failover"
+    ],
+    "answer": 0,
+    "explain": "Scale up increases the capacity of a single resource.",
+    "src": "describe-benefits-use-cloud-services"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "Traffic rises and falls unpredictably; resources automatically adjust to demand. Which cloud benefit is illustrated?",
+    "options": [
+      "Sovereignty",
+      "Elasticity",
+      "Capital expenditure",
+      "Physical isolation"
+    ],
+    "answer": 1,
+    "explain": "Elasticity means resources dynamically grow and shrink with demand.",
+    "src": "describe-benefits-use-cloud-services"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "An application must continue functioning when a component fails. Which benefit matters most?",
+    "options": [
+      "Cost predictability",
+      "Vertical scaling",
+      "Reliability",
+      "Data classification"
+    ],
+    "answer": 2,
+    "explain": "Reliability focuses on recovering from failures and maintaining operation.",
+    "src": "describe-benefits-use-cloud-services"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A team wants a consistent estimate of Azure spending before deploying. Which benefit is being used?",
+    "options": [
+      "Geographic redundancy",
+      "Authentication",
+      "Hardware isolation",
+      "Cost predictability"
+    ],
+    "answer": 3,
+    "explain": "Cloud cost predictability involves estimating and forecasting spending.",
+    "src": "describe-benefits-use-cloud-services"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "Two independent components each have a 99.9% availability SLA. What happens to the approximate composite SLA when both are required?",
+    "options": [
+      "It is lower than 99.9%",
+      "It becomes 100%",
+      "It stays exactly 99.9%",
+      "It becomes 99.99%"
+    ],
+    "answer": 0,
+    "explain": "Multiplying 0.999 by 0.999 gives about 99.8001% for independent required components.",
+    "src": "describe-benefits-use-cloud-services"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A team needs full control over the guest operating system of a migrated server. Which model best fits?",
+    "options": [
+      "PaaS",
+      "SaaS",
+      "IaaS",
+      "Serverless-only"
+    ],
+    "answer": 2,
+    "explain": "IaaS provides virtual infrastructure while the customer manages the guest OS.",
+    "src": "describe-cloud-service-types"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "Developers need to deploy a web application without patching its operating system. Which model fits best?",
+    "options": [
+      "IaaS",
+      "Private cloud",
+      "CapEx",
+      "PaaS"
+    ],
+    "answer": 3,
+    "explain": "PaaS manages the underlying OS and runtime infrastructure for the customer.",
+    "src": "describe-cloud-service-types"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "Employees need ready-to-use email and collaboration software. Which model fits best?",
+    "options": [
+      "SaaS",
+      "IaaS",
+      "PaaS",
+      "Bare metal"
+    ],
+    "answer": 0,
+    "explain": "SaaS delivers a complete managed application such as Microsoft 365.",
+    "src": "describe-cloud-service-types"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A company installs SQL Server inside an Azure virtual machine. Which service model applies to that deployment?",
+    "options": [
+      "PaaS",
+      "IaaS",
+      "SaaS",
+      "FaaS exclusively"
+    ],
+    "answer": 1,
+    "explain": "The deployment remains IaaS because the company manages the VM and its SQL Server installation.",
+    "src": "describe-cloud-service-types"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "A developer chooses Azure SQL Database instead of installing SQL Server on a VM. Which model is it?",
+    "options": [
+      "IaaS",
+      "SaaS",
+      "PaaS",
+      "Private cloud"
+    ],
+    "answer": 2,
+    "explain": "Azure SQL Database is a managed database platform service.",
+    "src": "describe-cloud-service-types"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "prompt": "Which statement about Azure Functions is accurate?",
+    "options": [
+      "All plans charge only per execution",
+      "It requires customer-managed physical servers",
+      "It is a fourth cloud service model alongside IaaS, PaaS, SaaS",
+      "Billing and scaling depend on the hosting plan"
+    ],
+    "answer": 3,
+    "explain": "Functions is serverless-capable, but pricing and scaling vary by plan.",
+    "src": "describe-cloud-service-types"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "Where does an Azure resource group sit in the management hierarchy?",
+    "options": [
+      "Above management group",
+      "Below subscription and above resources",
+      "Above subscription",
+      "Below individual resources"
+    ],
+    "answer": 1,
+    "explain": "The hierarchy is management groups, subscriptions, resource groups, then resources.",
+    "src": "describe-core-architectural-components-of-azure"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "An administrator deletes a resource group containing three VMs. What is the expected effect?",
+    "options": [
+      "The VMs are automatically moved to another group",
+      "Only the group label disappears",
+      "The VMs in that group are deleted",
+      "The VMs are converted to templates"
+    ],
+    "answer": 2,
+    "explain": "Deleting a resource group deletes the resources it contains.",
+    "src": "describe-core-architectural-components-of-azure"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A business wants to apply governance across several Azure subscriptions. Which scope groups them?",
+    "options": [
+      "Resource group",
+      "Availability zone",
+      "Virtual network",
+      "Management group"
+    ],
+    "answer": 3,
+    "explain": "Management groups organize subscriptions and allow inherited governance.",
+    "src": "describe-core-architectural-components-of-azure"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "An Azure region supports availability zones. How many separate zones does it have at minimum?",
+    "options": [
+      "Three",
+      "One",
+      "Two",
+      "Ten"
+    ],
+    "answer": 0,
+    "explain": "A zone-enabled region has at least three availability zones.",
+    "src": "describe-core-architectural-components-of-azure"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company deploys in an Azure region pair but configures no replication. Is its application automatically protected against regional failure?",
+    "options": [
+      "Yes, pairing automatically copies every VM",
+      "No, workload replication or failover must be configured",
+      "Yes, every database is automatically mirrored",
+      "Yes, pairing guarantees zero data loss"
+    ],
+    "answer": 1,
+    "explain": "Region pairing alone does not replicate customer workloads.",
+    "src": "describe-core-architectural-components-of-azure"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A business wants to isolate its VM from failure of one datacenter within a region. Which concept should it evaluate?",
+    "options": [
+      "Management groups",
+      "Resource tags",
+      "Availability zones",
+      "Azure reservations"
+    ],
+    "answer": 2,
+    "explain": "Availability zones are physically separate facilities within a region.",
+    "src": "describe-core-architectural-components-of-azure"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company wants to host a web API without managing VM operating systems. Which Azure service best fits?",
+    "options": [
+      "Azure App Service",
+      "Azure Virtual Machines",
+      "Azure Virtual Desktop",
+      "Azure Disk Storage"
+    ],
+    "answer": 0,
+    "explain": "App Service is a managed platform for web apps and APIs.",
+    "src": "describe-azure-compute-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A scheduled event should run a short piece of code. Which service best fits?",
+    "options": [
+      "Azure Virtual Desktop",
+      "Azure Functions",
+      "Azure Files",
+      "Azure DNS"
+    ],
+    "answer": 1,
+    "explain": "Functions supports event-driven execution.",
+    "src": "describe-azure-compute-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "An enterprise needs to orchestrate a large set of Kubernetes containers. Which service should it consider?",
+    "options": [
+      "Azure Container Instances",
+      "Azure Virtual Desktop",
+      "Azure Kubernetes Service",
+      "Azure Files"
+    ],
+    "answer": 2,
+    "explain": "AKS provides managed Kubernetes orchestration.",
+    "src": "describe-azure-compute-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A team needs to run a standalone container without administering a Kubernetes cluster. Which service is simplest?",
+    "options": [
+      "Azure Virtual Machines",
+      "Azure Virtual Desktop",
+      "Azure DNS",
+      "Azure Container Instances"
+    ],
+    "answer": 3,
+    "explain": "ACI runs containers without requiring Kubernetes cluster management.",
+    "src": "describe-azure-compute-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company wants employees to access Windows desktops remotely from many devices. Which service fits?",
+    "options": [
+      "Azure Virtual Desktop",
+      "Azure App Service",
+      "Azure Functions",
+      "Azure Blob Storage"
+    ],
+    "answer": 0,
+    "explain": "Azure Virtual Desktop provides virtualized desktops and apps.",
+    "src": "describe-azure-compute-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A service needs many similar virtual machines with automatic scaling. Which Azure feature fits?",
+    "options": [
+      "Availability sets only",
+      "Virtual Machine Scale Sets",
+      "Azure Files",
+      "Azure DNS"
+    ],
+    "answer": 1,
+    "explain": "VM Scale Sets manage groups of VMs and can autoscale them.",
+    "src": "describe-azure-compute-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "An office needs an encrypted connection to Azure over the public internet. Which service fits?",
+    "options": [
+      "ExpressRoute",
+      "VNet peering",
+      "Azure DNS",
+      "VPN Gateway"
+    ],
+    "answer": 3,
+    "explain": "VPN Gateway provides encrypted tunnels over the internet.",
+    "src": "describe-azure-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company needs private connectivity to Azure through a network provider without traversing the public internet. Which service fits?",
+    "options": [
+      "ExpressRoute",
+      "VPN Gateway",
+      "Azure DNS",
+      "Network security group"
+    ],
+    "answer": 0,
+    "explain": "ExpressRoute provides private connectivity through a provider; encryption is not automatic.",
+    "src": "describe-azure-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "Two Azure VNets need private connectivity using the Microsoft backbone. Which feature fits?",
+    "options": [
+      "Azure DNS",
+      "VNet peering",
+      "Azure Files",
+      "Azure Policy"
+    ],
+    "answer": 1,
+    "explain": "VNet peering connects virtual networks privately.",
+    "src": "describe-azure-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A security team needs inbound and outbound allow/deny rules on a subnet. Which feature fits?",
+    "options": [
+      "Resource lock",
+      "Azure Advisor",
+      "Network security group",
+      "Azure Cost Management"
+    ],
+    "answer": 2,
+    "explain": "NSGs filter traffic with rules on subnets or network interfaces.",
+    "src": "describe-azure-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A storage service must be reachable through a private IP inside a VNet. Which feature fits?",
+    "options": [
+      "Public endpoint",
+      "Azure DNS public zone",
+      "ExpressRoute circuit alone",
+      "Private endpoint"
+    ],
+    "answer": 3,
+    "explain": "Private endpoints use Private Link to expose a supported service through a private IP.",
+    "src": "describe-azure-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A team needs to divide a VNet into separate address ranges. What should it create?",
+    "options": [
+      "Subnets",
+      "Subscriptions",
+      "Management groups",
+      "Resource locks"
+    ],
+    "answer": 0,
+    "explain": "Subnets are IP address ranges inside a virtual network.",
+    "src": "describe-azure-networking-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company needs a managed SMB file share accessible by Windows servers. Which storage service fits?",
+    "options": [
+      "Blob Storage",
+      "Queue Storage",
+      "Azure Files",
+      "Table Storage"
+    ],
+    "answer": 2,
+    "explain": "Azure Files provides managed file shares using SMB and supported NFS options.",
+    "src": "describe-azure-storage-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A media company stores images and videos as unstructured objects. Which service fits?",
+    "options": [
+      "Azure Files exclusively",
+      "Queue Storage",
+      "Disk Storage exclusively",
+      "Blob Storage"
+    ],
+    "answer": 3,
+    "explain": "Blob Storage stores unstructured object data.",
+    "src": "describe-azure-storage-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company stores backups that are rarely retrieved and can wait hours for retrieval. Which tier fits?",
+    "options": [
+      "Archive",
+      "Hot",
+      "Cool",
+      "Cold"
+    ],
+    "answer": 0,
+    "explain": "Archive is offline and requires rehydration, which takes time.",
+    "src": "describe-azure-storage-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A storage account must tolerate loss of one availability zone within its primary region. Which redundancy option fits?",
+    "options": [
+      "LRS",
+      "ZRS",
+      "GRS without zone redundancy",
+      "Local disk caching"
+    ],
+    "answer": 1,
+    "explain": "ZRS replicates across availability zones in a region.",
+    "src": "describe-azure-storage-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A business wants replication across regions and zone redundancy in the primary region. Which option fits?",
+    "options": [
+      "LRS",
+      "ZRS",
+      "GZRS",
+      "GRS"
+    ],
+    "answer": 2,
+    "explain": "GZRS combines zone redundancy in the primary with geo-replication to a secondary region.",
+    "src": "describe-azure-storage-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "An organization must transfer tens of terabytes to Azure despite limited network bandwidth. Which service should it evaluate?",
+    "options": [
+      "Azure DNS",
+      "Azure Policy",
+      "Azure Advisor",
+      "Azure Data Box"
+    ],
+    "answer": 3,
+    "explain": "Data Box transfers large datasets using shipped physical devices.",
+    "src": "describe-azure-storage-services"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A user signs in with a password and a hardware security key. What security concept is this?",
+    "options": [
+      "Single sign-on",
+      "Multifactor authentication",
+      "Authorization only",
+      "Resource locking"
+    ],
+    "answer": 1,
+    "explain": "The factors are something known and something possessed.",
+    "src": "describe-azure-identity-access-security"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "An admin wants a person to view resources but not modify them. Which built-in Azure role fits?",
+    "options": [
+      "Contributor",
+      "Owner",
+      "Reader",
+      "User Access Administrator"
+    ],
+    "answer": 2,
+    "explain": "Reader grants read-only resource access.",
+    "src": "describe-azure-identity-access-security"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A user can manage Azure resources but must not grant access to others. Which built-in role fits?",
+    "options": [
+      "Owner",
+      "User Access Administrator",
+      "Reader",
+      "Contributor"
+    ],
+    "answer": 3,
+    "explain": "Contributor manages resources but cannot grant Azure RBAC role assignments.",
+    "src": "describe-azure-identity-access-security"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company wants to require MFA when sign-in risk is high. Which feature fits?",
+    "options": [
+      "Conditional Access",
+      "Resource locks",
+      "Azure Files",
+      "Azure Policy tags"
+    ],
+    "answer": 0,
+    "explain": "Conditional Access uses signals to make access decisions such as requiring MFA.",
+    "src": "describe-azure-identity-access-security"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "A company needs domain join and LDAP without running its own domain controllers. Which service fits?",
+    "options": [
+      "Azure DNS only",
+      "Microsoft Entra Domain Services",
+      "Azure Advisor",
+      "Microsoft Purview"
+    ],
+    "answer": 1,
+    "explain": "Entra Domain Services supplies managed traditional domain capabilities.",
+    "src": "describe-azure-identity-access-security"
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "prompt": "An organization adopts 'verify explicitly, use least privilege, assume breach'. Which strategy is this?",
+    "options": [
+      "Public cloud",
+      "High availability",
+      "Zero Trust",
+      "Vertical scaling"
+    ],
+    "answer": 2,
+    "explain": "Those three principles define the Zero Trust approach.",
+    "src": "describe-azure-identity-access-security"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A team wants to estimate the price of a planned Azure deployment. Which tool fits?",
+    "options": [
+      "Azure Pricing Calculator",
+      "Microsoft Cost Management budgets",
+      "Azure Advisor security tab",
+      "Azure Service Health"
+    ],
+    "answer": 0,
+    "explain": "The Pricing Calculator estimates costs before deployment.",
+    "src": "describe-cost-management-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "Finance needs to analyze actual Azure spending and set budget alerts. Which tool fits?",
+    "options": [
+      "Azure DNS",
+      "Microsoft Cost Management",
+      "Azure Resource Manager",
+      "Azure Virtual Desktop"
+    ],
+    "answer": 1,
+    "explain": "Cost Management provides cost analysis, forecasts, budgets, and alerts.",
+    "src": "describe-cost-management-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A budget threshold is reached in Azure. What happens by default?",
+    "options": [
+      "Azure automatically deletes all resources",
+      "Every VM is deallocated",
+      "Alerts can notify but resources keep running",
+      "All subscriptions are suspended"
+    ],
+    "answer": 2,
+    "explain": "Budgets do not automatically stop workloads.",
+    "src": "describe-cost-management-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A company wants to reuse eligible existing Windows Server licenses to lower Azure costs. Which option fits?",
+    "options": [
+      "Spot VMs",
+      "Azure Policy",
+      "Azure Arc",
+      "Azure Hybrid Benefit"
+    ],
+    "answer": 3,
+    "explain": "Hybrid Benefit applies eligible existing licenses to qualifying Azure services.",
+    "src": "describe-cost-management-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A fault-tolerant batch workload can tolerate eviction. Which pricing option may reduce cost?",
+    "options": [
+      "Spot VMs",
+      "Pay-as-you-go dedicated capacity only",
+      "ExpressRoute",
+      "Premium SSD"
+    ],
+    "answer": 0,
+    "explain": "Spot VMs use spare capacity at lower prices but may be evicted.",
+    "src": "describe-cost-management-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A company commits to an hourly amount of eligible Azure compute spending. Which discount mechanism fits?",
+    "options": [
+      "Azure resource lock",
+      "Azure savings plan for compute",
+      "Azure Service Health",
+      "Azure Policy initiative"
+    ],
+    "answer": 1,
+    "explain": "Compute savings plans use an hourly spending commitment over a term.",
+    "src": "describe-cost-management-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An organization needs to deny deployment of resources without a required tag. Which service fits?",
+    "options": [
+      "Resource lock",
+      "Azure RBAC Reader",
+      "Azure Advisor",
+      "Azure Policy"
+    ],
+    "answer": 3,
+    "explain": "Azure Policy can deny noncompliant resource configurations.",
+    "src": "describe-features-tools-azure-for-governance-compliance"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An admin wants to prevent accidental deletion but still allow modifications. Which lock fits?",
+    "options": [
+      "CanNotDelete",
+      "ReadOnly",
+      "Reader RBAC role",
+      "Azure Policy audit-only"
+    ],
+    "answer": 0,
+    "explain": "A CanNotDelete lock prevents deletion but allows permitted updates.",
+    "src": "describe-features-tools-azure-for-governance-compliance"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An admin wants to prevent both modification and deletion of a resource. Which lock fits?",
+    "options": [
+      "CanNotDelete",
+      "ReadOnly",
+      "Contributor role",
+      "Cost budget"
+    ],
+    "answer": 1,
+    "explain": "ReadOnly locks block changes and deletions.",
+    "src": "describe-features-tools-azure-for-governance-compliance"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A company needs to group multiple related policy definitions for assignment. What should it use?",
+    "options": [
+      "Availability set",
+      "Resource group lock",
+      "Policy initiative",
+      "VNet peering"
+    ],
+    "answer": 2,
+    "explain": "An initiative groups Azure Policy definitions.",
+    "src": "describe-features-tools-azure-for-governance-compliance"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A compliance officer needs Microsoft audit and compliance reports. Where should they look?",
+    "options": [
+      "Azure Monitor",
+      "Azure Cloud Shell",
+      "Azure Files",
+      "Service Trust Portal"
+    ],
+    "answer": 3,
+    "explain": "Service Trust Portal provides Microsoft compliance and audit documents.",
+    "src": "describe-features-tools-azure-for-governance-compliance"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A data governance team wants to discover and classify data across environments. Which service fits?",
+    "options": [
+      "Microsoft Purview",
+      "Azure VPN Gateway",
+      "Azure Functions",
+      "Azure Virtual Desktop"
+    ],
+    "answer": 0,
+    "explain": "Microsoft Purview supports data discovery, classification, and governance.",
+    "src": "describe-features-tools-azure-for-governance-compliance"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An engineer wants a browser-based authenticated Bash or PowerShell environment. Which tool fits?",
+    "options": [
+      "Azure Virtual Desktop",
+      "Azure Advisor",
+      "Azure Cloud Shell",
+      "Azure Service Health"
+    ],
+    "answer": 2,
+    "explain": "Cloud Shell provides a browser-accessible shell for Azure management.",
+    "src": "describe-features-tools-manage-deploy-azure-resources"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A developer wants to describe Azure infrastructure using a concise declarative language that compiles to ARM. Which tool fits?",
+    "options": [
+      "Azure PowerShell",
+      "Azure Monitor",
+      "Azure Policy",
+      "Bicep"
+    ],
+    "answer": 3,
+    "explain": "Bicep compiles to ARM templates for declarative deployments.",
+    "src": "describe-features-tools-manage-deploy-azure-resources"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A deployment team wants to declare resources in JSON for repeatable deployments. What should it use?",
+    "options": [
+      "ARM templates",
+      "Azure Advisor recommendations",
+      "Azure status page",
+      "Azure Files shares"
+    ],
+    "answer": 0,
+    "explain": "ARM templates are declarative JSON infrastructure definitions.",
+    "src": "describe-features-tools-manage-deploy-azure-resources"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A technician uses az vm create to deploy a virtual machine. Which tool is being used?",
+    "options": [
+      "Azure PowerShell",
+      "Azure CLI",
+      "Azure Portal GUI",
+      "Azure Cloud Shell exclusively"
+    ],
+    "answer": 1,
+    "explain": "Commands beginning with az are Azure CLI commands; they can run locally or in Cloud Shell.",
+    "src": "describe-features-tools-manage-deploy-azure-resources"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An organization wants to manage on-premises servers with Azure management tools. Which service fits?",
+    "options": [
+      "Azure DNS",
+      "Azure Files",
+      "Azure Arc",
+      "Azure Monitor alerts only"
+    ],
+    "answer": 2,
+    "explain": "Azure Arc extends Azure management to non-Azure resources.",
+    "src": "describe-features-tools-manage-deploy-azure-resources"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "Which component processes Azure resource deployment and management requests behind the portal, CLI, and templates?",
+    "options": [
+      "Azure Blob Storage",
+      "Azure Advisor",
+      "Azure Virtual Desktop",
+      "Azure Resource Manager"
+    ],
+    "answer": 3,
+    "explain": "Azure Resource Manager is the common Azure management and deployment layer.",
+    "src": "describe-features-tools-manage-deploy-azure-resources"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An app team needs telemetry about web request latency and failures. Which service fits?",
+    "options": [
+      "Azure Advisor",
+      "Application Insights",
+      "Azure DNS",
+      "Azure Cost Management"
+    ],
+    "answer": 1,
+    "explain": "Application Insights monitors application performance and usage.",
+    "src": "describe-monitoring-tools-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A team wants to query collected Azure logs using KQL. Which tool fits?",
+    "options": [
+      "Azure Pricing Calculator",
+      "Azure Policy",
+      "Log Analytics",
+      "Azure Files"
+    ],
+    "answer": 2,
+    "explain": "Log Analytics supports KQL queries over monitored logs.",
+    "src": "describe-monitoring-tools-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An administrator needs to know whether an Azure outage affects their subscription. Which service fits?",
+    "options": [
+      "Azure Advisor",
+      "Azure CLI",
+      "Azure Files",
+      "Azure Service Health"
+    ],
+    "answer": 3,
+    "explain": "Service Health reports service incidents relevant to the user's environment.",
+    "src": "describe-monitoring-tools-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An administrator wants recommendations for cost, security, reliability, and performance. Which service fits?",
+    "options": [
+      "Azure Advisor",
+      "Azure Service Health",
+      "Azure DNS",
+      "Azure Blob Storage"
+    ],
+    "answer": 0,
+    "explain": "Advisor provides personalized best-practice recommendations.",
+    "src": "describe-monitoring-tools-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "A VM appears unhealthy; the operator wants its individual resource health status. Which tool fits?",
+    "options": [
+      "Azure status global page",
+      "Azure Resource Health",
+      "Azure Pricing Calculator",
+      "Azure Policy initiative"
+    ],
+    "answer": 1,
+    "explain": "Resource Health reports the health of individual Azure resources.",
+    "src": "describe-monitoring-tools-azure"
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "prompt": "An operator wants to collect metrics and logs and trigger alerts on conditions. Which service fits?",
+    "options": [
+      "Azure Advisor",
+      "Azure DNS",
+      "Azure Monitor",
+      "Azure Resource Manager templates"
+    ],
+    "answer": 2,
+    "explain": "Azure Monitor collects and analyzes telemetry and supports alerts.",
+    "src": "describe-monitoring-tools-azure"
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "src": "describe-cloud-compute",
+    "explain": "A private cloud provides a cloud environment dedicated to one organization; it can be hosted on-premises or by a provider.",
+    "prompt": "A business needs to run a confidential workload on infrastructure dedicated to its organization. Which cloud model best fits this requirement?",
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Hybrid cloud",
+      "Multi-cloud"
+    ],
+    "answer": 1
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "multi",
+    "src": "describe-cloud-compute",
+    "explain": "Customers remain responsible for their data and accounts/identities; Microsoft manages the physical infrastructure.",
+    "prompt": "Which TWO responsibilities remain with a customer across Azure IaaS, PaaS, and SaaS? Select two.",
+    "options": [
+      "Protecting its information and data",
+      "Maintaining Microsoft datacenter buildings",
+      "Managing its accounts and identities",
+      "Replacing physical hosts"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      2
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "yesno",
+    "src": "describe-cloud-compute",
+    "explain": "Hybrid combines environments; public cloud is provider-operated; private cloud may be hosted externally.",
+    "prompt": "For each statement about cloud models, choose Yes or No.",
+    "rows": [
+      {
+        "t": "A hybrid cloud combines public-cloud and private/on-premises environments.",
+        "a": true
+      },
+      {
+        "t": "A public cloud requires each customer to own the physical servers.",
+        "a": false
+      },
+      {
+        "t": "A private cloud must always be physically located in the customer’s office.",
+        "a": false
+      }
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "dd",
+    "src": "describe-cloud-compute",
+    "explain": "CapEx typically covers purchases of owned assets; OpEx typically covers ongoing service costs.",
+    "prompt": "Match the expense or ownership characteristic to the most appropriate category.",
+    "boxes": [
+      "Capital expenditure (CapEx)",
+      "Operating expenditure (OpEx)"
+    ],
+    "items": [
+      {
+        "t": "Buying datacenter servers upfront",
+        "b": 0
+      },
+      {
+        "t": "Monthly charge for provisioned Azure VM compute",
+        "b": 1
+      },
+      {
+        "t": "Purchasing owned network switches",
+        "b": 0
+      },
+      {
+        "t": "Pay-as-you-go Azure storage charges",
+        "b": 1
+      }
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "src": "describe-benefits-use-cloud-services",
+    "explain": "Elasticity adjusts provisioned resources with demand; adding/removing instances is horizontal scaling.",
+    "prompt": "An online store adds application instances during a sale and removes them when demand falls. Which cloud benefit is demonstrated?",
+    "options": [
+      "Fault tolerance",
+      "Elasticity",
+      "Governance",
+      "Disaster recovery"
+    ],
+    "answer": 1
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "multi",
+    "src": "describe-benefits-use-cloud-services",
+    "explain": "Horizontal scaling adds instances; increasing one instance’s CPU or RAM is vertical scaling.",
+    "prompt": "Which TWO changes are examples of horizontal scaling? Select two.",
+    "options": [
+      "Adding a second web server instance",
+      "Increasing RAM in an existing VM",
+      "Adding more container replicas",
+      "Increasing the CPU count of one VM"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      2
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "yesno",
+    "src": "describe-benefits-use-cloud-services",
+    "explain": "Availability and recovery are distinct; scalability may be manual or automatic.",
+    "prompt": "Evaluate these cloud benefit statements.",
+    "rows": [
+      {
+        "t": "High availability aims to keep services accessible despite some failures.",
+        "a": true
+      },
+      {
+        "t": "Scalability means every workload must scale automatically.",
+        "a": false
+      },
+      {
+        "t": "Disaster recovery planning can help restore services after major disruption.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "dd",
+    "src": "describe-benefits-use-cloud-services",
+    "explain": "Availability minimizes disruption, scalability adjusts capacity, and disaster recovery restores service after significant failure.",
+    "prompt": "Match the example to the benefit.",
+    "boxes": [
+      "High availability",
+      "Scalability",
+      "Disaster recovery"
+    ],
+    "items": [
+      {
+        "t": "Keep a service running despite one instance failing",
+        "b": 0
+      },
+      {
+        "t": "Increase capacity to serve more users",
+        "b": 1
+      },
+      {
+        "t": "Restore service after a regional disaster",
+        "b": 2
+      }
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "single",
+    "src": "describe-cloud-service-types",
+    "explain": "PaaS abstracts the platform and infrastructure so the customer focuses on application code and data.",
+    "prompt": "A team wants Microsoft to manage the application platform while developers deploy their own code. Which model best matches?",
+    "options": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "On-premises"
+    ],
+    "answer": 1
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "multi",
+    "src": "describe-cloud-service-types",
+    "explain": "With IaaS the customer manages the guest OS and installed software; Microsoft maintains physical infrastructure.",
+    "prompt": "Under Azure IaaS, which TWO tasks are typically the customer’s responsibility? Select two.",
+    "options": [
+      "Patching the guest operating system",
+      "Maintaining the physical datacenter",
+      "Installing application software",
+      "Replacing failed host hardware"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      2
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "yesno",
+    "src": "describe-cloud-service-types",
+    "explain": "SaaS delivers software, PaaS manages the application platform, and VMs are IaaS.",
+    "prompt": "Evaluate the service model statements.",
+    "rows": [
+      {
+        "t": "Microsoft 365 is an example of SaaS.",
+        "a": true
+      },
+      {
+        "t": "In PaaS, customers normally manage the physical hosts.",
+        "a": false
+      },
+      {
+        "t": "Azure Virtual Machines are an example of IaaS.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Cloud concepts",
+    "type": "dd",
+    "src": "describe-cloud-service-types",
+    "explain": "VMs expose guest OS management; App Service and Azure SQL Database are managed platforms; Microsoft 365 is SaaS.",
+    "prompt": "Place each offering in its cloud service model.",
+    "boxes": [
+      "IaaS",
+      "PaaS",
+      "SaaS"
+    ],
+    "items": [
+      {
+        "t": "Azure Virtual Machines",
+        "b": 0
+      },
+      {
+        "t": "Azure App Service",
+        "b": 1
+      },
+      {
+        "t": "Microsoft 365",
+        "b": 2
+      },
+      {
+        "t": "Azure SQL Database",
+        "b": 1
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "src": "describe-core-architectural-components-of-azure",
+    "explain": "Management groups organize subscriptions for governance inheritance.",
+    "prompt": "An administrator wants to apply governance across several Azure subscriptions using a single hierarchy level. What should they use?",
+    "options": [
+      "Resource group",
+      "Management group",
+      "Availability zone",
+      "Virtual network"
+    ],
+    "answer": 1
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "multi",
+    "src": "describe-core-architectural-components-of-azure",
+    "explain": "Resources have one resource group, while a group may contain different resource types and regions.",
+    "prompt": "Which TWO statements about Azure resource groups are correct? Select two.",
+    "options": [
+      "A resource belongs to one resource group at a time.",
+      "A resource group can contain resources in different Azure regions.",
+      "Every resource group must contain exactly one resource.",
+      "Resource groups can only contain virtual machines."
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "yesno",
+    "src": "describe-core-architectural-components-of-azure",
+    "explain": "Zone design supports isolation; cross-region replication requires service-specific configuration.",
+    "prompt": "Evaluate these Azure architecture statements.",
+    "rows": [
+      {
+        "t": "Availability zones are separate physical locations within an Azure region.",
+        "a": true
+      },
+      {
+        "t": "A region pair automatically replicates every customer workload.",
+        "a": false
+      },
+      {
+        "t": "A subscription is a billing and management boundary.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "dd",
+    "src": "describe-core-architectural-components-of-azure",
+    "explain": "These are distinct Azure location and management concepts.",
+    "prompt": "Match each item to its Azure scope or concept.",
+    "boxes": [
+      "Region",
+      "Availability zone",
+      "Resource group",
+      "Subscription"
+    ],
+    "items": [
+      {
+        "t": "Geographic area containing datacenters",
+        "b": 0
+      },
+      {
+        "t": "Physically separate datacenter location within a region",
+        "b": 1
+      },
+      {
+        "t": "Logical container for related Azure resources",
+        "b": 2
+      },
+      {
+        "t": "Billing and access-management boundary",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "src": "describe-azure-compute-networking-services",
+    "explain": "Azure App Service is a managed platform for hosting web apps.",
+    "prompt": "A team needs to run a web application without patching virtual machine operating systems. Which service is a natural fit?",
+    "options": [
+      "Azure App Service",
+      "Azure Virtual Machines",
+      "Azure Virtual Network",
+      "Azure Disk Storage"
+    ],
+    "answer": 0
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "multi",
+    "src": "describe-azure-compute-networking-services",
+    "explain": "AKS orchestrates containers; ACI runs containers without managing servers.",
+    "prompt": "Which TWO Azure services can run containerized applications? Select two.",
+    "options": [
+      "Azure Kubernetes Service (AKS)",
+      "Azure Container Instances (ACI)",
+      "Azure DNS",
+      "Azure Policy"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "yesno",
+    "src": "describe-azure-compute-networking-services",
+    "explain": "Functions behavior depends on hosting plan; VM Scale Sets support scaling VM groups.",
+    "prompt": "Evaluate these compute statements.",
+    "rows": [
+      {
+        "t": "Azure Functions can execute code in response to events.",
+        "a": true
+      },
+      {
+        "t": "All Azure Functions hosting plans have identical billing and scaling.",
+        "a": false
+      },
+      {
+        "t": "Azure Virtual Machine Scale Sets help manage groups of load-balanced VMs.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "dd",
+    "src": "describe-azure-compute-networking-services",
+    "explain": "Choose VMs for OS control, App Service for managed web hosting, Functions for events, and ACI for standalone containers.",
+    "prompt": "Match each workload to the Azure compute service.",
+    "boxes": [
+      "Azure Virtual Machines",
+      "Azure App Service",
+      "Azure Functions",
+      "Azure Container Instances"
+    ],
+    "items": [
+      {
+        "t": "Legacy application requiring guest OS control",
+        "b": 0
+      },
+      {
+        "t": "Managed hosting for a web API",
+        "b": 1
+      },
+      {
+        "t": "Event-driven image processing function",
+        "b": 2
+      },
+      {
+        "t": "Run a standalone container without orchestration",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "src": "describe-azure-networking-services",
+    "explain": "ExpressRoute provides private connectivity through a connectivity provider; VPN Gateway uses encrypted tunnels over the internet.",
+    "prompt": "A company needs a private dedicated connection from its datacenter to Microsoft cloud services, avoiding the public internet path. Which service should it consider?",
+    "options": [
+      "Azure VPN Gateway",
+      "Azure ExpressRoute",
+      "Azure DNS",
+      "Azure Load Balancer"
+    ],
+    "answer": 1
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "multi",
+    "src": "describe-azure-networking-services",
+    "explain": "VPN Gateway and ExpressRoute connect on-premises networks to Azure using different connectivity models.",
+    "prompt": "Which TWO Azure services are used to connect networks? Select two.",
+    "options": [
+      "Azure VPN Gateway",
+      "Azure ExpressRoute",
+      "Azure Advisor",
+      "Azure Monitor"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "yesno",
+    "src": "describe-azure-networking-services",
+    "explain": "Peering connects VNets; NSGs filter traffic; DNS resolves names.",
+    "prompt": "Evaluate these networking statements.",
+    "rows": [
+      {
+        "t": "Virtual network peering connects Azure virtual networks.",
+        "a": true
+      },
+      {
+        "t": "A network security group defines allow/deny rules for network traffic.",
+        "a": true
+      },
+      {
+        "t": "Azure DNS is a replacement for all network firewall rules.",
+        "a": false
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "dd",
+    "src": "describe-azure-networking-services",
+    "explain": "DNS handles names; Load Balancer is layer 4; Application Gateway is layer 7; VPN Gateway provides encrypted network tunnels.",
+    "prompt": "Match the networking need to the service.",
+    "boxes": [
+      "Azure DNS",
+      "Azure Load Balancer",
+      "Azure Application Gateway",
+      "Azure VPN Gateway"
+    ],
+    "items": [
+      {
+        "t": "Host DNS zones and records",
+        "b": 0
+      },
+      {
+        "t": "Distribute layer 4 TCP/UDP traffic",
+        "b": 1
+      },
+      {
+        "t": "Route HTTP(S) traffic with layer 7 features",
+        "b": 2
+      },
+      {
+        "t": "Encrypted site-to-site connection over the internet",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "src": "describe-azure-storage-services",
+    "explain": "Azure Files provides managed file shares accessible using SMB and supported protocols.",
+    "prompt": "A team wants a managed SMB file share that can be mounted by multiple Azure virtual machines. Which service is most suitable?",
+    "options": [
+      "Azure Blob Storage",
+      "Azure Files",
+      "Azure Queue Storage",
+      "Azure Table Storage"
+    ],
+    "answer": 1
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "multi",
+    "src": "describe-azure-storage-services",
+    "explain": "GRS and GZRS provide geo-replication; LRS and ZRS replicate within a single region.",
+    "prompt": "Which TWO Azure Storage redundancy options replicate data to a secondary geographic region? Select two.",
+    "options": [
+      "GRS",
+      "LRS",
+      "GZRS",
+      "ZRS"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      2
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "yesno",
+    "src": "describe-azure-storage-services",
+    "explain": "Blob is object storage; LRS stays in one region; Storage Explorer is a client management tool.",
+    "prompt": "Evaluate these storage statements.",
+    "rows": [
+      {
+        "t": "Blob Storage is designed for unstructured object data.",
+        "a": true
+      },
+      {
+        "t": "LRS automatically provides a second-region copy.",
+        "a": false
+      },
+      {
+        "t": "Azure Storage Explorer can help manage Azure storage data.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "dd",
+    "src": "describe-azure-storage-services",
+    "explain": "These storage offerings serve objects, file shares, messages, and NoSQL entities respectively.",
+    "prompt": "Match the data requirement to the storage service.",
+    "boxes": [
+      "Blob Storage",
+      "Azure Files",
+      "Queue Storage",
+      "Table Storage"
+    ],
+    "items": [
+      {
+        "t": "Store images and backups as objects",
+        "b": 0
+      },
+      {
+        "t": "Managed shared file directories",
+        "b": 1
+      },
+      {
+        "t": "Store asynchronous work messages",
+        "b": 2
+      },
+      {
+        "t": "Store schemaless key-attribute entities",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "single",
+    "src": "describe-azure-identity-access-security",
+    "explain": "Azure RBAC grants permissions through role assignments at scopes such as resource groups.",
+    "prompt": "A security team needs to give an employee read-only access to resources in one resource group. Which Azure feature should it use?",
+    "options": [
+      "Azure RBAC",
+      "Azure Policy",
+      "Resource lock",
+      "Azure Advisor"
+    ],
+    "answer": 0
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "multi",
+    "src": "describe-azure-identity-access-security",
+    "explain": "MFA adds authentication factors; Conditional Access applies sign-in access decisions.",
+    "prompt": "Which TWO capabilities help protect user sign-ins? Select two.",
+    "options": [
+      "Multifactor authentication (MFA)",
+      "Conditional Access policies",
+      "Resource tags",
+      "Availability sets"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "yesno",
+    "src": "describe-azure-identity-access-security",
+    "explain": "RBAC authorizes actions, Policy governs compliance, and Zero Trust emphasizes explicit verification and least privilege.",
+    "prompt": "Evaluate these identity and security statements.",
+    "rows": [
+      {
+        "t": "Microsoft Entra ID provides cloud identity and authentication services.",
+        "a": true
+      },
+      {
+        "t": "Azure RBAC and Azure Policy serve exactly the same purpose.",
+        "a": false
+      },
+      {
+        "t": "Zero Trust includes verifying explicitly and using least privilege.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Azure architecture and services",
+    "type": "dd",
+    "src": "describe-azure-identity-access-security",
+    "explain": "Identity, authorization, conditional sign-in policies, and security posture are separate capabilities.",
+    "prompt": "Match each security goal to the Azure capability.",
+    "boxes": [
+      "Microsoft Entra ID",
+      "Azure RBAC",
+      "Conditional Access",
+      "Microsoft Defender for Cloud"
+    ],
+    "items": [
+      {
+        "t": "Cloud identity and sign-in management",
+        "b": 0
+      },
+      {
+        "t": "Assign permissions to Azure resources",
+        "b": 1
+      },
+      {
+        "t": "Require additional controls based on sign-in conditions",
+        "b": 2
+      },
+      {
+        "t": "Assess security posture and provide protection recommendations",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "src": "describe-cost-management-azure",
+    "explain": "Azure Pricing Calculator estimates expected service charges from planned configurations.",
+    "prompt": "A finance team wants to estimate the monthly price of a planned Azure deployment before creating resources. Which tool is most suitable?",
+    "options": [
+      "Azure Pricing Calculator",
+      "Azure Monitor",
+      "Azure Service Health",
+      "Azure Policy"
+    ],
+    "answer": 0
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "multi",
+    "src": "describe-cost-management-azure",
+    "explain": "Tags help group costs and budgets track spending against thresholds; neither guarantees a hard spending cap.",
+    "prompt": "Which TWO actions can help organize and analyze Azure spending? Select two.",
+    "options": [
+      "Apply cost allocation tags to resources",
+      "Use Azure Cost Management budgets",
+      "Increase every VM size by default",
+      "Disable all cost alerts"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "yesno",
+    "src": "describe-cost-management-azure",
+    "explain": "Retained resources may be billed; budgets notify rather than universally stopping spending; reservations involve commitments.",
+    "prompt": "Evaluate these Azure cost statements.",
+    "rows": [
+      {
+        "t": "Deleting a VM may leave separately billed disks if they are retained.",
+        "a": true
+      },
+      {
+        "t": "A Cost Management budget always stops Azure resources when its threshold is reached.",
+        "a": false
+      },
+      {
+        "t": "Reserved pricing can reduce eligible costs in exchange for a commitment.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "dd",
+    "src": "describe-cost-management-azure",
+    "explain": "These tools support estimation, monitoring, allocation, and commitment-based discounts.",
+    "prompt": "Match the cost-management task to the appropriate tool or feature.",
+    "boxes": [
+      "Pricing Calculator",
+      "Cost Management",
+      "Tags",
+      "Reservations"
+    ],
+    "items": [
+      {
+        "t": "Estimate cost before deployment",
+        "b": 0
+      },
+      {
+        "t": "Analyze existing Azure charges",
+        "b": 1
+      },
+      {
+        "t": "Label resources by department for reporting",
+        "b": 2
+      },
+      {
+        "t": "Commit to eligible capacity for potential discount",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "src": "describe-features-tools-azure-for-governance-compliance",
+    "explain": "Azure Policy can evaluate and enforce allowed resource locations.",
+    "prompt": "An organization wants to deny creation of resources outside approved Azure regions. What should it use?",
+    "options": [
+      "Azure Policy",
+      "Azure RBAC",
+      "Azure Monitor",
+      "Azure Load Balancer"
+    ],
+    "answer": 0
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "multi",
+    "src": "describe-features-tools-azure-for-governance-compliance",
+    "explain": "CanNotDelete prevents deletion and ReadOnly restricts changes; tags and calculators do not lock resources.",
+    "prompt": "Which TWO features help prevent accidental changes or deletion of Azure resources? Select two.",
+    "options": [
+      "CanNotDelete resource lock",
+      "ReadOnly resource lock",
+      "Cost allocation tag",
+      "Azure Pricing Calculator"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "yesno",
+    "src": "describe-features-tools-azure-for-governance-compliance",
+    "explain": "Policy evaluates compliance; locks complement rather than replace RBAC; Purview supports governance of data.",
+    "prompt": "Evaluate these governance statements.",
+    "rows": [
+      {
+        "t": "Azure Policy can audit resources against organizational rules.",
+        "a": true
+      },
+      {
+        "t": "Resource locks replace the need for Azure RBAC authorization.",
+        "a": false
+      },
+      {
+        "t": "Microsoft Purview provides data governance capabilities.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "dd",
+    "src": "describe-features-tools-azure-for-governance-compliance",
+    "explain": "Policies enforce rules, locks protect resources, RBAC authorizes actions, and Purview supports data governance.",
+    "prompt": "Match each governance need to its feature.",
+    "boxes": [
+      "Azure Policy",
+      "Resource locks",
+      "Azure RBAC",
+      "Microsoft Purview"
+    ],
+    "items": [
+      {
+        "t": "Require allowed deployment locations",
+        "b": 0
+      },
+      {
+        "t": "Protect a resource against accidental deletion",
+        "b": 1
+      },
+      {
+        "t": "Grant an operator contributor permissions",
+        "b": 2
+      },
+      {
+        "t": "Discover and govern organizational data",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "src": "describe-features-tools-manage-deploy-azure-resources",
+    "explain": "Bicep is a declarative infrastructure-as-code language for Azure deployments.",
+    "prompt": "A team wants to deploy the same Azure infrastructure repeatedly from a declarative file. Which option fits best?",
+    "options": [
+      "Bicep",
+      "Azure Advisor",
+      "Azure Service Health",
+      "Azure DNS"
+    ],
+    "answer": 0
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "multi",
+    "src": "describe-features-tools-manage-deploy-azure-resources",
+    "explain": "Azure CLI and Azure PowerShell support scripting and command-line management.",
+    "prompt": "Which TWO tools can be used to manage Azure resources from a command line? Select two.",
+    "options": [
+      "Azure CLI",
+      "Azure PowerShell",
+      "Azure Pricing Calculator",
+      "Microsoft Purview"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "yesno",
+    "src": "describe-features-tools-manage-deploy-azure-resources",
+    "explain": "Cloud Shell is browser-based; ARM templates are declarative; Azure Arc extends management to hybrid/multicloud resources.",
+    "prompt": "Evaluate these Azure management statements.",
+    "rows": [
+      {
+        "t": "Azure Cloud Shell provides browser-accessible command-line tools.",
+        "a": true
+      },
+      {
+        "t": "ARM templates define Azure resources declaratively.",
+        "a": true
+      },
+      {
+        "t": "Azure Arc can manage only resources hosted in Azure regions.",
+        "a": false
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "dd",
+    "src": "describe-features-tools-manage-deploy-azure-resources",
+    "explain": "Portal is graphical; CLI is scriptable; Bicep is declarative IaC; Arc extends Azure management.",
+    "prompt": "Match the management scenario to its tool.",
+    "boxes": [
+      "Azure portal",
+      "Azure CLI",
+      "Bicep",
+      "Azure Arc"
+    ],
+    "items": [
+      {
+        "t": "Manage resources through a web interface",
+        "b": 0
+      },
+      {
+        "t": "Automate management using cross-platform commands",
+        "b": 1
+      },
+      {
+        "t": "Declare repeatable Azure infrastructure",
+        "b": 2
+      },
+      {
+        "t": "Extend Azure management to servers outside Azure",
+        "b": 3
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "single",
+    "src": "describe-monitoring-tools-azure",
+    "explain": "Azure Service Health provides personalized information about service issues and planned maintenance.",
+    "prompt": "An administrator wants to know whether an ongoing Azure platform incident affects resources in their subscription. Which service should they check?",
+    "options": [
+      "Azure Service Health",
+      "Azure Advisor",
+      "Azure Policy",
+      "Azure Cost Management"
+    ],
+    "answer": 0
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "multi",
+    "src": "describe-monitoring-tools-azure",
+    "explain": "Azure Monitor collects and analyzes telemetry and can trigger alerts.",
+    "prompt": "Which TWO capabilities are associated with Azure Monitor? Select two.",
+    "options": [
+      "Collecting metrics and logs",
+      "Creating alerts based on telemetry",
+      "Assigning Azure RBAC roles",
+      "Estimating pre-deployment prices"
+    ],
+    "pick": 2,
+    "answers": [
+      0,
+      1
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "yesno",
+    "src": "describe-monitoring-tools-azure",
+    "explain": "Advisor recommends improvements; Service Health reports platform health; Monitor handles telemetry and alerts.",
+    "prompt": "Evaluate these monitoring statements.",
+    "rows": [
+      {
+        "t": "Azure Advisor provides recommendations about Azure resources.",
+        "a": true
+      },
+      {
+        "t": "Azure Service Health and Azure Monitor have identical purposes.",
+        "a": false
+      },
+      {
+        "t": "Azure Monitor can support alert rules based on monitored data.",
+        "a": true
+      }
+    ]
+  },
+  {
+    "domain": "Azure management and governance",
+    "type": "dd",
+    "src": "describe-monitoring-tools-azure",
+    "explain": "Monitor handles telemetry, Advisor recommends, Service Health tracks platform events, and Resource Health tracks resource state.",
+    "prompt": "Match the operational need to the tool.",
+    "boxes": [
+      "Azure Monitor",
+      "Azure Advisor",
+      "Azure Service Health",
+      "Azure Resource Health"
+    ],
+    "items": [
+      {
+        "t": "Investigate application telemetry and alert conditions",
+        "b": 0
+      },
+      {
+        "t": "Find cost and reliability improvement recommendations",
+        "b": 1
+      },
+      {
+        "t": "Check Azure platform incidents affecting your services",
+        "b": 2
+      },
+      {
+        "t": "Check the health of a particular Azure resource",
+        "b": 3
+      }
+    ]
   }
 ]</script>
 
@@ -754,7 +2767,10 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
 (function () {
   "use strict";
   var ALL_Q = JSON.parse(document.getElementById("quiz-data").textContent);
-  var Q = ALL_Q.slice();
+  var Q = ALL_Q.slice(0, 102);
+  var ORIGINAL_Q = ALL_Q.slice(0, 102);
+  var ADVANCED_Q = ALL_Q.slice();
+  var selectedBank = "classic";
   var CHAPTERS = [
     ["1", "Cloud computing", ["describe-cloud-compute"]],
     ["2", "Benefits of cloud services", ["describe-benefits-use-cloud-services"]],
@@ -773,8 +2789,10 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
   function applyChapter(chapter) {
     selectedChapter = chapter;
     var item = CHAPTERS.find(function (c) { return c[0] === chapter; });
-    Q = item ? ALL_Q.filter(function (q) { return item[2].indexOf(q.src) !== -1; }) : ALL_Q.slice();
+    var bank = selectedBank === "advanced" ? ADVANCED_Q : ORIGINAL_Q;
+    Q = item ? bank.filter(function (q) { return item[2].indexOf(q.src) !== -1; }) : bank.slice();
   }
+  function bankName() { return selectedBank === "advanced" ? "Advanced Mixed (150 questions)" : "Classic (102 questions)"; }
   function chapterName() {
     var item = CHAPTERS.find(function (c) { return c[0] === selectedChapter; });
     return item ? "Chapter " + item[0] + " - " + item[1] : "All chapters";
@@ -862,7 +2880,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
       max = q.items.length;
       q.items.forEach(function (it, k) {
         if (r[k] === it.b) pts++;
-        else if (it.b === -1) errs.push("\"" + it.t + "\" placed in " + q.boxes[r[k]] + ", belongs in no box.");
+        else if (it.b === -1) errs.push("\"" + it.t + "\" placed in " + (r[k] === -1 ? "the tray" : q.boxes[r[k]]) + ", belongs in no box.");
         else if (r[k] === -1) errs.push("\"" + it.t + "\" left in the tray, belongs in " + q.boxes[it.b] + ".");
         else errs.push("\"" + it.t + "\" placed in " + q.boxes[r[k]] + ", belongs in " + q.boxes[it.b] + ".");
       });
@@ -907,26 +2925,30 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
     }).join("");
     app.innerHTML =
       '<div class="card"><h2>Microsoft Azure Fundamentals (AZ-900)</h2>' +
-      '<p><strong>' + esc(chapterName()) + '</strong> - ' + Q.length + ' original practice questions covering the six question styles used on the real exam: ' +
+      '<p><strong>' + esc(chapterName()) + '</strong> - ' + Q.length + ' practice questions in ' + esc(bankName()) + ', supporting formats such as ' +
       'drag and drop, single choice, multiple choice, Yes/No grid, sentence completion, and a problem-solution series.</p>' +
       '<table><tr><th>Domain</th><th>Questions</th><th>Share</th></tr>' + rows + '</table>' +
       '<p class="small muted">Official weights (skills measured as of July 20, 2026): cloud concepts 25-30%, ' +
       'architecture and services 35-40%, management and governance 30-35%. ' +
       'These questions are original revision material. They are not official Microsoft questions and are not taken from any exam.</p></div>' +
-       '<div class="card"><h3>Study by brochure chapter</h3>' +
+       '<div class="card"><h3>Choose your question bank</h3>' +
+      '<div class="bank-options"><label><input type="radio" name="bank" value="classic"' + (selectedBank === 'classic' ? ' checked' : '') + '> <strong>Classic — 102 questions</strong><span class="small muted">The existing quiz, unchanged.</span></label>' +
+      '<label><input type="radio" name="bank" value="advanced"' + (selectedBank === 'advanced' ? ' checked' : '') + '> <strong>Advanced Mixed — 150 questions</strong><span class="small muted">All 102 classic questions plus 48 additional questions, with matching, multi-select, Yes/No grids and scenarios in every chapter.</span></label></div></div>' +
+      '<div class="card"><h3>Study by brochure chapter</h3>' +
       '<label for="chapterSelect">Choose a chapter</label>' +
       '<select id="chapterSelect" style="width:100%;padding:10px;margin-top:8px;border:1px solid var(--border);background:var(--card)">' +
-      '<option value="all">All chapters (' + ALL_Q.length + ' questions)</option>' +
-      CHAPTERS.map(function (c) { var n = ALL_Q.filter(function (q) { return c[2].indexOf(q.src) !== -1; }).length;
+      '<option value="all">All chapters (' + Q.length + ' questions)</option>' +
+      CHAPTERS.map(function (c) { var n = Q.filter(function (q) { return c[2].indexOf(q.src) !== -1; }).length;
         return '<option value="' + c[0] + '"' + (selectedChapter === c[0] ? ' selected' : '') +
           '>Chapter ' + c[0] + ' - ' + esc(c[1]) + ' (' + n + ' question' + (n === 1 ? '' : 's') + ')</option>';
       }).join('') + '</select>' +
-      '<p class="small muted">Chapter names follow BROCHURE_AZ-900.md. Choose Practice or Exam below to begin. Each chapter uses its matching existing questions.</p></div>' +
+      '<p class="small muted">Chapter names follow BROCHURE_AZ-900.md. Choose Practice or Exam below to begin. Each chapter includes targeted knowledge checks and practical scenarios. Review the explanation after each answer.</p></div>' +
       '<div class="mode-grid">' +
       '<button class="btn" type="button" id="mPractice"><strong>Practice mode</strong>' +
       '<span class="small muted">Check each answer and see the explanation and source right away.</span></button>' +
       '<button class="btn" type="button" id="mExam"><strong>Exam mode</strong>' +
       '<span class="small muted">No corrections until you finish, like the real exam.</span></button></div>';
+    app.querySelectorAll('input[name="bank"]').forEach(function (r) { r.onchange = function () { selectedBank = this.value; applyChapter(selectedChapter); S = newState(null); S.view = "start"; render(); }; });
     document.getElementById("chapterSelect").onchange = function () { applyChapter(this.value); S = newState(null); S.view = "start"; render(); };
     document.getElementById("mPractice").onclick = function () { S = newState("practice"); S.view = "quiz"; render(); };
     document.getElementById("mExam").onclick = function () { S = newState("exam"); S.view = "quiz"; render(); };
@@ -1162,7 +3184,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
       lines.push({ i: i, g: g });
     });
     var pct = Math.round(tot * 100 / max);
-    var txt = "AZ-900 Practice Quiz - " + chapterName() + " - " + (S.mode === "practice" ? "Practice" : "Exam") + " mode\n" +
+    var txt = "AZ-900 Chapter Mastery Quiz - " + bankName() + " - " + chapterName() + " - " + (S.mode === "practice" ? "Practice" : "Exam") + " mode\n" +
       "Score: " + pct + "% (" + tot + "/" + max + " points)\n" +
       "Fully correct questions: " + full + "/" + Q.length + "\n\n";
     lines.forEach(function (l) {
@@ -1175,7 +3197,7 @@ a.link { color: var(--accent); cursor: pointer; text-decoration: underline; }
 
   function renderResults() {
     var s = buildSummary();
-    var h = '<div class="card"><h2>Results: ' + esc(chapterName()) + '</h2><div class="score-big">' + s.pct + "%</div>" +
+    var h = '<div class="card"><h2>Results: ' + esc(bankName()) + ' — ' + esc(chapterName()) + '</h2><div class="score-big">' + s.pct + "%</div>" +
       "<p>" + s.tot + " / " + s.max + " points - " + s.full + " of " + Q.length + " questions fully correct.</p>" +
       '<p class="small muted">Partial credit: one point per correctly placed item, per correct statement, or per correct answer in a multiple-choice question.</p>' +
       '<div class="controls"><button type="button" class="btn primary" id="revBtn">Review questions</button>' +
