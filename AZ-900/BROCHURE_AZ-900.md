@@ -47,7 +47,8 @@ tool fits a scenario. It does not test deep configuration.
 
 ## Part A - Cloud concepts
 
-### 1. Cloud computing\n\n![Cloud deployment models at a glance.](01-cloud-models.png)\n\n*Visual guide: Cloud deployment models at a glance.*\n
+### 1. Cloud computing
+
 **Cloud computing** is the delivery of computing services (servers, storage,
 databases, networking, software, analytics) over the internet, paid for as you
 use them.
@@ -96,7 +97,8 @@ customer. The split depends on the service type.
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 2. Benefits of cloud services\n\n![Scaling up increases one machine; scaling out adds instances. Elasticity is the ability to adjust capacity with demand.](02-scaling.png)\n\n*Visual guide: Scaling up increases one machine; scaling out adds instances. Elasticity is the ability to adjust capacity with demand.*\n
+### 2. Benefits of cloud services
+
 | Benefit | Meaning in one line |
 | --- | --- |
 | High availability | The service stays up and accessible, measured by an SLA (for example 99.9%) |
@@ -125,7 +127,8 @@ customer. The split depends on the service type.
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 3. Cloud service types\n\n![From IaaS to SaaS, the cloud provider takes on more operational responsibilities.](03-service-types.png)\n\n*Visual guide: From IaaS to SaaS, the cloud provider takes on more operational responsibilities.*\n
+### 3. Cloud service types
+
 | Type | You manage | Provider manages | Azure examples | Typical use |
 | --- | --- | --- | --- | --- |
 | IaaS | OS, runtime, apps, data | Hardware, network, virtualization | Virtual Machines | Lift-and-shift migration, full control |
@@ -150,7 +153,8 @@ runs. Azure Functions and Logic Apps provide serverless capabilities; billing an
 
 ## Part B - Azure architecture and services
 
-### 4. Core architecture\n\n![Azure management hierarchy: policy and access can inherit downward.](04-hierarchy.png)\n\n*Visual guide: Azure management hierarchy: policy and access can inherit downward.*\n
+### 4. Core architecture
+
 #### Physical infrastructure
 
 | Term | Definition |
@@ -197,7 +201,8 @@ Management groups
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 5. Compute\n\n![A quick way to select the right Azure compute option for a scenario.](05-compute.png)\n\n*Visual guide: A quick way to select the right Azure compute option for a scenario.*\n
+### 5. Compute
+
 | Service | Model | Use it when |
 | --- | --- | --- |
 | Virtual Machines | IaaS | You need full OS control or lift-and-shift |
@@ -224,7 +229,8 @@ Management groups
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 6. Networking\n\n![Two common hybrid connections, plus private access to a service.](06-networking.png)\n\n*Visual guide: Two common hybrid connections, plus private access to a service.*\n
+### 6. Networking
+
 | Service or feature | What it does |
 | --- | --- |
 | Virtual network (VNet) | Private network in Azure; isolation and segmentation into **subnets** |
@@ -251,7 +257,8 @@ Management groups
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 7. Storage\n\n![Choose storage by what your application needs to store.](07-storage.png)\n\n*Visual guide: Choose storage by what your application needs to store.*\n
+### 7. Storage
+
 #### Storage services
 
 | Service | Stores | Typical use |
@@ -309,7 +316,8 @@ the redundancy and performance options.
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 8. Identity, access, and security\n\n![Authentication verifies identity; authorization controls permissions.](08-security.png)\n\n*Visual guide: Authentication verifies identity; authorization controls permissions.*\n
+### 8. Identity, access, and security
+
 | Concept | Meaning |
 | --- | --- |
 | Authentication (AuthN) | Proves **who you are** |
@@ -358,7 +366,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 
 ## Part C - Management and governance
 
-### 9. Cost management\n\n![Cloud cost management is a continuous cycle.](09-cost.png)\n\n*Visual guide: Cloud cost management is a continuous cycle.*\n
+### 9. Cost management
+
 **Factors that affect cost**
 
 - Resource type and size (SKU), consumption, and region
@@ -393,7 +402,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 10. Governance and compliance\n\n![Policy, locks, and Purview solve different governance problems.](10-governance.png)\n\n*Visual guide: Policy, locks, and Purview solve different governance problems.*\n
+### 10. Governance and compliance
+
 | Service | Purpose |
 | --- | --- |
 | Azure Policy | Create and enforce rules on resource properties (for example, allowed regions or required tags); can audit or deny |
@@ -417,7 +427,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 11. Managing and deploying resources\n\n![ARM is the management layer behind Azure deployments.](11-deployment.png)\n\n*Visual guide: ARM is the management layer behind Azure deployments.*\n
+### 11. Managing and deploying resources
+
 | Tool | Description |
 | --- | --- |
 | Azure portal | Web-based graphical interface |
@@ -438,7 +449,8 @@ and source-controlled.
 
 > **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
-### 12. Monitoring\n\n![Monitor measures and alerts; Service Health and Advisor answer different questions.](12-monitoring.png)\n\n*Visual guide: Monitor measures and alerts; Service Health and Advisor answer different questions.*\n
+### 12. Monitoring
+
 | Service | Purpose |
 | --- | --- |
 | Azure Advisor | Personalized **recommendations**: reliability, security, performance, cost, operational excellence |
