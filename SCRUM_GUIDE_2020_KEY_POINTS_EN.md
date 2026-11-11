@@ -244,9 +244,10 @@ with respect to people, interactions, processes, tools, and the Definition of
 Done, and identify the assumptions that led it in certain directions.
 
 The team discusses what went well, what problems occurred, and how those
-problems were or were not resolved. It identifies the most helpful changes
-and addresses them as soon as possible. Improvements may be added to the
-Sprint Backlog for the next Sprint.
+problems were or were not resolved. The Scrum Team identifies the most helpful
+changes to improve its effectiveness; the most impactful improvements are
+addressed as soon as possible. Improvements may be added to the Sprint Backlog
+for the next Sprint.
 
 **Timebox:** At most three hours for a one-month Sprint. Shorter Sprints
 usually have shorter retrospectives.
