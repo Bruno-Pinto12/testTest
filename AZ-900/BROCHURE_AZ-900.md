@@ -1,13 +1,12 @@
-# AZ-900 Knowledge Brochure — Illustrated Edition
+# AZ-900 Knowledge Brochure — Reviewed Edition (2026)
 
-**Official exam-scope verification (November 4, 2026):** The live Microsoft AZ-900 study guide was retrieved and compared with this material. The applicable skills-measured date is **July 20, 2026**, with weights **25–30% cloud concepts**, **35–40% Azure architecture and services**, and **30–35% Azure management and governance**. The official guide lists 11 objective groups. Source: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900. The TCO Calculator is **retired**: https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators. This is an independently written study aid, not an official Microsoft publication. Product-level sources and verification limits are in the included `AZ900_DETAILED_AUDIT.md`.
+**Exam scope:** Reviewed against the Microsoft AZ-900 study guide (skills measured as of July 20, 2026) and the January 2024 Exam Cram transcript. The current exam objectives take precedence over older video examples. This is independent study material, not an official Microsoft publication.
 
+A concise, text-only reference to read, understand, and remember. The original 12-chapter structure is preserved, with targeted corrections and short practical examples.
 
-A clear, visual reference to read, understand, and remember. This edition preserves the original 12 chapters and adds original diagrams and a few concise clarifications. The diagrams are simplified conceptual illustrations, not Azure deployment blueprints.
+> **Source note:** Official exam objectives: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900. The 2024 video is a learning aid; service details can change.
 
-> **Source note:** Verified against the live official AZ-900 study guide on November 4, 2026. These explanations and questions are independent study material, not official exam items.
-
-> **Interactive practice:** Open `AZ-900_PRACTICE_QUIZ_Classic_and_Advanced_Mixed.html` from this download for Classic and Advanced Mixed practice modes.
+> **Interactive practice:** If you have the separate `AZ-900_PRACTICE_QUIZ_Classic_and_Advanced_Mixed.html` file, use its Classic and Advanced Mixed modes after reviewing each chapter.
 
 ## Contents
 
@@ -95,8 +94,6 @@ customer. The split depends on the service type.
   by a third party but is dedicated to one organization.
 - Moving to the cloud does **not** transfer responsibility for your data.
 
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
-
 ### 2. Benefits of cloud services
 
 | Benefit | Meaning in one line |
@@ -121,11 +118,8 @@ customer. The split depends on the service type.
 **SLA quick facts**
 
 - An SLA is Microsoft's formal commitment for uptime and connectivity.
-- 99.9% allows about 43 minutes of downtime per month; 99.99% about 4 minutes.
-- Combining services multiplies their SLAs, so the **composite SLA is lower**
-  than each individual SLA.
-
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
+- For a 30-day month, 99.9% corresponds to about 43 minutes of potential downtime and 99.99% to about 4 minutes. Actual SLA terms, measurement periods, and exclusions vary by service.
+- For a simple application where every component must be available and failures are independent, multiplying component availability percentages gives an approximate **composite availability**. Real application architecture and SLA terms may change the calculation.
 
 ### 3. Cloud service types
 
@@ -146,8 +140,6 @@ runs. Azure Functions and Logic Apps provide serverless capabilities; billing an
 - A VM is **always IaaS**, even if it runs a database.
 - Azure SQL Database is **PaaS**; SQL Server installed on a VM is **IaaS**.
 - In SaaS the customer still owns **data and accounts**.
-
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ---
 
@@ -199,8 +191,6 @@ Management groups
 > **Remember (top to bottom):** "**M**y **S**ubscription **R**uns **R**esources":
 > Management group, Subscription, Resource group, Resource.
 
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
-
 ### 5. Compute
 
 | Service | Model | Use it when |
@@ -215,6 +205,19 @@ Management groups
 | Azure Functions | Serverless | Event-driven code with plan-dependent scaling and billing |
 | Azure App Service | PaaS | Host web apps, REST APIs, and mobile back ends |
 
+**Resources required for an Azure VM**
+
+| Resource | Why it is needed |
+| --- | --- |
+| VM size | Defines available virtual CPUs, memory, and other capabilities |
+| Operating system image | Provides Windows or Linux to boot |
+| Managed OS disk | Stores the operating system; optional data disks store application data |
+| Network interface (NIC) | Connects the VM to a subnet in a virtual network (VNet) |
+| Network security group (NSG) | Optional rules to allow or deny network traffic |
+| Public IP | Optional; only needed for certain direct public connectivity scenarios |
+
+A VM must be placed in a resource group and a region. A public IP is **not** required for every VM. **Exam example:** choose a VM when you need OS-level control; choose App Service for a managed web application.
+
 **VMs vs containers**
 
 | Virtual machine | Container |
@@ -226,8 +229,6 @@ Management groups
 > **Remember:** "Event triggers code" = **Functions**. "Web app without
 > servers to manage" = **App Service**. "Remote desktop for staff" =
 > **Azure Virtual Desktop**. "Many containers" = **AKS**.
-
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 6. Networking
 
@@ -254,8 +255,6 @@ Management groups
 > **Remember:** "Not over the internet" = **ExpressRoute**.
 > "Encrypted over the internet" = **VPN Gateway**.
 > "Private IP for a PaaS service" = **Private endpoint**.
-
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 7. Storage
 
@@ -304,7 +303,7 @@ the redundancy and performance options.
 | Tool | Use |
 | --- | --- |
 | Azure Migrate | Hub to discover, assess, and migrate on-premises servers, databases, and apps |
-| Azure Data Box | Physical device shipped to move **very large** data offline (up to about 80 TB per device) |
+| Azure Data Box | Secure physical device shipped to transfer very large datasets when network transfer is impractical; device capacity depends on the model |
 | AzCopy | Command-line tool to copy files to/from storage accounts |
 | Azure Storage Explorer | Graphical app to manage storage accounts |
 | Azure File Sync | Syncs Azure Files with Windows file servers (on-premises cache) |
@@ -313,8 +312,6 @@ the redundancy and performance options.
 
 - Slow or limited internet + huge data = **Data Box**.
 - Archive is the cheapest to store but **cannot be read immediately**.
-
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 8. Identity, access, and security
 
@@ -360,8 +357,6 @@ Physical security -> Identity & access -> Perimeter -> Network
 - RBAC controls **who can do what**; Azure Policy controls **what can be
   created or how it must be configured**.
 
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
-
 ---
 
 ## Part C - Management and governance
@@ -394,13 +389,11 @@ Physical security -> Identity & access -> Perimeter -> Network
 | Pricing calculator | Estimate the cost of Azure services **before** deploying |
 | Microsoft Cost Management | Analyze actual and forecast spending; create budgets, alerts, and cost reports. Budgets alone do not stop resources. |
 | Tags | Labels (name/value) that group resources, for example by cost center or environment |
-| TCO calculator (historical) | Compared on-premises vs Azure cost; the official Learn lesson states it **has been retired** |
+| TCO calculator (historical; retired) | Former on-premises vs cloud comparison tool; **not** a current exam tool to memorize |
 
 > **Remember:** Pricing calculator = **before** (estimate).
 > Cost Management = **during/after** (actual/forecast spend, budgets). Tags = **group and
 > report costs**.
-
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 10. Governance and compliance
 
@@ -425,8 +418,6 @@ Physical security -> Identity & access -> Perimeter -> Network
 > **Remember:** Policy = **rules** for resources. RBAC = **permissions** for
 > people. Locks = **protection** from deletion or change.
 
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
-
 ### 11. Managing and deploying resources
 
 | Tool | Description |
@@ -446,8 +437,6 @@ Physical security -> Identity & access -> Perimeter -> Network
 and source-controlled.
 
 > **Remember:** Azure resource-management tools use **Azure Resource Manager**. IaC makes deployments repeatable and reviewable, but outcomes can still depend on parameters, external state, permissions, and service availability.
-
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
 
 ### 12. Monitoring
 
@@ -472,8 +461,6 @@ and source-controlled.
 > Monitor = **my resources' metrics and logs**. Application Insights = **my
 > app**.
 
-> **Practice:** Open [the interactive practice quiz](AZ-900_PRACTICE_QUIZ.html).
-
 ---
 
 ## Part D - Quick memory sheets
@@ -490,7 +477,7 @@ and source-controlled.
 | Require MFA from untrusted locations | Conditional Access |
 | Private connection, not over the internet | ExpressRoute |
 | Encrypted connection over the internet | VPN Gateway |
-| Move 100+ TB with slow internet | Azure Data Box |
+| Move very large datasets with slow internet | Azure Data Box |
 | Rarely accessed data, lowest storage cost | Archive tier |
 | Protect against datacenter failure | Availability zones / ZRS |
 | Protect against region failure | Configured cross-region replication/failover; GRS/GZRS for supported storage |
@@ -550,11 +537,30 @@ recognition. They are **not confirmed** as explicit exam objectives.
 | Terraform | Third-party infrastructure-as-code tool that also deploys Azure |
 | Sustainability | Microsoft's efforts and tools to measure cloud carbon emissions |
 
-For full definitions see the [glossary](GLOSSARY_AZ-900.md); for a tick-list of
-all topics see the [checklist](CHECKLIST_AZ-900.md).
+For additional practice, use your separate AZ-900 glossary and checklist if available.
 
 ## Direct Microsoft references for this brochure
 
-For a chapter-by-chapter evidence map and corrections, see [the detailed audit](AZ900_DETAILED_AUDIT.md). Particularly important: [Blob access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview), [Azure Functions hosting options](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale), [region pairing](https://learn.microsoft.com/en-us/azure/reliability/regions-paired), and [Azure VM billing states](https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing).
+Useful official documentation: [Blob access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview), [Azure Functions hosting options](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale), [region pairing](https://learn.microsoft.com/en-us/azure/reliability/regions-paired), and [Azure VM billing states](https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing).
 
-**Additional Microsoft-verified optional product notes:** Microsoft now calls the former Azure AI services collection **Foundry Tools**. The Basic Load Balancer SKU and Application Gateway v1 SKUs are retired; these are implementation details, not separate AZ-900 objectives. See [the detailed audit](AZ900_DETAILED_AUDIT.md).
+**Additional Microsoft-verified optional product notes:** Microsoft now calls the former Azure AI services collection **Foundry Tools**. The Basic Load Balancer SKU and Application Gateway v1 SKUs are retired; these are implementation details, not separate AZ-900 objectives. See Microsoft product documentation for lifecycle details.
+
+
+## Final 2026 review — short scenario practice
+
+These examples reinforce the recognition-based questions emphasized in the 2024 Exam Cram video.
+
+| Scenario | Best starting answer | Reason |
+| --- | --- | --- |
+| Host a website without managing its operating system | Azure App Service | Managed web application hosting |
+| Run a legacy application needing administrator access to Windows | Azure Virtual Machines | Full guest OS control |
+| Run short event-triggered code | Azure Functions | Event-driven compute |
+| Connect an office to Azure using an encrypted tunnel over the internet | VPN Gateway | Encrypted internet connectivity |
+| Connect through a private provider circuit | ExpressRoute | Private connectivity, not automatically encrypted |
+| Prevent deletion of a critical resource | Resource lock (CanNotDelete) | Blocks deletion even for Owners until removed |
+| Require a particular Azure region for deployments | Azure Policy | Enforces resource configuration rules |
+| Grant a colleague read-only access to a resource group | Azure RBAC Reader | Grants scoped permissions |
+| Estimate spending before deployment | Azure Pricing calculator | Estimates planned costs |
+| Diagnose a performance problem in a web application | Application Insights | Application telemetry |
+
+**What to prioritize:** understand why an answer fits a scenario, rather than memorizing product limits or the exact wording of these examples.
