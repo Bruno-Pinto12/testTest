@@ -39,8 +39,7 @@ A concise, text-only reference to read, understand, and remember. The original 1
 | Describe Azure architecture and services | 35-40% |
 | Describe Azure management and governance | 30-35% |
 
-The exam tests **recognition and choice**: which service, which model, which
-tool fits a scenario. It does not test deep configuration.
+The exam primarily tests **recognition and choice**: which service, model, or tool fits a scenario. Deep hands-on configuration is not a stated exam objective.
 
 ---
 
@@ -102,13 +101,13 @@ customer. The split depends on the service type.
 
 | Benefit | Meaning in one line |
 | --- | --- |
-| High availability | The service stays up and accessible, measured by an SLA (for example 99.9%) |
+| High availability | Design and operate services to minimize downtime; an SLA states a provider's contractual availability commitment |
 | Scalability | Ability to add or remove resources to handle load |
 | Vertical scaling (scale up/down) | Make a resource bigger or smaller (more CPU or RAM) |
 | Horizontal scaling (scale out/in) | Add or remove instances (more VMs) |
 | Elasticity | Scaling happens dynamically in response to demand (often using autoscaling) |
 | Reliability | Ability to recover from failures and keep working |
-| Predictability (performance) | Consistent performance through autoscaling and load balancing |
+| Predictability (performance) | Plan and monitor expected performance; scaling and load balancing can help handle changing demand |
 | Predictability (cost) | Forecast spending with tools such as the Pricing calculator and Cost Management |
 | Security | Provider security controls plus customer-managed identities, data protection, configuration, and patching where applicable |
 | Governance | Enforce standards and compliance with templates and policies |
@@ -132,6 +131,8 @@ customer. The split depends on the service type.
 **Exam trap:** A backup alone does not guarantee immediate failover. Availability zones help within a region; cross-region recovery requires a suitable service configuration and recovery design.
 
 **SLA quick facts**
+
+An SLA is not the same as a guarantee of zero downtime. A composite availability estimate assumes a particular application design and component dependencies.
 
 - An SLA is Microsoft's formal commitment for uptime and connectivity.
 - For a 30-day month, 99.9% corresponds to about 43 minutes of potential downtime and 99.99% to about 4 minutes. Actual SLA terms, measurement periods, and exclusions vary by service.
@@ -202,8 +203,8 @@ Management groups
 | Resource | Any manageable item: VM, storage account, VNet, database |
 
 - Deleting a resource group **deletes all resources** in it.
-- A resource can be moved between resource groups.
-- Settings applied at a higher level are **inherited** by lower levels.
+- Many resources can be moved between resource groups or subscriptions, but **not every resource type or configuration supports moving**.
+- Applicable Azure RBAC assignments and Azure Policy assignments at higher scopes can affect lower scopes; **not every setting or tag is automatically inherited**.
 
 > **Remember (top to bottom):** "**M**y **S**ubscription **R**uns **R**esources":
 > Management group, Subscription, Resource group, Resource.
@@ -324,9 +325,9 @@ the redundancy and performance options.
 | --- | --- | --- |
 | LRS | 3 copies in **one datacenter** | Disk or rack failure |
 | ZRS | 3 copies across **3 availability zones** in one region | Datacenter failure |
-| GRS | LRS in primary + LRS in a **secondary region** | Region failure |
-| GZRS | ZRS in primary + LRS in secondary region | Datacenter **and** region failure |
-| RA-GRS / RA-GZRS | Same as GRS / GZRS with **read access** to the secondary | Region failure, with readable secondary |
+| GRS | LRS in primary + LRS in a **secondary region** | Durable copies in another region; write failover/access requires supported recovery procedures |
+| GZRS | ZRS in primary + LRS in secondary region | Zone resilience plus durable copies in another region; recovery/failover is not automatic for every scenario |
+| RA-GRS / RA-GZRS | Same as GRS / GZRS with **read access** to the secondary | Readable secondary endpoint; applications must explicitly use it |
 
 > **Remember:** **L**ocal, **Z**one, **G**eo, **G**eo+**Z**one. "RA" provides a secondary read endpoint where supported; your application must be designed to use it. Geo-replication is asynchronous and can lose recent writes in a disaster.
 
@@ -359,7 +360,7 @@ the redundancy and performance options.
 | Microsoft Entra External ID | Identity capabilities for external users, including business guests and customer identities |
 | B2B collaboration | Invite partners, suppliers, or consultants to collaborate using their existing identities; the host organization controls access |
 | B2B direct connect | Enables supported cross-organization collaboration, such as Teams shared channels, through configured cross-tenant trust without ordinary guest invitations |
-| Customer identities (formerly Azure AD B2C scenarios) | Sign-up and sign-in for customers of external-facing applications; distinct from employee/partner collaboration |
+| Customer identities (Microsoft Entra External ID) | Sign-up and sign-in for customers of external-facing applications; distinct from B2B collaboration. Azure AD B2C is a separate legacy product offering |
 | Conditional Access | If-then policies based on signals (user, location, device, risk) to allow, block, or require MFA |
 | Azure RBAC | Grants permissions by **role** at a **scope** (management group, subscription, resource group, resource) |
 | Zero Trust | "Never trust, always verify": verify explicitly, least privilege, assume breach |
@@ -458,7 +459,7 @@ Physical security -> Identity & access -> Perimeter -> Network
 | --- | --- |
 | Azure Policy | Create and enforce rules on resource properties (for example, allowed regions or required tags); can audit or deny |
 | Policy initiative | Group of policies managed together |
-| Resource locks | Prevent accidental change or deletion |
+| Resource locks | Prevent accidental management-plane changes or deletion, depending on lock type |
 | Microsoft Purview | Data governance, risk, and compliance: discover, classify, and map data across environments |
 | Service Trust Portal | Microsoft's compliance reports, audits, and security documents |
 
@@ -473,7 +474,7 @@ Physical security -> Identity & access -> Perimeter -> Network
 | CanNotDelete (Delete) | Yes | Yes | **No** |
 | ReadOnly | Yes | **No** | **No** |
 
-- Locks apply even to Owners; the lock must be **removed** first.
+- Locks apply even to Owners for protected management operations; a user with the appropriate permissions must remove the lock before performing a blocked operation. Locks generally do not block data-plane operations.
 - Locks and policies are inherited from parent scopes.
 
 > **Remember:** Policy = **rules** for resources. RBAC = **permissions** for
@@ -484,12 +485,12 @@ Physical security -> Identity & access -> Perimeter -> Network
 | Tool | Description |
 | --- | --- |
 | Azure portal | Web-based graphical interface |
-| Azure Cloud Shell | Browser-based shell (Bash or PowerShell), already authenticated |
+| Azure Cloud Shell | Browser-based, authenticated Bash or PowerShell shell; initial setup and storage requirements depend on the configuration |
 | Azure CLI | Cross-platform command-line tool (`az ...` commands) |
 | Azure PowerShell | PowerShell cmdlets (`New-AzVM` style) |
 | Azure mobile app | Monitor and manage resources from a phone |
 | Azure Arc | Manage non-Azure resources (on-premises, other clouds) as if they were in Azure |
-| Azure Resource Manager (ARM) | The deployment and management **layer** behind every Azure request |
+| Azure Resource Manager (ARM) | Azure's deployment and management **control plane** for Azure resources; not every data-plane operation goes through ARM |
 | Infrastructure as code (IaC) | Describe infrastructure in files instead of manual clicks |
 | ARM templates | JSON files that declare resources to deploy |
 | Bicep | Simpler language that compiles to ARM templates |
@@ -644,3 +645,37 @@ These examples reinforce the recognition-based questions emphasized in the 2024 
 | Find whether a single VM is unhealthy | Azure Resource Health | Individual resource health |
 
 **What to prioritize:** understand why an answer fits a scenario, rather than memorizing product limits or the exact wording of these examples.
+
+---
+
+## Final source-check and exam coverage (November 16, 2026)
+
+**Review order:** The January 2024 Exam Cram transcript was used to identify useful explanations and exam scenarios. These were then checked against the Microsoft AZ-900 skills measured as of July 20, 2026; official documentation takes precedence wherever service behavior or terminology has changed.
+
+| Official objective group | Main brochure section | Coverage |
+| --- | --- | --- |
+| Describe cloud computing | 1 | Covered |
+| Benefits of cloud services | 2 | Covered |
+| Cloud service types | 3 | Covered |
+| Core architectural components | 4 | Covered |
+| Compute and networking services | 5–6 | Covered |
+| Storage services and migration | 7 | Covered |
+| Identity, access, and security | 8 | Covered |
+| Cost management | 9 | Covered |
+| Governance and compliance | 10 | Covered |
+| Managing and deploying resources | 11 | Covered |
+| Monitoring tools | 12 | Covered |
+
+**Corrections made in the final pass:** availability versus SLA; the limits of inherited settings and resource moves; storage geo-redundancy versus actual failover; guest B2B versus customer identities; management-plane resource locks; ARM control-plane terminology; and clearer performance predictability.
+
+**Scope caution:** A topic being covered in this document does not guarantee that every future exam question is represented. The video dates from 2024, so its historical capacities, product names, and service lifecycle statements must not override current Microsoft documentation. Optional supporting topics are not a claim that Microsoft explicitly tests every item.
+
+**Official references:**
+- [AZ-900 skills measured (July 20, 2026)](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
+- [Microsoft Entra B2B direct connect](https://learn.microsoft.com/en-us/entra/external-id/b2b-direct-connect-overview)
+- [Microsoft Entra B2B collaboration](https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b)
+- [Azure Blob access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)
+- [Azure storage redundancy](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)
+- [Azure resource locks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
+- [Move Azure resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)
+- [Azure Resource Manager overview](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
