@@ -1,8 +1,8 @@
 # AZ-900 Knowledge Brochure — Reviewed Edition (2026)
 
-**Exam scope:** Reviewed against the Microsoft AZ-900 study guide (skills measured as of July 20, 2026) and the January 2024 Exam Cram transcript. The current exam objectives take precedence over older video examples. This is independent study material, not an official Microsoft publication.
+**Exam scope:** Expanded using the January 2024 Exam Cram transcript, then checked against the Microsoft AZ-900 study guide (skills measured as of July 20, 2026) and relevant Microsoft product documentation. The current exam objectives take precedence over older video examples. This is independent study material, not an official Microsoft publication.
 
-A concise, text-only reference to read, understand, and remember. The original 12-chapter structure is preserved, with targeted corrections and short practical examples.
+A concise, text-only reference to read, understand, and remember. The original 12-chapter structure is preserved, with definitions, distinctions between similar services, and practical exam scenarios. Material from the 2024 video is adapted rather than copied; the 2026 Microsoft objectives and current documentation take priority.
 
 > **Source note:** Official exam objectives: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900. The 2024 video is a learning aid; service details can change.
 
@@ -78,12 +78,16 @@ customer. The split depends on the service type.
   services that run **outside Azure** (on-premises or other clouds).
 - **Azure VMware Solution** runs VMware workloads natively in Azure.
 
+**Economies of scale:** A cloud provider purchases and operates infrastructure at large scale, spreading costs across many customers. This can reduce the unit cost of computing compared with running a small private datacenter.
+
 #### Consumption-based model
 
 | Expense type | Meaning | Example |
 | --- | --- | --- |
 | CapEx (capital expenditure) | Up-front spending on physical infrastructure | Buying servers and building a datacenter |
 | OpEx (operational expenditure) | Spending on services as they are consumed | Paying monthly for cloud VMs |
+
+**Pricing model comparison:** Pay-as-you-go offers flexibility without a long-term commitment. Reservations or savings plans can reduce eligible costs in exchange for a 1- or 3-year commitment. Spot VMs can be cheaper but may be evicted. These are **pricing options**, not cloud deployment models.
 
 > **Remember:** Cloud often shifts infrastructure spending toward **OpEx** and usage-based billing. You generally pay
 > for billable usage or provisioned resources. **Stopping an application or guest OS does not necessarily stop charges**; disks, reserved capacity, and allocated compute can still cost money.
@@ -106,7 +110,7 @@ customer. The split depends on the service type.
 | Reliability | Ability to recover from failures and keep working |
 | Predictability (performance) | Consistent performance through autoscaling and load balancing |
 | Predictability (cost) | Forecast spending with tools such as the Pricing calculator and Cost Management |
-| Security | Control over patches, configuration, and built-in security tools |
+| Security | Provider security controls plus customer-managed identities, data protection, configuration, and patching where applicable |
 | Governance | Enforce standards and compliance with templates and policies |
 | Manageability **of** the cloud | Autoscaling, monitoring, automatic replacement of failed resources |
 | Manageability **in** the cloud | Ways to manage: portal, CLI, PowerShell, APIs, templates |
@@ -114,6 +118,18 @@ customer. The split depends on the service type.
 > **Remember:** **Scalability** = can grow. **Elasticity** = grows and shrinks
 > by itself. **Availability** = stays up. **Reliability** = recovers from
 > failure.
+
+**Resilience concepts (from the video)**
+
+| Term | Exam meaning |
+| --- | --- |
+| Fault tolerance | A system continues operating despite some component failures |
+| Disaster recovery (DR) | Restore services after a major outage; often involves backups, replication, and a recovery plan |
+| High availability (HA) | Reduce service interruption through redundant components and appropriate design |
+| RTO | Recovery Time Objective: target maximum time to restore service |
+| RPO | Recovery Point Objective: target maximum acceptable data loss measured in time |
+
+**Exam trap:** A backup alone does not guarantee immediate failover. Availability zones help within a region; cross-region recovery requires a suitable service configuration and recovery design.
 
 **SLA quick facts**
 
@@ -153,6 +169,7 @@ runs. Azure Functions and Logic Apps provide serverless capabilities; billing an
 | --- | --- |
 | Datacenter | Physical building with servers, power, cooling, and networking |
 | Region | Geographic area with one or more datacenters linked by a low-latency network |
+| Geography | Data-residency boundary containing one or more Azure regions (for example, a country or broader market) |
 | Availability zone | Physically separate datacenter(s) inside a region with independent power, cooling, and networking |
 | Region pair | Association of certain Azure regions for platform resiliency considerations; pairing does not itself replicate customer workloads |
 | Sovereign region | Isolated Azure instance for legal or compliance needs (Azure Government, Azure China by 21Vianet) |
@@ -218,6 +235,12 @@ Management groups
 
 A VM must be placed in a resource group and a region. A public IP is **not** required for every VM. **Exam example:** choose a VM when you need OS-level control; choose App Service for a managed web application.
 
+**Choosing VM availability options**
+
+- **Availability set:** Places related VMs across fault and update domains to reduce the impact of hardware failures and planned maintenance.
+- **Availability zone:** Places a supported VM in a physically separate zone within a region; multi-zone application designs can survive a zone outage.
+- **Scale set:** Manages a group of VMs and supports scaling. Scaling and resilience are different goals, although a scale set can contribute to both.
+
 **VMs vs containers**
 
 | Virtual machine | Container |
@@ -240,9 +263,12 @@ A VM must be placed in a resource group and a region. A public IP is **not** req
 | Network security group (NSG) | Allow/deny rules for inbound and outbound traffic on subnets or NICs |
 | Public endpoint | Reachable from the internet through a public IP address |
 | Private endpoint | Gives an Azure service a **private IP** inside your VNet (Private Link) |
+| Service endpoint | Extends a VNet subnet identity to supported Azure services over the Azure backbone; unlike Private Link, it does not place a private IP for that service in your VNet |
 | VPN Gateway | **Encrypted** tunnel over the **public internet** (site-to-site, point-to-site, VNet-to-VNet) |
 | ExpressRoute | **Private** connectivity via a provider, avoiding the public internet; encryption is not implied |
 | Azure DNS | Hosts DNS domains in Azure (public or private zones) |
+
+**Network decision example:** Two VNets need private communication = **VNet peering**. An on-premises office needs encrypted connectivity over the internet = **VPN Gateway**. A private provider circuit = **ExpressRoute**. A storage account should be accessed through a private IP inside your VNet = **Private endpoint**.
 
 **VPN Gateway vs ExpressRoute**
 
@@ -273,14 +299,20 @@ the redundancy and performance options.
 
 **Storage account reminder:** General-purpose v2 (StorageV2) is the standard account type for most Azure Storage scenarios; account type and redundancy choices affect supported features.
 
+**Performance choice:** **Standard** storage generally suits common workloads at lower cost; **Premium** options use higher-performance storage for supported workloads that need consistently low latency. Premium storage account types support specific services, so Premium is not a universal switch for every storage feature.
+
+**Security reminder:** Azure Storage encrypts data at rest by default. Network access settings, identity-based access, and encryption options can provide additional protection.
+
 #### Blob access tiers
 
 | Tier | Access pattern | Minimum storage period |
 | --- | --- | --- |
 | Hot | Frequently accessed | None |
-| Cool | Infrequent, stored at least 30 days | 30 days |
-| Cold | Rarely accessed, stored at least 90 days | 90 days |
+| Cool | Infrequent, usually kept at least 30 days | 30 days for general-purpose v2 block blobs* |
+| Cold | Rarely accessed, usually kept at least 90 days | 90 days for general-purpose v2 block blobs* |
 | Archive | Almost never accessed, **offline**, retrieval takes hours | 180 days |
+
+*Early-deletion charges can apply if blobs leave Cool, Cold, or Archive before their minimum retention period; exact rules depend on the account type and feature. Archive supports only certain redundancy configurations.*
 
 > **Remember:** Hot -> Cool -> Cold -> Archive generally trades lower storage cost for higher retrieval costs. Hot, Cool and Cold remain online; Archive is offline and must be **rehydrated** before reading.
 
@@ -324,12 +356,35 @@ the redundancy and performance options.
 | Single sign-on (SSO) | One sign-in for many applications |
 | Multifactor authentication (MFA) | Two or more of: something you **know**, **have**, **are** |
 | Passwordless | Sign in without a password (Windows Hello for Business, Microsoft Authenticator, FIDO2 keys) |
-| External identities (B2B / B2C) | Let partners (B2B) or customers (B2C) sign in with their own identities |
+| Microsoft Entra External ID | Identity capabilities for external users, including business guests and customer identities |
+| B2B collaboration | Invite partners, suppliers, or consultants to collaborate using their existing identities; the host organization controls access |
+| B2B direct connect | Enables supported cross-organization collaboration, such as Teams shared channels, through configured cross-tenant trust without ordinary guest invitations |
+| Customer identities (formerly Azure AD B2C scenarios) | Sign-up and sign-in for customers of external-facing applications; distinct from employee/partner collaboration |
 | Conditional Access | If-then policies based on signals (user, location, device, risk) to allow, block, or require MFA |
 | Azure RBAC | Grants permissions by **role** at a **scope** (management group, subscription, resource group, resource) |
 | Zero Trust | "Never trust, always verify": verify explicitly, least privilege, assume breach |
 | Defense in depth | Multiple layers of protection so one failure does not expose data |
 | Microsoft Defender for Cloud | Security posture management and threat protection for Azure, hybrid, and multi-cloud |
+
+**Guest account detail:** With **B2B collaboration**, an invited partner usually signs in with an existing identity and is represented by a guest user object in the host directory. The host organization grants the necessary app or resource permissions; guest access is not unrestricted. **B2B direct connect** is different: it currently supports Teams shared channels and does not create the usual guest object in the resource tenant.
+
+**External identities: choose the right scenario**
+
+- **B2B collaboration:** A supplier needs access to your SharePoint site or Azure resources. Invite the supplier as an external user; grant only the required permissions.
+- **B2B direct connect:** Two organizations collaborate in a supported Teams shared channel with configured cross-tenant access.
+- **Customer identities:** A shopping application needs sign-up and sign-in for thousands of customers. Use customer-facing identity capabilities, not B2B guest collaboration.
+- **Remember:** Authentication establishes identity; authorization (for example, Azure RBAC for Azure resources) determines permissions. A guest invitation does not automatically grant broad access.
+
+**Defender for Cloud:** Helps assess cloud security posture, identify recommendations, and protect supported workloads. It does **not** replace Entra ID authentication, Azure RBAC authorization, or Conditional Access sign-in rules.
+
+**Identity and access distinctions**
+
+| Feature | Main purpose |
+| --- | --- |
+| Microsoft Entra ID | Authenticate users and manage cloud identities |
+| Microsoft Entra Domain Services | Provide managed domain join, LDAP, Kerberos and Group Policy for compatible workloads |
+| Conditional Access | Apply sign-in rules based on signals (for example require MFA) |
+| Azure RBAC | Authorize actions on Azure resources at a defined scope |
 
 **Common RBAC built-in roles**
 
@@ -391,6 +446,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 | Tags | Labels (name/value) that group resources, for example by cost center or environment |
 | TCO calculator (historical; retired) | Former on-premises vs cloud comparison tool; **not** a current exam tool to memorize |
 
+**Cost scenario:** A team needs to estimate a new VM before deployment -> **Pricing calculator**. Finance wants current spend and budget alerts -> **Cost Management**. Management wants to categorize costs by department -> **tags**. A budget alert warns about spending but does not automatically stop all resources.
+
 > **Remember:** Pricing calculator = **before** (estimate).
 > Cost Management = **during/after** (actual/forecast spend, budgets). Tags = **group and
 > report costs**.
@@ -404,6 +461,10 @@ Physical security -> Identity & access -> Perimeter -> Network
 | Resource locks | Prevent accidental change or deletion |
 | Microsoft Purview | Data governance, risk, and compliance: discover, classify, and map data across environments |
 | Service Trust Portal | Microsoft's compliance reports, audits, and security documents |
+
+**Governance example:** Use **Azure Policy** to restrict deployments to approved regions; **Azure RBAC** to grant a user Reader access; a **resource lock** to prevent accidental deletion; and **tags** to organize costs. These tools solve different problems.
+
+**Tags caveat:** Tags are metadata used for organization and cost analysis; they do not grant access or enforce compliance. Tags are not automatically inherited by every child resource simply because they are present on a resource group. Use Azure Policy where automatic tag enforcement or inheritance is needed.
 
 **Resource lock types**
 
@@ -433,6 +494,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 | ARM templates | JSON files that declare resources to deploy |
 | Bicep | Simpler language that compiles to ARM templates |
 
+**Deployment decision example:** Use the **portal** for graphical administration; **Cloud Shell** for an authenticated browser terminal; **CLI/PowerShell** for scripted commands; and **ARM templates/Bicep** for repeatable declarative deployments. **ARM** is the management layer used by these tools, not a separate hosting service.
+
 **ARM template benefits:** declarative, repeatable, orchestrated, modular,
 and source-controlled.
 
@@ -448,6 +511,10 @@ and source-controlled.
 | Log Analytics | Write and run queries (KQL) on log data collected by Azure Monitor |
 | Azure Monitor alerts | Notify or act when a condition is met |
 | Application Insights | Monitor the performance and usage of **web applications** |
+
+**Monitoring example:** Use **Advisor** for improvement recommendations; **Service Health** for an Azure platform outage affecting your subscription; **Resource Health** for one VM's health; **Azure Monitor alerts** for threshold notifications; and **Application Insights** for application errors or response times.
+
+**Metrics vs logs:** **Metrics** are numeric measurements such as CPU usage or request rate. **Logs** record richer events and diagnostic information; **Log Analytics** uses Kusto Query Language (KQL) to query supported log data. Alerts can be configured to notify or trigger actions when a condition is met.
 
 **Service Health components**
 
@@ -541,6 +608,8 @@ For additional practice, use your separate AZ-900 glossary and checklist if avai
 
 ## Direct Microsoft references for this brochure
 
+Official exam blueprint (checked November 16, 2026): [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900). Product documentation used for corrections: [Microsoft Entra B2B collaboration](https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b), [B2B direct connect](https://learn.microsoft.com/en-us/entra/external-id/b2b-direct-connect-overview), [Data Box](https://learn.microsoft.com/en-us/azure/databox/data-box-overview), [region pairs](https://learn.microsoft.com/en-us/azure/reliability/regions-paired).
+
 Useful official documentation: [Blob access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview), [Azure Functions hosting options](https://learn.microsoft.com/en-us/azure/azure-functions/functions-scale), [region pairing](https://learn.microsoft.com/en-us/azure/reliability/regions-paired), and [Azure VM billing states](https://learn.microsoft.com/en-us/azure/virtual-machines/states-billing).
 
 **Additional Microsoft-verified optional product notes:** Microsoft now calls the former Azure AI services collection **Foundry Tools**. The Basic Load Balancer SKU and Application Gateway v1 SKUs are retired; these are implementation details, not separate AZ-900 objectives. See Microsoft product documentation for lifecycle details.
@@ -562,5 +631,16 @@ These examples reinforce the recognition-based questions emphasized in the 2024 
 | Grant a colleague read-only access to a resource group | Azure RBAC Reader | Grants scoped permissions |
 | Estimate spending before deployment | Azure Pricing calculator | Estimates planned costs |
 | Diagnose a performance problem in a web application | Application Insights | Application telemetry |
+| Invite a supplier to access shared company resources | Entra B2B collaboration | External business guest using an existing identity |
+| Provide sign-in for customers of a shopping application | Entra External ID customer identities | Customer-facing authentication |
+| Let two organizations work in a Teams shared channel | B2B direct connect | Supported cross-tenant collaboration |
+| Restrict sign-in unless MFA is completed | Conditional Access | Sign-in policy, not Azure RBAC |
+| Give an Azure storage service a private IP in your VNet | Private endpoint | Private Link access |
+| Need shared company files accessible over SMB | Azure Files | Managed file shares |
+| Need to copy large data to Blob Storage from a script | AzCopy | Command-line file transfer |
+| Need to synchronize an on-premises Windows file server with Azure Files | Azure File Sync | Hybrid file synchronization |
+| Need to keep an application running during a zone failure | Multi-zone design | Redundant instances across availability zones |
+| Need to restore service after a major regional outage | Disaster recovery design | Configure suitable cross-region replication and failover |
+| Find whether a single VM is unhealthy | Azure Resource Health | Individual resource health |
 
 **What to prioritize:** understand why an answer fits a scenario, rather than memorizing product limits or the exact wording of these examples.
