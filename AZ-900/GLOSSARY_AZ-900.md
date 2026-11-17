@@ -1,35 +1,30 @@
-# AZ-900 - Microsoft Azure Fundamentals Study Glossary
+# AZ-900 Study Glossary — Aligned with the Knowledge Brochure (2026)
 
-**Official verification (November 4, 2026):** The live Microsoft AZ-900 study guide was retrieved and compared with this material. The applicable skills-measured date is **July 20, 2026**, with weights **25–30% cloud concepts**, **35–40% Azure architecture and services**, and **30–35% Azure management and governance**. The official guide lists 11 objective groups. Source: https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900. The TCO Calculator is **retired**: https://learn.microsoft.com/en-us/training/modules/describe-cost-management-azure/3-compare-pricing-total-cost-of-ownership-calculators. This is an independently written study aid, not an official Microsoft publication.
+**Reference document:** `AZ900_Brochure_Verification_Ultime_2026.md` (12 chapters). This glossary follows the brochure’s chapter order and definitions. It is a companion reference, not an independent replacement for the brochure.
 
-
-## Source verification and correction log
-
-The official AZ-900 exam blueprint has now been accessed directly and verified on November 4, 2026. It is effective from July 20, 2026, and includes the three domains and 11 objective groups described in this glossary. Previous notes claiming the blueprint was inaccessible are superseded by this section.
-
-The official syllabus does **not** list the retired TCO Calculator as an objective. Its historical purpose is optional context. Extra AI/ML/IoT and sustainability topics remain supplementary unless a future Microsoft blueprint explicitly includes them.
+**Exam scope:** Microsoft AZ-900 study guide, skills measured as of July 20, 2026. The 2024 Exam Cram video provides background; the brochure and current Microsoft documentation take precedence.
 
 ## Contents
 
-1. [Cloud concepts](#1-cloud-concepts)
-2. [Azure architecture and resource organization](#2-azure-architecture-and-resource-organization)
-3. [Compute and application hosting](#3-compute-and-application-hosting)
-4. [Networking](#4-networking)
-5. [Storage and migration](#5-storage-and-migration)
-6. [Identity, access, and security](#6-identity-access-and-security)
-7. [Cost management and service commitments](#7-cost-management-and-service-commitments)
-8. [Governance and compliance](#8-governance-and-compliance)
-9. [Deployment and administration](#9-deployment-and-administration)
-10. [Monitoring](#10-monitoring)
-11. [AI, machine learning, IoT, and edge](#11-ai-machine-learning-iot-and-edge)
-12. [Additional recognition terms](#12-additional-recognition-terms)
-13. [Key distinctions and revision checklist](#13-key-distinctions-and-revision-checklist)
-14. [Official sources and coverage map](#14-official-sources-and-coverage-map)
+1. [Cloud computing](#1-cloud-computing)
+2. [Benefits of cloud services](#2-benefits-of-cloud-services)
+3. [Cloud service types](#3-cloud-service-types)
+4. [Core architecture](#4-core-architecture)
+5. [Compute](#5-compute)
+6. [Networking](#6-networking)
+7. [Storage](#7-storage)
+8. [Identity, access, and security](#8-identity-access-and-security)
+9. [Cost management](#9-cost-management)
+10. [Governance and compliance](#10-governance-and-compliance)
+11. [Managing and deploying resources](#11-managing-and-deploying-resources)
+12. [Monitoring](#12-monitoring)
 
-## 1. Cloud concepts
+The sections below contain **definitions**, not a second course. For detailed explanations, examples and exam traps, consult the corresponding brochure chapter.
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+## 1. Cloud computing
+
+| Term | Definition and exam distinction |
+| --- | --- |
 | Cloud computing | On-demand delivery of computing services over a network, typically with usage-related pricing. |
 | On-premises | Infrastructure operated in an organization's own facilities or an environment it manages. |
 | Public cloud | Cloud infrastructure operated by a provider for multiple customers. Customer data is not automatically public. Useful for rapid provisioning without purchasing physical servers. |
@@ -37,14 +32,24 @@ The official syllabus does **not** list the retired TCO Calculator as an objecti
 | Hybrid cloud | An integrated combination of public-cloud and private-cloud or on-premises resources. Useful for keeping some workloads locally while extending into Azure. |
 | Multicloud | Use of more than one cloud provider. Not the same as hybrid cloud. |
 | Shared responsibility model | Division of security and operational duties between provider and customer. Responsibilities vary by service model; customers remain responsible for their data, identities, and access configuration. |
-| Infrastructure as a Service - IaaS | Provider manages physical infrastructure; customer manages the guest OS, applications, and configurations. Azure VMs are an example. Useful when OS-level control is required. |
-| Platform as a Service - PaaS | Provider also manages the application platform and underlying OS. Customer manages application code, data, and relevant configuration. Azure App Service is an example. |
-| Software as a Service - SaaS | Ready-to-use application operated by a provider. Customer still manages users, data, and settings. Microsoft 365 is an example. |
-| Serverless | Provider manages servers and much of execution capacity. Servers still exist; scaling and billing depend on the service and hosting plan. |
 | Consumption-based model | Charges depend on consumed or provisioned resources instead of purchasing all infrastructure upfront. |
 | Pay-as-you-go | Usage-based pricing without a long-term reservation commitment. Idle provisioned resources may still incur charges. |
 | Capital expenditure - CapEx | Upfront investment, such as purchasing physical servers. |
 | Operational expenditure - OpEx | Ongoing operating expense, such as a monthly cloud bill. |
+| Economies of scale | Large cloud providers spread infrastructure and operating costs across many customers; this can reduce per-unit costs. |
+| Geographic distribution | Ability to deploy resources in multiple regions to serve users closer to them and support resilience strategies. |
+| Service availability vs SLA | Availability is actual service uptime; an SLA is a contractual commitment under defined terms, not a promise of zero downtime. |
+| Area | On-premises | IaaS | PaaS | SaaS |
+| Physical datacenter, hosts, and physical network | Customer | Provider | Provider | Provider |
+| Guest operating system | Customer | Customer | Provider | Provider |
+| Application operation and platform | Customer | Customer | Shared: customer code and configuration, provider platform | Provider application; customer usage and settings |
+| Customer data, identities, and access choices | Customer | Customer | Customer | Customer |
+| Pricing options vs deployment models | Pay-as-you-go, reservations, savings plans, and Spot are billing options; public, private, and hybrid are deployment models. |
+
+## 2. Benefits of cloud services
+
+| Term | Definition and exam distinction |
+| --- | --- |
 | High availability - HA | Designing a service to remain available despite certain failures. Requires suitable architecture, not just deployment to Azure. |
 | Scalability | Ability to adjust resources as demand changes. |
 | Vertical scaling / scale up / scale down | Increasing or decreasing the capacity of an instance, such as CPU or memory. |
@@ -65,23 +70,23 @@ The official syllabus does **not** list the retired TCO Calculator as an objecti
 | Sustainability | Reducing unnecessary resource consumption through efficient architecture and operation. Cloud use is not automatically sustainable. |
 | Rightsizing | Matching resource capacity to actual requirements instead of overprovisioning. Helps cost efficiency and sustainability. |
 | Resource utilization | How much provisioned capacity is actually used. Improve it through consolidation, scaling, and shutting down unused environments. |
+| Service-level agreement (SLA) | Contractual availability commitment, not a promise of zero downtime. |
+| Composite SLA | Estimated combined availability of dependent components; depends on architecture and assumptions. |
 
-### Shared responsibility quick comparison
+## 3. Cloud service types
 
-| Area | On-premises | IaaS | PaaS | SaaS |
-|---|---|---|---|---|
-| Physical datacenter, hosts, and physical network | Customer | Provider | Provider | Provider |
-| Guest operating system | Customer | Customer | Provider | Provider |
-| Application operation and platform | Customer | Customer | Shared: customer code and configuration, provider platform | Provider application; customer usage and settings |
-| Customer data, identities, and access choices | Customer | Customer | Customer | Customer |
+| Term | Definition and exam distinction |
+| --- | --- |
+| Infrastructure as a Service - IaaS | Provider manages physical infrastructure; customer manages the guest OS, applications, and configurations. Azure VMs are an example. Useful when OS-level control is required. |
+| Platform as a Service - PaaS | Provider also manages the application platform and underlying OS. Customer manages application code, data, and relevant configuration. Azure App Service is an example. |
+| Software as a Service - SaaS | Ready-to-use application operated by a provider. Customer still manages users, data, and settings. Microsoft 365 is an example. |
+| Serverless | Provider manages servers and much of execution capacity. Servers still exist; scaling and billing depend on the service and hosting plan. |
+| IaaS vs PaaS vs SaaS | IaaS gives guest OS control; PaaS manages the platform; SaaS provides a ready-to-use application. |
 
-This is a conceptual comparison. Device security, network controls, and other
-responsibilities depend on the specific service and configuration.
+## 4. Core architecture
 
-## 2. Azure architecture and resource organization
-
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Datacenter | Physical facility containing servers, networking, power, and cooling. |
 | Azure region | Geographic area containing one or more datacenters connected through a low-latency network. |
 | Region pair | Association between certain Azure regions. Not every region is paired, and pairing does not automatically replicate all resources. |
@@ -102,17 +107,25 @@ responsibilities depend on the specific service and configuration.
 | Inheritance | Application of certain parent-scope assignments or rules to child scopes. |
 | Resource provider | Provider of an Azure resource type, such as `Microsoft.Compute`. |
 | Azure Resource Manager - ARM | Azure's management layer for creating, updating, and deleting resources. Not a reference to a processor architecture here. |
+| Control plane | Management operations such as creating a VM or updating its configuration, commonly via Azure Resource Manager. |
+| Azure resource move | Some resources can move between resource groups or subscriptions, subject to service-specific limitations and validation. |
+| Region selection | Choice affecting latency, data residency, service availability, resiliency design, and price. |
+| Azure VMware Solution | Runs supported VMware workloads on Azure infrastructure. |
+| Resource move limitation | Many resources can move between groups or subscriptions, but some resource types/configurations cannot. |
+| Scope inheritance | Applicable RBAC and Policy assignments can inherit; tags and arbitrary settings do not automatically inherit. |
 
-## 3. Compute and application hosting
+## 5. Compute
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Compute | Resources that execute workloads, including VMs, containers, and functions. |
 | Azure Virtual Machines - VMs | IaaS machines where the customer manages the guest OS and installed software. |
 | VM size | VM CPU, memory, and related capacity choices; affects performance and cost. |
 | Stock keeping unit - SKU | Product or service variant identifying a particular offering, size, or tier. In Azure, SKU choices can affect capacity, features, availability, and price. |
 | VM image | Template containing an OS and possibly preinstalled software used to create VMs. |
 | VM supporting resources | Typically includes disks, a network interface, a VNet and subnet, and suitable access controls. A public IP is not always required. |
+| VM deployment prerequisites | Choose a subscription, resource group, region, image, VM size (vCPU/RAM), OS disk, and networking. Public IP is optional. |
+| Zonal VM | A VM placed in a particular availability zone; use suitable multi-zone architecture for zone-failure resilience. |
 | Operating system disk / data disk | Disk containing the guest OS / additional disk for application data. |
 | Network interface - NIC | Connects a VM to a virtual network and holds IP configuration. |
 | Virtual Machine Scale Sets - VMSS | Groups of VMs that support coordinated deployment, management, and scaling. |
@@ -131,11 +144,14 @@ responsibilities depend on the specific service and configuration.
 | Azure Functions | Runs functions triggered by events; scaling, execution limits, and pricing depend on the hosting plan. |
 | Trigger | Event starting an execution, such as an HTTP request, message, or schedule. |
 | Hosting option | Choice among VMs, containers, managed web hosting, and functions based on control, dependencies, and execution requirements. |
+| Availability zone vs availability set | Zone separates physical datacenter locations; set separates VMs by fault/update domains. |
+| Public IP (VM) | Optional VM resource; a VM can operate with private networking only. |
+| Azure Functions vs App Service | Functions focuses on event-triggered code; App Service hosts managed web applications and APIs. |
 
-## 4. Networking
+## 6. Networking
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Azure Virtual Network - VNet | Logical private network in Azure connecting resources and other networks. |
 | Subnet | Subdivision of a VNet's address space. |
 | Classless Inter-Domain Routing - CIDR | Notation for an IP address range, such as `10.0.0.0/16`. The prefix length indicates the network portion; detailed subnet calculation is not the focus here. |
@@ -152,6 +168,8 @@ responsibilities depend on the specific service and configuration.
 | Point-to-site - P2S | VPN connection from an individual client to an Azure network. |
 | VNet-to-VNet VPN | VPN gateway connection between Azure virtual networks. Distinct from VNet peering, which does not require VPN gateways. |
 | Azure ExpressRoute | Private connectivity to Microsoft through a connectivity provider, bypassing the public internet. Encryption is not implicit. |
+| VPN Gateway vs ExpressRoute | VPN Gateway uses encrypted tunnels, commonly over the internet; ExpressRoute provides private connectivity through a provider and does not automatically encrypt traffic. |
+| VNet peering vs VPN | Peering connects Azure VNets through the Microsoft network without a VPN gateway; VPN connections use gateway-based encrypted tunnels. |
 | Domain Name System - DNS | Resolves domain names into records such as IP addresses. |
 | Azure DNS | Hosts DNS zones. DNS hosting is not the same as registering or buying a domain name. |
 | Public DNS zone / Azure Private DNS zone | Public zones publish records for public DNS resolution; private zones resolve names within linked VNets according to their configuration. DNS resolution alone does not grant network access. |
@@ -161,11 +179,13 @@ responsibilities depend on the specific service and configuration.
 | Azure Bastion | Managed RDP/SSH access to VMs without requiring public IP addresses on the target VMs. |
 | Load balancing | Distributes traffic across instances to spread load and improve availability. |
 | Latency / bandwidth | Latency is communication delay; bandwidth is transfer capacity. They are different measurements. |
+| Private endpoint vs service endpoint | Private endpoint assigns a private VNet IP for supported service access; service endpoint extends subnet identity without creating a service private IP. |
+| VNet peering transitivity | VNet peering does not automatically provide transitive connectivity between multiple VNets. |
 
-## 5. Storage and migration
+## 7. Storage
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Storage account | Azure resource providing a namespace and configuration for storage services, including region, redundancy, performance, and security options. |
 | Standard general-purpose v2 - GPv2 | General-purpose account supporting blobs, queues, tables, and Azure Files. A common starting point for standard storage scenarios. |
 | Premium block blobs account | Account optimized for block and append blobs requiring high transaction rates or consistently low latency. |
@@ -203,12 +223,18 @@ responsibilities depend on the specific service and configuration.
 | Cloud tiering | Azure File Sync capability that keeps frequently used files locally and retrieves other files from Azure on demand. |
 | Azure Migrate | Tools for discovering, assessing, and migrating workloads to Azure. |
 | Azure Data Box | Physical-device-based offline transfer for large data volumes. |
+| Online vs offline migration | AzCopy transfers supported data online; Data Box is a physical-device option when large transfers over a network are impractical. |
+| Standard vs Premium storage | Standard suits common cost-sensitive workloads; Premium offerings target supported workloads requiring higher throughput or lower latency. Availability depends on account type. |
+| Storage encryption at rest | Azure Storage encrypts data at rest by default; customers still configure identity, access, and network restrictions. |
+| Storage replication vs backup | Replication increases durability against certain failures; independent backup/versioning is needed for many deletion and corruption recovery scenarios. |
 | Shared access signature - SAS | Delegated, limited authorization to storage resources. Protect a SAS URL as a secret. |
+| Cool/Cold minimum retention | Early-deletion billing depends on tier, account type and configuration; do not assume one rule fits every account. |
+| Replication vs failover | Geo-replication stores secondary copies; application failover and access require suitable design and supported recovery procedures. |
 
-## 6. Identity, access, and security
+## 8. Identity, access, and security
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Microsoft Entra ID | Cloud identity and access management service, formerly Azure Active Directory / Azure AD. |
 | Active Directory Domain Services - AD DS | Traditional domain directory service associated with Windows Server. Not the same service as Microsoft Entra ID. |
 | Microsoft Entra Domain Services | Managed domain services supporting capabilities such as domain join, LDAP, Kerberos, and NTLM. |
@@ -223,8 +249,17 @@ responsibilities depend on the specific service and configuration.
 | Conditional Access | Policies evaluating signals such as user, device, and location to impose access requirements. Features may require appropriate licenses. |
 | External identities | Access management for people outside the organization, including partners, suppliers, and customers. Collaboration and customer sign-in scenarios depend on the Microsoft Entra External ID offering and configuration. |
 | Business-to-business - B2B collaboration | Collaboration model allowing external users to access an organization's resources, commonly as guests. |
+| Microsoft Entra External ID | Microsoft identity capabilities for external people, including business collaboration and customer-facing sign-in scenarios. |
+| B2B guest user | External partner represented by a guest object in the host tenant; typically signs in using an existing identity and needs explicit resource or app permissions. |
+| Cross-tenant access settings | Microsoft Entra settings that govern inbound and outbound B2B collaboration and direct-connect access between organizations. |
+| B2B direct connect | Cross-organization access model supporting Teams shared channels with configured cross-tenant trust; unlike normal B2B guest collaboration, it does not create the typical guest object in the resource tenant. |
+| Customer identities / External ID for customers | Authentication and self-service sign-up for customers of external-facing apps; different from inviting business guests. |
+| Azure AD B2C (legacy offering) | Older customer identity product; do not assume it is interchangeable with current Entra External ID offerings or B2B guest access. |
+| B2B vs customer sign-in | Supplier accessing company resources -> B2B collaboration. Shoppers signing into a customer app -> customer identities. |
 | Guest access | Access granted to an external identity; permissions must still be assigned appropriately. |
 | Azure role-based access control - Azure RBAC | Authorization to Azure resources through role assignments at a defined scope. |
+| Conditional Access vs Azure RBAC | Conditional Access determines conditions for sign-in (for example MFA); Azure RBAC determines permitted Azure resource operations. |
+| Microsoft Entra roles vs Azure RBAC | Directory roles administer identity settings and users; Azure RBAC roles authorize Azure resource management or data operations at a scope. |
 | Role definition | Collection of permissions describing what a role allows. |
 | Role assignment | Association of a security principal, role definition, and scope. |
 | Security principal | Identity that can receive permissions, such as a user, group, service principal, or managed identity. |
@@ -248,11 +283,15 @@ responsibilities depend on the specific service and configuration.
 | Microsoft Defender for Cloud | Cloud security posture management and workload protection. Some protection plans are paid. |
 | Security posture | Overall state of an environment's security configurations and controls. |
 | Secure score | Indicator helping prioritize security improvements; not a guarantee of security. |
+| Microsoft Entra B2B direct connect | Cross-tenant collaboration for supported Teams shared channels, without a normal guest object in the resource tenant. |
+| B2B collaboration guest | External partner normally uses an existing identity and is represented as a guest in the host directory; permissions must be granted. |
+| Microsoft Entra External ID customer identities | Customer sign-up and sign-in for external-facing applications; distinct from B2B guest collaboration. |
+| B2B vs B2C | B2B serves business partners/guests; customer identity services serve customers of applications. |
 
-## 7. Cost management and service commitments
+## 9. Cost management
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Pricing calculator | Estimates the cost of a planned Azure configuration. Not a guaranteed invoice. |
 | Total cost of ownership - TCO | Overall solution cost, including infrastructure, licensing, operation, maintenance, and relevant indirect costs. |
 | TCO calculator - retired | Former tool for comparing on-premises and Azure costs. The reviewed Learn pricing lesson explicitly states that it has been retired. TCO remains a useful concept; use the Pricing calculator for Azure estimates. |
@@ -266,6 +305,8 @@ responsibilities depend on the specific service and configuration.
 | Reservation / reserved capacity | Commitment covering eligible usage or capacity over a term, potentially reducing cost relative to pay-as-you-go. |
 | Azure savings plan for compute | Hourly spending commitment over a term for eligible compute usage; different from a targeted reservation. |
 | Azure Spot Virtual Machines | Discounted spare capacity that Azure can evict. Appropriate for interruption-tolerant workloads, not guaranteed availability. |
+| Reservation vs savings plan | Reservations apply to eligible specified resource usage; savings plans apply a monetary hourly commitment across eligible compute usage. |
+| Cost budget vs quota | Budget sends spending alerts; a service quota limits resource capacity or usage and is not a spending cap. |
 | Azure Hybrid Benefit | Licensing benefit for reusing eligible licenses under applicable conditions. |
 | Deallocation | Releases a VM's compute allocation. Disks and other retained resources can remain billable. Shutting down inside the guest OS may not deallocate it. |
 | Quota / service limit | Resource or usage limit at a scope. Not a financial spending cap. |
@@ -273,11 +314,13 @@ responsibilities depend on the specific service and configuration.
 | Availability percentage | Proportion of availability over a defined period. High availability does not mean zero downtime. |
 | Composite SLA | Combined availability of dependencies. Multiplying percentages is an estimate for independent serial dependencies; real architecture and contractual terms matter. |
 | Preview / general availability - GA | Pre-release / generally released service status. Support, production suitability, and guarantees may differ. |
+| Reservations vs savings plans | Reservations apply to eligible reserved usage; savings plans use an hourly eligible-compute spending commitment. |
+| Budget vs quota | Budget warns about spending; quota limits resource quantities, not financial charges. |
 
-## 8. Governance and compliance
+## 10. Governance and compliance
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Governance | Rules and mechanisms controlling resource use, risk, cost, and compliance. Cloud tools help apply consistent standards at scale, but the customer must define and configure those standards. |
 | Azure Policy | Evaluates and enforces resource rules, such as allowed deployment regions or required configurations. |
 | Policy definition | Condition and effect describing a governance rule. |
@@ -290,15 +333,20 @@ responsibilities depend on the specific service and configuration.
 | CanNotDelete lock | Generally allows reading and modification but blocks deletion within its scope. |
 | ReadOnly lock | Generally allows reads and blocks control-plane changes; can also affect some seemingly read-oriented operations using modification APIs. |
 | Tag | Key-value metadata such as `Environment=Study` for organization and cost allocation. Tags are not automatically inherited without an additional mechanism. |
+| Azure Policy vs Azure RBAC | Policy evaluates or enforces resource compliance; RBAC controls who can perform permitted actions. |
+| Policy vs lock | Policy evaluates allowed configurations or operations; locks prevent certain management-plane changes or deletion. |
+| Lock and data-plane operations | Resource locks primarily restrict management-plane operations; they generally do not prevent direct data-plane operations. |
 | Microsoft Purview | Solutions for data discovery, governance, protection, and compliance; capabilities depend on the specific solution. |
 | Data classification | Categorizing data by content and sensitivity. |
 | Service Trust Portal | Microsoft portal for trust information and compliance reports; some documents require authentication or acceptance of terms. |
 | Regulatory requirement | Obligation imposed by regulation. Choosing a region or certified service alone does not satisfy every obligation. |
+| Resource locks and data plane | Locks primarily restrict management-plane operations and do not generally block data-plane access. |
+| Tags and inheritance | Tags are metadata and do not automatically inherit from resource groups without another mechanism. |
 
-## 9. Deployment and administration
+## 11. Managing and deploying resources
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Azure portal | Browser-based graphical interface for managing Azure. |
 | Azure Cloud Shell | Browser-accessible command environment with Bash or PowerShell and Azure tools. Resources created through it can incur charges. |
 | Azure CLI | Cross-platform command-line tool using commands such as `az`. |
@@ -311,11 +359,17 @@ responsibilities depend on the specific service and configuration.
 | Idempotence | Repeating an operation does not cause additional changes once the desired state is reached. |
 | Deployment | Applying configuration to create or update resources. |
 | Azure Arc | Extends supported Azure management capabilities to resources outside Azure, including on-premises and other clouds. |
+| Azure mobile app | Mobile interface for selected Azure monitoring and management tasks. |
+| ARM vs Bicep | ARM is the Azure resource management control plane; Bicep is a declarative language compiled to ARM templates. |
+| Cloud Shell vs local CLI | Cloud Shell provides Azure tools in a browser-based shell; CLI and PowerShell can also run locally with appropriate authentication. |
+| Azure Resource Manager control plane | ARM manages resource deployment/configuration; service data-plane requests are distinct. |
+| ARM templates vs Bicep | ARM templates are declarative JSON; Bicep is a concise declarative language compiled to ARM templates. |
+| Azure Cloud Shell setup | Authenticated browser shell with Bash or PowerShell; initial setup may depend on configuration. |
 
-## 10. Monitoring
+## 12. Monitoring
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Definition and exam distinction |
+| --- | --- |
 | Azure Monitor | Platform for collecting, analyzing, and acting on application and infrastructure telemetry. |
 | Metrics | Timestamped numerical measurements, such as CPU utilization. |
 | Logs | Event or observation records supporting detailed analysis. |
@@ -330,15 +384,17 @@ responsibilities depend on the specific service and configuration.
 | Azure Resource Health | Availability and health information about a particular resource. |
 | Azure Status | Public, general Azure service-status view, less personalized than Service Health. |
 | Azure Advisor | Recommendations across reliability, security, performance, operational excellence, and cost. Does not automatically implement every recommendation. |
+| Metrics vs logs | Metrics are numeric time-series measurements; logs capture detailed events and observations for investigation. |
+| Service Health vs Resource Health | Service Health reports platform incidents relevant to your services/subscriptions; Resource Health reports the condition of an individual resource. |
+| Azure Status vs Service Health | Azure Status is a public high-level status page; Service Health gives personalized impact information. |
+| Advisor vs Monitor | Advisor recommends improvements; Monitor collects telemetry, queries data and triggers alerts. |
 
-## 11. AI, machine learning, IoT, and edge
+## Appendix A. Optional supporting topics (not all explicit exam objectives)
 
-These categories appear in the reviewed Learn compute module. Recognize their
-purpose without treating AZ-900 as an AI-development or IoT-engineering exam.
-Product names can evolve; use the current documentation for implementation.
+### AI, ML, IoT and edge
 
-| Term | Meaning and exam-oriented distinction |
-|---|---|
+| Term | Meaning |
+| --- | --- |
 | Artificial intelligence - AI | Broad category of capabilities for tasks such as language understanding, vision, and content generation. |
 | Azure AI services | Prebuilt AI capabilities exposed through APIs for scenarios such as language, speech, vision, and document processing. |
 | Azure OpenAI Service | Azure service for accessing models supporting generative AI scenarios such as chat and content generation, with Azure security and governance integrations. |
@@ -352,13 +408,10 @@ Product names can evolve; use the current documentation for implementation.
 | Azure IoT Central | SaaS-oriented IoT application platform described in the reviewed lesson; check current lifecycle and availability before choosing it for a new project. |
 | Edge computing / Azure IoT Edge | Processing near devices or data sources; IoT Edge extends cloud workloads to compatible edge devices. |
 
-## 12. Additional recognition terms
-
-These supporting terms help interpret examples and older videos. Their presence
-here does not establish that each is an explicit current exam objective.
+### Other recognition terms
 
 | Term | Meaning |
-|---|---|
+| --- | --- |
 | Azure SQL Database | Managed relational database; an example of PaaS. |
 | Azure Cosmos DB | Distributed database service supporting different models and interfaces depending on the offering. |
 | Azure Database for PostgreSQL | Managed PostgreSQL database service; another PaaS example. |
@@ -373,7 +426,7 @@ here does not establish that each is an explicit current exam objective.
 | Azure Site Recovery | Replication and disaster-recovery orchestration for supported workloads. |
 | Azure Well-Architected Framework | Design guidance across reliability, security, cost optimization, operational excellence, and performance efficiency. |
 
-## 13. Key distinctions and revision checklist
+## Appendix B. Scenario recognition and revision checklist
 
 | If a scenario asks for... | Think of... | Do not confuse it with... |
 |---|---|---|
@@ -385,6 +438,10 @@ here does not establish that each is an explicit current exam objective.
 | Recovery from a regional disaster | A configured cross-region recovery strategy | Region pairing alone |
 | Organizing multiple subscriptions | Management groups | Resource groups |
 | Proving identity | Authentication | Authorization |
+| Inviting an external consultant to access a company resource | B2B collaboration | Customer identities for public-facing applications |
+| Collaborating in a Teams shared channel across organizations | B2B direct connect | Ordinary B2B guest invitation |
+| Allowing customers to sign up for an online shop | Entra External ID customer identities | B2B collaboration |
+| Requiring MFA for risky sign-ins | Conditional Access | Azure RBAC role assignment |
 | Granting resource-management permissions | Azure RBAC | Azure Policy |
 | Managing Azure role assignments without general resource administration | User Access Administrator | Contributor: manages resources but cannot assign roles through that role |
 | Configuring domain users and computers | Group Policy | Azure Policy: Azure resource governance |
@@ -403,34 +460,15 @@ here does not establish that each is an explicit current exam objective.
 | Application failures and slow requests | Application Insights | Service Trust Portal: compliance documents |
 | Managing supported resources outside Azure | Azure Arc | Azure Migrate: assessment and migration |
 | Offline bulk data transfer | Azure Data Box | AzCopy: online transfer |
+| Running VMs with fault/update domain separation | Availability set | Scale set: scaling and fleet management |
+| A workload needing zone failure resilience | Appropriate multi-zone deployment | Assuming a single zonal VM is zone-redundant |
+| Inspecting CPU utilization or alert thresholds | Azure Monitor metrics and alerts | Azure Advisor recommendations |
+| Preventing an accidental resource deletion | CanNotDelete lock | Azure Policy or backup alone |
 | Prebuilt language or vision capabilities | Azure AI services | Custom model training in Azure Machine Learning |
 | Device-to-cloud messaging | Azure IoT Hub | General-purpose web hosting |
 | Reducing unused capacity | Rightsizing, scaling in, and deallocation | Assuming cloud use is inherently efficient |
 
-### Revision method
-
-For each term, explain its purpose in one sentence, give an example, and
-contrast it with the closest alternative. Focus on selecting an appropriate
-service and understanding responsibilities, not memorizing exact prices,
-command syntax, or implementation details.
-
-When studying with an AI tutor, use original practice questions, one at a time,
-mixing definitions, comparisons, and simple scenarios. State how many answers
-are expected for multiple-choice questions. After answering, explain why the
-correct answer fits and why each alternative does not, then link the explanation
-to the relevant glossary section. Track recurring mistakes by topic group and
-revise those sections before trying another set.
-
-Treat the uploaded guide's appendix 11 as study guidance, not independent
-evidence of exam scope. Its reported domain weights must not be presented as
-verified here. Do not convert a practice percentage into Microsoft's official
-exam score, describe generated questions as official, or use exam dumps.
-Distinguish a general service purpose from behavior that depends on a plan,
-region, license, or configuration; explicitly flag unresolved discrepancies.
-Use Microsoft's practice assessment and exam sandbox to prepare for the
-assessment experience.
-
-### Checklist
+### Revision checklist
 
 - [ ] Compare public, private, hybrid, and multicloud models and use cases.
 - [ ] Explain consumption pricing, CapEx, OpEx, and shared responsibility.
@@ -444,6 +482,7 @@ assessment experience.
 - [ ] Compare storage services, account types, access tiers, and redundancy.
 - [ ] Choose between AzCopy, Storage Explorer, File Sync, Migrate, and Data Box.
 - [ ] Explain Entra directory services, external identities, SSO, MFA, and Conditional Access.
+- [ ] Distinguish B2B collaboration, B2B direct connect, customer identities, guest objects, and cross-tenant access settings.
 - [ ] Distinguish authentication, authorization, Azure RBAC, and directory roles.
 - [ ] Explain Zero Trust, defense in depth, encryption, key management, and Defender for Cloud.
 - [ ] Distinguish cost estimates, cost analysis, budgets, and optimization commitments.
@@ -453,56 +492,14 @@ assessment experience.
 - [ ] Recognize AI services, custom ML, IoT, and edge categories in the Learn material.
 - [ ] Cross-check this checklist against every objective in the live exam study guide.
 
-## 14. Official sources and coverage map
+## Appendix C. Sources and alignment notes
 
-This section maps reviewed **training module objectives**, not verified current
-exam objectives. See [the pending verification requirements](#retrieval-retry-and-remaining-verification).
+- **Primary content reference:** `AZ900_Brochure_Verification_Ultime_2026.md` — 12 chapters, Quick memory sheets, supporting topics and final scenarios.
+- [Microsoft AZ-900 official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
+- [Microsoft Entra B2B collaboration](https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b)
+- [Microsoft Entra B2B direct connect](https://learn.microsoft.com/en-us/entra/external-id/b2b-direct-connect-overview)
+- [Azure Storage redundancy](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)
+- [Azure Blob access tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview)
+- [Azure resource locks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
 
-### Microsoft Learn learning paths
-
-The reviewed sources call the series **Introduction to Cloud Infrastructure**.
-It includes three conceptual paths and a fourth guided-project path.
-
-| Learning path | Microsoft Learn | Official source reviewed |
-|---|---|---|
-| Describe cloud concepts | [Learning path](https://learn.microsoft.com/en-us/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/) | [Path definition](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/paths/microsoft-azure-fundamentals-describe-cloud-concepts/index.yml) |
-| Describe Azure architecture and services | [Learning path](https://learn.microsoft.com/en-us/training/paths/azure-fundamentals-describe-azure-architecture-services/) | [Path definition](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/paths/azure-fundamentals-describe-azure-architecture-services/index.yml) |
-| Describe Azure management and governance | [Learning path](https://learn.microsoft.com/en-us/training/paths/describe-azure-management-governance/) | [Path definition](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/paths/describe-azure-management-governance/index.yml) |
-| Apply Azure skills in guided projects | [Learning path](https://learn.microsoft.com/en-us/training/paths/introduction-cloud-infrastructure-apply-azure-skills-guided-projects/) | Identified in the three reviewed path definitions; project content not reviewed. |
-
-### Reviewed module objectives
-
-The following links point to the official source snapshot used for the coverage
-review. They let you inspect the objectives even if the Learn website is
-temporarily unavailable.
-
-| Reviewed Learn module | Glossary coverage | Source |
-|---|---|---|
-| Describe cloud computing | Section 1: models, responsibility, consumption pricing | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-cloud-compute/index.yml) |
-| Describe the benefits of using cloud services | Section 1: availability, scalability, reliability, management, sustainability | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-benefits-use-cloud-services/index.yml) |
-| Describe cloud service types | Section 1: IaaS, PaaS, SaaS, responsibilities, and use cases | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-cloud-service-types/index.yml) |
-| Describe the core architectural components of Azure | Section 2 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-core-architectural-components-of-azure/index.yml) |
-| Describe Azure compute services | Sections 3 and 11 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-azure-compute-networking-services/index.yml) |
-| Describe Azure networking services | Section 4 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-azure-networking-services/index.yml) |
-| Describe Azure storage services | Section 5 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-azure-storage-services/index.yml) |
-| Describe Azure identity, access, and security | Section 6 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-azure-identity-access-security/index.yml) |
-| Describe cost management in Azure | Section 7; tags in section 8 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-cost-management-azure/index.yml) |
-| Describe features and tools in Azure for governance and compliance | Section 8 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-features-tools-azure-for-governance-compliance/index.yml) |
-| Describe features and tools for managing and deploying Azure resources | Section 9 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-features-tools-manage-deploy-azure-resources/index.yml) |
-| Describe monitoring tools in Azure | Section 10 | [Objectives](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-monitoring-tools-azure/index.yml) |
-
-### Lessons read for updated coverage
-
-- [Sustainability in the cloud](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-benefits-use-cloud-services/includes/5a-describe-sustainability-cloud.md)
-- [AI, ML, IoT, and edge service categories](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-azure-compute-networking-services/includes/12a-describe-ai-ml-iot-edge-services.md)
-- [Storage account options and endpoints](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-azure-storage-services/includes/2-accounts.md)
-- [Pricing calculator and TCO calculator retirement](https://github.com/MicrosoftDocs/learn/blob/84a72937fdd8e262449c18e5cb42920210a7b211/learn-pr/wwl-azure/describe-cost-management-azure/includes/3-compare-pricing-total-cost-of-ownership-calculators.md)
-
-### Exam reference and practice
-
-- [Official AZ-900 study guide and change log](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
-- [Azure Fundamentals certification and practice assessment access](https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/)
-- [Azure documentation](https://learn.microsoft.com/en-us/azure/)
-
-When an older video, this glossary, and the current official exam guide differ,
-prioritize the current exam guide and Microsoft documentation.
+**Alignment rule:** The brochure is the primary study material. Optional supplementary terms in this glossary should not be treated as guaranteed exam objectives.
