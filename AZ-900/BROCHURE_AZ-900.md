@@ -31,6 +31,8 @@ A concise, text-only reference to read, understand, and remember. The original 1
 
 ---
 
+Updated November 24, 2026: expanded using the practice-question bank. Core objectives remain prioritized over supporting services.
+
 ## Exam at a glance
 
 | Domain | Official weight (July 20, 2026) |
@@ -209,6 +211,8 @@ Management groups
 > **Remember (top to bottom):** "**M**y **S**ubscription **R**uns **R**esources":
 > Management group, Subscription, Resource group, Resource.
 
+Resource groups themselves have no additional charge and can contain resources in different regions. Multiple subscriptions can trust the same Entra tenant; each subscription trusts one tenant at a time.
+
 ### 5. Compute
 
 | Service | Model | Use it when |
@@ -254,6 +258,8 @@ A VM must be placed in a resource group and a region. A public IP is **not** req
 > servers to manage" = **App Service**. "Remote desktop for staff" =
 > **Azure Virtual Desktop**. "Many containers" = **AKS**.
 
+**VM billing:** Stopped (allocated) VMs still incur compute charges; stopped (deallocated) VMs do not incur VM compute charges, although disks and other resources can still cost money. App Service can enforce a minimum TLS version (such as TLS 1.2); a minimum does not exclude newer versions. ACI runs containers without customer-managed hosts. AKS virtual nodes can burst eligible pods into ACI when configured. Scale sets can add instances for demand spikes; availability sets stagger updates and separate fault domains.
+
 ### 6. Networking
 
 | Service or feature | What it does |
@@ -282,6 +288,8 @@ A VM must be placed in a resource group and a region. A public IP is **not** req
 > **Remember:** "Not over the internet" = **ExpressRoute**.
 > "Encrypted over the internet" = **VPN Gateway**.
 > "Private IP for a PaaS service" = **Private endpoint**.
+
+**Connectivity:** Private communication is allowed by default within a VNet, including across subnets, subject to NSGs, routes and guest firewalls. Separate VNets need connectivity such as peering. Site-to-site VPN connects networks; point-to-site VPN connects individual clients. A virtual network gateway provides the Azure VPN endpoint; a local network gateway represents the on-premises VPN device and networks. An NSG allows or denies traffic but does not create public connectivity. Azure Firewall provides centralized stateful filtering across connected networks; Application Gateway provides HTTP(S) routing and optional WAF. VPN is generally suitable for a low-cost pilot; ExpressRoute provides private connectivity and often more predictable latency.
 
 ### 7. Storage
 
@@ -345,6 +353,8 @@ the redundancy and performance options.
 
 - Slow or limited internet + huge data = **Data Box**.
 - Archive is the cheapest to store but **cannot be read immediately**.
+
+**Storage distinctions:** Table Storage is a schemaless NoSQL key/attribute store using PartitionKey and RowKey. LRS is generally the lowest-cost redundancy option; GZRS combines zone and geographic redundancy for stronger resilience. Azure File Sync synchronizes Windows Server shares with Azure Files in both directions (cloud-side changes may take time to detect). AzCopy is a command-line transfer tool; Storage Explorer is graphical; Data Box supports offline bulk migration.
 
 ### 8. Identity, access, and security
 
@@ -415,6 +425,23 @@ Physical security -> Identity & access -> Perimeter -> Network
 
 ---
 
+**Additional identity and security distinctions (supporting knowledge):**
+
+| Feature | Purpose |
+|---|---|
+| Entra ID Protection | Detect risky cloud identities and sign-ins; risk signals can feed Conditional Access |
+| Entra Connect Sync | Synchronize on-premises AD identities with Entra ID; supports hybrid SSO designs |
+| Security groups | Assign permissions collectively |
+| Microsoft 365 groups | Provide shared collaboration resources |
+| Windows Hello for Business | Passwordless Windows sign-in using a device-bound credential unlocked by PIN or biometrics |
+| Microsoft Authenticator | Authentication approvals and time-based one-time codes (OATH TOTP), including supported third-party accounts |
+| Privileged Identity Management | Time-limited privileged role activation |
+| Defender for Identity | Detect threats to Active Directory identities |
+| Defender for Endpoint | Endpoint and server threat detection and response |
+| Microsoft Sentinel | Security analytics, SIEM and SOAR |
+
+Hybrid MFA and SSO depend on the integration and application; they do not automatically apply to every legacy AD login. Conditional Access can require MFA based on location, device state and risk. OTP means one-time password; TOTP is time-based. Defender for Cloud provides regulatory compliance assessments (such as applicable PCI DSS or HIPAA controls), not a legal guarantee of compliance. For the preserved quiz question 61, Defender for Endpoint is the reported quiz answer, but Defender for Identity is the more directly relevant product and is absent from the options.
+
 ## Part C - Management and governance
 
 ### 9. Cost management
@@ -453,6 +480,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 > Cost Management = **during/after** (actual/forecast spend, budgets). Tags = **group and
 > report costs**.
 
+PAYG has no long-term commitment and offers flexibility; reservations can lower unit costs for predictable usage. Pricing Calculator estimates planned deployments, Cost Management tracks and forecasts spending, and Advisor recommends optimizations to existing resources. Tags can identify application, department and cost center for chargeback.
+
 ### 10. Governance and compliance
 
 | Service | Purpose |
@@ -480,6 +509,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 > **Remember:** Policy = **rules** for resources. RBAC = **permissions** for
 > people. Locks = **protection** from deletion or change.
 
+Purview sensitivity labels classify documents and can apply persistent encryption and access restrictions even when files travel outside the organization. A ReadOnly lock at resource group scope blocks management-plane creation and changes within that scope until an authorized user removes the lock; it does not universally block data-plane writes.
+
 ### 11. Managing and deploying resources
 
 | Tool | Description |
@@ -501,6 +532,8 @@ Physical security -> Identity & access -> Perimeter -> Network
 and source-controlled.
 
 > **Remember:** Azure resource-management tools use **Azure Resource Manager**. IaC makes deployments repeatable and reviewable, but outcomes can still depend on parameters, external state, permissions, and service availability.
+
+Portal URL: https://portal.azure.com. Azure Automation runbooks automate administrative and corrective tasks. Azure Blueprints is a legacy deployment approach; prioritize ARM/Bicep, Policy and current deployment tooling rather than memorizing it as an exam objective.
 
 ### 12. Monitoring
 
@@ -530,6 +563,8 @@ and source-controlled.
 > app**.
 
 ---
+
+Azure Monitor includes infrastructure/container monitoring for AKS and Application Insights for instrumented application telemetry, including microservices. Action groups can invoke Automation runbooks or Logic Apps, depending on the desired corrective action or workflow. Monitor collects and correlates resource telemetry; Application Insights specializes in application requests, dependencies, exceptions and latency.
 
 ## Part D - Quick memory sheets
 
@@ -607,6 +642,19 @@ recognition. They are **not confirmed** as explicit exam objectives.
 
 For additional practice, use your separate AZ-900 glossary and checklist if available.
 
+### Messaging and integration (supporting knowledge)
+
+| Service | Purpose |
+|---|---|
+| Event Grid | Route discrete events from Azure services and custom sources to subscribers |
+| Service Bus | Reliable enterprise messaging using queues and topics |
+| Event Hubs | High-throughput event and telemetry ingestion |
+| Logic Apps | Managed integration workflows and connectors |
+| Power Automate | Business process automation, including Microsoft 365 workflows |
+| Azure Automation | Administrative scripts and runbooks |
+
+Event Grid signals that something happened; Service Bus transports business messages; Event Hubs ingests streams. DDoS protection includes built-in infrastructure protection and enhanced IP Protection and Network Protection tiers. The historical Basic/Standard names should not be memorized as current tiers.
+
 ## Direct Microsoft references for this brochure
 
 Official exam blueprint (checked November 16, 2026): [AZ-900 study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900). Product documentation used for corrections: [Microsoft Entra B2B collaboration](https://learn.microsoft.com/en-us/entra/external-id/what-is-b2b), [B2B direct connect](https://learn.microsoft.com/en-us/entra/external-id/b2b-direct-connect-overview), [Data Box](https://learn.microsoft.com/en-us/azure/databox/data-box-overview), [region pairs](https://learn.microsoft.com/en-us/azure/reliability/regions-paired).
@@ -679,3 +727,8 @@ These examples reinforce the recognition-based questions emphasized in the 2024 
 - [Azure resource locks](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources)
 - [Move Azure resources](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/move-resource-group-and-subscription)
 - [Azure Resource Manager overview](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
+
+### November 24 update sources
+
+- [Official AZ-900 objectives, July 20, 2026](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-900)
+- [DDoS tier comparison](https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-sku-comparison)
